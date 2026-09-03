@@ -1,0 +1,58 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/gcdsky130/gcdsky130.txt
+Output directory: test_output_gcdsky130
+Timestamp: 2026-02-28T14:51:55.702784
+
+DESIGN INFO:
+  design_names=['gcd']
+  technology_nodes=['sky130hd']
+  config_mks=['config.mk']
+  design_info_file=gcdsky130_design_info.json
+
+LINE CHECK:
+  log_total_lines=3541  chunks_total_lines=3451  chunks_covered_lines=3451  gaps=90  overlaps=0  extracted_total_lines=1360
+  gap_file=gcdsky130_gap_lines.txt
+
+Total stage occurrences extracted: 6
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:   254 lines -> gcdsky130_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   118 lines -> gcdsky130_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:   119 lines -> gcdsky130_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   319 lines -> gcdsky130_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   436 lines -> gcdsky130_routing_extract.txt
+
+SYNTHESIS (1 occurrence(s)):
+  #1:   114 lines -> gcdsky130_synthesis_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  114 lines)
+ 2. floorplan_1                    (  119 lines)
+ 3. placement_1                    (  319 lines)
+ 4. cts_1                          (  254 lines)
+ 5. routing_1                      (  436 lines)
+ 6. final_1                        (  118 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=1.1 ns  cpu_s=1.94  warnings=0  errors=0
+ 2. floorplan_1       area=2441.0  util=43  wns=-2.039  tns=-78.6  viol=46  hpwl=N/A
+ 3. placement_1       area=3623.0  util=64  wns=N/A  tns=N/A  viol=N/A  hpwl=4452.6
+ 4. cts_1             area=4387.0  util=78  wns=-2.337  tns=-104.2  viol=84  hpwl=6613.0
+ 5. routing_1         area=4687.0  util=83  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=4777.080  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.001
+================================================================================

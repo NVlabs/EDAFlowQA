@@ -1,0 +1,54 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 0.77,
+      "worstcase_voltage_v": 0.769,
+      "average_voltage_v": 0.77,
+      "average_ir_drop_v": 0.000165,
+      "worstcase_ir_drop_v": 0.000641,
+      "percentage_drop": 0.08
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.000484,
+      "average_voltage_v": 0.000143,
+      "average_ir_drop_v": 0.000143,
+      "worstcase_ir_drop_v": 0.000484,
+      "percentage_drop": 0.06
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 128,
+    "fill_cell_area": 12.92,
+    "tap_cell_count": 36,
+    "tap_cell_area": 1.05,
+    "clock_buffer_count": 3,
+    "clock_buffer_area": 0.22,
+    "timing_repair_buffer_count": 9,
+    "timing_repair_buffer_area": 0.66,
+    "inverter_count": 16,
+    "inverter_area": 0.74,
+    "sequential_cell_count": 12,
+    "sequential_cell_area": 3.5,
+    "combinational_cell_count": 41,
+    "combinational_cell_area": 4.8,
+    "total_cell_count": 269,
+    "total_cell_area": 24.93
+  },
+  "design_metrics": {},
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 1,
+      "memory_mb": 189,
+      "sha1sum": "35bcba4bcb517273d2ac"
+    },
+    "6_report": {
+      "elapsed_s": 2,
+      "memory_mb": 250
+    }
+  },
+  "performance": {},
+  "design_name": "aes-block",
+  "sub_design_name": "aes_rcon"
+}

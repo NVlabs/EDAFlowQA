@@ -1,0 +1,95 @@
+Log file: ./design_artifacts/gcdsky130/gcdsky130.txt
+Total log lines: 3541
+Uncovered line count: 90
+Gap ranges (0-based, end exclusive): [(0, 90)]
+--------------------------------------------------------------------------------
+L1: [2025-10-11T15:04:39.047Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:2f17ad
+L2: [2025-10-11T15:04:39.047Z] 
+L3: [2025-10-11T15:04:39.047Z] Error: No such object: openroad/flow-ubuntu22.04-dev:2f17ad
+L4: [2025-10-11T15:05:42.576Z] + docker pull openroad/flow-ubuntu22.04-dev:2f17ad
+L5: [2025-10-11T15:05:42.576Z] 2f17ad: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2025-10-11T15:05:42.576Z] 3713021b0277: Already exists
+L7: [2025-10-11T15:05:42.576Z] 3a5e9772043a: Pulling fs layer
+L8: [2025-10-11T15:05:42.576Z] 4026b60abc07: Pulling fs layer
+L9: [2025-10-11T15:05:42.576Z] b932253d8a19: Pulling fs layer
+L10: [2025-10-11T15:05:42.576Z] c836a3bb3235: Pulling fs layer
+L11: [2025-10-11T15:05:42.576Z] a41c330d8a6f: Pulling fs layer
+L12: [2025-10-11T15:05:42.576Z] 7ba9432c2643: Pulling fs layer
+L13: [2025-10-11T15:05:42.576Z] c836a3bb3235: Waiting
+L14: [2025-10-11T15:05:42.576Z] a41c330d8a6f: Waiting
+L15: [2025-10-11T15:05:42.576Z] 7ba9432c2643: Waiting
+L16: [2025-10-11T15:05:43.085Z] 4026b60abc07: Verifying Checksum
+L17: [2025-10-11T15:05:43.085Z] 4026b60abc07: Download complete
+L18: [2025-10-11T15:05:43.085Z] b932253d8a19: Verifying Checksum
+L19: [2025-10-11T15:05:43.085Z] b932253d8a19: Download complete
+L20: [2025-10-11T15:05:43.085Z] 3a5e9772043a: Verifying Checksum
+L21: [2025-10-11T15:05:43.085Z] 3a5e9772043a: Download complete
+L22: [2025-10-11T15:05:43.085Z] 3a5e9772043a: Pull complete
+L23: [2025-10-11T15:05:43.085Z] c836a3bb3235: Verifying Checksum
+L24: [2025-10-11T15:05:43.085Z] c836a3bb3235: Download complete
+L25: [2025-10-11T15:05:43.085Z] 4026b60abc07: Pull complete
+L26: [2025-10-11T15:05:43.085Z] b932253d8a19: Pull complete
+L27: [2025-10-11T15:05:43.085Z] c836a3bb3235: Pull complete
+L28: [2025-10-11T15:05:43.085Z] 7ba9432c2643: Verifying Checksum
+L29: [2025-10-11T15:05:43.085Z] 7ba9432c2643: Download complete
+L30: [2025-10-11T15:06:09.009Z] a41c330d8a6f: Verifying Checksum
+L31: [2025-10-11T15:06:09.009Z] a41c330d8a6f: Download complete
+L32: [2025-10-11T15:06:52.447Z] a41c330d8a6f: Pull complete
+L33: [2025-10-11T15:06:52.447Z] 7ba9432c2643: Pull complete
+L34: [2025-10-11T15:06:52.448Z] Digest: sha256:de3c4425d63075c63934c83ceee655ab694d184cc1a0c32d4cfe21ecf4683677
+L35: [2025-10-11T15:06:52.448Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:2f17ad
+L36: [2025-10-11T15:06:52.448Z] docker.io/openroad/flow-ubuntu22.04-dev:2f17ad
+L37: [2025-10-11T15:09:18.863Z] + git config --system --add safe.directory *
+L38: [2025-10-11T15:11:53.284Z] + nice flow/test/test_helper.sh gcd sky130hd
+L39: [2025-10-11T15:11:53.284Z] +++ readlink -f flow/test/test_helper.sh
+L40: [2025-10-11T15:11:53.284Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L41: [2025-10-11T15:11:53.284Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L42: [2025-10-11T15:11:53.284Z] + DESIGN_NAME=gcd
+L43: [2025-10-11T15:11:53.284Z] + PLATFORM=sky130hd
+L44: [2025-10-11T15:11:53.284Z] + CONFIG_MK=config.mk
+L45: [2025-10-11T15:11:53.284Z] + '[' 2 -ge 4 ']'
+L46: [2025-10-11T15:11:53.284Z] + TARGET='finish metadata'
+L47: [2025-10-11T15:11:53.284Z] + DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk
+L48: [2025-10-11T15:11:53.284Z] + LOG_FILE=./logs/sky130hd/gcd.log
+L49: [2025-10-11T15:11:53.284Z] + mkdir -p ./logs/sky130hd
+L50: [2025-10-11T15:11:53.284Z] + __make='make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk'
+L51: [2025-10-11T15:11:53.284Z] + '[' -n '' ']'
+L52: [2025-10-11T15:11:53.284Z] ++ dirname ./logs/sky130hd/gcd.log
+L53: [2025-10-11T15:11:53.284Z] + mkdir -p ./logs/sky130hd
+L54: [2025-10-11T15:11:53.284Z] + make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk clean_all clean_metadata
+L55: [2025-10-11T15:11:53.284Z] + tee ./logs/sky130hd/gcd.log
+L56: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/1_* ./results/sky130hd/gcd/base/mem*.json
+L57: [2025-10-11T15:11:53.793Z] rm -f ./reports/sky130hd/gcd/base/synth_*
+L58: [2025-10-11T15:11:53.793Z] rm -f ./logs/sky130hd/gcd/base/1_*
+L59: [2025-10-11T15:11:53.793Z] rm -f 
+L60: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/clock_period.txt
+L61: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/2_*floorplan*.odb ./results/sky130hd/gcd/base/2_floorplan.sdc ./results/sky130hd/gcd/base/2_*.v ./results/sky130hd/gcd/base/2_*.def
+L62: [2025-10-11T15:11:53.793Z] rm -f ./reports/sky130hd/gcd/base/2_*
+L63: [2025-10-11T15:11:53.793Z] rm -f ./logs/sky130hd/gcd/base/2_*
+L64: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/3_*place*.odb
+L65: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/3_place.sdc
+L66: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/3_*.def ./results/sky130hd/gcd/base/3_*.v
+L67: [2025-10-11T15:11:53.793Z] rm -f ./reports/sky130hd/gcd/base/3_*
+L68: [2025-10-11T15:11:53.793Z] rm -f ./logs/sky130hd/gcd/base/3_*
+L69: [2025-10-11T15:11:53.793Z] rm -rf ./results/sky130hd/gcd/base/4_*cts*.odb ./results/sky130hd/gcd/base/4_cts.sdc ./results/sky130hd/gcd/base/4_*.v ./results/sky130hd/gcd/base/4_*.def
+L70: [2025-10-11T15:11:53.793Z] rm -f  ./reports/sky130hd/gcd/base/4_*
+L71: [2025-10-11T15:11:53.793Z] rm -rf ./logs/sky130hd/gcd/base/4_*
+L72: [2025-10-11T15:11:53.793Z] rm -rf ./results/sky130hd/gcd/base/route.guide ./results/sky130hd/gcd/base/output_guide.mod ./results/sky130hd/gcd/base/updated_clks.sdc
+L73: [2025-10-11T15:11:53.793Z] rm -rf ./results/sky130hd/gcd/base/5_*.odb ./results/sky130hd/gcd/base/5_route.sdc ./results/sky130hd/gcd/base/5_*.def ./results/sky130hd/gcd/base/5_*.v
+L74: [2025-10-11T15:11:53.793Z] rm -f  ./reports/sky130hd/gcd/base/5_*
+L75: [2025-10-11T15:11:53.793Z] rm -f  ./logs/sky130hd/gcd/base/5_*
+L76: [2025-10-11T15:11:53.793Z] rm -rf ./results/sky130hd/gcd/base/6_*.gds ./results/sky130hd/gcd/base/6_*.oas ./results/sky130hd/gcd/base/6_*.odb ./results/sky130hd/gcd/base/6_*.v ./results/sky130hd/gcd/base/6_*.def ./results/sky130hd/gcd/base/6_*.sdc ./results/sky130hd/gcd/base/6_*.spef
+L77: [2025-10-11T15:11:53.793Z] rm -rf ./reports/sky130hd/gcd/base/6_*.rpt
+L78: [2025-10-11T15:11:53.793Z] rm -f  ./logs/sky130hd/gcd/base/6_*
+L79: [2025-10-11T15:11:53.793Z] rm -f ./reports/sky130hd/gcd/base/design-dir.txt
+L80: [2025-10-11T15:11:53.793Z] rm -f ./reports/sky130hd/gcd/base/metadata*.*
+L81: [2025-10-11T15:11:53.793Z] rm -f ./results/sky130hd/gcd/base/gcd.lib ./results/sky130hd/gcd/base/gcd.lef
+L82: [2025-10-11T15:11:53.793Z] rm -rf ./objects/sky130hd/gcd/base
+L83: [2025-10-11T15:11:53.793Z] make: Nothing to be done for 'clean_metadata'.
+L84: [2025-10-11T15:11:53.793Z] + set +e
+L85: [2025-10-11T15:11:53.793Z] + eval make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk 'finish metadata'
+L86: [2025-10-11T15:11:53.793Z] + tee -a ./logs/sky130hd/gcd.log
+L87: [2025-10-11T15:11:53.793Z] ++ make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk finish metadata
+L88: [2025-10-11T15:11:54.302Z] mkdir -p results/sky130hd/gcd/base/
+L89: [2025-10-11T15:11:54.302Z] echo 1.1 > results/sky130hd/gcd/base/clock_period.txt
+L90: [2025-10-11T15:11:54.849Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/gcd/base/1_1_yosys_canonicalize.log

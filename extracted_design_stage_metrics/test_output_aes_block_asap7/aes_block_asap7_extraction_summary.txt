@@ -1,0 +1,94 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/aes_block_asap7_log/aes_block_asap7.txt
+Output directory: test_output_aes_block_asap7
+Timestamp: 2026-02-28T04:21:49.516281
+
+DESIGN INFO:
+  design_names=['aes-block']
+  technology_nodes=['asap7']
+  config_mks=['config.mk']
+  design_info_file=aes_block_asap7_design_info.json
+
+LINE CHECK:
+  log_total_lines=6728  chunks_total_lines=6375  chunks_covered_lines=6375  gaps=353  overlaps=0  extracted_total_lines=3875
+  gap_file=aes_block_asap7_gap_lines.txt
+
+Total stage occurrences extracted: 18
+--------------------------------------------------------------------------------
+
+CTS (3 occurrence(s)):
+  #1:    45 lines -> aes_block_asap7_cts_extract.txt
+  #2:    37 lines -> aes_block_asap7_cts_2_extract.txt
+  #3:   586 lines -> aes_block_asap7_cts_3_extract.txt
+
+FINAL (3 occurrence(s)):
+  #1:   304 lines -> aes_block_asap7_final_extract.txt
+  #2:   455 lines -> aes_block_asap7_final_2_extract.txt
+  #3:   147 lines -> aes_block_asap7_final_3_extract.txt
+
+FLOORPLAN (3 occurrence(s)):
+  #1:    52 lines -> aes_block_asap7_floorplan_extract.txt
+  #2:    51 lines -> aes_block_asap7_floorplan_2_extract.txt
+  #3:    65 lines -> aes_block_asap7_floorplan_3_extract.txt
+
+PLACEMENT (3 occurrence(s)):
+  #1:   277 lines -> aes_block_asap7_placement_extract.txt
+  #2:   356 lines -> aes_block_asap7_placement_2_extract.txt
+  #3:   294 lines -> aes_block_asap7_placement_3_extract.txt
+
+ROUTING (3 occurrence(s)):
+  #1:   172 lines -> aes_block_asap7_routing_extract.txt
+  #2:   288 lines -> aes_block_asap7_routing_2_extract.txt
+  #3:   710 lines -> aes_block_asap7_routing_3_extract.txt
+
+SYNTHESIS (3 occurrence(s)):
+  #1:    11 lines -> aes_block_asap7_synthesis_extract.txt
+  #2:    12 lines -> aes_block_asap7_synthesis_2_extract.txt
+  #3:    13 lines -> aes_block_asap7_synthesis_3_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (   11 lines)
+ 2. floorplan_1                    (   52 lines)
+ 3. placement_1                    (  277 lines)
+ 4. cts_1                          (   45 lines)
+ 5. routing_1                      (  172 lines)
+ 6. final_1                        (  304 lines)
+ 7. synthesis_2                    (   12 lines)
+ 8. floorplan_2                    (   51 lines)
+ 9. placement_2                    (  356 lines)
+10. cts_2                          (   37 lines)
+11. routing_2                      (  288 lines)
+12. final_2                        (  455 lines)
+13. synthesis_3                    (   13 lines)
+14. floorplan_3                    (   65 lines)
+15. placement_3                    (  294 lines)
+16. cts_3                          (  586 lines)
+17. routing_3                      (  710 lines)
+18. final_3                        (  147 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=N/A  cpu_s=1.38  warnings=0  errors=0
+ 2. floorplan_1       area=N/A  util=N/A  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 3. placement_1       area=24.9  util=49.4  wns=N/A  tns=N/A  viol=N/A  hpwl=160.0
+ 4. cts_1             area=N/A  util=N/A  wns=N/A  tns=N/A  viol=N/A  hpwl=170.3
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=N/A  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.000
+ 7. synthesis_2       clock=N/A  cpu_s=1.43  warnings=0  errors=0
+ 8. floorplan_2       area=N/A  util=N/A  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 9. placement_2       area=151.6  util=39.7  wns=N/A  tns=N/A  viol=N/A  hpwl=1525.5
+10. cts_2             area=N/A  util=N/A  wns=N/A  tns=N/A  viol=N/A  hpwl=1536.4
+11. routing_2         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+12. final_2           area=N/A  util=N/A  ir_vdd_wc=0.000  ir_vss_wc=0.000
+13. synthesis_3       clock=N/A  cpu_s=1.45  warnings=0  errors=0
+14. floorplan_3       area=N/A  util=40.0  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+15. placement_3       area=15178.5  util=12.0  wns=N/A  tns=N/A  viol=N/A  hpwl=47058.0
+16. cts_3             area=N/A  util=N/A  wns=-139.335  tns=-8959.4  viol=200  hpwl=49591.1
+17. routing_3         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+18. final_3           area=6424.170  util=N/A  ir_vdd_wc=N/A  ir_vss_wc=N/A
+================================================================================

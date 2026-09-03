@@ -1,0 +1,149 @@
+{
+  "stage": "placement",
+  "substages": {
+    "3_1_place_gp_skip_io": {
+      "hpwl": 439.238,
+      "area": 112.674,
+      "utilization": 57.665,
+      "density": 57.665,
+      "overflow": 0.0986,
+      "optimization_process": [
+        {
+          "type": "global_placement",
+          "command": "global_placement -skip_io -density 0.8 -pad_left 0 -pad_right 0",
+          "iterations_count": 351,
+          "start_metrics": {
+            "overflow": 0.9292,
+            "hpwl": 282.93
+          },
+          "end_metrics": {
+            "overflow": 0.0986,
+            "hpwl": 439.238
+          },
+          "results": {
+            "movable_instances": 425,
+            "fixed_instances": 224,
+            "num_nets": 468,
+            "num_pins": 1346,
+            "core_area_um2": 112.674,
+            "fixed_instances_area_um2": 6.532,
+            "movable_instances_area_um2": 61.207,
+            "standard_cells_area_um2": 61.207,
+            "utilization": 57.665,
+            "target_density": 80.0,
+            "final_overflow": 0.0986,
+            "final_hpwl_um": 439.238
+          }
+        }
+      ],
+      "elapsed_s": 1,
+      "memory_mb": 187,
+      "sha1sum": "cf52d7921f5bad160012"
+    },
+    "3_2_place_iop": {
+      "optimization_process": [
+        {
+          "type": "io_placement",
+          "command": "place_pins -hor_layers M4 -ver_layers M5 -min_distance 6 -min_distance_in_tracks",
+          "results": {
+            "io_nets_hpwl_um": 263.03
+          }
+        }
+      ],
+      "elapsed_s": 0,
+      "memory_mb": 186,
+      "sha1sum": "5a2e200854b35fc3914d"
+    },
+    "3_3_place_gp": {
+      "hpwl": 568.621,
+      "area": 112.674,
+      "utilization": 59.066,
+      "density": 59.066,
+      "overflow": 0.0996,
+      "optimization_process": [
+        {
+          "type": "buffer_removal",
+          "results": {
+            "removed_buffers": 26
+          }
+        },
+        {
+          "type": "buffer_insertion",
+          "results": {
+            "input_buffers": 42,
+            "buffer_type": "BUFx2_ASAP7_75t_R",
+            "output_buffers": 32
+          }
+        },
+        {
+          "type": "global_placement",
+          "command": "global_placement -density 0.8 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+          "iterations_count": 303,
+          "start_metrics": {
+            "overflow": 0.6979,
+            "hpwl": 495.054
+          },
+          "end_metrics": {
+            "overflow": 0.0996,
+            "hpwl": 568.621
+          },
+          "results": {
+            "movable_instances": 473,
+            "fixed_instances": 224,
+            "num_nets": 516,
+            "num_pins": 1517,
+            "core_area_um2": 112.674,
+            "fixed_instances_area_um2": 6.532,
+            "movable_instances_area_um2": 62.694,
+            "standard_cells_area_um2": 62.694,
+            "utilization": 59.066,
+            "target_density": 80.0,
+            "final_overflow": 0.0996,
+            "final_hpwl_um": 568.621
+          }
+        }
+      ],
+      "report_metrics": "[2025-11-06T15:58:39.124Z] Report metrics stage 3, global place...",
+      "elapsed_s": 1,
+      "memory_mb": 256,
+      "sha1sum": "3a36c00f632d1855efd6"
+    },
+    "3_4_place_resized": {
+      "optimization_process": [
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        }
+      ],
+      "report_metrics": "[2025-11-06T15:58:40.725Z] Report metrics stage 3, resizer...",
+      "elapsed_s": 1,
+      "memory_mb": 206,
+      "sha1sum": "3a36c00f632d1855efd6"
+    },
+    "3_5_place_dp": {
+      "hpwl": 665.5,
+      "optimization_process": [
+        {
+          "type": "detailed_placement",
+          "results": {
+            "total_displacement_u": 161.1,
+            "average_displacement_u": 0.2,
+            "max_displacement_u": 1.1,
+            "original_hpwl_u": 575.9,
+            "legalized_hpwl_u": 759.4,
+            "delta_hpwl_percent": 32.0,
+            "final_hpwl_u": 665.5,
+            "final_delta_hpwl_percent": -12.4
+          }
+        }
+      ],
+      "report_metrics": "[2025-11-06T15:58:42.070Z] Report metrics stage 3, detailed place...",
+      "elapsed_s": 1,
+      "memory_mb": 192,
+      "sha1sum": "4f8cb3285a7f440d50c7"
+    }
+  },
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "fakeram7_256x32"
+}

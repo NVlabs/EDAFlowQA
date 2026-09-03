@@ -1,0 +1,30 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "hpwl": 1536.4,
+      "displacement": 0.0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "placement_total_displacement_u": 0.0,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 0.0,
+            "hpwl_before": 1524.5,
+            "hpwl_after": 1536.4
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:46:58.939Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:03.12",
+      "peak_memory_kb": 230444,
+      "elapsed_s": 3,
+      "memory_mb": 225,
+      "sha1sum": "a832f5a4837b09dd6f9d"
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_sbox"
+}

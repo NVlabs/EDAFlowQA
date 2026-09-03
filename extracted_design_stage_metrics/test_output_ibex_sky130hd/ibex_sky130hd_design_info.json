@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 36,
+      "timestamp": "2026-01-26T20:49:51.137Z",
+      "design_name": "ibex",
+      "technology_node": "sky130hd",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "ibex"
+    ],
+    "technology_nodes": [
+      "sky130hd"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

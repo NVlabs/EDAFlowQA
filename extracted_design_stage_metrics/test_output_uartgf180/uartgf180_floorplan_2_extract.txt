@@ -1,0 +1,55 @@
+[2025-10-11T15:11:28.998Z] Running floorplan.tcl, stage 2_1_floorplan
+[2025-10-11T15:11:30.022Z]   	EOLENCLOSURE 0.34 0.06 ;"
+[2025-10-11T15:11:30.535Z] ==========================================================================
+[2025-10-11T15:11:30.535Z] Floorplan check_setup
+[2025-10-11T15:11:30.535Z] --------------------------------------------------------------------------
+[2025-10-11T15:11:30.535Z] number instances in verilog is 256
+[2025-10-11T15:11:30.535Z] [WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.080, 10.080).
+[2025-10-11T15:11:30.535Z] Repair tie lo fanout...
+[2025-10-11T15:11:30.535Z] Repair tie hi fanout...
+[2025-10-11T15:11:30.535Z] repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp
+[2025-10-11T15:11:30.535Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2025-10-11T15:11:30.535Z] Default units for flow
+[2025-10-11T15:11:30.535Z]  time 1ns
+[2025-10-11T15:11:30.535Z]  capacitance 1pF
+[2025-10-11T15:11:30.535Z]  resistance 1ohm
+[2025-10-11T15:11:30.535Z]  voltage 1v
+[2025-10-11T15:11:30.535Z]  current 1mA
+[2025-10-11T15:11:30.535Z]  power 1uW
+[2025-10-11T15:11:30.535Z]  distance 1um
+[2025-10-11T15:11:30.535Z] Report metrics stage 2, floorplan final...
+[2025-10-11T15:11:31.046Z] ==========================================================================
+[2025-10-11T15:11:31.046Z] floorplan final report_design_area
+[2025-10-11T15:11:31.046Z] --------------------------------------------------------------------------
+[2025-10-11T15:11:31.046Z] Design area 56796 u^2 34% utilization.
+[2025-10-11T15:11:31.046Z] Elapsed time: 0:01.75[h:]min:sec. CPU time: user 1.70 sys 0.65 (134%). Peak memory: 143288KB.
+[2025-10-11T15:11:31.046Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:31.046Z] 2_1_floorplan                      1            139 c3f176cf079309b632c3
+[2025-10-11T15:11:31.560Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2025-10-11T15:11:32.636Z] rtl_macro_placer -max_num_level 2 -halo_width 20 -halo_height 20 -min_ar 0.33 -signature_net_threshold 50 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/gf180/uart-blocks/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.6
+[2025-10-11T15:11:32.636Z] Die Area: (0.00, 0.00) (430.00, 430.00),  Floorplan Area: (10.08, 10.08) (420.00, 418.32)
+[2025-10-11T15:11:32.636Z] 	Number of std cell instances: 255
+[2025-10-11T15:11:32.636Z] 	Area of std cell instances: 11224.68
+[2025-10-11T15:11:32.636Z] 	Number of macros: 1
+[2025-10-11T15:11:32.636Z] 	Area of macros: 45571.58
+[2025-10-11T15:11:32.636Z] 	Halo width: 20.00
+[2025-10-11T15:11:32.636Z] 	Halo height: 20.00
+[2025-10-11T15:11:32.636Z] 	Area of macros with halos: 64249.58
+[2025-10-11T15:11:32.636Z] 	Area of std cell instances + Area of macros: 56796.26
+[2025-10-11T15:11:32.636Z] 	Floorplan area: 167345.75
+[2025-10-11T15:11:32.636Z] 	Design Utilization: 0.34
+[2025-10-11T15:11:32.636Z] 	Floorplan Utilization: 0.09
+[2025-10-11T15:11:32.636Z] 	Manufacturing Grid: 10
+[2025-10-11T15:11:35.797Z] Elapsed time: 0:03.98[h:]min:sec. CPU time: user 72.41 sys 0.11 (1821%). Peak memory: 121760KB.
+[2025-10-11T15:11:35.797Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:35.797Z] 2_2_floorplan_macro                3            118 8eb86b4a29f00c6aede6
+[2025-10-11T15:11:35.797Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2025-10-11T15:11:37.400Z] [INFO TAP-0004] Inserted 162 endcaps.
+[2025-10-11T15:11:37.400Z] [INFO TAP-0005] Inserted 94 tapcells.
+[2025-10-11T15:11:37.400Z] Elapsed time: 0:01.17[h:]min:sec. CPU time: user 1.10 sys 0.07 (100%). Peak memory: 120276KB.
+[2025-10-11T15:11:37.400Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:37.400Z] 2_3_floorplan_tapcell              1            117 e6173e589292a97d843c
+[2025-10-11T15:11:37.906Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2025-10-11T15:11:39.424Z] Elapsed time: 0:01.23[h:]min:sec. CPU time: user 1.15 sys 0.08 (100%). Peak memory: 127248KB.
+[2025-10-11T15:11:39.424Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:39.424Z] 2_4_floorplan_pdn                  1            124 9088c669c25d1e0e618e

@@ -1,0 +1,64 @@
+[2026-01-26T20:57:29.789Z] Running floorplan.tcl, stage 2_1_floorplan
+[2026-01-26T20:57:30.949Z] ==========================================================================
+[2026-01-26T20:57:30.949Z] Floorplan check_setup
+[2026-01-26T20:57:30.949Z] --------------------------------------------------------------------------
+[2026-01-26T20:57:35.411Z] Warning: There are 4 unclocked register/latch pins.
+[2026-01-26T20:57:35.411Z] Warning: There are 4 unconstrained endpoints.
+[2026-01-26T20:57:35.411Z] number instances in verilog is 167365
+[2026-01-26T20:57:35.411Z] [WARNING IFP-0028] Core area lower left (10.000, 12.000) snapped to (10.070, 12.600).
+[2026-01-26T20:57:35.411Z] Repair tie lo fanout...
+[2026-01-26T20:57:35.411Z] [INFO RSZ-0042] Inserted 1376 tie LOGIC0_X1 instances.
+[2026-01-26T20:57:35.411Z] Repair tie hi fanout...
+[2026-01-26T20:57:35.411Z] [INFO RSZ-0042] Inserted 2195 tie LOGIC1_X1 instances.
+[2026-01-26T20:57:35.411Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose
+[2026-01-26T20:57:35.411Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2026-01-26T20:57:36.618Z] Default units for flow
+[2026-01-26T20:57:36.618Z]  time 1ns
+[2026-01-26T20:57:36.618Z]  capacitance 1fF
+[2026-01-26T20:57:36.618Z]  resistance 1kohm
+[2026-01-26T20:57:36.618Z]  voltage 1v
+[2026-01-26T20:57:36.618Z]  current 1mA
+[2026-01-26T20:57:36.618Z]  power 1nW
+[2026-01-26T20:57:36.618Z]  distance 1um
+[2026-01-26T20:57:36.618Z] Report metrics stage 2, floorplan final...
+[2026-01-26T20:57:59.513Z] ==========================================================================
+[2026-01-26T20:57:59.513Z] floorplan final report_design_area
+[2026-01-26T20:57:59.513Z] --------------------------------------------------------------------------
+[2026-01-26T20:57:59.513Z] Design area 737742 um^2 36% utilization.
+[2026-01-26T20:58:00.094Z] write_db ./results/nangate45/ariane136/base/2_1_floorplan.odb
+[2026-01-26T20:58:00.675Z] write_sdc -no_timestamp ./results/nangate45/ariane136/base/2_1_floorplan.sdc
+[2026-01-26T20:58:00.675Z] Elapsed time: 0:30.54[h:]min:sec. CPU time: user 42.62 sys 31.41 (242%). Peak memory: 773756KB.
+[2026-01-26T20:58:00.675Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:58:00.675Z] 2_1_floorplan                     30            755 9d2d46f7b4ea12c76f27
+[2026-01-26T20:58:00.675Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2026-01-26T20:58:01.837Z] rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/nangate45/ariane136/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.35 -data_flow_driven
+[2026-01-26T20:58:01.837Z] Die Area: (0.00, 0.00) (1500.00, 1500.00),  Floorplan Area: (10.07, 12.60) (1447.99, 1447.60)
+[2026-01-26T20:58:01.837Z] 	Number of std cell instances: 170737
+[2026-01-26T20:58:01.837Z] 	Area of std cell instances: 308658.42
+[2026-01-26T20:58:01.837Z] 	Number of macros: 136
+[2026-01-26T20:58:01.837Z] 	Area of macros: 429083.54
+[2026-01-26T20:58:01.837Z] 	Halo width: 10.00
+[2026-01-26T20:58:01.837Z] 	Halo height: 10.00
+[2026-01-26T20:58:01.837Z] 	Area of macros with halos: 805286.74
+[2026-01-26T20:58:01.837Z] 	Area of std cell instances + Area of macros: 737741.96
+[2026-01-26T20:58:01.837Z] 	Floorplan area: 2063415.20
+[2026-01-26T20:58:01.837Z] 	Design Utilization: 0.36
+[2026-01-26T20:58:01.837Z] 	Floorplan Utilization: 0.19
+[2026-01-26T20:58:01.837Z] 	Manufacturing Grid: 10
+[2026-01-26T20:58:54.938Z] Took 52 seconds: rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/nangate45/ariane136/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.35 -data_flow_driven
+[2026-01-26T20:58:54.938Z] write_db ./results/nangate45/ariane136/base/2_2_floorplan_macro.odb
+[2026-01-26T20:58:55.517Z] Elapsed time: 0:54.28[h:]min:sec. CPU time: user 317.72 sys 0.96 (587%). Peak memory: 1745880KB.
+[2026-01-26T20:58:55.517Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:58:55.517Z] 2_2_floorplan_macro               54           1704 715e14749941e7d59e81
+[2026-01-26T20:58:55.517Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2026-01-26T20:58:56.676Z] [INFO TAP-0004] Inserted 2050 endcaps.
+[2026-01-26T20:58:56.676Z] [INFO TAP-0005] Inserted 4248 tapcells.
+[2026-01-26T20:58:56.676Z] write_db ./results/nangate45/ariane136/base/2_3_floorplan_tapcell.odb
+[2026-01-26T20:58:57.255Z] Elapsed time: 0:01.65[h:]min:sec. CPU time: user 1.47 sys 0.18 (100%). Peak memory: 290984KB.
+[2026-01-26T20:58:57.255Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:58:57.255Z] 2_3_floorplan_tapcell              1            284 2dbc23f29501ca4464da
+[2026-01-26T20:58:57.834Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2026-01-26T20:59:04.974Z] write_db ./results/nangate45/ariane136/base/2_4_floorplan_pdn.odb
+[2026-01-26T20:59:05.553Z] Elapsed time: 0:07.78[h:]min:sec. CPU time: user 7.44 sys 0.33 (100%). Peak memory: 590696KB.
+[2026-01-26T20:59:05.553Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:59:05.553Z] 2_4_floorplan_pdn                  7            576 5d514a3058dc2a6bb925

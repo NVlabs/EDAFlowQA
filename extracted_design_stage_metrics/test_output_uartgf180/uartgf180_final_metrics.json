@@ -1,0 +1,58 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 5.5,
+      "worstcase_voltage_v": 5.5,
+      "average_voltage_v": 5.5,
+      "average_ir_drop_v": 0.00107,
+      "worstcase_ir_drop_v": 0.00166,
+      "percentage_drop": 0.03
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.00151,
+      "average_voltage_v": 0.00108,
+      "average_ir_drop_v": 0.00108,
+      "worstcase_ir_drop_v": 0.00151,
+      "percentage_drop": 0.03
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 753,
+    "fill_cell_area": 26708.37,
+    "tap_cell_count": 42,
+    "tap_cell_area": 237.08,
+    "clock_buffer_count": 6,
+    "clock_buffer_area": 304.82,
+    "timing_repair_buffer_count": 31,
+    "timing_repair_buffer_area": 1312.42,
+    "inverter_count": 15,
+    "inverter_area": 254.02,
+    "clock_inverter_count": 2,
+    "clock_inverter_area": 50.8,
+    "sequential_cell_count": 44,
+    "sequential_cell_area": 3725.57,
+    "combinational_cell_count": 230,
+    "combinational_cell_area": 9065.55,
+    "total_cell_count": 1203,
+    "total_cell_area": 42110.21
+  },
+  "design_metrics": {
+    "area": 14713.0
+  },
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 1,
+      "memory_mb": 118,
+      "sha1sum": "110c2adfacd48bbaf581"
+    },
+    "6_report": {
+      "elapsed_s": 4,
+      "memory_mb": 182
+    }
+  },
+  "performance": {},
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart_rx"
+}

@@ -1,0 +1,79 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": 0.065,
+      "tns": 0.0,
+      "clock_sink_wirelength_um": 1022.48,
+      "hpwl": 551706.3,
+      "displacement": 9.3,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 20 -sink_clustering_max_diameter 50",
+          "results": {
+            "total_sinks": 562,
+            "clock_buffers_created": 122,
+            "min_buffer_depth": 3,
+            "max_buffer_depth": 4,
+            "avg_sink_wirelength_um": 1022.48,
+            "placement_total_displacement_u": 1302.6,
+            "placement_avg_displacement_u": 0.1,
+            "placement_max_displacement_u": 8.2,
+            "hpwl_before": 542009.4,
+            "hpwl_after": 551488.5,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 658,
+                "leaf_buffers": 101,
+                "avg_sink_wire_length_um": 1022.48,
+                "path_depth_min": 3,
+                "path_depth_max": 4
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -verbose",
+          "iterations_count": 8,
+          "start_metrics": {
+            "wns": -0.247,
+            "tns": -0.5,
+            "violation_end_points": 5
+          },
+          "end_metrics": {
+            "wns": 0.065,
+            "tns": 0.0,
+            "violation_end_points": 0
+          },
+          "placement_impact": {
+            "total_displacement_u": 9.3,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 2.4,
+            "hpwl_before": 551700.6,
+            "hpwl_after": 551706.3
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-27T23:55:37.161Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:06.30",
+      "peak_memory_kb": 225180,
+      "elapsed_s": 6,
+      "memory_mb": 219,
+      "sha1sum": "2a8730847537eb858000"
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 4.0,
+    "cts__design__instance__count__hold_buffer": 0.0,
+    "cts__timing__setup__ws": 0.0654055,
+    "cts__timing__setup__tns": 0.0,
+    "cts__timing__hold__ws": 0.355334,
+    "cts__timing__hold__tns": 0.0
+  }
+}

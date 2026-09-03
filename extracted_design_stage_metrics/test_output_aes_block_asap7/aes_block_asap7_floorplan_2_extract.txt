@@ -1,0 +1,51 @@
+[2026-01-26T20:46:36.822Z] Running floorplan.tcl, stage 2_1_floorplan
+[2026-01-26T20:46:38.562Z] ==========================================================================
+[2026-01-26T20:46:38.562Z] Floorplan check_setup
+[2026-01-26T20:46:38.562Z] --------------------------------------------------------------------------
+[2026-01-26T20:46:38.562Z] number instances in verilog is 622
+[2026-01-26T20:46:38.562Z] [WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.052, 2.160).
+[2026-01-26T20:46:38.562Z] Repair tie lo fanout...
+[2026-01-26T20:46:38.562Z] Repair tie hi fanout...
+[2026-01-26T20:46:38.562Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose
+[2026-01-26T20:46:38.562Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2026-01-26T20:46:38.562Z] Default units for flow
+[2026-01-26T20:46:38.562Z]  time 1ps
+[2026-01-26T20:46:38.562Z]  capacitance 1fF
+[2026-01-26T20:46:38.562Z]  resistance 1kohm
+[2026-01-26T20:46:38.562Z]  voltage 1v
+[2026-01-26T20:46:38.562Z]  current 1mA
+[2026-01-26T20:46:38.562Z]  power 1pW
+[2026-01-26T20:46:38.562Z]  distance 1um
+[2026-01-26T20:46:38.562Z] Report metrics stage 2, floorplan final...
+[2026-01-26T20:46:38.562Z] ==========================================================================
+[2026-01-26T20:46:38.562Z] floorplan final report_design_area
+[2026-01-26T20:46:38.562Z] --------------------------------------------------------------------------
+[2026-01-26T20:46:38.562Z] Design area 63 um^2 42% utilization.
+[2026-01-26T20:46:38.562Z] write_db ./results/asap7/aes-block_aes_sbox/base/2_1_floorplan.odb
+[2026-01-26T20:46:38.562Z] write_sdc -no_timestamp ./results/asap7/aes-block_aes_sbox/base/2_1_floorplan.sdc
+[2026-01-26T20:46:38.562Z] Elapsed time: 0:01.52[h:]min:sec. CPU time: user 1.40 sys 0.15 (102%). Peak memory: 216488KB.
+[2026-01-26T20:46:38.562Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:38.562Z] 2_1_floorplan                      1            211 c80d1366117b18695e61
+[2026-01-26T20:46:38.562Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2026-01-26T20:46:40.302Z] No macros found: Skipping macro_placement
+[2026-01-26T20:46:40.302Z] write_db ./results/asap7/aes-block_aes_sbox/base/2_2_floorplan_macro.odb
+[2026-01-26T20:46:40.302Z] Elapsed time: 0:01.38[h:]min:sec. CPU time: user 1.29 sys 0.09 (100%). Peak memory: 194472KB.
+[2026-01-26T20:46:40.302Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:40.302Z] 2_2_floorplan_macro                1            189 c80d1366117b18695e61
+[2026-01-26T20:46:40.882Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2026-01-26T20:46:42.041Z] Tap and End Cap cell insertion
+[2026-01-26T20:46:42.041Z]   TAP Cell          : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:46:42.041Z]   ENDCAP Cell       : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:46:42.041Z]   Halo Around Macro : 2 2
+[2026-01-26T20:46:42.041Z]   TAP Cell Distance : 25
+[2026-01-26T20:46:42.041Z] [INFO TAP-0004] Inserted 90 endcaps.
+[2026-01-26T20:46:42.041Z] [INFO TAP-0005] Inserted 0 tapcells.
+[2026-01-26T20:46:42.041Z] write_db ./results/asap7/aes-block_aes_sbox/base/2_3_floorplan_tapcell.odb
+[2026-01-26T20:46:42.041Z] Elapsed time: 0:01.39[h:]min:sec. CPU time: user 1.28 sys 0.10 (100%). Peak memory: 195768KB.
+[2026-01-26T20:46:42.041Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:42.041Z] 2_3_floorplan_tapcell              1            191 8226258fb95ba34fd2c4
+[2026-01-26T20:46:42.621Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2026-01-26T20:46:43.782Z] write_db ./results/asap7/aes-block_aes_sbox/base/2_4_floorplan_pdn.odb
+[2026-01-26T20:46:43.782Z] Elapsed time: 0:01.39[h:]min:sec. CPU time: user 1.30 sys 0.09 (100%). Peak memory: 196732KB.
+[2026-01-26T20:46:43.782Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:43.782Z] 2_4_floorplan_pdn                  1            192 2e4aabd456ac59534e14

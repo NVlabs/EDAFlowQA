@@ -1,0 +1,298 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 1.1,
+      "worstcase_voltage_v": 1.03,
+      "average_voltage_v": 1.06,
+      "average_ir_drop_v": 0.037,
+      "worstcase_ir_drop_v": 0.0691,
+      "percentage_drop": 6.29
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.0664,
+      "average_voltage_v": 0.0328,
+      "average_ir_drop_v": 0.0328,
+      "worstcase_ir_drop_v": 0.0664,
+      "percentage_drop": 6.04
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 17718,
+    "fill_cell_area": 32255.43,
+    "tap_cell_count": 411,
+    "tap_cell_area": 109.33,
+    "clock_buffer_count": 128,
+    "clock_buffer_area": 157.47,
+    "timing_repair_buffer_count": 2500,
+    "timing_repair_buffer_area": 2556.79,
+    "inverter_count": 163,
+    "inverter_area": 104.8,
+    "clock_inverter_count": 56,
+    "clock_inverter_area": 42.56,
+    "sequential_cell_count": 562,
+    "sequential_cell_area": 2541.9,
+    "combinational_cell_count": 12379,
+    "combinational_cell_area": 15016.76,
+    "total_cell_count": 33917,
+    "total_cell_area": 52785.04
+  },
+  "design_metrics": {
+    "setup_wns": -0.00634837,
+    "setup_tns": -0.0182802,
+    "hold_wns": 0.00920999,
+    "hold_tns": 0.0,
+    "area": 20529.6
+  },
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 0,
+      "memory_mb": 140,
+      "sha1sum": "345c385c940a41976fc5"
+    },
+    "6_report": {
+      "elapsed_s": 16,
+      "memory_mb": 459
+    },
+    "1_1_yosys_canonicalize": {
+      "elapsed_s": 0,
+      "memory_mb": 40,
+      "sha1sum": "185e3e3f5f51913756c3"
+    },
+    "1_2_yosys": {
+      "elapsed_s": 35,
+      "memory_mb": 68,
+      "sha1sum": "75e2fa30efaace7fd99e"
+    },
+    "1_synth": {
+      "elapsed_s": 0,
+      "memory_mb": 129,
+      "sha1sum": "f47e57b150d71845d94b"
+    },
+    "2_1_floorplan": {
+      "elapsed_s": 43,
+      "memory_mb": 168,
+      "sha1sum": "ee878866a36599089c18"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_s": 0,
+      "memory_mb": 120,
+      "sha1sum": "ee878866a36599089c18"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_s": 0,
+      "memory_mb": 114,
+      "sha1sum": "6f5a6a6f8867e3f77f2f"
+    },
+    "2_4_floorplan_pdn": {
+      "elapsed_s": 0,
+      "memory_mb": 123,
+      "sha1sum": "5820cc4e7332c32a78d7"
+    },
+    "3_1_place_gp_skip_io": {
+      "elapsed_s": 0,
+      "memory_mb": 112,
+      "sha1sum": "5820cc4e7332c32a78d7"
+    },
+    "3_2_place_iop": {
+      "elapsed_s": 0,
+      "memory_mb": 83,
+      "sha1sum": "5820cc4e7332c32a78d7"
+    },
+    "3_3_place_gp": {
+      "elapsed_s": 26,
+      "memory_mb": 502,
+      "sha1sum": "dd3ddea188923e5b2738"
+    },
+    "3_4_place_resized": {
+      "elapsed_s": 6,
+      "memory_mb": 178,
+      "sha1sum": "dd3ddea188923e5b2738"
+    },
+    "3_5_place_dp": {
+      "elapsed_s": 9,
+      "memory_mb": 201,
+      "sha1sum": "a9dc55816f0ac60aedb1"
+    },
+    "4_1_cts": {
+      "elapsed_s": 7,
+      "memory_mb": 204,
+      "sha1sum": "efcb8814311d2fe2492e"
+    },
+    "5_1_grt": {
+      "elapsed_s": 12,
+      "memory_mb": 479,
+      "sha1sum": "ba5cb49b0fe3d4539542"
+    },
+    "5_2_route": {
+      "elapsed_s": 103,
+      "memory_mb": 2715,
+      "sha1sum": "8a8c756452745289c4ac"
+    },
+    "5_3_fillcell": {
+      "elapsed_s": 0,
+      "memory_mb": 163,
+      "sha1sum": "345c385c940a41976fc5"
+    },
+    "6_1_merge": {
+      "elapsed_s": 2,
+      "memory_mb": 491
+    }
+  },
+  "performance": {},
+  "test_metrics": {
+    "synth__design__instance__area__stdcell": {
+      "actual_value": 17171.896,
+      "operator": "<=",
+      "threshold_value": 19700.0,
+      "passed": true
+    },
+    "constraints__clocks__count": {
+      "actual_value": 1.0,
+      "operator": "==",
+      "threshold_value": 1.0,
+      "passed": true
+    },
+    "placeopt__design__instance__area": {
+      "actual_value": 20311.8,
+      "operator": "<=",
+      "threshold_value": 23359.0,
+      "passed": true
+    },
+    "placeopt__design__instance__count__stdcell": {
+      "actual_value": 15994.0,
+      "operator": "<=",
+      "threshold_value": 18239.0,
+      "passed": true
+    },
+    "detailedplace__design__violations": {
+      "actual_value": 0.0,
+      "operator": "==",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__design__instance__count__setup_buffer": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 1586.0,
+      "passed": true
+    },
+    "cts__design__instance__count__hold_buffer": {
+      "actual_value": 21.0,
+      "operator": "<=",
+      "threshold_value": 1586.0,
+      "passed": true
+    },
+    "cts__timing__setup__ws": {
+      "actual_value": 0.0120705,
+      "operator": ">=",
+      "threshold_value": -0.041,
+      "passed": true
+    },
+    "cts__timing__setup__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -0.164,
+      "passed": true
+    },
+    "cts__timing__hold__ws": {
+      "actual_value": 0.000103348,
+      "operator": ">=",
+      "threshold_value": -0.041,
+      "passed": true
+    },
+    "cts__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -0.164,
+      "passed": true
+    },
+    "globalroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 100.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__ws": {
+      "actual_value": -0.0134869,
+      "operator": ">=",
+      "threshold_value": -0.0545,
+      "passed": true
+    },
+    "globalroute__timing__setup__tns": {
+      "actual_value": -0.0657322,
+      "operator": ">=",
+      "threshold_value": -0.23,
+      "passed": true
+    },
+    "globalroute__timing__hold__ws": {
+      "actual_value": -0.00782223,
+      "operator": ">=",
+      "threshold_value": -0.041,
+      "passed": true
+    },
+    "globalroute__timing__hold__tns": {
+      "actual_value": -0.0841164,
+      "operator": ">=",
+      "threshold_value": -0.164,
+      "passed": true
+    },
+    "detailedroute__route__wirelength": {
+      "actual_value": 245113.0,
+      "operator": "<=",
+      "threshold_value": 271242.0,
+      "passed": true
+    },
+    "detailedroute__route__drc_errors": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna__violating__nets": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 100.0,
+      "passed": true
+    },
+    "finish__timing__setup__ws": {
+      "actual_value": -0.00634837,
+      "operator": ">=",
+      "threshold_value": -0.0473,
+      "passed": true
+    },
+    "finish__timing__setup__tns": {
+      "actual_value": -0.0182802,
+      "operator": ">=",
+      "threshold_value": -0.182,
+      "passed": true
+    },
+    "finish__timing__hold__ws": {
+      "actual_value": 0.00920999,
+      "operator": ">=",
+      "threshold_value": -0.041,
+      "passed": true
+    },
+    "finish__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -0.164,
+      "passed": true
+    },
+    "finish__design__instance__area": {
+      "actual_value": 20529.6,
+      "operator": "<=",
+      "threshold_value": 23609.0,
+      "passed": true
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top"
+}

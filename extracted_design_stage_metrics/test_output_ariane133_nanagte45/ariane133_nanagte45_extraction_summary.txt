@@ -1,0 +1,58 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/ariane133_nanagte45/ariane133_nanagte45.txt
+Output directory: test_output_ariane133_nanagte45
+Timestamp: 2026-02-28T12:04:40.261531
+
+DESIGN INFO:
+  design_names=['ariane133']
+  technology_nodes=['nangate45']
+  config_mks=['config.mk']
+  design_info_file=ariane133_nanagte45_design_info.json
+
+LINE CHECK:
+  log_total_lines=6221  chunks_total_lines=6137  chunks_covered_lines=6137  gaps=84  overlaps=0  extracted_total_lines=2750
+  gap_file=ariane133_nanagte45_gap_lines.txt
+
+Total stage occurrences extracted: 6
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:   409 lines -> ariane133_nanagte45_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   121 lines -> ariane133_nanagte45_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:   302 lines -> ariane133_nanagte45_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   796 lines -> ariane133_nanagte45_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   844 lines -> ariane133_nanagte45_routing_extract.txt
+
+SYNTHESIS (1 occurrence(s)):
+  #1:   278 lines -> ariane133_nanagte45_synthesis_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  278 lines)
+ 2. floorplan_1                    (  302 lines)
+ 3. placement_1                    (  796 lines)
+ 4. cts_1                          (  409 lines)
+ 5. routing_1                      (  844 lines)
+ 6. final_1                        (  121 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=3.0 ns  cpu_s=447.63  warnings=51  errors=0
+ 2. floorplan_1       area=N/A  util=50.0  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 3. placement_1       area=1436761.8  util=42.7  wns=N/A  tns=N/A  viol=N/A  hpwl=6237627.5
+ 4. cts_1             area=N/A  util=N/A  wns=-0.364  tns=-625.8  viol=2821  hpwl=6410426.4
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=738644.000  util=N/A  ir_vdd_wc=0.006  ir_vss_wc=0.007
+================================================================================

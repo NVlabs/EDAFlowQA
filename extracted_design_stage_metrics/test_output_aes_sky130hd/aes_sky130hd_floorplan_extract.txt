@@ -1,0 +1,46 @@
+[2026-01-27T23:54:35.733Z] Running floorplan.tcl, stage 2_1_floorplan
+[2026-01-27T23:54:36.649Z] ==========================================================================
+[2026-01-27T23:54:36.649Z] Floorplan check_setup
+[2026-01-27T23:54:36.649Z] --------------------------------------------------------------------------
+[2026-01-27T23:54:36.649Z] number instances in verilog is 11103
+[2026-01-27T23:54:36.649Z] [WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[2026-01-27T23:54:36.649Z] Repair tie lo fanout...
+[2026-01-27T23:54:36.649Z] Repair tie hi fanout...
+[2026-01-27T23:54:36.649Z] estimate_parasitics -placement
+[2026-01-27T23:54:36.649Z] replace_arith_module -path_count 1000 -target setup -slack_margin 0.0
+[2026-01-27T23:54:36.649Z] [INFO RSZ-0026] Removed 0 buffers.
+[2026-01-27T23:54:36.649Z] Default units for flow
+[2026-01-27T23:54:36.649Z]  time 1ns
+[2026-01-27T23:54:36.649Z]  capacitance 1pF
+[2026-01-27T23:54:36.649Z]  resistance 1kohm
+[2026-01-27T23:54:36.649Z]  voltage 1v
+[2026-01-27T23:54:36.649Z]  current 1mA
+[2026-01-27T23:54:36.649Z]  power 1nW
+[2026-01-27T23:54:36.649Z]  distance 1um
+[2026-01-27T23:54:36.649Z] Report metrics stage 2, floorplan final...
+[2026-01-27T23:54:37.555Z] ==========================================================================
+[2026-01-27T23:54:37.555Z] floorplan final report_design_area
+[2026-01-27T23:54:37.555Z] --------------------------------------------------------------------------
+[2026-01-27T23:54:37.555Z] Design area 76455 um^2 20% utilization.
+[2026-01-27T23:54:37.555Z] write_db ./results/sky130hd/aes/base/2_1_floorplan.odb
+[2026-01-27T23:54:37.555Z] write_sdc -no_timestamp ./results/sky130hd/aes/base/2_1_floorplan.sdc
+[2026-01-27T23:54:37.555Z] Elapsed time: 0:01.86[h:]min:sec. CPU time: user 2.96 sys 3.37 (340%). Peak memory: 159300KB.
+[2026-01-27T23:54:37.555Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-27T23:54:37.555Z] 2_1_floorplan                      1            155 4cc4c80051ec95e90e80
+[2026-01-27T23:54:38.489Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2026-01-27T23:54:38.489Z] No macros found: Skipping macro_placement
+[2026-01-27T23:54:38.489Z] write_db ./results/sky130hd/aes/base/2_2_floorplan_macro.odb
+[2026-01-27T23:54:38.489Z] Elapsed time: 0:00.50[h:]min:sec. CPU time: user 0.44 sys 0.06 (100%). Peak memory: 135080KB.
+[2026-01-27T23:54:38.489Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-27T23:54:38.489Z] 2_2_floorplan_macro                0            131 4cc4c80051ec95e90e80
+[2026-01-27T23:54:39.401Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2026-01-27T23:54:39.401Z] [INFO TAP-0005] Inserted 5038 tapcells.
+[2026-01-27T23:54:39.401Z] write_db ./results/sky130hd/aes/base/2_3_floorplan_tapcell.odb
+[2026-01-27T23:54:39.401Z] Elapsed time: 0:00.49[h:]min:sec. CPU time: user 0.44 sys 0.05 (100%). Peak memory: 131604KB.
+[2026-01-27T23:54:39.401Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-27T23:54:39.401Z] 2_3_floorplan_tapcell              0            128 70870a26c171c42c591b
+[2026-01-27T23:54:40.352Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2026-01-27T23:54:40.352Z] write_db ./results/sky130hd/aes/base/2_4_floorplan_pdn.odb
+[2026-01-27T23:54:41.181Z] Elapsed time: 0:00.81[h:]min:sec. CPU time: user 0.74 sys 0.07 (100%). Peak memory: 157380KB.
+[2026-01-27T23:54:41.182Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-27T23:54:41.182Z] 2_4_floorplan_pdn                  0            153 14d8881e1c893f7dc11d

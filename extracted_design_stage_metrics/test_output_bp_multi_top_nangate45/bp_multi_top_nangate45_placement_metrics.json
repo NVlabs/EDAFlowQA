@@ -1,0 +1,153 @@
+{
+  "stage": "placement",
+  "substages": {
+    "3_1_place_gp_skip_io": {
+      "hpwl": 3272866.0,
+      "area": 1165503.738,
+      "utilization": 25.407,
+      "density": 25.407,
+      "overflow": 0.0992,
+      "optimization_process": [
+        {
+          "type": "global_placement",
+          "command": "global_placement -skip_io -density 0.306999990940094 -pad_left 0 -pad_right 0",
+          "iterations_count": 382,
+          "start_metrics": {
+            "overflow": 0.9764,
+            "hpwl": 5637674.0
+          },
+          "end_metrics": {
+            "overflow": 0.0992,
+            "hpwl": 3272866.0
+          },
+          "results": {
+            "movable_instances": 122667,
+            "fixed_instances": 7636,
+            "num_nets": 141751,
+            "num_pins": 415193,
+            "core_area_um2": 1165503.738,
+            "fixed_instances_area_um2": 458656.618,
+            "movable_instances_area_um2": 179590.166,
+            "standard_cells_area_um2": 179590.166,
+            "utilization": 25.407,
+            "target_density": 30.7,
+            "final_overflow": 0.0992,
+            "final_hpwl_um": 3272866.0
+          }
+        }
+      ],
+      "elapsed_s": 23,
+      "memory_mb": 619,
+      "sha1sum": "c8741f8d0050783dd31f"
+    },
+    "3_2_place_iop": {
+      "optimization_process": [
+        {
+          "type": "io_placement",
+          "command": "place_pins -hor_layers metal5 -ver_layers metal6",
+          "results": {
+            "io_nets_hpwl_um": 766808.56
+          }
+        }
+      ],
+      "elapsed_s": 0,
+      "memory_mb": 308,
+      "sha1sum": "bffcfbd8e092b2c93e3b"
+    },
+    "3_3_place_gp": {
+      "hpwl": 3154719.0,
+      "area": 1165503.738,
+      "utilization": 24.06,
+      "density": 24.06,
+      "overflow": 0.0985,
+      "optimization_process": [
+        {
+          "type": "buffer_removal",
+          "results": {
+            "removed_buffers": 10979
+          }
+        },
+        {
+          "type": "buffer_insertion",
+          "results": {
+            "input_buffers": 701,
+            "buffer_type": "BUF_X1",
+            "output_buffers": 612
+          }
+        },
+        {
+          "type": "global_placement",
+          "command": "global_placement -density 0.2975 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+          "iterations_count": 1828,
+          "start_metrics": {
+            "overflow": 0.9261,
+            "hpwl": 2192254.0
+          },
+          "end_metrics": {
+            "overflow": 0.0985,
+            "hpwl": 3154719.0
+          },
+          "results": {
+            "movable_instances": 113001,
+            "fixed_instances": 7636,
+            "num_nets": 132085,
+            "num_pins": 397314,
+            "core_area_um2": 1165503.738,
+            "fixed_instances_area_um2": 458656.618,
+            "movable_instances_area_um2": 214899.737,
+            "standard_cells_area_um2": 170069.228,
+            "utilization": 24.06,
+            "target_density": 30.4,
+            "final_overflow": 0.0985,
+            "final_hpwl_um": 3154719.0
+          }
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:08:10.560Z] Report metrics stage 3, global place...",
+      "elapsed_s": 227,
+      "memory_mb": 1619,
+      "sha1sum": "cd58edbf668da81a1028"
+    },
+    "3_4_place_resized": {
+      "optimization_process": [
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:08:51.035Z] Report metrics stage 3, resizer...",
+      "elapsed_s": 101,
+      "memory_mb": 693,
+      "sha1sum": "dfcae3bf9251c2308d74"
+    },
+    "3_5_place_dp": {
+      "hpwl": 3142554.5,
+      "optimization_process": [
+        {
+          "type": "detailed_placement",
+          "results": {
+            "total_displacement_u": 104358.0,
+            "average_displacement_u": 0.8,
+            "max_displacement_u": 50.3,
+            "original_hpwl_u": 3155299.2,
+            "legalized_hpwl_u": 3228035.4,
+            "delta_hpwl_percent": 2.0,
+            "final_hpwl_u": 3142554.5,
+            "final_delta_hpwl_percent": -2.6
+          }
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:10:50.376Z] Report metrics stage 3, detailed place...",
+      "elapsed_s": 106,
+      "memory_mb": 958,
+      "sha1sum": "3b5cebe0bbf8b6a59d0a"
+    }
+  },
+  "design_name": "bp_multi_top",
+  "sub_design_name": "bp_multi_top",
+  "design_metrics_final": {
+    "placeopt__design__instance__area": 512111.0,
+    "placeopt__design__instance__count__stdcell": 127896.0
+  }
+}

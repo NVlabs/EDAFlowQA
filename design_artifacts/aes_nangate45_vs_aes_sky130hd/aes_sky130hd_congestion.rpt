@@ -1,0 +1,28 @@
+violation type: Vertical congestion
+	srcs: net:_00096_ net:net4365 net:net4375 net:net4998 net:net2400 net:net3436 net:net3443 net:net3459 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 345.0000) - (317.4000, 351.9000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_07324_ net:_07518_ net:_07591_ net:_07601_ net:_07602_ net:_07787_ net:net4148 net:net4167 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 255.3000) - (317.4000, 262.2000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_04422_ net:_04597_ net:net4363 net:net4364 net:net3445 net:net4998 net:net3459 net:net3469 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 414.0000) - (317.4000, 420.9000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_07518_ net:_07751_ net:_07787_ net:_07788_ net:net4148 net:net4167 net:net3052 net:net4181 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 241.5000) - (317.4000, 248.4000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_04464_ net:_04701_ net:_04766_ net:_04860_ net:net4376 net:net4998 net:net2400 net:net3459 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 365.7000) - (317.4000, 372.6000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_04464_ net:_04701_ net:net4365 net:net4998 net:net2400 net:net3431 net:net3436 net:net3459 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 351.9000) - (317.4000, 358.8000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_07397_ net:_07518_ net:_07586_ net:_07588_ net:_07787_ net:net4148 net:net4173 net:net3045 net:clknet_0_clk
+	comment: capacity:9 usage:10 overflow:1
+	bbox = (310.5000, 269.1000) - (317.4000, 276.0000) on Layer -

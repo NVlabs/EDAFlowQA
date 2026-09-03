@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 36,
+      "timestamp": "2026-01-26T20:49:27.027Z",
+      "design_name": "ariane133",
+      "technology_node": "nangate45",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "ariane133"
+    ],
+    "technology_nodes": [
+      "nangate45"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

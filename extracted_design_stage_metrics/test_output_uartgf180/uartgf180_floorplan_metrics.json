@@ -1,0 +1,61 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "area": 13164.0,
+      "utilization": 31,
+      "density": 31,
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {}
+        }
+      ],
+      "elapsed_time": "0:01.84",
+      "peak_memory_kb": 142588,
+      "elapsed_s": 1,
+      "memory_mb": 139,
+      "sha1sum": "ebe3e13b99634360d347"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_time": "0:01.18",
+      "peak_memory_kb": 119864,
+      "elapsed_s": 1,
+      "memory_mb": 117,
+      "sha1sum": "ebe3e13b99634360d347"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 80,
+            "tapcells_inserted": 42
+          }
+        }
+      ],
+      "elapsed_time": "0:01.19",
+      "peak_memory_kb": 119800,
+      "elapsed_s": 1,
+      "memory_mb": 116,
+      "sha1sum": "ec477fbedeb410d3e201"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2025-10-11T15:10:05.274Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:01.19",
+      "peak_memory_kb": 121572,
+      "elapsed_s": 1,
+      "memory_mb": 118,
+      "sha1sum": "4fa5375a6f9d196fe85c"
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart_rx"
+}

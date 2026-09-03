@@ -1,0 +1,349 @@
+{
+  "stage": "synthesis",
+  "total_runs": 1,
+  "runs": [
+    {
+      "run_number": 1,
+      "script_name": "synth",
+      "design_name": "ariane",
+      "steps": [
+        {
+          "number": "1",
+          "description": "Executing RTLIL frontend.",
+          "timestamp": "2026-01-26T20:49:38.920Z"
+        },
+        {
+          "number": "2",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "2.1",
+          "description": "Analyzing design hierarchy..",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "2.2",
+          "description": "Analyzing design hierarchy..",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "3",
+          "description": "Executing SYNTH pass.",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "3.1",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "3.2",
+          "description": "Executing PROC pass (convert processes to netlists).",
+          "timestamp": "2026-01-26T20:49:39.520Z"
+        },
+        {
+          "number": "3.5",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2026-01-26T20:49:43.007Z"
+        },
+        {
+          "number": "3.7",
+          "description": "Executing FSM pass (extract and optimize FSM).",
+          "timestamp": "2026-01-26T20:49:58.093Z"
+        },
+        {
+          "number": "3.9",
+          "description": "Executing WREDUCE pass (reducing word size of cells).",
+          "timestamp": "2026-01-26T20:50:14.206Z"
+        },
+        {
+          "number": "3.12",
+          "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+          "timestamp": "2026-01-26T20:50:16.003Z"
+        },
+        {
+          "number": "3.13",
+          "description": "Executing SHARE pass (SAT-based resource sharing).",
+          "timestamp": "2026-01-26T20:50:16.003Z"
+        },
+        {
+          "number": "3.15",
+          "description": "Executing MEMORY pass.",
+          "timestamp": "2026-01-26T20:50:25.099Z"
+        },
+        {
+          "number": "4",
+          "description": "Executing CELLMATCH pass. (match cells)",
+          "timestamp": "2026-01-26T20:50:28.546Z"
+        },
+        {
+          "number": "5",
+          "description": "Executing KEEP_HIERARCHY pass.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "number": "6",
+          "description": "Executing SYNTH pass.",
+          "timestamp": "2026-01-26T20:50:29.120Z"
+        },
+        {
+          "number": "6.1",
+          "description": "Executing PROC pass (convert processes to netlists).",
+          "timestamp": "2026-01-26T20:50:29.120Z"
+        },
+        {
+          "number": "6.2",
+          "description": "Executing FLATTEN pass (flatten design).",
+          "timestamp": "2026-01-26T20:50:29.701Z"
+        },
+        {
+          "number": "6.5",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2026-01-26T20:50:31.514Z"
+        },
+        {
+          "number": "6.7",
+          "description": "Executing FSM pass (extract and optimize FSM).",
+          "timestamp": "2026-01-26T20:50:39.914Z"
+        },
+        {
+          "number": "6.9",
+          "description": "Executing WREDUCE pass (reducing word size of cells).",
+          "timestamp": "2026-01-26T20:50:44.800Z"
+        },
+        {
+          "number": "6.12",
+          "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+          "timestamp": "2026-01-26T20:50:46.629Z"
+        },
+        {
+          "number": "6.13",
+          "description": "Executing SHARE pass (SAT-based resource sharing).",
+          "timestamp": "2026-01-26T20:50:46.629Z"
+        },
+        {
+          "number": "6.15",
+          "description": "Executing MEMORY pass.",
+          "timestamp": "2026-01-26T20:50:51.513Z"
+        },
+        {
+          "number": "7",
+          "description": "Executing SYNTH pass.",
+          "timestamp": "2026-01-26T20:50:57.100Z"
+        },
+        {
+          "number": "7.2",
+          "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+          "timestamp": "2026-01-26T20:51:01.805Z"
+        },
+        {
+          "number": "7.4",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2026-01-26T20:51:20.010Z"
+        },
+        {
+          "number": "7.6",
+          "description": "Executing ABC pass (technology mapping using ABC).",
+          "timestamp": "2026-01-26T20:51:31.209Z"
+        },
+        {
+          "number": "7.8",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2026-01-26T20:52:02.815Z"
+        },
+        {
+          "number": "7.9",
+          "description": "Printing statistics.",
+          "timestamp": "2026-01-26T20:52:03.388Z"
+        },
+        {
+          "number": "7.10",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2026-01-26T20:52:03.388Z"
+        },
+        {
+          "number": "8",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2026-01-26T20:52:05.267Z"
+        },
+        {
+          "number": "9",
+          "description": "Executing EXTRACT_FA pass (find and extract full/half adders).",
+          "timestamp": "2026-01-26T20:52:19.126Z"
+        },
+        {
+          "number": "10",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2026-01-26T20:53:12.148Z"
+        },
+        {
+          "number": "10.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_adders.v",
+          "timestamp": "2026-01-26T20:53:12.148Z"
+        },
+        {
+          "number": "11",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2026-01-26T20:53:12.148Z"
+        },
+        {
+          "number": "11.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+          "timestamp": "2026-01-26T20:53:12.148Z"
+        },
+        {
+          "number": "12",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2026-01-26T20:53:12.148Z"
+        },
+        {
+          "number": "13",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2026-01-26T20:53:13.343Z"
+        },
+        {
+          "number": "13.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_latch.v",
+          "timestamp": "2026-01-26T20:53:13.343Z"
+        },
+        {
+          "number": "14",
+          "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+          "timestamp": "2026-01-26T20:53:13.917Z"
+        },
+        {
+          "number": "14.1",
+          "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+          "timestamp": "2026-01-26T20:53:13.917Z"
+        },
+        {
+          "number": "15",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2026-01-26T20:53:13.917Z"
+        },
+        {
+          "number": "16",
+          "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+          "timestamp": "2026-01-26T20:53:27.834Z"
+        },
+        {
+          "number": "17",
+          "description": "Executing ABC pass (technology mapping using ABC).",
+          "timestamp": "2026-01-26T20:53:27.834Z"
+        },
+        {
+          "number": "18",
+          "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+          "timestamp": "2026-01-26T20:56:48.990Z"
+        },
+        {
+          "number": "19",
+          "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+          "timestamp": "2026-01-26T20:56:48.990Z"
+        },
+        {
+          "number": "20",
+          "description": "Executing HILOMAP pass (mapping to constant drivers).",
+          "timestamp": "2026-01-26T20:56:51.624Z"
+        },
+        {
+          "number": "21",
+          "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+          "timestamp": "2026-01-26T20:56:51.624Z"
+        },
+        {
+          "number": "22",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2026-01-26T20:56:51.624Z"
+        },
+        {
+          "number": "23",
+          "description": "Printing statistics.",
+          "timestamp": "2026-01-26T20:56:52.821Z"
+        },
+        {
+          "number": "24",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2026-01-26T20:56:52.821Z"
+        },
+        {
+          "number": "25",
+          "description": "Executing Verilog backend.",
+          "timestamp": "2026-01-26T20:56:52.821Z"
+        },
+        {
+          "number": "25.1",
+          "description": "Executing BMUXMAP pass.",
+          "timestamp": "2026-01-26T20:56:52.821Z"
+        },
+        {
+          "number": "25.2",
+          "description": "Executing DEMUXMAP pass.",
+          "timestamp": "2026-01-26T20:56:52.821Z"
+        }
+      ],
+      "timing": {
+        "clock_period_ns": 3.0,
+        "clock_period_set_count": 1
+      },
+      "warnings": [
+        {
+          "message": "Wire std_nbdcache_0000000080000000.\\dirty_wdata_63 is used but has no driver.",
+          "timestamp": "2026-01-26T20:49:44.203Z"
+        },
+        {
+          "message": "Wire std_nbdcache_0000000080000000.\\dirty_wdata_62 is used but has no driver.",
+          "timestamp": "2026-01-26T20:49:44.203Z"
+        },
+        {
+          "message": "Wire std_nbdcache_0000000080000000.\\dirty_wdata_61 is used but has no driver.",
+          "timestamp": "2026-01-26T20:49:44.203Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATETST_X1.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATETST_X2.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATETST_X4.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATETST_X8.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATE_X1.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATE_X2.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATE_X4.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module CLKGATE_X8.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        },
+        {
+          "message": "Ignoring blackbox module fakeram45_256x16.",
+          "timestamp": "2026-01-26T20:50:28.547Z"
+        }
+      ],
+      "statistics": {
+        "cells": {},
+        "chip_area": {}
+      },
+      "check": {}
+    }
+  ],
+  "design_name": "ariane133",
+  "sub_design_name": "ariane"
+}

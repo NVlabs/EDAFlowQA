@@ -1,0 +1,1169 @@
+{
+  "design_name": "gcd",
+  "sub_design_names": [
+    "gcd"
+  ],
+  "design_info": {
+    "runs": [
+      {
+        "line": 42,
+        "timestamp": "2025-10-11T15:11:53.284Z",
+        "design_name": "gcd",
+        "technology_node": "sky130hd",
+        "config_mk": "config.mk"
+      }
+    ]
+  },
+  "log_file": "./design_artifacts/gcdsky130/gcdsky130.txt",
+  "timestamp": "2026-02-28T14:51:55.702784",
+  "flow_execution_summary": {
+    "design_name": "gcd",
+    "technology_node": "sky130hd",
+    "log_file": "./design_artifacts/gcdsky130/gcdsky130.txt",
+    "timestamp": "2026-02-28T14:51:55.702784",
+    "execute_successfully": true,
+    "exit_code": 0,
+    "exit_line": "[2025-10-11T15:14:00.124Z] + exit 0",
+    "errors_detected": [
+      {
+        "line": 3,
+        "content": "[2025-10-11T15:04:39.047Z] Error: No such object: openroad/flow-ubuntu22.04-dev:2f17ad"
+      }
+    ],
+    "total_stages": 6,
+    "stages": [
+      {
+        "sequence_number": 1,
+        "stage_type": "synthesis",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 90,
+          "end": 337
+        },
+        "extracted_lines": 114,
+        "output_file": "gcdsky130_synthesis_extract.txt",
+        "metrics_file": "gcdsky130_synthesis_metrics.json"
+      },
+      {
+        "sequence_number": 2,
+        "stage_type": "floorplan",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 337,
+          "end": 1422
+        },
+        "extracted_lines": 119,
+        "output_file": "gcdsky130_floorplan_extract.txt",
+        "metrics_file": "gcdsky130_floorplan_metrics.json"
+      },
+      {
+        "sequence_number": 3,
+        "stage_type": "placement",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 1422,
+          "end": 1850
+        },
+        "extracted_lines": 319,
+        "output_file": "gcdsky130_placement_extract.txt",
+        "metrics_file": "gcdsky130_placement_metrics.json"
+      },
+      {
+        "sequence_number": 4,
+        "stage_type": "cts",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 1850,
+          "end": 2143
+        },
+        "extracted_lines": 254,
+        "output_file": "gcdsky130_cts_extract.txt",
+        "metrics_file": "gcdsky130_cts_metrics.json"
+      },
+      {
+        "sequence_number": 5,
+        "stage_type": "routing",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 2143,
+          "end": 3359
+        },
+        "extracted_lines": 436,
+        "output_file": "gcdsky130_routing_extract.txt",
+        "metrics_file": "gcdsky130_routing_metrics.json"
+      },
+      {
+        "sequence_number": 6,
+        "stage_type": "final",
+        "occurrence": 1,
+        "sub_design_name": "gcd",
+        "line_range": {
+          "start": 3359,
+          "end": 3541
+        },
+        "extracted_lines": 118,
+        "output_file": "gcdsky130_final_extract.txt",
+        "metrics_file": "gcdsky130_final_metrics.json"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "sequence_number": 1,
+      "stage": "synthesis",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_synthesis_metrics.json",
+      "metrics": {
+        "stage": "synthesis",
+        "total_runs": 1,
+        "runs": [
+          {
+            "run_number": 1,
+            "script_name": "synth",
+            "design_name": "gcd",
+            "steps": [
+              {
+                "number": "1",
+                "description": "Executing RTLIL frontend.",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "2",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "2.1",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "2.2",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.1",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.2",
+                "description": "Executing PROC pass (convert processes to netlists).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.3",
+                "description": "Executing FLATTEN pass (flatten design).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.6",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.8",
+                "description": "Executing FSM pass (extract and optimize FSM).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.10",
+                "description": "Executing WREDUCE pass (reducing word size of cells).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.13",
+                "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.14",
+                "description": "Executing SHARE pass (SAT-based resource sharing).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "3.16",
+                "description": "Executing MEMORY pass.",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "4",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "4.2",
+                "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "4.4",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "4.6",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:11:55.949Z"
+              },
+              {
+                "number": "4.8",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "4.9",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "4.10",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "5",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "6",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "6.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/cells_latch_hd.v",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "7",
+                "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "7.1",
+                "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "8",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "9",
+                "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "10",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:11:56.524Z"
+              },
+              {
+                "number": "11",
+                "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "12",
+                "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "13",
+                "description": "Executing HILOMAP pass (mapping to constant drivers).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "14",
+                "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "15",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "16",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "17",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "18",
+                "description": "Executing Verilog backend.",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "18.1",
+                "description": "Executing BMUXMAP pass.",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              },
+              {
+                "number": "18.2",
+                "description": "Executing DEMUXMAP pass.",
+                "timestamp": "2025-10-11T15:11:57.675Z"
+              }
+            ],
+            "timing": {
+              "clock_period_ns": 1.1,
+              "clock_period_set_count": 1
+            },
+            "statistics": {
+              "cells": {},
+              "chip_area": {}
+            },
+            "check": {}
+          }
+        ],
+        "design_name": "gcd",
+        "sub_design_name": "gcd"
+      }
+    },
+    {
+      "sequence_number": 2,
+      "stage": "floorplan",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_floorplan_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "wns": -2.039,
+            "tns": -78.6,
+            "area": 2441.0,
+            "utilization": 43,
+            "density": 43,
+            "violations": 46,
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {}
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp -match_cell_footprint",
+                "iterations_count": 73,
+                "start_metrics": {
+                  "wns": -2.376,
+                  "tns": -88.7,
+                  "violation_end_points": 55
+                },
+                "end_metrics": {
+                  "wns": -2.039,
+                  "tns": -78.6,
+                  "violation_end_points": 46
+                }
+              }
+            ],
+            "elapsed_time": "0:03.17",
+            "peak_memory_kb": 131932,
+            "elapsed_s": 3,
+            "memory_mb": 128,
+            "sha1sum": "1e90c5da216f1918f759"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_time": "0:00.71",
+            "peak_memory_kb": 108560,
+            "elapsed_s": 0,
+            "memory_mb": 106,
+            "sha1sum": "1e90c5da216f1918f759"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_time": "0:00.70",
+            "peak_memory_kb": 108228,
+            "elapsed_s": 0,
+            "memory_mb": 105,
+            "sha1sum": "dc81e28c0cf051227026"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2025-10-11T15:12:01.760Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:00.74",
+            "peak_memory_kb": 110364,
+            "elapsed_s": 0,
+            "memory_mb": 107,
+            "sha1sum": "bddc77e72332cb2785b0"
+          }
+        },
+        "design_name": "gcd",
+        "sub_design_name": "gcd"
+      }
+    },
+    {
+      "sequence_number": 3,
+      "stage": "placement",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_placement_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 2846.482,
+            "area": 5641.661,
+            "utilization": 43.971,
+            "density": 43.971,
+            "overflow": 0.0981,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.6 -pad_left 0 -pad_right 0",
+                "iterations_count": 374,
+                "start_metrics": {
+                  "overflow": 0.9569,
+                  "hpwl": 631.523
+                },
+                "end_metrics": {
+                  "overflow": 0.0981,
+                  "hpwl": 2846.482
+                },
+                "results": {
+                  "movable_instances": 242,
+                  "fixed_instances": 72,
+                  "num_nets": 278,
+                  "num_pins": 855,
+                  "core_area_um2": 5641.661,
+                  "fixed_instances_area_um2": 90.086,
+                  "movable_instances_area_um2": 2441.091,
+                  "standard_cells_area_um2": 2441.091,
+                  "utilization": 43.971,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0981,
+                  "final_hpwl_um": 2846.482
+                }
+              }
+            ],
+            "elapsed_s": 0,
+            "memory_mb": 107,
+            "sha1sum": "f606767078861df7a7f7"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers met3 -ver_layers met2",
+                "results": {
+                  "io_nets_hpwl_um": 1109.54
+                }
+              }
+            ],
+            "elapsed_s": 0,
+            "memory_mb": 105,
+            "sha1sum": "4b2bd24ba1653f66c029"
+          },
+          "3_3_place_gp": {
+            "hpwl": 4202.554,
+            "area": 3623.0,
+            "utilization": 64,
+            "density": 64,
+            "overflow": 0.0997,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 7
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 35,
+                  "buffer_type": "sky130_fd_sc_hd__clkdlybuf4s50_1",
+                  "output_buffers": 18
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.6 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+                "iterations_count": 336,
+                "start_metrics": {
+                  "overflow": 0.6297,
+                  "hpwl": 2892.218
+                },
+                "end_metrics": {
+                  "overflow": 0.0997,
+                  "hpwl": 4202.554
+                },
+                "results": {
+                  "movable_instances": 288,
+                  "fixed_instances": 72,
+                  "num_nets": 324,
+                  "num_pins": 1001,
+                  "core_area_um2": 5641.661,
+                  "fixed_instances_area_um2": 90.086,
+                  "movable_instances_area_um2": 2927.808,
+                  "standard_cells_area_um2": 2927.808,
+                  "utilization": 52.738,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0997,
+                  "final_hpwl_um": 4202.554
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:23.091Z] Report metrics stage 3, global place...",
+            "elapsed_s": 13,
+            "memory_mb": 188,
+            "sha1sum": "94631aadfbb3749e6007"
+          },
+          "3_4_place_resized": {
+            "area": 3623.0,
+            "utilization": 64,
+            "density": 64,
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose -match_cell_footprint",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:25.177Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 1,
+            "memory_mb": 125,
+            "sha1sum": "94631aadfbb3749e6007"
+          },
+          "3_5_place_dp": {
+            "hpwl": 4452.6,
+            "area": 3623.0,
+            "utilization": 64,
+            "density": 64,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 901.2,
+                  "average_displacement_u": 2.0,
+                  "max_displacement_u": 9.6,
+                  "original_hpwl_u": 4211.0,
+                  "legalized_hpwl_u": 4987.0,
+                  "delta_hpwl_percent": 18.0,
+                  "final_hpwl_u": 4452.6,
+                  "final_delta_hpwl_percent": -10.7
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:27.267Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 1,
+            "memory_mb": 110,
+            "sha1sum": "48f39e218b0dcb3b3e9b"
+          }
+        },
+        "design_name": "gcd",
+        "sub_design_name": "gcd",
+        "design_metrics_final": {
+          "placeopt__design__instance__area": 3713.56,
+          "placeopt__design__instance__count__stdcell": 451.0
+        }
+      }
+    },
+    {
+      "sequence_number": 4,
+      "stage": "cts",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_cts_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "wns": -2.337,
+            "tns": -104.2,
+            "clock_sink_wirelength_um": 116.0,
+            "hpwl": 6613.0,
+            "area": 4387.0,
+            "utilization": 78,
+            "density": 78,
+            "displacement": 1163.5,
+            "violations": 84,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+                "results": {
+                  "total_sinks": 35,
+                  "clock_buffers_created": 5,
+                  "min_buffer_depth": 2,
+                  "max_buffer_depth": 2,
+                  "avg_sink_wirelength_um": 116.0,
+                  "placement_total_displacement_u": 95.4,
+                  "placement_avg_displacement_u": 0.2,
+                  "placement_max_displacement_u": 6.9,
+                  "hpwl_before": 4641.8,
+                  "hpwl_after": 4977.7,
+                  "clock_nets": [
+                    {
+                      "name": "clk",
+                      "sinks": 38,
+                      "leaf_buffers": 0,
+                      "avg_sink_wire_length_um": 116.0,
+                      "path_depth_min": 2,
+                      "path_depth_max": 2,
+                      "leaf_load_cells": 3
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint",
+                "iterations_count": 199,
+                "start_metrics": {
+                  "wns": -2.638,
+                  "tns": -96.9,
+                  "violation_end_points": 56
+                },
+                "end_metrics": {
+                  "wns": -2.337,
+                  "tns": -104.2,
+                  "violation_end_points": 84
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_timing_summary",
+                "removed_buffers": 4,
+                "inserted_buffers": 42,
+                "resized_instances": 127,
+                "cloned_instances": 2
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:43.273Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "0:14.36",
+            "peak_memory_kb": 149324,
+            "elapsed_s": 14,
+            "memory_mb": 145,
+            "sha1sum": "5639158eab7e301dd9b3"
+          }
+        },
+        "design_name": "gcd",
+        "sub_design_name": "gcd",
+        "design_metrics_final": {
+          "cts__design__instance__count__setup_buffer": 42.0,
+          "cts__design__instance__count__hold_buffer": 0.0,
+          "cts__timing__setup__ws": -2.3374,
+          "cts__timing__setup__tns": -104.172,
+          "cts__timing__hold__ws": 0.473234,
+          "cts__timing__hold__tns": 0.0
+        }
+      }
+    },
+    {
+      "sequence_number": 5,
+      "stage": "routing",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_routing_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 12199.0,
+            "area": 4687.0,
+            "utilization": 83,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/sky130hd/gcd/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 12199.0,
+                  "total_resource": 3649,
+                  "total_demand": 1001,
+                  "total_usage_percent": 27.43,
+                  "total_overflow": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 6613.0,
+                  "hpwl_after": 6613.0,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100",
+                "iterations_count": 211,
+                "start_metrics": {
+                  "wns": -2.682,
+                  "tns": -118.0,
+                  "violation_end_points": 85
+                },
+                "end_metrics": {
+                  "wns": -2.472,
+                  "tns": -107.0,
+                  "violation_end_points": 85
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 987.3,
+                  "avg_displacement_u": 2.0,
+                  "max_displacement_u": 18.8,
+                  "hpwl_before": 6794.7,
+                  "hpwl_after": 7680.6,
+                  "delta_hpwl_percent": 13.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:13:01.593Z] Report metrics stage 5, global route...",
+            "elapsed_time": "0:17.20",
+            "peak_memory_kb": 213084,
+            "elapsed_s": 17,
+            "memory_mb": 208,
+            "sha1sum": "1cf9231d70982b2951b7",
+            "design_metrics_final": {
+              "globalroute__antenna_diodes_count": 0.0,
+              "globalroute__timing__setup__ws": -2.52945,
+              "globalroute__timing__setup__tns": -108.699,
+              "globalroute__timing__hold__ws": 0.529624,
+              "globalroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_2_route": {
+            "wirelength_um": 8413.0,
+            "total_vias": 2644,
+            "violations": 0,
+            "area": 4687.0,
+            "utilization": 83,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/sky130hd/gcd/base/5_route_drc.rpt -output_maze ./results/sky130hd/gcd/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 110,
+                    "wirelength_um": 8489.0,
+                    "vias": 2634
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 56,
+                    "wirelength_um": 8370.0,
+                    "vias": 2609
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 39,
+                    "wirelength_um": 8418.0,
+                    "vias": 2611
+                  },
+                  {
+                    "iteration": 3,
+                    "violations": 0,
+                    "wirelength_um": 8413.0,
+                    "vias": 2644
+                  }
+                ],
+                "final_wirelength_um": 8413.0,
+                "final_vias": 2644,
+                "final_violations": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:13:39.535Z] Report metrics stage 5, detailed route...",
+            "elapsed_time": "0:37.55",
+            "peak_memory_kb": 960536,
+            "elapsed_s": 37,
+            "memory_mb": 938,
+            "sha1sum": "3e8512a96e2d3921a1d7",
+            "design_metrics_final": {
+              "detailedroute__route__wirelength": 8413.0,
+              "detailedroute__route__drc_errors": 0.0,
+              "detailedroute__antenna__violating__nets": 0.0,
+              "detailedroute__antenna_diodes_count": 0.0,
+              "detailedroute__timing__setup__ws": -2.09199,
+              "detailedroute__timing__setup__tns": -88.6852,
+              "detailedroute__timing__hold__ws": 0.483805,
+              "detailedroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:00.73",
+            "peak_memory_kb": 111036,
+            "elapsed_s": 0,
+            "memory_mb": 108,
+            "sha1sum": "742669aa6cc6c77cb186"
+          }
+        },
+        "design_name": "gcd",
+        "sub_design_name": "gcd"
+      }
+    },
+    {
+      "sequence_number": 6,
+      "stage": "final",
+      "occurrence": 1,
+      "design_name": "gcd",
+      "sub_design_name": "gcd",
+      "metrics_file": "test_output_gcdsky130/gcdsky130_final_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 1.8,
+            "worstcase_voltage_v": 1.8,
+            "average_voltage_v": 1.8,
+            "average_ir_drop_v": 0.000425,
+            "worstcase_ir_drop_v": 0.00104,
+            "percentage_drop": 0.06
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.000654,
+            "average_voltage_v": 0.000213,
+            "average_ir_drop_v": 0.000213,
+            "worstcase_ir_drop_v": 0.000654,
+            "percentage_drop": 0.04
+          }
+        },
+        "cell_counts": {
+          "fill_cell_count": 239,
+          "fill_cell_area": 864.58,
+          "tap_cell_count": 72,
+          "tap_cell_area": 90.09,
+          "clock_buffer_count": 8,
+          "clock_buffer_area": 80.08,
+          "timing_repair_buffer_count": 188,
+          "timing_repair_buffer_area": 1737.92,
+          "inverter_count": 13,
+          "inverter_area": 48.8,
+          "sequential_cell_count": 35,
+          "sequential_cell_area": 1025.98,
+          "combinational_cell_count": 189,
+          "combinational_cell_area": 1794.22,
+          "total_cell_count": 744,
+          "total_cell_area": 5641.66
+        },
+        "design_metrics": {
+          "area": 4777.08,
+          "setup_wns": -2.3863,
+          "setup_tns": -101.92,
+          "hold_wns": 0.514831,
+          "hold_tns": 0.0,
+          "wns_percent_delay": -67.94317
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 0,
+            "memory_mb": 105,
+            "sha1sum": "742669aa6cc6c77cb186"
+          },
+          "6_report": {
+            "elapsed_s": 3,
+            "memory_mb": 169
+          },
+          "1_1_yosys_canonicalize": {
+            "elapsed_s": 0,
+            "memory_mb": 54,
+            "sha1sum": "18f911f8feeeeb2b66f4"
+          },
+          "1_2_yosys": {
+            "elapsed_s": 1,
+            "memory_mb": 57,
+            "sha1sum": "f3b02b04837908bc769f"
+          },
+          "2_1_floorplan": {
+            "elapsed_s": 3,
+            "memory_mb": 128,
+            "sha1sum": "1e90c5da216f1918f759"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_s": 0,
+            "memory_mb": 106,
+            "sha1sum": "1e90c5da216f1918f759"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_s": 0,
+            "memory_mb": 105,
+            "sha1sum": "dc81e28c0cf051227026"
+          },
+          "2_4_floorplan_pdn": {
+            "elapsed_s": 0,
+            "memory_mb": 107,
+            "sha1sum": "bddc77e72332cb2785b0"
+          },
+          "3_1_place_gp_skip_io": {
+            "elapsed_s": 0,
+            "memory_mb": 107,
+            "sha1sum": "f606767078861df7a7f7"
+          },
+          "3_2_place_iop": {
+            "elapsed_s": 0,
+            "memory_mb": 105,
+            "sha1sum": "4b2bd24ba1653f66c029"
+          },
+          "3_3_place_gp": {
+            "elapsed_s": 13,
+            "memory_mb": 188,
+            "sha1sum": "94631aadfbb3749e6007"
+          },
+          "3_4_place_resized": {
+            "elapsed_s": 1,
+            "memory_mb": 125,
+            "sha1sum": "94631aadfbb3749e6007"
+          },
+          "3_5_place_dp": {
+            "elapsed_s": 1,
+            "memory_mb": 110,
+            "sha1sum": "48f39e218b0dcb3b3e9b"
+          },
+          "4_1_cts": {
+            "elapsed_s": 14,
+            "memory_mb": 145,
+            "sha1sum": "5639158eab7e301dd9b3"
+          },
+          "5_1_grt": {
+            "elapsed_s": 17,
+            "memory_mb": 208,
+            "sha1sum": "1cf9231d70982b2951b7"
+          },
+          "5_2_route": {
+            "elapsed_s": 37,
+            "memory_mb": 938,
+            "sha1sum": "3e8512a96e2d3921a1d7"
+          },
+          "5_3_fillcell": {
+            "elapsed_s": 0,
+            "memory_mb": 108,
+            "sha1sum": "742669aa6cc6c77cb186"
+          },
+          "6_1_merge": {
+            "elapsed_s": 2,
+            "memory_mb": 429
+          }
+        },
+        "performance": {},
+        "test_metrics": {
+          "synth__design__instance__area__stdcell": {
+            "actual_value": 2402.304,
+            "operator": "<=",
+            "threshold_value": 2760.0,
+            "passed": true
+          },
+          "constraints__clocks__count": {
+            "actual_value": 1.0,
+            "operator": "==",
+            "threshold_value": 1.0,
+            "passed": true
+          },
+          "placeopt__design__instance__area": {
+            "actual_value": 3713.56,
+            "operator": "<=",
+            "threshold_value": 4271.0,
+            "passed": true
+          },
+          "placeopt__design__instance__count__stdcell": {
+            "actual_value": 451.0,
+            "operator": "<=",
+            "threshold_value": 519.0,
+            "passed": true
+          },
+          "detailedplace__design__violations": {
+            "actual_value": 0.0,
+            "operator": "==",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__design__instance__count__setup_buffer": {
+            "actual_value": 42.0,
+            "operator": "<=",
+            "threshold_value": 46.0,
+            "passed": true
+          },
+          "cts__design__instance__count__hold_buffer": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 42.0,
+            "passed": true
+          },
+          "cts__timing__setup__ws": {
+            "actual_value": -2.3374,
+            "operator": ">=",
+            "threshold_value": -2.39,
+            "passed": true
+          },
+          "cts__timing__setup__tns": {
+            "actual_value": -104.172,
+            "operator": ">=",
+            "threshold_value": -125.0,
+            "passed": true
+          },
+          "cts__timing__hold__ws": {
+            "actual_value": 0.473234,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__ws": {
+            "actual_value": -2.52945,
+            "operator": ">=",
+            "threshold_value": -2.58,
+            "passed": true
+          },
+          "globalroute__timing__setup__tns": {
+            "actual_value": -108.699,
+            "operator": ">=",
+            "threshold_value": -130.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__ws": {
+            "actual_value": 0.529624,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__route__wirelength": {
+            "actual_value": 8413.0,
+            "operator": "<=",
+            "threshold_value": 9675.0,
+            "passed": true
+          },
+          "detailedroute__route__drc_errors": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna__violating__nets": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 5.0,
+            "passed": true
+          },
+          "detailedroute__timing__setup__ws": {
+            "actual_value": -2.09199,
+            "operator": ">=",
+            "threshold_value": -2.1469,
+            "passed": true
+          },
+          "detailedroute__timing__setup__tns": {
+            "actual_value": -88.6852,
+            "operator": ">=",
+            "threshold_value": -106.0,
+            "passed": true
+          },
+          "detailedroute__timing__hold__ws": {
+            "actual_value": 0.483805,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__setup__ws": {
+            "actual_value": -2.3863,
+            "operator": ">=",
+            "threshold_value": -2.44,
+            "passed": true
+          },
+          "finish__timing__setup__tns": {
+            "actual_value": -101.92,
+            "operator": ">=",
+            "threshold_value": -122.0,
+            "passed": true
+          },
+          "finish__timing__hold__ws": {
+            "actual_value": 0.514831,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__design__instance__area": {
+            "actual_value": 4777.08,
+            "operator": "<=",
+            "threshold_value": 5494.0,
+            "passed": true
+          },
+          "finish__timing__wns_percent_delay": {
+            "actual_value": -67.94317,
+            "operator": ">=",
+            "threshold_value": -79.41,
+            "passed": true
+          }
+        },
+        "design_name": "gcd",
+        "sub_design_name": "gcd"
+      }
+    }
+  ]
+}

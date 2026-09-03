@@ -1,0 +1,122 @@
+[2026-01-26T21:02:08.246Z] Running density_fill.tcl, stage 6_1_fill
+[2026-01-26T21:02:08.820Z] [WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+[2026-01-26T21:02:08.820Z] Elapsed time: 0:00.67[h:]min:sec. CPU time: user 0.56 sys 0.10 (99%). Peak memory: 171852KB.
+[2026-01-26T21:02:08.820Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T21:02:08.820Z] 6_1_fill                           0            167 42d4ead6c27471004c47
+[2026-01-26T21:02:09.394Z] Running final_report.tcl, stage 6_report
+[2026-01-26T21:02:10.539Z] [WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+[2026-01-26T21:02:10.539Z] write_db ./results/sky130hd/ibex/base/6_final.odb
+[2026-01-26T21:02:23.438Z] ########## IR report #################
+[2026-01-26T21:02:23.438Z] Net              : VDD
+[2026-01-26T21:02:23.438Z] Corner           : default
+[2026-01-26T21:02:23.438Z] Total power      : 6.72e-02 W
+[2026-01-26T21:02:23.438Z] Supply voltage   : 1.80e+00 V
+[2026-01-26T21:02:23.438Z] Worstcase voltage: 1.80e+00 V
+[2026-01-26T21:02:23.438Z] Average voltage  : 1.80e+00 V
+[2026-01-26T21:02:23.438Z] Average IR drop  : 4.55e-05 V
+[2026-01-26T21:02:23.438Z] Worstcase IR drop: 6.23e-04 V
+[2026-01-26T21:02:23.438Z] Percentage drop  : 0.03 %
+[2026-01-26T21:02:23.438Z] ######################################
+[2026-01-26T21:02:23.438Z] ########## IR report #################
+[2026-01-26T21:02:23.438Z] Net              : VSS
+[2026-01-26T21:02:23.438Z] Corner           : default
+[2026-01-26T21:02:23.438Z] Total power      : 6.72e-02 W
+[2026-01-26T21:02:23.438Z] Supply voltage   : 0.00e+00 V
+[2026-01-26T21:02:23.438Z] Worstcase voltage: 7.99e-04 V
+[2026-01-26T21:02:23.438Z] Average voltage  : 4.21e-05 V
+[2026-01-26T21:02:23.438Z] Average IR drop  : 4.21e-05 V
+[2026-01-26T21:02:23.438Z] Worstcase IR drop: 7.99e-04 V
+[2026-01-26T21:02:23.438Z] Percentage drop  : 0.04 %
+[2026-01-26T21:02:23.438Z] ######################################
+[2026-01-26T21:02:23.438Z] Cell type report:                       Count       Area
+[2026-01-26T21:02:23.438Z]   Fill cell                             25115  125884.48
+[2026-01-26T21:02:23.438Z]   Tap cell                               3743    4683.24
+[2026-01-26T21:02:23.438Z]   Antenna cell                             50     125.12
+[2026-01-26T21:02:23.438Z]   Clock buffer                            232    5383.91
+[2026-01-26T21:02:23.438Z]   Timing Repair Buffer                   1504   13733.17
+[2026-01-26T21:02:23.438Z]   Inverter                                224     853.32
+[2026-01-26T21:02:23.438Z]   Clock inverter                          150    2162.07
+[2026-01-26T21:02:23.438Z]   Sequential cell                        1939   49895.35
+[2026-01-26T21:02:23.438Z]   Multi-Input combinational cell        11994   80300.76
+[2026-01-26T21:02:23.438Z]   Total                                 44951  283021.44
+[2026-01-26T21:02:23.438Z] Report metrics stage 6, finish...
+[2026-01-26T21:02:26.922Z] 
+[2026-01-26T21:02:26.922Z] ==========================================================================
+[2026-01-26T21:02:26.922Z] finish report_design_area
+[2026-01-26T21:02:26.922Z] --------------------------------------------------------------------------
+[2026-01-26T21:02:26.922Z] Design area 152454 um^2 54% utilization.
+[2026-01-26T21:02:26.922Z] [WARNING GUI-0076] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[2026-01-26T21:02:30.400Z] Elapsed time: 0:20.31[h:]min:sec. CPU time: user 37.18 sys 12.29 (243%). Peak memory: 542376KB.
+[2026-01-26T21:02:30.400Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T21:02:30.400Z] 6_report                          20            529                  N/A
+[2026-01-26T21:02:33.428Z] [INFO] Reporting cells prior to loading DEF ...
+[2026-01-26T21:02:33.428Z] [INFO] All LEF cells have matching GDS/OAS cells
+[2026-01-26T21:02:33.428Z] [INFO] No orphan cells in the final layout
+[2026-01-26T21:02:34.002Z] Elapsed time: 0:02.51[h:]min:sec. CPU time: user 2.22 sys 0.28 (99%). Peak memory: 524120KB.
+[2026-01-26T21:02:34.002Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T21:02:34.002Z] 1_1_yosys_canonicalize             1             70 7742590547cf5038ef46
+[2026-01-26T21:02:34.002Z] 1_2_yosys                         55            110 1092d9e44faa4130c68f
+[2026-01-26T21:02:34.002Z] 1_synth                            0            149 1519a92301bd9dd895cc
+[2026-01-26T21:02:34.002Z] 2_1_floorplan                      6            173 826dfa9dd956b09793f7
+[2026-01-26T21:02:34.002Z] 2_2_floorplan_macro                0            138 826dfa9dd956b09793f7
+[2026-01-26T21:02:34.002Z] 2_3_floorplan_tapcell              0            132 cc3aacbb8e4c3c583587
+[2026-01-26T21:02:34.002Z] 2_4_floorplan_pdn                  0            153 665d6f969f0032fc410b
+[2026-01-26T21:02:34.002Z] 3_1_place_gp_skip_io               5            167 c7dd51b62b34c5f8888a
+[2026-01-26T21:02:34.002Z] 3_2_place_iop                      0            144 9af7c1d9503471c974d4
+[2026-01-26T21:02:34.002Z] 3_3_place_gp                      46            373 8c4f228230b91924c80f
+[2026-01-26T21:02:34.002Z] 3_4_place_resized                 11            199 8c4f228230b91924c80f
+[2026-01-26T21:02:34.002Z] 3_5_place_dp                      12            221 8b922ce9913ee182b189
+[2026-01-26T21:02:34.002Z] 4_1_cts                           18            263 8870057cc7d344f8f3a2
+[2026-01-26T21:02:34.002Z] 5_1_grt                           73            651 4610b5e6f146ff3fbf58
+[2026-01-26T21:02:34.002Z] 5_2_route                        491           3965 af03487970d8dbf019d3
+[2026-01-26T21:02:34.002Z] 5_3_fillcell                       1            195 42d4ead6c27471004c47
+[2026-01-26T21:02:34.002Z] 6_1_fill                           0            167 42d4ead6c27471004c47
+[2026-01-26T21:02:34.002Z] 6_1_merge                          2            511                  N/A
+[2026-01-26T21:02:34.002Z] 6_report                          20            529                  N/A
+[2026-01-26T21:02:34.002Z] Total                            741           3965                     
+[2026-01-26T21:02:34.574Z] echo ./designs/sky130hd/ibex/ > ./reports/sky130hd/ibex/base/design-dir.txt
+[2026-01-26T21:02:34.574Z] /usr/bin/python3 /tmp/workspace/nROAD-flow-scripts-Public_master/flow/util/genMetrics.py -d ibex \
+[2026-01-26T21:02:34.574Z]     -p sky130hd \
+[2026-01-26T21:02:34.574Z]     -v base \
+[2026-01-26T21:02:34.574Z]     --logs ./logs/sky130hd/ibex/base \
+[2026-01-26T21:02:34.575Z]     --reports ./reports/sky130hd/ibex/base \
+[2026-01-26T21:02:34.575Z]     --results ./results/sky130hd/ibex/base \
+[2026-01-26T21:02:34.575Z]     -o ./reports/sky130hd/ibex/base/metadata.json 2>&1 \
+[2026-01-26T21:02:34.575Z]     | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/reports/sky130hd/ibex/base/metadata-generate.log
+[2026-01-26T21:02:34.575Z] [WARN] not a git repo
+[2026-01-26T21:02:34.575Z] [WARN] not a git repo
+[2026-01-26T21:02:34.575Z] [WARN] Tag synth__design__instance__count__stdcell not found in ./reports/sky130hd/ibex/base/synth_stat.txt. Will use N/A.
+[2026-01-26T21:02:34.575Z] [WARN] Overwriting Tag finish__runtime__total
+[2026-01-26T21:02:34.575Z] [WARN] Overwriting Tag finish__cpu__total
+[2026-01-26T21:02:34.575Z] [WARN] Overwriting Tag finish__mem__peak
+[2026-01-26T21:02:34.575Z] /usr/bin/python3 /tmp/workspace/nROAD-flow-scripts-Public_master/flow/util/checkMetadata.py \
+[2026-01-26T21:02:34.575Z]     -m ./reports/sky130hd/ibex/base/metadata.json \
+[2026-01-26T21:02:34.575Z]     -r ./designs/sky130hd/ibex//rules-base.json 2>&1 \
+[2026-01-26T21:02:34.575Z]     | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/reports/sky130hd/ibex/base/metadata-check.log
+[2026-01-26T21:02:34.575Z] [INFO] synth__design__instance__area__stdcell pass test: 128439.4336 <= 148000
+[2026-01-26T21:02:34.575Z] [INFO] constraints__clocks__count pass test: 1 == 1
+[2026-01-26T21:02:34.575Z] [INFO] placeopt__design__instance__area pass test: 147066 <= 169126
+[2026-01-26T21:02:34.575Z] [INFO] placeopt__design__instance__count__stdcell pass test: 19298 <= 20977
+[2026-01-26T21:02:34.575Z] [INFO] detailedplace__design__violations pass test: 0 == 0
+[2026-01-26T21:02:34.575Z] [INFO] cts__design__instance__count__setup_buffer pass test: 39 <= 1824
+[2026-01-26T21:02:34.575Z] [INFO] cts__design__instance__count__hold_buffer pass test: 0 <= 1824
+[2026-01-26T21:02:34.575Z] [INFO] cts__timing__setup__ws pass test: -0.0328786 >= -0.533
+[2026-01-26T21:02:34.575Z] [INFO] cts__timing__setup__tns pass test: -0.0540448 >= -2.05
+[2026-01-26T21:02:34.575Z] [INFO] cts__timing__hold__ws pass test: 0.420737 >= -0.5
+[2026-01-26T21:02:34.575Z] [INFO] cts__timing__hold__tns pass test: 0 >= -2
+[2026-01-26T21:02:34.575Z] [INFO] globalroute__antenna_diodes_count pass test: 17 <= 100
+[2026-01-26T21:02:34.575Z] [INFO] globalroute__timing__setup__ws pass test: -0.283044 >= -0.783
+[2026-01-26T21:02:34.575Z] [INFO] globalroute__timing__setup__tns pass test: -1.62721 >= -3.63
+[2026-01-26T21:02:34.575Z] [INFO] globalroute__timing__hold__ws pass test: 0.430856 >= -0.5
+[2026-01-26T21:02:34.575Z] [INFO] globalroute__timing__hold__tns pass test: 0 >= -2
+[2026-01-26T21:02:34.575Z] [INFO] detailedroute__route__wirelength pass test: 684659 <= 749863
+[2026-01-26T21:02:34.575Z] [INFO] detailedroute__route__drc_errors pass test: 0 <= 0
+[2026-01-26T21:02:34.575Z] [INFO] detailedroute__antenna__violating__nets pass test: 0 <= 0
+[2026-01-26T21:02:34.575Z] [INFO] detailedroute__antenna_diodes_count pass test: 33 <= 100
+[2026-01-26T21:02:34.575Z] [INFO] finish__timing__setup__ws pass test: -0.170094 >= -0.631
+[2026-01-26T21:02:34.575Z] [INFO] finish__timing__setup__tns pass test: -0.170094 >= -2.13
+[2026-01-26T21:02:34.575Z] [INFO] finish__timing__hold__ws pass test: 0.418817 >= -0.5
+[2026-01-26T21:02:34.575Z] [INFO] finish__timing__hold__tns pass test: 0 >= -2
+[2026-01-26T21:02:34.575Z] [INFO] finish__design__instance__area pass test: 157137 <= 180708
+[2026-01-26T21:02:34.575Z] Metadata check warnings: 0
+[2026-01-26T21:02:34.575Z] All metadata rules passed (25 rules)

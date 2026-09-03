@@ -1,0 +1,114 @@
+[2025-10-11T15:11:54.849Z] Using ABC speed script.
+[2025-10-11T15:11:54.849Z] Setting clock period to 1.1
+[2025-10-11T15:11:54.849Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+[2025-10-11T15:11:54.849Z] 2. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+[2025-10-11T15:11:54.849Z] 3. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/gcd/gcd.v
+[2025-10-11T15:11:54.849Z] 4. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/cells_clkgate_hd.v
+[2025-10-11T15:11:54.849Z] 5. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:54.849Z] 6. Executing AST frontend in derive mode using pre-parsed AST for module `\gcd'.
+[2025-10-11T15:11:54.849Z] 6.1. Analyzing design hierarchy..
+[2025-10-11T15:11:54.849Z] 6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\GcdUnitDpathRTL_0x4d0fc71ead8d3d9e'.
+[2025-10-11T15:11:54.849Z] 6.3. Executing AST frontend in derive mode using pre-parsed AST for module `\GcdUnitCtrlRTL_0x4d0fc71ead8d3d9e'.
+[2025-10-11T15:11:54.849Z] 6.4. Analyzing design hierarchy..
+[2025-10-11T15:11:54.849Z] 6.5. Executing AST frontend in derive mode using pre-parsed AST for module `\RegRst_0x9f365fdf6c8998a'.
+[2025-10-11T15:11:54.849Z] 6.6. Executing AST frontend in derive mode using pre-parsed AST for module `\RegEn_0x68db79c4ec1d6e5b'.
+[2025-10-11T15:11:54.849Z] 6.7. Executing AST frontend in derive mode using pre-parsed AST for module `\Subtractor_0x422b1f52edd46a85'.
+[2025-10-11T15:11:54.849Z] 6.8. Executing AST frontend in derive mode using pre-parsed AST for module `\Mux_0xdd6473406d1a99a'.
+[2025-10-11T15:11:54.849Z] 6.9. Executing AST frontend in derive mode using pre-parsed AST for module `\Mux_0x683fa1a418b072c9'.
+[2025-10-11T15:11:54.849Z] 6.10. Executing AST frontend in derive mode using pre-parsed AST for module `\ZeroComparator_0x422b1f52edd46a85'.
+[2025-10-11T15:11:54.849Z] 6.11. Executing AST frontend in derive mode using pre-parsed AST for module `\LtComparator_0x422b1f52edd46a85'.
+[2025-10-11T15:11:54.849Z] 6.12. Analyzing design hierarchy..
+[2025-10-11T15:11:54.849Z] 6.13. Analyzing design hierarchy..
+[2025-10-11T15:11:54.849Z] 7. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-10-11T15:11:54.849Z] 8. Executing RTLIL backend.
+[2025-10-11T15:11:55.332Z] Warnings: 8 unique messages, 8 total
+[2025-10-11T15:11:55.332Z] End of script. Logfile hash: cbb4f9ed81, CPU: user 0.25s system 0.04s, MEM: 51.98 MB peak
+[2025-10-11T15:11:55.332Z] Yosys 0.58+35 (git sha1 89f32a415, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-10-11T15:11:55.332Z] Time spent: 77% 4x read_liberty (0 sec), 8% 4x read_verilog (0 sec), ...
+[2025-10-11T15:11:55.332Z] Elapsed time: 0:00.42[h:]min:sec. CPU time: user 0.37 sys 0.04 (99%). Peak memory: 56064KB.
+[2025-10-11T15:11:55.332Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/sky130hd/gcd/base/1_2_yosys.log
+[2025-10-11T15:11:55.949Z] Using ABC speed script.
+[2025-10-11T15:11:55.949Z] Setting clock period to 1.1
+[2025-10-11T15:11:55.949Z] 1. Executing RTLIL frontend.
+[2025-10-11T15:11:55.949Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:55.949Z] 2.1. Analyzing design hierarchy..
+[2025-10-11T15:11:55.949Z] 2.2. Analyzing design hierarchy..
+[2025-10-11T15:11:55.949Z] 3. Executing SYNTH pass.
+[2025-10-11T15:11:55.949Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:55.949Z] 3.1.1. Analyzing design hierarchy..
+[2025-10-11T15:11:55.949Z] 3.1.2. Analyzing design hierarchy..
+[2025-10-11T15:11:55.949Z] 3.2. Executing PROC pass (convert processes to netlists).
+[2025-10-11T15:11:55.949Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:55.949Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-10-11T15:11:55.949Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-10-11T15:11:55.949Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+[2025-10-11T15:11:55.949Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-10-11T15:11:55.949Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-10-11T15:11:55.949Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-10-11T15:11:55.949Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-10-11T15:11:55.949Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-10-11T15:11:55.949Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-10-11T15:11:55.949Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:55.949Z] 3.3. Executing FLATTEN pass (flatten design).
+[2025-10-11T15:11:55.949Z] 3.6. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:55.949Z] 3.8. Executing FSM pass (extract and optimize FSM).
+[2025-10-11T15:11:55.949Z] 3.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-10-11T15:11:55.949Z] 3.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-10-11T15:11:55.949Z] 3.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:55.949Z] 3.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:55.949Z] 3.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-10-11T15:11:55.949Z] 3.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-10-11T15:11:55.949Z] 3.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-10-11T15:11:55.949Z] 3.10. Executing WREDUCE pass (reducing word size of cells).
+[2025-10-11T15:11:55.949Z] 3.13. Executing ALUMACC pass (create $alu and $macc cells).
+[2025-10-11T15:11:55.949Z] 3.14. Executing SHARE pass (SAT-based resource sharing).
+[2025-10-11T15:11:55.949Z] 3.16. Executing MEMORY pass.
+[2025-10-11T15:11:55.949Z] 3.16.1. Executing OPT_MEM pass (optimize memories).
+[2025-10-11T15:11:55.949Z] 3.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-10-11T15:11:55.949Z] 3.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-10-11T15:11:55.949Z] 3.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-10-11T15:11:55.949Z] 3.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-10-11T15:11:55.949Z] 3.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-10-11T15:11:55.949Z] 3.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-10-11T15:11:55.949Z] 3.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-10-11T15:11:55.949Z] 4. Executing SYNTH pass.
+[2025-10-11T15:11:55.949Z] 4.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2025-10-11T15:11:55.949Z] 4.3.6. Executing OPT_SHARE pass.
+[2025-10-11T15:11:55.949Z] 4.4. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:55.949Z] 4.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2025-10-11T15:11:55.949Z] 4.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/common/lcu_kogge_stone.v
+[2025-10-11T15:11:55.949Z] 4.4.3. Continuing TECHMAP pass.
+[2025-10-11T15:11:55.949Z] 4.6. Executing ABC pass (technology mapping using ABC).
+[2025-10-11T15:11:55.949Z] 4.6.1. Extracting gate netlist of module `\gcd' to `<abc-temp-dir>/input.blif'..
+[2025-10-11T15:11:56.524Z] 4.8. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:56.524Z] 4.8.1. Analyzing design hierarchy..
+[2025-10-11T15:11:56.524Z] 4.8.2. Analyzing design hierarchy..
+[2025-10-11T15:11:56.524Z] 4.9. Printing statistics.
+[2025-10-11T15:11:56.524Z] 4.10. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:56.524Z] 5. Executing OPT pass (performing simple optimizations).
+[2025-10-11T15:11:56.524Z] 6. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:56.524Z] 6.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/cells_latch_hd.v
+[2025-10-11T15:11:56.524Z] 7. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2025-10-11T15:11:56.524Z] 7.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2025-10-11T15:11:56.524Z] 8. Executing OPT pass (performing simple optimizations).
+[2025-10-11T15:11:56.524Z] 9. Executing SETUNDEF pass (replace undef values with defined constants).
+[2025-10-11T15:11:56.524Z] abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -dont_use sky130_fd_sc_hd__probe_p_8 -dont_use sky130_fd_sc_hd__probec_p_8 -dont_use sky130_fd_sc_hd__lpflow_bleeder_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_12 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_3 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_6 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_inputiso0n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso0p_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1p_1 -dont_use sky130_fd_sc_hd__lpflow_inputisolatch_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_16 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_2 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_4 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_8 -dont_use sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 -constr ./objects/sky130hd/gcd/base/abc.constr -D 1.1
+[2025-10-11T15:11:56.524Z] 10. Executing ABC pass (technology mapping using ABC).
+[2025-10-11T15:11:57.675Z] 10.1.1. Executed ABC.
+[2025-10-11T15:11:57.675Z] 10.1.2. Re-integrating ABC results.
+[2025-10-11T15:11:57.675Z] 11. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2025-10-11T15:11:57.675Z] 12. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-10-11T15:11:57.675Z] 13. Executing HILOMAP pass (mapping to constant drivers).
+[2025-10-11T15:11:57.675Z] 14. Executing INSBUF pass (insert buffer cells for connected wires).
+[2025-10-11T15:11:57.675Z] 15. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:57.675Z] 16. Printing statistics.
+[2025-10-11T15:11:57.675Z] 17. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:57.675Z] 18. Executing Verilog backend.
+[2025-10-11T15:11:57.675Z] 18.1. Executing BMUXMAP pass.
+[2025-10-11T15:11:57.675Z] 18.2. Executing DEMUXMAP pass.
+[2025-10-11T15:11:57.675Z] exec cp /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/sky130hd/gcd/constraint.sdc ./results/sky130hd/gcd/base/1_synth.sdc
+[2025-10-11T15:11:57.675Z] End of script. Logfile hash: cd5f1787da, CPU: user 0.75s system 0.05s, MEM: 55.95 MB peak
+[2025-10-11T15:11:57.675Z] Yosys 0.58+35 (git sha1 89f32a415, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-10-11T15:11:57.675Z] Time spent: 56% 2x abc (0 sec), 9% 21x opt_clean (0 sec), ...
+[2025-10-11T15:11:57.675Z] Elapsed time: 0:01.95[h:]min:sec. CPU time: user 1.81 sys 0.13 (99%). Peak memory: 58840KB.
+[2025-10-11T15:11:58.276Z] mkdir -p ./results/sky130hd/gcd/base ./logs/sky130hd/gcd/base ./reports/sky130hd/gcd/base

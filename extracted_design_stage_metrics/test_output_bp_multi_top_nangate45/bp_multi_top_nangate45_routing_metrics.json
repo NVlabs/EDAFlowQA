@@ -1,0 +1,275 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 4370608.0,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/nangate45/bp_multi/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 4370608.0,
+            "total_resource": 6860331,
+            "total_demand": 1729426,
+            "total_usage_percent": 25.21,
+            "total_overflow": 0,
+            "per_layer_metrics": [
+              {
+                "layer": "metal1",
+                "resource": 0,
+                "demand": 0,
+                "usage_percent": 0.0,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal2",
+                "resource": 968864,
+                "demand": 384475,
+                "usage_percent": 39.68,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal3",
+                "resource": 1362638,
+                "demand": 554410,
+                "usage_percent": 40.69,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal4",
+                "resource": 943109,
+                "demand": 293129,
+                "usage_percent": 31.08,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal5",
+                "resource": 1261658,
+                "demand": 288237,
+                "usage_percent": 22.85,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal6",
+                "resource": 1264226,
+                "demand": 155699,
+                "usage_percent": 12.32,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal7",
+                "resource": 240818,
+                "demand": 20044,
+                "usage_percent": 8.32,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal8",
+                "resource": 274050,
+                "demand": 14529,
+                "usage_percent": 5.3,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal9",
+                "resource": 272484,
+                "demand": 12600,
+                "usage_percent": 4.62,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal10",
+                "resource": 272484,
+                "demand": 6303,
+                "usage_percent": 2.31,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              }
+            ]
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 51.8,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 2.8,
+            "hpwl_before": 3274099.8,
+            "hpwl_after": 3274117.1,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose",
+          "iterations_count": 7,
+          "start_metrics": {
+            "wns": -4.558,
+            "tns": -4.6,
+            "violation_end_points": 1
+          },
+          "end_metrics": {
+            "wns": -4.54,
+            "tns": -4.5,
+            "violation_end_points": 1
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 10.4,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 1.4,
+            "hpwl_before": 3274118.0,
+            "hpwl_after": 3274123.0,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:15:07.602Z] Report metrics stage 5, global route...",
+      "elapsed_time": "2:27.26",
+      "peak_memory_kb": 2832208,
+      "elapsed_s": 147,
+      "memory_mb": 2765,
+      "sha1sum": "0c6c613d56b365ff0c53",
+      "design_metrics_final": {
+        "globalroute__antenna_diodes_count": 0.0,
+        "globalroute__timing__setup__ws": -4.54005,
+        "globalroute__timing__setup__tns": -4.54005,
+        "globalroute__timing__hold__ws": 0.0360452,
+        "globalroute__timing__hold__tns": 0.0
+      }
+    },
+    "5_2_route": {
+      "wirelength_um": 3663381.0,
+      "total_vias": 852622,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/nangate45/bp_multi/base/5_route_drc.rpt -output_maze ./results/nangate45/bp_multi/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 23567,
+              "wirelength_um": 3673563.0,
+              "vias": 858479
+            },
+            {
+              "iteration": 1,
+              "violations": 4827,
+              "wirelength_um": 3664359.0,
+              "vias": 850777
+            },
+            {
+              "iteration": 2,
+              "violations": 2639,
+              "wirelength_um": 3663005.0,
+              "vias": 849346
+            },
+            {
+              "iteration": 3,
+              "violations": 123,
+              "wirelength_um": 3663281.0,
+              "vias": 852446
+            },
+            {
+              "iteration": 4,
+              "violations": 43,
+              "wirelength_um": 3663307.0,
+              "vias": 852528
+            },
+            {
+              "iteration": 5,
+              "violations": 43,
+              "wirelength_um": 3663307.0,
+              "vias": 852528
+            },
+            {
+              "iteration": 6,
+              "violations": 33,
+              "wirelength_um": 3663313.0,
+              "vias": 852549
+            },
+            {
+              "iteration": 7,
+              "violations": 23,
+              "wirelength_um": 3663331.0,
+              "vias": 852580
+            },
+            {
+              "iteration": 8,
+              "violations": 0,
+              "wirelength_um": 3663381.0,
+              "vias": 852622
+            }
+          ],
+          "final_wirelength_um": 3663381.0,
+          "final_vias": 852622,
+          "final_violations": 0
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:18:54.044Z] Report metrics stage 5, detailed route...",
+      "elapsed_time": "3:36.44",
+      "peak_memory_kb": 6935488,
+      "elapsed_s": 216,
+      "memory_mb": 6772,
+      "sha1sum": "488ae8a6beb2179552b5",
+      "design_metrics_final": {
+        "detailedroute__route__wirelength": 3663381.0,
+        "detailedroute__route__drc_errors": 0.0,
+        "detailedroute__antenna__violating__nets": 0.0,
+        "detailedroute__antenna_diodes_count": 0.0,
+        "detailedroute__timing__setup__ws": -3.70812,
+        "detailedroute__timing__setup__tns": -3.70812,
+        "detailedroute__timing__hold__ws": 0.0278645,
+        "detailedroute__timing__hold__tns": 0.0
+      }
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:03.44",
+      "peak_memory_kb": 765992,
+      "elapsed_s": 3,
+      "memory_mb": 748,
+      "sha1sum": "a385afd5edcd21f3f594"
+    }
+  },
+  "design_name": "bp_multi_top",
+  "sub_design_name": "bp_multi_top"
+}

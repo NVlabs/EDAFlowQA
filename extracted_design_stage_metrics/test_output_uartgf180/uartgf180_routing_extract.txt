@@ -1,0 +1,200 @@
+[2025-10-11T15:10:37.497Z] Running global_route.tcl, stage 5_1_grt
+[2025-10-11T15:10:39.034Z] Design:                   uart_rx
+[2025-10-11T15:10:39.034Z]   Layer Via2
+[2025-10-11T15:10:39.034Z]   Layer Via3
+[2025-10-11T15:10:39.034Z]   Layer Via4
+[2025-10-11T15:10:40.060Z] global_route -congestion_report_file ./reports/gf180/uart-blocks_uart_rx/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[2025-10-11T15:10:40.060Z]           Routing      Original      Derated      Resource
+[2025-10-11T15:10:40.060Z] Layer     Direction    Resources     Resources    Reduction (%)
+[2025-10-11T15:10:40.060Z] ---------------------------------------------------------------
+[2025-10-11T15:10:40.060Z] Metal1     Horizontal          0             0          0.00%
+[2025-10-11T15:10:40.060Z] Metal2     Vertical         9525          5584          41.38%
+[2025-10-11T15:10:40.060Z] Metal3     Horizontal       9525          6506          31.70%
+[2025-10-11T15:10:40.060Z] Metal4     Vertical         9525          5332          44.02%
+[2025-10-11T15:10:40.060Z] ---------------------------------------------------------------
+[2025-10-11T15:10:40.572Z] Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+[2025-10-11T15:10:40.572Z] ---------------------------------------------------------------------------------------
+[2025-10-11T15:10:40.572Z] Metal1               0             0            0.00%             0 /  0 /  0
+[2025-10-11T15:10:40.572Z] Metal2            5584           727           13.02%             0 /  0 /  0
+[2025-10-11T15:10:40.572Z] Metal3            6506           740           11.37%             0 /  0 /  0
+[2025-10-11T15:10:40.572Z] Metal4            5332             5            0.09%             0 /  0 /  0
+[2025-10-11T15:10:40.572Z] ---------------------------------------------------------------------------------------
+[2025-10-11T15:10:40.572Z] Total            17422          1472            8.45%             0 /  0 /  0
+[2025-10-11T15:10:40.572Z] [INFO GRT-0018] Total wirelength: 20025 um
+[2025-10-11T15:10:40.572Z] Perform buffer insertion and gate resizing...
+[2025-10-11T15:10:40.572Z] repair_design -verbose
+[2025-10-11T15:10:41.086Z] Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+[2025-10-11T15:10:41.086Z] ---------------------------------------------------------------------
+[2025-10-11T15:10:41.086Z]         0 |     +0.0% |       0 |       0 |             0 |       353
+[2025-10-11T15:10:41.086Z]        10 |     +0.0% |       0 |       0 |             0 |       343
+[2025-10-11T15:10:41.086Z]        20 |     +0.0% |       0 |       0 |             0 |       333
+[2025-10-11T15:10:41.086Z]        30 |     +0.0% |       0 |       0 |             0 |       323
+[2025-10-11T15:10:41.086Z]        40 |     +0.0% |       0 |       0 |             0 |       313
+[2025-10-11T15:10:41.086Z]        50 |     +0.0% |       0 |       0 |             0 |       303
+[2025-10-11T15:10:41.086Z]        60 |     +0.0% |       0 |       0 |             0 |       293
+[2025-10-11T15:10:41.086Z]        70 |     +0.0% |       0 |       0 |             0 |       283
+[2025-10-11T15:10:41.086Z]        80 |     +0.0% |       0 |       0 |             0 |       273
+[2025-10-11T15:10:41.086Z]        90 |     +0.0% |       0 |       0 |             0 |       263
+[2025-10-11T15:10:41.086Z]       100 |     +0.0% |       0 |       0 |             0 |       253
+[2025-10-11T15:10:41.086Z]       110 |     +0.0% |       0 |       0 |             0 |       243
+[2025-10-11T15:10:41.086Z]       120 |     +0.0% |       0 |       0 |             0 |       233
+[2025-10-11T15:10:41.086Z]       130 |     +0.0% |       0 |       0 |             0 |       223
+[2025-10-11T15:10:41.086Z]       140 |     +0.0% |       0 |       0 |             0 |       213
+[2025-10-11T15:10:41.086Z]       150 |     +0.0% |       0 |       0 |             0 |       203
+[2025-10-11T15:10:41.086Z]       160 |     +0.0% |       0 |       0 |             0 |       193
+[2025-10-11T15:10:41.086Z]       170 |     +0.0% |       0 |       0 |             0 |       183
+[2025-10-11T15:10:41.086Z]       180 |     +0.0% |       0 |       0 |             0 |       173
+[2025-10-11T15:10:41.086Z]       190 |     +0.0% |       0 |       0 |             0 |       163
+[2025-10-11T15:10:41.086Z]       200 |     +0.0% |       0 |       0 |             0 |       153
+[2025-10-11T15:10:41.086Z]       210 |     +0.0% |       0 |       0 |             0 |       143
+[2025-10-11T15:10:41.086Z]       220 |     +0.0% |       0 |       0 |             0 |       133
+[2025-10-11T15:10:41.086Z]       230 |     +0.0% |       0 |       0 |             0 |       123
+[2025-10-11T15:10:41.086Z]       240 |     +0.0% |       0 |       0 |             0 |       113
+[2025-10-11T15:10:41.086Z]       250 |     +0.0% |       0 |       0 |             0 |       103
+[2025-10-11T15:10:41.086Z]       260 |     +0.0% |       0 |       0 |             0 |        93
+[2025-10-11T15:10:41.086Z]       270 |     +0.0% |       0 |       0 |             0 |        83
+[2025-10-11T15:10:41.086Z]       280 |     +0.0% |       0 |       0 |             0 |        73
+[2025-10-11T15:10:41.086Z]       290 |     +0.0% |       0 |       0 |             0 |        63
+[2025-10-11T15:10:41.086Z]       300 |     +0.0% |       0 |       0 |             0 |        53
+[2025-10-11T15:10:41.086Z]       310 |     +0.0% |       0 |       0 |             0 |        43
+[2025-10-11T15:10:41.086Z]       320 |     +0.0% |       0 |       0 |             0 |        33
+[2025-10-11T15:10:41.086Z]       330 |     +0.0% |       0 |       0 |             0 |        23
+[2025-10-11T15:10:41.086Z]       340 |     +0.0% |       0 |       0 |             0 |        13
+[2025-10-11T15:10:41.086Z]       350 |     +0.0% |       0 |       0 |             0 |         3
+[2025-10-11T15:10:41.086Z]     final |     +0.0% |       0 |       0 |             0 |         0
+[2025-10-11T15:10:41.086Z] ---------------------------------------------------------------------
+[2025-10-11T15:10:41.086Z] global_route -start_incremental
+[2025-10-11T15:10:41.086Z] detailed_placement
+[2025-10-11T15:10:41.086Z] Placement Analysis
+[2025-10-11T15:10:41.086Z] ---------------------------------
+[2025-10-11T15:10:41.086Z] total displacement          0.0 u
+[2025-10-11T15:10:41.086Z] average displacement        0.0 u
+[2025-10-11T15:10:41.086Z] max displacement            0.0 u
+[2025-10-11T15:10:41.086Z] original HPWL           10426.7 u
+[2025-10-11T15:10:41.086Z] legalized HPWL          10426.7 u
+[2025-10-11T15:10:41.086Z] delta HPWL                    0 %
+[2025-10-11T15:10:41.086Z] global_route -end_incremental -congestion_report_file ./reports/gf180/uart-blocks_uart_rx/base/congestion_post_repair_design.rpt
+[2025-10-11T15:10:41.086Z] Repair setup and hold violations...
+[2025-10-11T15:10:41.086Z] repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100
+[2025-10-11T15:10:41.086Z] global_route -start_incremental
+[2025-10-11T15:10:41.086Z] detailed_placement
+[2025-10-11T15:10:41.086Z] Placement Analysis
+[2025-10-11T15:10:41.086Z] ---------------------------------
+[2025-10-11T15:10:41.086Z] total displacement          0.0 u
+[2025-10-11T15:10:41.086Z] average displacement        0.0 u
+[2025-10-11T15:10:41.086Z] max displacement            0.0 u
+[2025-10-11T15:10:41.086Z] original HPWL           10426.7 u
+[2025-10-11T15:10:41.086Z] legalized HPWL          10426.7 u
+[2025-10-11T15:10:41.086Z] delta HPWL                    0 %
+[2025-10-11T15:10:41.086Z] global_route -end_incremental -congestion_report_file ./reports/gf180/uart-blocks_uart_rx/base/congestion_post_repair_timing.rpt
+[2025-10-11T15:10:41.086Z] global_route -start_incremental
+[2025-10-11T15:10:41.086Z] global_route -end_incremental -congestion_report_file ./reports/gf180/uart-blocks_uart_rx/base/congestion_post_recover_power.rpt
+[2025-10-11T15:10:41.086Z] Repair antennas...
+[2025-10-11T15:10:41.598Z] [INFO GRT-0012] Found 0 antenna violations.
+[2025-10-11T15:10:41.598Z] [INFO ANT-0002] Found 0 net violations.
+[2025-10-11T15:10:41.598Z] [INFO ANT-0001] Found 0 pin violations.
+[2025-10-11T15:10:41.598Z] Estimate parasitics...
+[2025-10-11T15:10:41.598Z] Report metrics stage 5, global route...
+[2025-10-11T15:10:42.112Z] ==========================================================================
+[2025-10-11T15:10:42.112Z] global route report_design_area
+[2025-10-11T15:10:42.112Z] --------------------------------------------------------------------------
+[2025-10-11T15:10:42.112Z] Design area 14713 u^2 35% utilization.
+[2025-10-11T15:10:42.112Z] Elapsed time: 0:04.69[h:]min:sec. CPU time: user 33.12 sys 2.34 (756%). Peak memory: 206788KB.
+[2025-10-11T15:10:42.112Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:10:42.112Z] 5_1_grt                            4            201 6672b71cfa0d48817946
+[2025-10-11T15:10:42.624Z] Running detail_route.tcl, stage 5_2_route
+[2025-10-11T15:10:44.215Z] detailed_route -output_drc ./reports/gf180/uart-blocks_uart_rx/base/5_route_drc.rpt -output_maze ./results/gf180/uart-blocks_uart_rx/base/maze.log -disable_via_gen -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5
+[2025-10-11T15:10:44.215Z] Design:                   uart_rx
+[2025-10-11T15:10:44.215Z]   Layer Via2
+[2025-10-11T15:10:44.215Z]   Layer Via3
+[2025-10-11T15:10:44.215Z]   Layer Via4
+[2025-10-11T15:10:45.752Z] [INFO DRT-0195] Start 0th optimization iteration.
+[2025-10-11T15:10:51.899Z] [INFO DRT-0199]   Number of violations = 47.
+[2025-10-11T15:10:51.899Z] Viol/Layer      Metal2 Metal3
+[2025-10-11T15:10:51.899Z] Metal Spacing        9      0
+[2025-10-11T15:10:51.899Z] Recheck              6     13
+[2025-10-11T15:10:51.899Z] Short               17      2
+[2025-10-11T15:10:51.899Z] Total wire length = 12394 um.
+[2025-10-11T15:10:51.899Z] Total number of vias = 2132.
+[2025-10-11T15:10:51.899Z] Up-via summary (total 2132):
+[2025-10-11T15:10:51.899Z] ---------------
+[2025-10-11T15:10:51.899Z]   Poly2       0
+[2025-10-11T15:10:51.899Z]  Metal1    1134
+[2025-10-11T15:10:51.899Z]  Metal2     996
+[2025-10-11T15:10:51.899Z]  Metal3       2
+[2025-10-11T15:10:51.899Z]  Metal4       0
+[2025-10-11T15:10:51.899Z] ---------------
+[2025-10-11T15:10:51.899Z]        2132
+[2025-10-11T15:10:51.899Z] [INFO DRT-0195] Start 1st optimization iteration.
+[2025-10-11T15:10:55.323Z] [INFO DRT-0199]   Number of violations = 7.
+[2025-10-11T15:10:55.323Z] Viol/Layer      Metal2
+[2025-10-11T15:10:55.323Z] Short                7
+[2025-10-11T15:10:55.323Z] Total wire length = 12316 um.
+[2025-10-11T15:10:55.323Z] Total number of vias = 2108.
+[2025-10-11T15:10:55.323Z] Up-via summary (total 2108):
+[2025-10-11T15:10:55.323Z] ---------------
+[2025-10-11T15:10:55.323Z]   Poly2       0
+[2025-10-11T15:10:55.323Z]  Metal1    1135
+[2025-10-11T15:10:55.323Z]  Metal2     969
+[2025-10-11T15:10:55.323Z]  Metal3       4
+[2025-10-11T15:10:55.323Z]  Metal4       0
+[2025-10-11T15:10:55.323Z] ---------------
+[2025-10-11T15:10:55.323Z]        2108
+[2025-10-11T15:10:55.323Z] [INFO DRT-0195] Start 2nd optimization iteration.
+[2025-10-11T15:10:59.046Z] [INFO DRT-0199]   Number of violations = 4.
+[2025-10-11T15:10:59.046Z] Viol/Layer      Metal2
+[2025-10-11T15:10:59.046Z] Metal Spacing        1
+[2025-10-11T15:10:59.046Z] Short                3
+[2025-10-11T15:10:59.046Z] Total wire length = 12291 um.
+[2025-10-11T15:10:59.046Z] Total number of vias = 2102.
+[2025-10-11T15:10:59.046Z] Up-via summary (total 2102):
+[2025-10-11T15:10:59.046Z] ---------------
+[2025-10-11T15:10:59.046Z]   Poly2       0
+[2025-10-11T15:10:59.046Z]  Metal1    1132
+[2025-10-11T15:10:59.046Z]  Metal2     967
+[2025-10-11T15:10:59.046Z]  Metal3       3
+[2025-10-11T15:10:59.046Z]  Metal4       0
+[2025-10-11T15:10:59.046Z] ---------------
+[2025-10-11T15:10:59.046Z]        2102
+[2025-10-11T15:11:05.607Z] [INFO DRT-0199]   Number of violations = 0.
+[2025-10-11T15:11:05.607Z] Total wire length = 12293 um.
+[2025-10-11T15:11:05.607Z] Total number of vias = 2105.
+[2025-10-11T15:11:05.607Z] Up-via summary (total 2105):
+[2025-10-11T15:11:05.607Z] ---------------
+[2025-10-11T15:11:05.607Z]   Poly2       0
+[2025-10-11T15:11:05.607Z]  Metal1    1132
+[2025-10-11T15:11:05.607Z]  Metal2     968
+[2025-10-11T15:11:05.607Z]  Metal3       5
+[2025-10-11T15:11:05.607Z]  Metal4       0
+[2025-10-11T15:11:05.607Z] ---------------
+[2025-10-11T15:11:05.607Z]        2105
+[2025-10-11T15:11:05.607Z] Total wire length = 12293 um.
+[2025-10-11T15:11:05.607Z] Total number of vias = 2105.
+[2025-10-11T15:11:05.607Z] Up-via summary (total 2105):
+[2025-10-11T15:11:05.607Z] ---------------
+[2025-10-11T15:11:05.607Z]   Poly2       0
+[2025-10-11T15:11:05.607Z]  Metal1    1132
+[2025-10-11T15:11:05.607Z]  Metal2     968
+[2025-10-11T15:11:05.607Z]  Metal3       5
+[2025-10-11T15:11:05.607Z]  Metal4       0
+[2025-10-11T15:11:05.607Z] ---------------
+[2025-10-11T15:11:05.607Z]        2105
+[2025-10-11T15:11:05.607Z] Took 22 seconds: detailed_route -output_drc ./reports/gf180/uart-blocks_uart_rx/base/5_route_drc.rpt -output_maze ./results/gf180/uart-blocks_uart_rx/base/maze.log -disable_via_gen -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5
+[2025-10-11T15:11:05.607Z] [INFO GRT-0012] Found 0 antenna violations.
+[2025-10-11T15:11:05.607Z] [INFO ANT-0002] Found 0 net violations.
+[2025-10-11T15:11:05.607Z] [INFO ANT-0001] Found 0 pin violations.
+[2025-10-11T15:11:05.607Z] [INFO ANT-0002] Found 0 net violations.
+[2025-10-11T15:11:05.607Z] [INFO ANT-0001] Found 0 pin violations.
+[2025-10-11T15:11:05.607Z] Report metrics stage 5, detailed route...
+[2025-10-11T15:11:06.682Z] ==========================================================================
+[2025-10-11T15:11:06.682Z] detailed route report_design_area
+[2025-10-11T15:11:06.682Z] --------------------------------------------------------------------------
+[2025-10-11T15:11:06.682Z] Design area 14713 u^2 35% utilization.
+[2025-10-11T15:11:06.682Z] Elapsed time: 0:23.91[h:]min:sec. CPU time: user 166.38 sys 2.39 (705%). Peak memory: 1231748KB.
+[2025-10-11T15:11:06.682Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:06.682Z] 5_2_route                         23           1202 7624b3a1cc3511b2d1b4
+[2025-10-11T15:11:07.194Z] Running fillcell.tcl, stage 5_3_fillcell
+[2025-10-11T15:11:08.782Z] filler_placement "gf180mcu_fd_sc_mcu9t5v0__fill_64 gf180mcu_fd_sc_mcu9t5v0__fill_32 gf180mcu_fd_sc_mcu9t5v0__fill_16 gf180mcu_fd_sc_mcu9t5v0__fill_8 gf180mcu_fd_sc_mcu9t5v0__fill_4 gf180mcu_fd_sc_mcu9t5v0__fill_2 gf180mcu_fd_sc_mcu9t5v0__fill_1"
+[2025-10-11T15:11:08.782Z] Elapsed time: 0:01.21[h:]min:sec. CPU time: user 1.14 sys 0.06 (99%). Peak memory: 124008KB.
+[2025-10-11T15:11:08.782Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:08.782Z] 5_3_fillcell                       1            121 110c2adfacd48bbaf581

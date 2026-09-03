@@ -1,0 +1,42 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        }
+      ],
+      "elapsed_time": "0:06.96",
+      "peak_memory_kb": 177352,
+      "elapsed_s": 6,
+      "memory_mb": 173,
+      "sha1sum": "826dfa9dd956b09793f7"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_time": "0:00.55",
+      "peak_memory_kb": 141516,
+      "elapsed_s": 0,
+      "memory_mb": 138,
+      "sha1sum": "826dfa9dd956b09793f7"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_time": "0:00.55",
+      "peak_memory_kb": 135524,
+      "elapsed_s": 0,
+      "memory_mb": 132,
+      "sha1sum": "cc3aacbb8e4c3c583587"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2026-01-26T20:50:54.340Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:00.86",
+      "peak_memory_kb": 157616,
+      "elapsed_s": 0,
+      "memory_mb": 153,
+      "sha1sum": "665d6f969f0032fc410b"
+    }
+  },
+  "design_name": "ibex",
+  "sub_design_name": "ibex_core"
+}

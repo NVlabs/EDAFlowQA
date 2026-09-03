@@ -1,0 +1,60 @@
+[2026-01-27T23:55:33.624Z] Running cts.tcl, stage 4_1_cts
+[2026-01-27T23:55:33.624Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 20 -sink_clustering_max_diameter 50
+[2026-01-27T23:55:34.492Z]                     sky130_fd_sc_hd__clkbuf_16
+[2026-01-27T23:55:34.492Z] [INFO CTS-0010]  Clock net "clk" has 562 sinks.
+[2026-01-27T23:55:34.492Z] [INFO CTS-0028]  Total number of sinks: 562.
+[2026-01-27T23:55:34.492Z] [INFO CTS-0018]     Created 122 clock buffers.
+[2026-01-27T23:55:34.492Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[2026-01-27T23:55:34.492Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[2026-01-27T23:55:34.492Z] [INFO CTS-0098] Clock net "clk"
+[2026-01-27T23:55:34.492Z] [INFO CTS-0099]  Sinks 658
+[2026-01-27T23:55:34.492Z] [INFO CTS-0100]  Leaf buffers 101
+[2026-01-27T23:55:34.492Z] [INFO CTS-0101]  Average sink wire length 1022.48 um
+[2026-01-27T23:55:34.492Z] [INFO CTS-0102]  Path depth 3 - 4
+[2026-01-27T23:55:35.327Z] estimate_parasitics -placement
+[2026-01-27T23:55:35.327Z] Placement Analysis
+[2026-01-27T23:55:35.327Z] ---------------------------------
+[2026-01-27T23:55:35.327Z] total displacement       1302.6 u
+[2026-01-27T23:55:35.327Z] average displacement        0.1 u
+[2026-01-27T23:55:35.327Z] max displacement            8.2 u
+[2026-01-27T23:55:35.327Z] original HPWL          542009.4 u
+[2026-01-27T23:55:35.327Z] legalized HPWL         551488.5 u
+[2026-01-27T23:55:35.327Z] delta HPWL                    2 %
+[2026-01-27T23:55:35.327Z] 
+[2026-01-27T23:55:35.327Z] estimate_parasitics -placement
+[2026-01-27T23:55:36.214Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -verbose
+[2026-01-27T23:55:36.214Z] [INFO RSZ-0094] Found 5 endpoints with setup violations.
+[2026-01-27T23:55:36.214Z]    Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+[2026-01-27T23:55:36.214Z]           | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+[2026-01-27T23:55:36.214Z] --------------------------------------------------------------------------------------------------------------
+[2026-01-27T23:55:36.214Z]         0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -0.247 |       -0.5 |      5 | sa21_sr[4]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]         2 |       0 |       1 |        0 |      0 |     0 |    +0.0% |   -0.124 |       -0.3 |      3 | sa21_sr[0]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]         5 |       0 |       2 |        4 |      0 |     0 |    +0.0% |   -0.047 |       -0.1 |      1 | u0.u2.d[5]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]         7 |       0 |       3 |        4 |      0 |     0 |    +0.0% |   -0.041 |       -0.1 |      0 | sa32_sr[7]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]         9 |       0 |       4 |        4 |      0 |     0 |    +0.1% |   -0.038 |       -0.0 |      0 | sa31_sr[0]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]        10 |       0 |       4 |        4 |      0 |     0 |    +0.1% |   -0.038 |       -0.0 |      0 | sa31_sr[0]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]        11 |       0 |       5 |        4 |      0 |     0 |    +0.1% |    0.065 |        0.0 |      0 | sa21_sr[0]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z]     final |       0 |       5 |        4 |      0 |     0 |    +0.1% |    0.065 |        0.0 |      0 | sa21_sr[0]$_DFF_P_/D
+[2026-01-27T23:55:36.214Z] --------------------------------------------------------------------------------------------------------------
+[2026-01-27T23:55:36.214Z] [INFO RSZ-0040] Inserted 4 buffers.
+[2026-01-27T23:55:36.214Z] [INFO RSZ-0051] Resized 5 instances: 5 up, 0 up match, 0 down, 0 VT
+[2026-01-27T23:55:37.161Z] Placement Analysis
+[2026-01-27T23:55:37.161Z] ---------------------------------
+[2026-01-27T23:55:37.161Z] total displacement          9.3 u
+[2026-01-27T23:55:37.161Z] average displacement        0.0 u
+[2026-01-27T23:55:37.161Z] max displacement            2.4 u
+[2026-01-27T23:55:37.161Z] original HPWL          551700.6 u
+[2026-01-27T23:55:37.161Z] legalized HPWL         551706.3 u
+[2026-01-27T23:55:37.161Z] delta HPWL                    0 %
+[2026-01-27T23:55:37.161Z] 
+[2026-01-27T23:55:37.161Z] Report metrics stage 4, cts final...
+[2026-01-27T23:55:39.150Z] 
+[2026-01-27T23:55:39.150Z] ==========================================================================
+[2026-01-27T23:55:39.150Z] cts final report_design_area
+[2026-01-27T23:55:39.150Z] --------------------------------------------------------------------------
+[2026-01-27T23:55:39.150Z] Design area 111036 um^2 29% utilization.
+[2026-01-27T23:55:40.071Z] write_db ./results/sky130hd/aes/base/4_1_cts.odb
+[2026-01-27T23:55:40.071Z] write_sdc -no_timestamp ./results/sky130hd/aes/base/4_cts.sdc
+[2026-01-27T23:55:40.071Z] Elapsed time: 0:06.30[h:]min:sec. CPU time: user 11.45 sys 7.03 (293%). Peak memory: 225180KB.
+[2026-01-27T23:55:40.071Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-27T23:55:40.071Z] 4_1_cts                            6            219 2a8730847537eb858000

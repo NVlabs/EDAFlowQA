@@ -1,0 +1,2042 @@
+{
+  "design_name": "uart-blocks",
+  "sub_design_names": [
+    "uart_rx",
+    "uart"
+  ],
+  "design_info": {
+    "runs": [
+      {
+        "line": 39,
+        "timestamp": "2025-10-11T15:09:56.296Z",
+        "design_name": "uart-blocks",
+        "technology_node": "gf180",
+        "config_mk": "config.mk"
+      }
+    ]
+  },
+  "log_file": "./design_artifacts/uartgf180/uartgf180.txt",
+  "timestamp": "2026-02-28T17:57:53.789343",
+  "flow_execution_summary": {
+    "design_name": "uart-blocks",
+    "technology_node": "gf180",
+    "log_file": "./design_artifacts/uartgf180/uartgf180.txt",
+    "timestamp": "2026-02-28T17:57:53.789343",
+    "execute_successfully": true,
+    "exit_code": 0,
+    "exit_line": "[2025-10-11T15:12:55.193Z] + exit 0",
+    "errors_detected": [
+      {
+        "line": 3,
+        "content": "[2025-10-11T15:03:06.267Z] Error: No such object: openroad/flow-ubuntu22.04-dev:2f17ad"
+      }
+    ],
+    "total_stages": 12,
+    "stages": [
+      {
+        "sequence_number": 1,
+        "stage_type": "synthesis",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 87,
+          "end": 350
+        },
+        "extracted_lines": 111,
+        "output_file": "uartgf180_synthesis_extract.txt",
+        "metrics_file": "uartgf180_synthesis_metrics.json"
+      },
+      {
+        "sequence_number": 2,
+        "stage_type": "floorplan",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 350,
+          "end": 421
+        },
+        "extracted_lines": 42,
+        "output_file": "uartgf180_floorplan_extract.txt",
+        "metrics_file": "uartgf180_floorplan_metrics.json"
+      },
+      {
+        "sequence_number": 3,
+        "stage_type": "placement",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 421,
+          "end": 851
+        },
+        "extracted_lines": 321,
+        "output_file": "uartgf180_placement_extract.txt",
+        "metrics_file": "uartgf180_placement_metrics.json"
+      },
+      {
+        "sequence_number": 4,
+        "stage_type": "cts",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 851,
+          "end": 932
+        },
+        "extracted_lines": 43,
+        "output_file": "uartgf180_cts_extract.txt",
+        "metrics_file": "uartgf180_cts_metrics.json"
+      },
+      {
+        "sequence_number": 5,
+        "stage_type": "routing",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 932,
+          "end": 1510
+        },
+        "extracted_lines": 200,
+        "output_file": "uartgf180_routing_extract.txt",
+        "metrics_file": "uartgf180_routing_metrics.json"
+      },
+      {
+        "sequence_number": 6,
+        "stage_type": "final",
+        "occurrence": 1,
+        "sub_design_name": "uart_rx",
+        "line_range": {
+          "start": 1510,
+          "end": 1848
+        },
+        "extracted_lines": 65,
+        "output_file": "uartgf180_final_extract.txt",
+        "metrics_file": "uartgf180_final_metrics.json"
+      },
+      {
+        "sequence_number": 7,
+        "stage_type": "synthesis",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 1848,
+          "end": 2198
+        },
+        "extracted_lines": 161,
+        "output_file": "uartgf180_synthesis_2_extract.txt",
+        "metrics_file": "uartgf180_synthesis_2_metrics.json"
+      },
+      {
+        "sequence_number": 8,
+        "stage_type": "floorplan",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 2198,
+          "end": 2290
+        },
+        "extracted_lines": 55,
+        "output_file": "uartgf180_floorplan_2_extract.txt",
+        "metrics_file": "uartgf180_floorplan_2_metrics.json"
+      },
+      {
+        "sequence_number": 9,
+        "stage_type": "placement",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 2290,
+          "end": 2719
+        },
+        "extracted_lines": 316,
+        "output_file": "uartgf180_placement_2_extract.txt",
+        "metrics_file": "uartgf180_placement_2_metrics.json"
+      },
+      {
+        "sequence_number": 10,
+        "stage_type": "cts",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 2719,
+          "end": 2832
+        },
+        "extracted_lines": 48,
+        "output_file": "uartgf180_cts_2_extract.txt",
+        "metrics_file": "uartgf180_cts_2_metrics.json"
+      },
+      {
+        "sequence_number": 11,
+        "stage_type": "routing",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 2832,
+          "end": 3416
+        },
+        "extracted_lines": 202,
+        "output_file": "uartgf180_routing_2_extract.txt",
+        "metrics_file": "uartgf180_routing_2_metrics.json"
+      },
+      {
+        "sequence_number": 12,
+        "stage_type": "final",
+        "occurrence": 2,
+        "sub_design_name": "uart",
+        "line_range": {
+          "start": 3416,
+          "end": 3858
+        },
+        "extracted_lines": 146,
+        "output_file": "uartgf180_final_2_extract.txt",
+        "metrics_file": "uartgf180_final_2_metrics.json"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "sequence_number": 1,
+      "stage": "synthesis",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_synthesis_metrics.json",
+      "metrics": {
+        "stage": "synthesis",
+        "total_runs": 1,
+        "runs": [
+          {
+            "run_number": 1,
+            "script_name": "synth",
+            "design_name": "uart_rx",
+            "steps": [
+              {
+                "number": "1",
+                "description": "Executing RTLIL frontend.",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "2",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "2.1",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "2.2",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.1",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.2",
+                "description": "Executing PROC pass (convert processes to netlists).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.3",
+                "description": "Executing FLATTEN pass (flatten design).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.6",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.8",
+                "description": "Executing FSM pass (extract and optimize FSM).",
+                "timestamp": "2025-10-11T15:09:59.421Z"
+              },
+              {
+                "number": "3.10",
+                "description": "Executing WREDUCE pass (reducing word size of cells).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "3.13",
+                "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "3.14",
+                "description": "Executing SHARE pass (SAT-based resource sharing).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "3.16",
+                "description": "Executing MEMORY pass.",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.2",
+                "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.4",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.6",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.8",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.9",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "4.10",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "5",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:09:59.934Z"
+              },
+              {
+                "number": "6",
+                "description": "Executing EXTRACT_FA pass (find and extract full/half adders).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "7",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "7.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_adders.v",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "8",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "8.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "9",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "10",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "10.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_latch.v",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "11",
+                "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "11.1",
+                "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "12",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "13",
+                "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "14",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:10:00.448Z"
+              },
+              {
+                "number": "15",
+                "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "16",
+                "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "17",
+                "description": "Executing HILOMAP pass (mapping to constant drivers).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "18",
+                "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "19",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "20",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "21",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "22",
+                "description": "Executing Verilog backend.",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "22.1",
+                "description": "Executing BMUXMAP pass.",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              },
+              {
+                "number": "22.2",
+                "description": "Executing DEMUXMAP pass.",
+                "timestamp": "2025-10-11T15:10:02.147Z"
+              }
+            ],
+            "timing": {
+              "clock_period_ns": 6.0,
+              "clock_period_set_count": 1
+            },
+            "statistics": {
+              "cells": {},
+              "chip_area": {}
+            },
+            "check": {}
+          }
+        ],
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 2,
+      "stage": "floorplan",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_floorplan_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "area": 13164.0,
+            "utilization": 31,
+            "density": 31,
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {}
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp",
+                "iterations_count": 0,
+                "start_metrics": {},
+                "end_metrics": {}
+              }
+            ],
+            "elapsed_time": "0:01.84",
+            "peak_memory_kb": 142588,
+            "elapsed_s": 1,
+            "memory_mb": 139,
+            "sha1sum": "ebe3e13b99634360d347"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_time": "0:01.18",
+            "peak_memory_kb": 119864,
+            "elapsed_s": 1,
+            "memory_mb": 117,
+            "sha1sum": "ebe3e13b99634360d347"
+          },
+          "2_3_floorplan_tapcell": {
+            "optimization_process": [
+              {
+                "type": "tapcell_insertion",
+                "results": {
+                  "endcaps_inserted": 80,
+                  "tapcells_inserted": 42
+                }
+              }
+            ],
+            "elapsed_time": "0:01.19",
+            "peak_memory_kb": 119800,
+            "elapsed_s": 1,
+            "memory_mb": 116,
+            "sha1sum": "ec477fbedeb410d3e201"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2025-10-11T15:10:05.274Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:01.19",
+            "peak_memory_kb": 121572,
+            "elapsed_s": 1,
+            "memory_mb": 118,
+            "sha1sum": "4fa5375a6f9d196fe85c"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 3,
+      "stage": "placement",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_placement_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 7683.336,
+            "area": 42110.208,
+            "utilization": 31.437,
+            "density": 31.437,
+            "overflow": 0.0982,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.6 -pad_left 0 -pad_right 0",
+                "iterations_count": 383,
+                "start_metrics": {
+                  "overflow": 0.9706,
+                  "hpwl": 1432.8
+                },
+                "end_metrics": {
+                  "overflow": 0.0982,
+                  "hpwl": 7683.336
+                },
+                "results": {
+                  "movable_instances": 294,
+                  "fixed_instances": 42,
+                  "num_nets": 319,
+                  "num_pins": 1056,
+                  "core_area_um2": 42110.208,
+                  "fixed_instances_area_um2": 237.082,
+                  "movable_instances_area_um2": 13163.674,
+                  "standard_cells_area_um2": 13163.674,
+                  "utilization": 31.437,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0982,
+                  "final_hpwl_um": 7683.336
+                }
+              }
+            ],
+            "elapsed_s": 1,
+            "memory_mb": 118,
+            "sha1sum": "e9b3fb0f303170a5c0aa"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers Metal3 -ver_layers Metal4",
+                "results": {
+                  "io_nets_hpwl_um": 3425.9
+                }
+              }
+            ],
+            "elapsed_s": 1,
+            "memory_mb": 117,
+            "sha1sum": "133ed88c6ae2f723b50d"
+          },
+          "3_3_place_gp": {
+            "hpwl": 8974.254,
+            "area": 14358.0,
+            "utilization": 34,
+            "density": 34,
+            "overflow": 0.0994,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 5
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 19,
+                  "buffer_type": "gf180mcu_fd_sc_mcu9t5v0__dlyb_2",
+                  "output_buffers": 12
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.6 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+                "iterations_count": 408,
+                "start_metrics": {
+                  "overflow": 0.9115,
+                  "hpwl": 2939.452
+                },
+                "end_metrics": {
+                  "overflow": 0.0994,
+                  "hpwl": 8974.254
+                },
+                "results": {
+                  "movable_instances": 320,
+                  "fixed_instances": 42,
+                  "num_nets": 345,
+                  "num_pins": 1140,
+                  "core_area_um2": 42110.208,
+                  "fixed_instances_area_um2": 237.082,
+                  "movable_instances_area_um2": 14357.549,
+                  "standard_cells_area_um2": 14357.549,
+                  "utilization": 34.288,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0994,
+                  "final_hpwl_um": 8974.254
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:10:23.355Z] Report metrics stage 3, global place...",
+            "elapsed_s": 7,
+            "memory_mb": 184,
+            "sha1sum": "9e016bd83ddb7980706f"
+          },
+          "3_4_place_resized": {
+            "area": 14358.0,
+            "utilization": 34,
+            "density": 34,
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:10:25.971Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 2,
+            "memory_mb": 136,
+            "sha1sum": "9e016bd83ddb7980706f"
+          },
+          "3_5_place_dp": {
+            "hpwl": 9452.8,
+            "area": 14358.0,
+            "utilization": 34,
+            "density": 34,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 1444.4,
+                  "average_displacement_u": 3.3,
+                  "max_displacement_u": 15.7,
+                  "original_hpwl_u": 8987.7,
+                  "legalized_hpwl_u": 10444.9,
+                  "delta_hpwl_percent": 16.0,
+                  "final_hpwl_u": 9452.8,
+                  "final_delta_hpwl_percent": -9.5
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:10:28.586Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 2,
+            "memory_mb": 122,
+            "sha1sum": "63d488e12b6812f8422d"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 4,
+      "stage": "cts",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_cts_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "clock_sink_wirelength_um": 223.87,
+            "hpwl": 10426.7,
+            "area": 14713.0,
+            "utilization": 35,
+            "density": 35,
+            "displacement": 0.0,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+                "results": {
+                  "total_sinks": 44,
+                  "clock_buffers_created": 5,
+                  "min_buffer_depth": 2,
+                  "max_buffer_depth": 2,
+                  "avg_sink_wirelength_um": 223.87,
+                  "placement_total_displacement_u": 120.2,
+                  "placement_avg_displacement_u": 0.3,
+                  "placement_max_displacement_u": 11.2,
+                  "hpwl_before": 9873.9,
+                  "hpwl_after": 10426.7,
+                  "clock_nets": [
+                    {
+                      "name": "clk",
+                      "sinks": 47,
+                      "leaf_buffers": 0,
+                      "avg_sink_wire_length_um": 223.87,
+                      "path_depth_min": 2,
+                      "path_depth_max": 2,
+                      "leaf_load_cells": 3
+                    }
+                  ]
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:10:35.958Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "0:05.54",
+            "peak_memory_kb": 158996,
+            "elapsed_s": 5,
+            "memory_mb": 155,
+            "sha1sum": "4cfcc8d190e52f4f6393"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 5,
+      "stage": "routing",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_routing_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 20025.0,
+            "area": 14713.0,
+            "utilization": 35,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/gf180/uart-blocks_uart_rx/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 20025.0,
+                  "total_resource": 17422,
+                  "total_demand": 1472,
+                  "total_usage_percent": 8.45,
+                  "total_overflow": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 10426.7,
+                  "hpwl_after": 10426.7,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 10426.7,
+                  "hpwl_after": 10426.7,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:10:41.598Z] Report metrics stage 5, global route...",
+            "elapsed_time": "0:04.69",
+            "peak_memory_kb": 206788,
+            "elapsed_s": 4,
+            "memory_mb": 201,
+            "sha1sum": "6672b71cfa0d48817946"
+          },
+          "5_2_route": {
+            "wirelength_um": 12293.0,
+            "total_vias": 2105,
+            "violations": 0,
+            "area": 14713.0,
+            "utilization": 35,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/gf180/uart-blocks_uart_rx/base/5_route_drc.rpt -output_maze ./results/gf180/uart-blocks_uart_rx/base/maze.log -disable_via_gen -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 47,
+                    "wirelength_um": 12394.0,
+                    "vias": 2132
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 7,
+                    "wirelength_um": 12316.0,
+                    "vias": 2108
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 0,
+                    "wirelength_um": 12293.0,
+                    "vias": 2105
+                  }
+                ],
+                "final_wirelength_um": 12293.0,
+                "final_vias": 2105,
+                "final_violations": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:11:05.607Z] Report metrics stage 5, detailed route...",
+            "elapsed_time": "0:23.91",
+            "peak_memory_kb": 1231748,
+            "elapsed_s": 23,
+            "memory_mb": 1202,
+            "sha1sum": "7624b3a1cc3511b2d1b4"
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:01.21",
+            "peak_memory_kb": 124008,
+            "elapsed_s": 1,
+            "memory_mb": 121,
+            "sha1sum": "110c2adfacd48bbaf581"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 6,
+      "stage": "final",
+      "occurrence": 1,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart_rx",
+      "metrics_file": "test_output_uartgf180/uartgf180_final_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 5.5,
+            "worstcase_voltage_v": 5.5,
+            "average_voltage_v": 5.5,
+            "average_ir_drop_v": 0.00107,
+            "worstcase_ir_drop_v": 0.00166,
+            "percentage_drop": 0.03
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.00151,
+            "average_voltage_v": 0.00108,
+            "average_ir_drop_v": 0.00108,
+            "worstcase_ir_drop_v": 0.00151,
+            "percentage_drop": 0.03
+          }
+        },
+        "cell_counts": {
+          "fill_cell_count": 753,
+          "fill_cell_area": 26708.37,
+          "tap_cell_count": 42,
+          "tap_cell_area": 237.08,
+          "clock_buffer_count": 6,
+          "clock_buffer_area": 304.82,
+          "timing_repair_buffer_count": 31,
+          "timing_repair_buffer_area": 1312.42,
+          "inverter_count": 15,
+          "inverter_area": 254.02,
+          "clock_inverter_count": 2,
+          "clock_inverter_area": 50.8,
+          "sequential_cell_count": 44,
+          "sequential_cell_area": 3725.57,
+          "combinational_cell_count": 230,
+          "combinational_cell_area": 9065.55,
+          "total_cell_count": 1203,
+          "total_cell_area": 42110.21
+        },
+        "design_metrics": {
+          "area": 14713.0
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 1,
+            "memory_mb": 118,
+            "sha1sum": "110c2adfacd48bbaf581"
+          },
+          "6_report": {
+            "elapsed_s": 4,
+            "memory_mb": 182
+          }
+        },
+        "performance": {},
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart_rx"
+      }
+    },
+    {
+      "sequence_number": 7,
+      "stage": "synthesis",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_synthesis_2_metrics.json",
+      "metrics": {
+        "stage": "synthesis",
+        "total_runs": 1,
+        "runs": [
+          {
+            "run_number": 1,
+            "script_name": "synth",
+            "design_name": "uart",
+            "steps": [
+              {
+                "number": "1",
+                "description": "Executing RTLIL frontend.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "2",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "2.1",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "2.2",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.1",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.2",
+                "description": "Executing PROC pass (convert processes to netlists).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.5",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.7",
+                "description": "Executing FSM pass (extract and optimize FSM).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.9",
+                "description": "Executing WREDUCE pass (reducing word size of cells).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.12",
+                "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.13",
+                "description": "Executing SHARE pass (SAT-based resource sharing).",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "3.15",
+                "description": "Executing MEMORY pass.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "4",
+                "description": "Executing CELLMATCH pass. (match cells)",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "number": "5",
+                "description": "Executing KEEP_HIERARCHY pass.",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.1",
+                "description": "Executing PROC pass (convert processes to netlists).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.2",
+                "description": "Executing FLATTEN pass (flatten design).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.5",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.7",
+                "description": "Executing FSM pass (extract and optimize FSM).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.9",
+                "description": "Executing WREDUCE pass (reducing word size of cells).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.12",
+                "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.13",
+                "description": "Executing SHARE pass (SAT-based resource sharing).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "6.15",
+                "description": "Executing MEMORY pass.",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "7",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "7.2",
+                "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "7.4",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "7.6",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:11:25.869Z"
+              },
+              {
+                "number": "7.8",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "7.9",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "7.10",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "8",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "9",
+                "description": "Executing EXTRACT_FA pass (find and extract full/half adders).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "10",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "10.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_adders.v",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "11",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "11.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "12",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "13",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "13.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_latch.v",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "14",
+                "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "14.1",
+                "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "15",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "16",
+                "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "17",
+                "description": "Executing ABC pass (technology mapping using ABC).",
+                "timestamp": "2025-10-11T15:11:26.382Z"
+              },
+              {
+                "number": "18",
+                "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+                "timestamp": "2025-10-11T15:11:27.427Z"
+              },
+              {
+                "number": "19",
+                "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+                "timestamp": "2025-10-11T15:11:27.427Z"
+              },
+              {
+                "number": "20",
+                "description": "Executing HILOMAP pass (mapping to constant drivers).",
+                "timestamp": "2025-10-11T15:11:27.427Z"
+              },
+              {
+                "number": "21",
+                "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+                "timestamp": "2025-10-11T15:11:27.427Z"
+              },
+              {
+                "number": "22",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:27.427Z"
+              },
+              {
+                "number": "23",
+                "description": "Printing statistics.",
+                "timestamp": "2025-10-11T15:11:27.974Z"
+              },
+              {
+                "number": "24",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2025-10-11T15:11:27.974Z"
+              },
+              {
+                "number": "25",
+                "description": "Executing Verilog backend.",
+                "timestamp": "2025-10-11T15:11:27.974Z"
+              },
+              {
+                "number": "25.1",
+                "description": "Executing BMUXMAP pass.",
+                "timestamp": "2025-10-11T15:11:27.974Z"
+              },
+              {
+                "number": "25.2",
+                "description": "Executing DEMUXMAP pass.",
+                "timestamp": "2025-10-11T15:11:27.974Z"
+              }
+            ],
+            "timing": {
+              "clock_period_ns": 6.0,
+              "clock_period_set_count": 1
+            },
+            "warnings": [
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_1.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_2.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_4.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_1.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_2.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_4.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              },
+              {
+                "message": "Ignoring blackbox module uart_rx.",
+                "timestamp": "2025-10-11T15:11:25.355Z"
+              }
+            ],
+            "statistics": {
+              "cells": {},
+              "chip_area": {}
+            },
+            "check": {}
+          }
+        ],
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    },
+    {
+      "sequence_number": 8,
+      "stage": "floorplan",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_floorplan_2_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "area": 56796.0,
+            "utilization": 34,
+            "density": 34,
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {}
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp",
+                "iterations_count": 0,
+                "start_metrics": {},
+                "end_metrics": {}
+              }
+            ],
+            "elapsed_time": "0:01.75",
+            "peak_memory_kb": 143288,
+            "elapsed_s": 1,
+            "memory_mb": 139,
+            "sha1sum": "c3f176cf079309b632c3"
+          },
+          "2_2_floorplan_macro": {
+            "utilization": 34.0,
+            "density": 34.0,
+            "optimization_process": [
+              {
+                "type": "macro_placement",
+                "command": "rtl_macro_placer -max_num_level 2 -halo_width 20 -halo_height 20 -min_ar 0.33 -signature_net_threshold 50 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/gf180/uart-blocks/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.6",
+                "results": {
+                  "num_std_cells": 255,
+                  "area_std_cells": 11224.68,
+                  "num_macros": 1,
+                  "area_macros": 56796.26,
+                  "design_utilization": 34.0,
+                  "floorplan_utilization": 9.0
+                }
+              }
+            ],
+            "elapsed_time": "0:03.98",
+            "peak_memory_kb": 121760,
+            "elapsed_s": 3,
+            "memory_mb": 118,
+            "sha1sum": "8eb86b4a29f00c6aede6"
+          },
+          "2_3_floorplan_tapcell": {
+            "optimization_process": [
+              {
+                "type": "tapcell_insertion",
+                "results": {
+                  "endcaps_inserted": 162,
+                  "tapcells_inserted": 94
+                }
+              }
+            ],
+            "elapsed_time": "0:01.17",
+            "peak_memory_kb": 120276,
+            "elapsed_s": 1,
+            "memory_mb": 117,
+            "sha1sum": "e6173e589292a97d843c"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2025-10-11T15:11:30.535Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:01.23",
+            "peak_memory_kb": 127248,
+            "elapsed_s": 1,
+            "memory_mb": 124,
+            "sha1sum": "9088c669c25d1e0e618e"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    },
+    {
+      "sequence_number": 9,
+      "stage": "placement",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_placement_2_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 7884.682,
+            "area": 167345.741,
+            "utilization": 11.043,
+            "density": 11.043,
+            "overflow": 0.0988,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.6 -pad_left 0 -pad_right 0",
+                "iterations_count": 393,
+                "start_metrics": {
+                  "overflow": 0.9472,
+                  "hpwl": 3874.693
+                },
+                "end_metrics": {
+                  "overflow": 0.0988,
+                  "hpwl": 7884.682
+                },
+                "results": {
+                  "movable_instances": 255,
+                  "fixed_instances": 95,
+                  "num_nets": 298,
+                  "num_pins": 940,
+                  "core_area_um2": 167345.741,
+                  "fixed_instances_area_um2": 65702.65,
+                  "movable_instances_area_um2": 11224.685,
+                  "standard_cells_area_um2": 11224.685,
+                  "utilization": 11.043,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0988,
+                  "final_hpwl_um": 7884.682
+                }
+              }
+            ],
+            "elapsed_s": 1,
+            "memory_mb": 119,
+            "sha1sum": "b4ecb9c3e807d9d55c19"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers Metal3 -ver_layers Metal4",
+                "results": {
+                  "io_nets_hpwl_um": 7538.6
+                }
+              }
+            ],
+            "elapsed_s": 1,
+            "memory_mb": 119,
+            "sha1sum": "3974c4b22a6396e07000"
+          },
+          "3_3_place_gp": {
+            "hpwl": 13199.67,
+            "area": 58470.0,
+            "utilization": 35,
+            "density": 35,
+            "overflow": 0.0978,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 5
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 28,
+                  "buffer_type": "gf180mcu_fd_sc_mcu9t5v0__dlyb_2",
+                  "output_buffers": 15
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.6 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+                "iterations_count": 364,
+                "start_metrics": {
+                  "overflow": 0.7765,
+                  "hpwl": 9696.346
+                },
+                "end_metrics": {
+                  "overflow": 0.0978,
+                  "hpwl": 13199.67
+                },
+                "results": {
+                  "movable_instances": 293,
+                  "fixed_instances": 95,
+                  "num_nets": 336,
+                  "num_pins": 1060,
+                  "core_area_um2": 167345.741,
+                  "fixed_instances_area_um2": 65702.65,
+                  "movable_instances_area_um2": 12858.854,
+                  "standard_cells_area_um2": 12858.854,
+                  "utilization": 12.651,
+                  "target_density": 60.0,
+                  "final_overflow": 0.0978,
+                  "final_hpwl_um": 13199.67
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:11:47.631Z] Report metrics stage 3, global place...",
+            "elapsed_s": 3,
+            "memory_mb": 195,
+            "sha1sum": "5dbf97e1dcdb701df82d"
+          },
+          "3_4_place_resized": {
+            "area": 58470.0,
+            "utilization": 35,
+            "density": 35,
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:11:50.242Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 2,
+            "memory_mb": 137,
+            "sha1sum": "5dbf97e1dcdb701df82d"
+          },
+          "3_5_place_dp": {
+            "hpwl": 13442.8,
+            "area": 58470.0,
+            "utilization": 35,
+            "density": 35,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 1194.8,
+                  "average_displacement_u": 1.8,
+                  "max_displacement_u": 13.9,
+                  "original_hpwl_u": 13208.4,
+                  "legalized_hpwl_u": 14269.3,
+                  "delta_hpwl_percent": 8.0,
+                  "final_hpwl_u": 13442.8,
+                  "final_delta_hpwl_percent": -5.8
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:11:52.850Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 2,
+            "memory_mb": 127,
+            "sha1sum": "01cce14027e2e780f61f"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    },
+    {
+      "sequence_number": 10,
+      "stage": "cts",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_cts_2_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "clock_sink_wirelength_um": 114.94,
+            "hpwl": 14784.5,
+            "area": 59373.0,
+            "utilization": 35,
+            "density": 35,
+            "displacement": 0.0,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+                "results": {
+                  "total_sinks": 35,
+                  "clock_buffers_created": 5,
+                  "min_buffer_depth": 2,
+                  "max_buffer_depth": 2,
+                  "avg_sink_wirelength_um": 114.94,
+                  "placement_total_displacement_u": 215.4,
+                  "placement_avg_displacement_u": 0.3,
+                  "placement_max_displacement_u": 32.0,
+                  "hpwl_before": 14159.3,
+                  "hpwl_after": 14784.5,
+                  "clock_nets": [
+                    {
+                      "name": "clk_regs",
+                      "sinks": 38,
+                      "leaf_buffers": 0,
+                      "avg_sink_wire_length_um": 114.94,
+                      "path_depth_min": 2,
+                      "path_depth_max": 2,
+                      "leaf_load_cells": 3
+                    }
+                  ]
+                }
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:04.235Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "0:09.23",
+            "peak_memory_kb": 165920,
+            "elapsed_s": 9,
+            "memory_mb": 162,
+            "sha1sum": "f735fe784642ab1c5210"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    },
+    {
+      "sequence_number": 11,
+      "stage": "routing",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_routing_2_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 24192.0,
+            "area": 59373.0,
+            "utilization": 35,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/gf180/uart-blocks/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 24192.0,
+                  "total_resource": 67205,
+                  "total_demand": 2017,
+                  "total_usage_percent": 3.0,
+                  "total_overflow": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 14784.5,
+                  "hpwl_after": 14784.5,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 14784.5,
+                  "hpwl_after": 14784.5,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:09.322Z] Report metrics stage 5, global route...",
+            "elapsed_time": "0:04.54",
+            "peak_memory_kb": 213592,
+            "elapsed_s": 4,
+            "memory_mb": 208,
+            "sha1sum": "5246c98d979ac51e8489"
+          },
+          "5_2_route": {
+            "wirelength_um": 16765.0,
+            "total_vias": 2007,
+            "violations": 0,
+            "area": 59373.0,
+            "utilization": 35,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/gf180/uart-blocks/base/5_route_drc.rpt -output_maze ./results/gf180/uart-blocks/base/maze.log -disable_via_gen -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 69,
+                    "wirelength_um": 16912.0,
+                    "vias": 2020
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 9,
+                    "wirelength_um": 16762.0,
+                    "vias": 1998
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 0,
+                    "wirelength_um": 16765.0,
+                    "vias": 2007
+                  }
+                ],
+                "final_wirelength_um": 16765.0,
+                "final_vias": 2007,
+                "final_violations": 0
+              }
+            ],
+            "report_metrics": "[2025-10-11T15:12:34.048Z] Report metrics stage 5, detailed route...",
+            "elapsed_time": "0:24.39",
+            "peak_memory_kb": 1291052,
+            "elapsed_s": 24,
+            "memory_mb": 1260,
+            "sha1sum": "0e4af9a667184885f9ab"
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:01.22",
+            "peak_memory_kb": 127632,
+            "elapsed_s": 1,
+            "memory_mb": 124,
+            "sha1sum": "c7139152c4b2e761b44f"
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    },
+    {
+      "sequence_number": 12,
+      "stage": "final",
+      "occurrence": 2,
+      "design_name": "uart-blocks",
+      "sub_design_name": "uart",
+      "metrics_file": "test_output_uartgf180/uartgf180_final_2_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 5.5,
+            "worstcase_voltage_v": 5.5,
+            "average_voltage_v": 5.5,
+            "average_ir_drop_v": 0.000406,
+            "worstcase_ir_drop_v": 0.0012,
+            "percentage_drop": 0.02
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.00109,
+            "average_voltage_v": 0.000388,
+            "average_ir_drop_v": 0.000388,
+            "worstcase_ir_drop_v": 0.00109,
+            "percentage_drop": 0.02
+          }
+        },
+        "cell_counts": {
+          "macro_count": 1,
+          "macro_area": 45571.58,
+          "fill_cell_count": 1249,
+          "fill_cell_area": 91801.38,
+          "tap_cell_count": 94,
+          "tap_cell_area": 530.61,
+          "clock_buffer_count": 11,
+          "clock_buffer_area": 874.94,
+          "timing_repair_buffer_count": 44,
+          "timing_repair_buffer_area": 1859.96,
+          "inverter_count": 23,
+          "inverter_area": 389.49,
+          "clock_inverter_count": 1,
+          "clock_inverter_area": 28.22,
+          "sequential_cell_count": 35,
+          "sequential_cell_area": 2963.52,
+          "combinational_cell_count": 192,
+          "combinational_cell_area": 7685.4,
+          "total_cell_count": 1910,
+          "total_cell_area": 153172.75
+        },
+        "design_metrics": {
+          "area": 61371.4,
+          "setup_wns": 1.69968,
+          "setup_tns": 0.0,
+          "hold_wns": 0.461581,
+          "hold_tns": 0.0,
+          "wns_percent_delay": 84.806905
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 1,
+            "memory_mb": 119,
+            "sha1sum": "c7139152c4b2e761b44f"
+          },
+          "6_report": {
+            "elapsed_s": 4,
+            "memory_mb": 186
+          },
+          "1_1_yosys_canonicalize": {
+            "elapsed_s": 0,
+            "memory_mb": 69,
+            "sha1sum": "d4460c9538e523081672"
+          },
+          "1_2_yosys": {
+            "elapsed_s": 2,
+            "memory_mb": 73,
+            "sha1sum": "1c6081dd776893ff5608"
+          },
+          "2_1_floorplan": {
+            "elapsed_s": 1,
+            "memory_mb": 139,
+            "sha1sum": "c3f176cf079309b632c3"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_s": 3,
+            "memory_mb": 118,
+            "sha1sum": "8eb86b4a29f00c6aede6"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_s": 1,
+            "memory_mb": 117,
+            "sha1sum": "e6173e589292a97d843c"
+          },
+          "2_4_floorplan_pdn": {
+            "elapsed_s": 1,
+            "memory_mb": 124,
+            "sha1sum": "9088c669c25d1e0e618e"
+          },
+          "3_1_place_gp_skip_io": {
+            "elapsed_s": 1,
+            "memory_mb": 119,
+            "sha1sum": "b4ecb9c3e807d9d55c19"
+          },
+          "3_2_place_iop": {
+            "elapsed_s": 1,
+            "memory_mb": 119,
+            "sha1sum": "3974c4b22a6396e07000"
+          },
+          "3_3_place_gp": {
+            "elapsed_s": 3,
+            "memory_mb": 195,
+            "sha1sum": "5dbf97e1dcdb701df82d"
+          },
+          "3_4_place_resized": {
+            "elapsed_s": 2,
+            "memory_mb": 137,
+            "sha1sum": "5dbf97e1dcdb701df82d"
+          },
+          "3_5_place_dp": {
+            "elapsed_s": 2,
+            "memory_mb": 127,
+            "sha1sum": "01cce14027e2e780f61f"
+          },
+          "4_1_cts": {
+            "elapsed_s": 9,
+            "memory_mb": 162,
+            "sha1sum": "f735fe784642ab1c5210"
+          },
+          "5_1_grt": {
+            "elapsed_s": 4,
+            "memory_mb": 208,
+            "sha1sum": "5246c98d979ac51e8489"
+          },
+          "5_2_route": {
+            "elapsed_s": 24,
+            "memory_mb": 1260,
+            "sha1sum": "0e4af9a667184885f9ab"
+          },
+          "5_3_fillcell": {
+            "elapsed_s": 1,
+            "memory_mb": 124,
+            "sha1sum": "c7139152c4b2e761b44f"
+          },
+          "6_1_merge": {
+            "elapsed_s": 2,
+            "memory_mb": 426
+          },
+          "generate_abstract": {
+            "elapsed_s": 1,
+            "memory_mb": 121
+          }
+        },
+        "performance": {},
+        "test_metrics": {
+          "synth__design__instance__area__stdcell": {
+            "actual_value": 53334.7828,
+            "operator": "<=",
+            "threshold_value": 61300.0,
+            "passed": true
+          },
+          "constraints__clocks__count": {
+            "actual_value": 1.0,
+            "operator": "==",
+            "threshold_value": 1.0,
+            "passed": true
+          },
+          "placeopt__design__instance__area": {
+            "actual_value": 60468.2,
+            "operator": "<=",
+            "threshold_value": 69126.0,
+            "passed": true
+          },
+          "placeopt__design__instance__count__stdcell": {
+            "actual_value": 648.0,
+            "operator": "<=",
+            "threshold_value": 726.0,
+            "passed": true
+          },
+          "detailedplace__design__violations": {
+            "actual_value": 0.0,
+            "operator": "==",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__design__instance__count__setup_buffer": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 63.0,
+            "passed": true
+          },
+          "cts__design__instance__count__hold_buffer": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 63.0,
+            "passed": true
+          },
+          "cts__timing__setup__ws": {
+            "actual_value": 1.70814,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__timing__setup__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__timing__hold__ws": {
+            "actual_value": 0.46241,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__ws": {
+            "actual_value": 1.6979,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__ws": {
+            "actual_value": 0.47746,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__route__wirelength": {
+            "actual_value": 16765.0,
+            "operator": "<=",
+            "threshold_value": 17413.0,
+            "passed": true
+          },
+          "detailedroute__route__drc_errors": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna__violating__nets": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 5.0,
+            "passed": true
+          },
+          "detailedroute__timing__setup__ws": {
+            "actual_value": 1.77189,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__timing__setup__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__timing__hold__ws": {
+            "actual_value": 0.446945,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__setup__ws": {
+            "actual_value": 1.69968,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__setup__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__hold__ws": {
+            "actual_value": 0.461581,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "finish__design__instance__area": {
+            "actual_value": 61371.4,
+            "operator": "<=",
+            "threshold_value": 70132.0,
+            "passed": true
+          },
+          "finish__timing__wns_percent_delay": {
+            "actual_value": 84.806905,
+            "operator": ">=",
+            "threshold_value": -10.0,
+            "passed": true
+          }
+        },
+        "design_name": "uart-blocks",
+        "sub_design_name": "uart"
+      }
+    }
+  ]
+}

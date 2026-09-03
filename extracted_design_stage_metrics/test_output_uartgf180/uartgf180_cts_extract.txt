@@ -1,0 +1,43 @@
+[2025-10-11T15:10:30.688Z] Running cts.tcl, stage 4_1_cts
+[2025-10-11T15:10:32.276Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2025-10-11T15:10:32.276Z]                     gf180mcu_fd_sc_mcu9t5v0__clkbuf_4
+[2025-10-11T15:10:32.276Z]                     gf180mcu_fd_sc_mcu9t5v0__clkbuf_8
+[2025-10-11T15:10:35.445Z] [INFO CTS-0010]  Clock net "clk" has 44 sinks.
+[2025-10-11T15:10:35.445Z] [INFO CTS-0028]  Total number of sinks: 44.
+[2025-10-11T15:10:35.445Z] [INFO CTS-0018]     Created 5 clock buffers.
+[2025-10-11T15:10:35.445Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2025-10-11T15:10:35.445Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[2025-10-11T15:10:35.445Z] [INFO CTS-0098] Clock net "clk"
+[2025-10-11T15:10:35.445Z] [INFO CTS-0099]  Sinks 47
+[2025-10-11T15:10:35.445Z] [INFO CTS-0100]  Leaf buffers 0
+[2025-10-11T15:10:35.445Z] [INFO CTS-0101]  Average sink wire length 223.87 um
+[2025-10-11T15:10:35.445Z] [INFO CTS-0102]  Path depth 2 - 2
+[2025-10-11T15:10:35.445Z] [INFO CTS-0207]  Leaf load cells 3
+[2025-10-11T15:10:35.445Z] Placement Analysis
+[2025-10-11T15:10:35.445Z] ---------------------------------
+[2025-10-11T15:10:35.445Z] total displacement        120.2 u
+[2025-10-11T15:10:35.445Z] average displacement        0.3 u
+[2025-10-11T15:10:35.445Z] max displacement           11.2 u
+[2025-10-11T15:10:35.445Z] original HPWL            9873.9 u
+[2025-10-11T15:10:35.445Z] legalized HPWL          10426.7 u
+[2025-10-11T15:10:35.445Z] delta HPWL                    6 %
+[2025-10-11T15:10:35.445Z] 
+[2025-10-11T15:10:35.445Z] repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100
+[2025-10-11T15:10:35.958Z] Placement Analysis
+[2025-10-11T15:10:35.958Z] ---------------------------------
+[2025-10-11T15:10:35.958Z] total displacement          0.0 u
+[2025-10-11T15:10:35.958Z] average displacement        0.0 u
+[2025-10-11T15:10:35.958Z] max displacement            0.0 u
+[2025-10-11T15:10:35.958Z] original HPWL           10426.7 u
+[2025-10-11T15:10:35.958Z] legalized HPWL          10426.7 u
+[2025-10-11T15:10:35.958Z] delta HPWL                    0 %
+[2025-10-11T15:10:35.958Z] 
+[2025-10-11T15:10:35.958Z] Report metrics stage 4, cts final...
+[2025-10-11T15:10:36.471Z] 
+[2025-10-11T15:10:36.471Z] ==========================================================================
+[2025-10-11T15:10:36.471Z] cts final report_design_area
+[2025-10-11T15:10:36.471Z] --------------------------------------------------------------------------
+[2025-10-11T15:10:36.471Z] Design area 14713 u^2 35% utilization.
+[2025-10-11T15:10:36.471Z] Elapsed time: 0:05.54[h:]min:sec. CPU time: user 6.14 sys 1.56 (139%). Peak memory: 158996KB.
+[2025-10-11T15:10:36.471Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:10:36.471Z] 4_1_cts                            5            155 4cfcc8d190e52f4f6393

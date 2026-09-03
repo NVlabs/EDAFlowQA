@@ -1,0 +1,94 @@
+Log file: ./design_artifacts/riscv32i-mock-sram_asap7/riscv32i-mock-sram_asap7.txt
+Total log lines: 6361
+Uncovered line count: 89
+Gap ranges (0-based, end exclusive): [(0, 89)]
+--------------------------------------------------------------------------------
+L1: [2025-11-06T15:57:11.790Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:ee5a20
+L2: [2025-11-06T15:57:11.790Z] 
+L3: [2025-11-06T15:57:11.790Z] Error: No such object: openroad/flow-ubuntu22.04-dev:ee5a20
+L4: [2025-11-06T15:57:12.121Z] + docker pull openroad/flow-ubuntu22.04-dev:ee5a20
+L5: [2025-11-06T15:57:12.381Z] ee5a20: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2025-11-06T15:57:12.381Z] 3713021b0277: Already exists
+L7: [2025-11-06T15:57:12.381Z] 3a5e9772043a: Pulling fs layer
+L8: [2025-11-06T15:57:12.381Z] 12c78e5e31f0: Pulling fs layer
+L9: [2025-11-06T15:57:12.381Z] 982751a7123c: Pulling fs layer
+L10: [2025-11-06T15:57:12.381Z] a2710005c2a8: Pulling fs layer
+L11: [2025-11-06T15:57:12.381Z] 8af70b1ef179: Pulling fs layer
+L12: [2025-11-06T15:57:12.381Z] c321f41ed27b: Pulling fs layer
+L13: [2025-11-06T15:57:12.381Z] a2710005c2a8: Waiting
+L14: [2025-11-06T15:57:12.381Z] 8af70b1ef179: Waiting
+L15: [2025-11-06T15:57:12.381Z] c321f41ed27b: Waiting
+L16: [2025-11-06T15:57:12.640Z] 3a5e9772043a: Verifying Checksum
+L17: [2025-11-06T15:57:12.640Z] 3a5e9772043a: Download complete
+L18: [2025-11-06T15:57:12.640Z] 982751a7123c: Verifying Checksum
+L19: [2025-11-06T15:57:12.640Z] 982751a7123c: Download complete
+L20: [2025-11-06T15:57:12.640Z] 3a5e9772043a: Pull complete
+L21: [2025-11-06T15:57:12.640Z] 12c78e5e31f0: Verifying Checksum
+L22: [2025-11-06T15:57:12.640Z] 12c78e5e31f0: Pull complete
+L23: [2025-11-06T15:57:12.900Z] 982751a7123c: Pull complete
+L24: [2025-11-06T15:57:12.900Z] a2710005c2a8: Verifying Checksum
+L25: [2025-11-06T15:57:12.900Z] a2710005c2a8: Download complete
+L26: [2025-11-06T15:57:12.900Z] a2710005c2a8: Pull complete
+L27: [2025-11-06T15:57:12.900Z] c321f41ed27b: Verifying Checksum
+L28: [2025-11-06T15:57:12.900Z] c321f41ed27b: Download complete
+L29: [2025-11-06T15:57:44.992Z] 8af70b1ef179: Verifying Checksum
+L30: [2025-11-06T15:57:44.992Z] 8af70b1ef179: Download complete
+L31: [2025-11-06T15:57:54.980Z] 8af70b1ef179: Pull complete
+L32: [2025-11-06T15:57:54.980Z] c321f41ed27b: Pull complete
+L33: [2025-11-06T15:57:54.980Z] Digest: sha256:c3110891fe8ac13fbc977d243e6146163ccaa2d91ef359c34230f9e7ed94d179
+L34: [2025-11-06T15:57:54.980Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:ee5a20
+L35: [2025-11-06T15:57:54.980Z] docker.io/openroad/flow-ubuntu22.04-dev:ee5a20
+L36: [2025-11-06T15:58:05.599Z] + git config --system --add safe.directory *
+L37: [2025-11-06T15:58:26.592Z] + nice flow/test/test_helper.sh riscv32i-mock-sram asap7
+L38: [2025-11-06T15:58:26.592Z] +++ readlink -f flow/test/test_helper.sh
+L39: [2025-11-06T15:58:26.592Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L40: [2025-11-06T15:58:26.592Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L41: [2025-11-06T15:58:26.592Z] + DESIGN_NAME=riscv32i-mock-sram
+L42: [2025-11-06T15:58:26.592Z] + PLATFORM=asap7
+L43: [2025-11-06T15:58:26.592Z] + CONFIG_MK=config.mk
+L44: [2025-11-06T15:58:26.592Z] + '[' 2 -ge 4 ']'
+L45: [2025-11-06T15:58:26.592Z] + TARGET='finish metadata'
+L46: [2025-11-06T15:58:26.592Z] + DESIGN_CONFIG=./designs/asap7/riscv32i-mock-sram/config.mk
+L47: [2025-11-06T15:58:26.592Z] + LOG_FILE=./logs/asap7/riscv32i-mock-sram.log
+L48: [2025-11-06T15:58:26.592Z] + mkdir -p ./logs/asap7
+L49: [2025-11-06T15:58:26.592Z] + __make='make DESIGN_CONFIG=./designs/asap7/riscv32i-mock-sram/config.mk'
+L50: [2025-11-06T15:58:26.592Z] + '[' -n '' ']'
+L51: [2025-11-06T15:58:26.592Z] ++ dirname ./logs/asap7/riscv32i-mock-sram.log
+L52: [2025-11-06T15:58:26.592Z] + mkdir -p ./logs/asap7
+L53: [2025-11-06T15:58:26.592Z] + make DESIGN_CONFIG=./designs/asap7/riscv32i-mock-sram/config.mk clean_all clean_metadata
+L54: [2025-11-06T15:58:26.592Z] + tee ./logs/asap7/riscv32i-mock-sram.log
+L55: [2025-11-06T15:58:26.851Z] rm -f ./results/asap7/riscv32i-mock-sram/base/1_* ./results/asap7/riscv32i-mock-sram/base/mem*.json
+L56: [2025-11-06T15:58:26.851Z] rm -f ./reports/asap7/riscv32i-mock-sram/base/synth_*
+L57: [2025-11-06T15:58:26.851Z] rm -f ./logs/asap7/riscv32i-mock-sram/base/1_*
+L58: [2025-11-06T15:58:26.851Z] rm -f 
+L59: [2025-11-06T15:58:26.851Z] rm -f ./results/asap7/riscv32i-mock-sram/base/clock_period.txt
+L60: [2025-11-06T15:58:26.851Z] rm -f ./results/asap7/riscv32i-mock-sram/base/2_*floorplan*.odb ./results/asap7/riscv32i-mock-sram/base/2_floorplan.sdc ./results/asap7/riscv32i-mock-sram/base/2_*.v ./results/asap7/riscv32i-mock-sram/base/2_*.def
+L61: [2025-11-06T15:58:26.851Z] rm -f ./reports/asap7/riscv32i-mock-sram/base/2_*
+L62: [2025-11-06T15:58:26.852Z] rm -f ./logs/asap7/riscv32i-mock-sram/base/2_*
+L63: [2025-11-06T15:58:26.852Z] rm -f ./results/asap7/riscv32i-mock-sram/base/3_*place*.odb
+L64: [2025-11-06T15:58:26.852Z] rm -f ./results/asap7/riscv32i-mock-sram/base/3_place.sdc
+L65: [2025-11-06T15:58:26.852Z] rm -f ./results/asap7/riscv32i-mock-sram/base/3_*.def ./results/asap7/riscv32i-mock-sram/base/3_*.v
+L66: [2025-11-06T15:58:26.852Z] rm -f ./reports/asap7/riscv32i-mock-sram/base/3_*
+L67: [2025-11-06T15:58:26.852Z] rm -f ./logs/asap7/riscv32i-mock-sram/base/3_*
+L68: [2025-11-06T15:58:26.852Z] rm -rf ./results/asap7/riscv32i-mock-sram/base/4_*cts*.odb ./results/asap7/riscv32i-mock-sram/base/4_cts.sdc ./results/asap7/riscv32i-mock-sram/base/4_*.v ./results/asap7/riscv32i-mock-sram/base/4_*.def
+L69: [2025-11-06T15:58:26.852Z] rm -f  ./reports/asap7/riscv32i-mock-sram/base/4_*
+L70: [2025-11-06T15:58:26.852Z] rm -rf ./logs/asap7/riscv32i-mock-sram/base/4_*
+L71: [2025-11-06T15:58:26.852Z] rm -rf ./results/asap7/riscv32i-mock-sram/base/route.guide ./results/asap7/riscv32i-mock-sram/base/output_guide.mod ./results/asap7/riscv32i-mock-sram/base/updated_clks.sdc
+L72: [2025-11-06T15:58:26.852Z] rm -rf ./results/asap7/riscv32i-mock-sram/base/5_*.odb ./results/asap7/riscv32i-mock-sram/base/5_route.sdc ./results/asap7/riscv32i-mock-sram/base/5_*.def ./results/asap7/riscv32i-mock-sram/base/5_*.v
+L73: [2025-11-06T15:58:26.852Z] rm -f  ./reports/asap7/riscv32i-mock-sram/base/5_*
+L74: [2025-11-06T15:58:26.852Z] rm -f  ./logs/asap7/riscv32i-mock-sram/base/5_*
+L75: [2025-11-06T15:58:26.852Z] rm -rf ./results/asap7/riscv32i-mock-sram/base/6_*.gds ./results/asap7/riscv32i-mock-sram/base/6_*.oas ./results/asap7/riscv32i-mock-sram/base/6_*.odb ./results/asap7/riscv32i-mock-sram/base/6_*.v ./results/asap7/riscv32i-mock-sram/base/6_*.def ./results/asap7/riscv32i-mock-sram/base/6_*.sdc ./results/asap7/riscv32i-mock-sram/base/6_*.spef
+L76: [2025-11-06T15:58:26.852Z] rm -rf ./reports/asap7/riscv32i-mock-sram/base/6_*.rpt
+L77: [2025-11-06T15:58:26.852Z] rm -f  ./logs/asap7/riscv32i-mock-sram/base/6_*
+L78: [2025-11-06T15:58:26.852Z] rm -f ./reports/asap7/riscv32i-mock-sram/base/design-dir.txt
+L79: [2025-11-06T15:58:26.852Z] rm -f ./reports/asap7/riscv32i-mock-sram/base/metadata*.*
+L80: [2025-11-06T15:58:26.852Z] rm -f ./results/asap7/riscv32i-mock-sram/base/riscv_top.lib ./results/asap7/riscv32i-mock-sram/base/riscv_top.lef
+L81: [2025-11-06T15:58:26.852Z] rm -rf ./objects/asap7/riscv32i-mock-sram/base
+L82: [2025-11-06T15:58:26.852Z] make: Nothing to be done for 'clean_metadata'.
+L83: [2025-11-06T15:58:26.852Z] + set +e
+L84: [2025-11-06T15:58:26.852Z] + eval make DESIGN_CONFIG=./designs/asap7/riscv32i-mock-sram/config.mk 'finish metadata'
+L85: [2025-11-06T15:58:26.852Z] + tee -a ./logs/asap7/riscv32i-mock-sram.log
+L86: [2025-11-06T15:58:26.852Z] ++ make DESIGN_CONFIG=./designs/asap7/riscv32i-mock-sram/config.mk finish metadata
+L87: [2025-11-06T15:58:27.111Z] mkdir -p results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/
+L88: [2025-11-06T15:58:27.111Z] echo 1000 > results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/clock_period.txt
+L89: [2025-11-06T15:58:27.370Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/asap7/riscv32i-mock-sram_fakeram7_256x32/base/1_1_yosys_canonicalize.log

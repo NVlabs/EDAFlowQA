@@ -1,0 +1,87 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -0.033,
+      "tns": -0.1,
+      "clock_sink_wirelength_um": 310.06,
+      "hpwl": 531327.2,
+      "displacement": 648.6,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 20 -sink_clustering_max_diameter 50",
+          "results": {
+            "total_sinks": 944,
+            "clock_buffers_created": 100,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 3,
+            "avg_sink_wirelength_um": 310.06,
+            "placement_total_displacement_u": 4423.7,
+            "placement_avg_displacement_u": 0.2,
+            "placement_max_displacement_u": 12.9,
+            "hpwl_before": 518379.1,
+            "hpwl_after": 527688.5,
+            "clock_nets": [
+              {
+                "name": "clk_i_regs",
+                "sinks": 1082,
+                "leaf_buffers": 91,
+                "avg_sink_wire_length_um": 279.02,
+                "path_depth_min": 2,
+                "path_depth_max": 3
+              },
+              {
+                "name": "_05313_",
+                "sinks": 1034,
+                "leaf_buffers": 91,
+                "avg_sink_wire_length_um": 310.06,
+                "path_depth_min": 2,
+                "path_depth_max": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -verbose",
+          "iterations_count": 91,
+          "start_metrics": {
+            "wns": -0.91,
+            "tns": -28.2,
+            "violation_end_points": 65
+          },
+          "end_metrics": {
+            "wns": -0.033,
+            "tns": -0.1,
+            "violation_end_points": 0
+          },
+          "placement_impact": {
+            "total_displacement_u": 648.6,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 9.7,
+            "hpwl_before": 530868.4,
+            "hpwl_after": 531327.2
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:52:30.695Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:18.88",
+      "peak_memory_kb": 269496,
+      "elapsed_s": 18,
+      "memory_mb": 263,
+      "sha1sum": "8870057cc7d344f8f3a2"
+    }
+  },
+  "design_name": "ibex",
+  "sub_design_name": "ibex_core",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 39.0,
+    "cts__design__instance__count__hold_buffer": 0.0,
+    "cts__timing__setup__ws": -0.0328786,
+    "cts__timing__setup__tns": -0.0540448,
+    "cts__timing__hold__ws": 0.420737,
+    "cts__timing__hold__tns": 0.0
+  }
+}

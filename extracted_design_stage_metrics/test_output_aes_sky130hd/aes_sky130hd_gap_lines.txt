@@ -1,0 +1,89 @@
+Log file: ./design_artifacts/aes_sky130hs_vs_aes_sky130hd/aes_sky130hd.txt
+Total log lines: 3015
+Uncovered line count: 84
+Gap ranges (0-based, end exclusive): [(0, 84)]
+--------------------------------------------------------------------------------
+L1: [2026-01-27T23:47:09.994Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:750295
+L2: [2026-01-27T23:47:09.994Z] 
+L3: [2026-01-27T23:47:09.994Z] error: no such object: openroad/flow-ubuntu22.04-dev:750295
+L4: [2026-01-27T23:47:52.646Z] + docker pull openroad/flow-ubuntu22.04-dev:750295
+L5: [2026-01-27T23:47:53.225Z] 750295: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2026-01-27T23:47:53.225Z] 3f3694f8bf08: Pulling fs layer
+L7: [2026-01-27T23:47:53.225Z] 107f1d8b0ef2: Pulling fs layer
+L8: [2026-01-27T23:47:53.225Z] 3b163c809fed: Pulling fs layer
+L9: [2026-01-27T23:47:53.225Z] 6f4ebca3e823: Pulling fs layer
+L10: [2026-01-27T23:47:53.225Z] a496dbddce3e: Pulling fs layer
+L11: [2026-01-27T23:47:53.225Z] fe9f28f1a46d: Pulling fs layer
+L12: [2026-01-27T23:47:53.225Z] ddc27fd59955: Pulling fs layer
+L13: [2026-01-27T23:47:53.804Z] 3f3694f8bf08: Download complete
+L14: [2026-01-27T23:47:53.804Z] fe9f28f1a46d: Download complete
+L15: [2026-01-27T23:47:53.804Z] ddc27fd59955: Download complete
+L16: [2026-01-27T23:47:53.804Z] 3b163c809fed: Download complete
+L17: [2026-01-27T23:47:53.804Z] a496dbddce3e: Download complete
+L18: [2026-01-27T23:47:53.804Z] f0c2f21ac230: Download complete
+L19: [2026-01-27T23:47:54.383Z] 6f4ebca3e823: Download complete
+L20: [2026-01-27T23:47:54.961Z] fe9f28f1a46d: Pull complete
+L21: [2026-01-27T23:47:54.961Z] ddc27fd59955: Pull complete
+L22: [2026-01-27T23:47:54.961Z] 3b163c809fed: Pull complete
+L23: [2026-01-27T23:47:54.961Z] a496dbddce3e: Pull complete
+L24: [2026-01-27T23:47:54.961Z] 6f4ebca3e823: Pull complete
+L25: [2026-01-27T23:48:01.709Z] 107f1d8b0ef2: Download complete
+L26: [2026-01-27T23:48:21.058Z] 3f3694f8bf08: Pull complete
+L27: [2026-01-27T23:48:21.058Z] 107f1d8b0ef2: Pull complete
+L28: [2026-01-27T23:48:21.058Z] Digest: sha256:49dff14f1f9c2036b018b35e7b428d9498e31ecb106aa020972d9c3196705478
+L29: [2026-01-27T23:48:21.058Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:750295
+L30: [2026-01-27T23:48:21.058Z] docker.io/openroad/flow-ubuntu22.04-dev:750295
+L31: [2026-01-27T23:51:43.834Z] + git config --system --add safe.directory *
+L32: [2026-01-27T23:53:55.640Z] + nice flow/test/test_helper.sh aes sky130hd
+L33: [2026-01-27T23:53:55.640Z] +++ readlink -f flow/test/test_helper.sh
+L34: [2026-01-27T23:53:55.640Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L35: [2026-01-27T23:53:55.640Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L36: [2026-01-27T23:53:55.640Z] + DESIGN_NAME=aes
+L37: [2026-01-27T23:53:55.640Z] + PLATFORM=sky130hd
+L38: [2026-01-27T23:53:55.640Z] + CONFIG_MK=config.mk
+L39: [2026-01-27T23:53:55.640Z] + '[' 2 -ge 4 ']'
+L40: [2026-01-27T23:53:55.640Z] + TARGET='finish metadata'
+L41: [2026-01-27T23:53:55.640Z] + DESIGN_CONFIG=./designs/sky130hd/aes/config.mk
+L42: [2026-01-27T23:53:55.640Z] + LOG_FILE=./logs/sky130hd/aes.log
+L43: [2026-01-27T23:53:55.640Z] + mkdir -p ./logs/sky130hd
+L44: [2026-01-27T23:53:55.640Z] + __make='make DESIGN_CONFIG=./designs/sky130hd/aes/config.mk'
+L45: [2026-01-27T23:53:55.640Z] + '[' -n '' ']'
+L46: [2026-01-27T23:53:55.640Z] ++ dirname ./logs/sky130hd/aes.log
+L47: [2026-01-27T23:53:55.640Z] + mkdir -p ./logs/sky130hd
+L48: [2026-01-27T23:53:55.640Z] + make DESIGN_CONFIG=./designs/sky130hd/aes/config.mk clean_all clean_metadata
+L49: [2026-01-27T23:53:55.640Z] + tee ./logs/sky130hd/aes.log
+L50: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/1_* ./results/sky130hd/aes/base/mem*.json
+L51: [2026-01-27T23:53:55.640Z] rm -f ./reports/sky130hd/aes/base/synth_*
+L52: [2026-01-27T23:53:55.640Z] rm -f ./logs/sky130hd/aes/base/1_*
+L53: [2026-01-27T23:53:55.640Z] rm -f 
+L54: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/clock_period.txt
+L55: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/2_*floorplan*.odb ./results/sky130hd/aes/base/2_floorplan.sdc ./results/sky130hd/aes/base/2_*.v ./results/sky130hd/aes/base/2_*.def
+L56: [2026-01-27T23:53:55.640Z] rm -f ./reports/sky130hd/aes/base/2_*
+L57: [2026-01-27T23:53:55.640Z] rm -f ./logs/sky130hd/aes/base/2_*
+L58: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/3_*place*.odb
+L59: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/3_place.sdc
+L60: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/3_*.def ./results/sky130hd/aes/base/3_*.v
+L61: [2026-01-27T23:53:55.640Z] rm -f ./reports/sky130hd/aes/base/3_*
+L62: [2026-01-27T23:53:55.640Z] rm -f ./logs/sky130hd/aes/base/3_*
+L63: [2026-01-27T23:53:55.640Z] rm -rf ./results/sky130hd/aes/base/4_*cts*.odb ./results/sky130hd/aes/base/4_cts.sdc ./results/sky130hd/aes/base/4_*.v ./results/sky130hd/aes/base/4_*.def
+L64: [2026-01-27T23:53:55.640Z] rm -f  ./reports/sky130hd/aes/base/4_*
+L65: [2026-01-27T23:53:55.640Z] rm -rf ./logs/sky130hd/aes/base/4_*
+L66: [2026-01-27T23:53:55.640Z] rm -rf ./results/sky130hd/aes/base/route.guide ./results/sky130hd/aes/base/output_guide.mod ./results/sky130hd/aes/base/updated_clks.sdc
+L67: [2026-01-27T23:53:55.640Z] rm -rf ./results/sky130hd/aes/base/5_*.odb ./results/sky130hd/aes/base/5_route.sdc ./results/sky130hd/aes/base/5_*.def ./results/sky130hd/aes/base/5_*.v
+L68: [2026-01-27T23:53:55.640Z] rm -f  ./reports/sky130hd/aes/base/5_*
+L69: [2026-01-27T23:53:55.640Z] rm -f  ./logs/sky130hd/aes/base/5_*
+L70: [2026-01-27T23:53:55.640Z] rm -rf ./results/sky130hd/aes/base/6_*.gds ./results/sky130hd/aes/base/6_*.oas ./results/sky130hd/aes/base/6_*.odb ./results/sky130hd/aes/base/6_*.v ./results/sky130hd/aes/base/6_*.def ./results/sky130hd/aes/base/6_*.sdc ./results/sky130hd/aes/base/6_*.spef
+L71: [2026-01-27T23:53:55.640Z] rm -rf ./reports/sky130hd/aes/base/6_*.rpt
+L72: [2026-01-27T23:53:55.640Z] rm -f  ./logs/sky130hd/aes/base/6_*
+L73: [2026-01-27T23:53:55.640Z] rm -f ./reports/sky130hd/aes/base/design-dir.txt
+L74: [2026-01-27T23:53:55.640Z] rm -f ./reports/sky130hd/aes/base/metadata*.*
+L75: [2026-01-27T23:53:55.640Z] rm -f ./results/sky130hd/aes/base/aes_cipher_top.lib ./results/sky130hd/aes/base/aes_cipher_top.lef
+L76: [2026-01-27T23:53:55.640Z] rm -rf ./objects/sky130hd/aes/base
+L77: [2026-01-27T23:53:55.640Z] make: Nothing to be done for 'clean_metadata'.
+L78: [2026-01-27T23:53:55.640Z] + set +e
+L79: [2026-01-27T23:53:55.640Z] + eval make DESIGN_CONFIG=./designs/sky130hd/aes/config.mk 'finish metadata'
+L80: [2026-01-27T23:53:55.640Z] + tee -a ./logs/sky130hd/aes.log
+L81: [2026-01-27T23:53:55.640Z] ++ make DESIGN_CONFIG=./designs/sky130hd/aes/config.mk finish metadata
+L82: [2026-01-27T23:53:55.640Z] mkdir -p results/sky130hd/aes/base/
+L83: [2026-01-27T23:53:55.640Z] echo 4.5 > results/sky130hd/aes/base/clock_period.txt
+L84: [2026-01-27T23:53:56.366Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/aes/base/1_1_yosys_canonicalize.log

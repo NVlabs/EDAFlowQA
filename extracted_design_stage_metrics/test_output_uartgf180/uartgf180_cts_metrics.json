@@ -1,0 +1,50 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "clock_sink_wirelength_um": 223.87,
+      "hpwl": 10426.7,
+      "area": 14713.0,
+      "utilization": 35,
+      "density": 35,
+      "displacement": 0.0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 44,
+            "clock_buffers_created": 5,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 2,
+            "avg_sink_wirelength_um": 223.87,
+            "placement_total_displacement_u": 120.2,
+            "placement_avg_displacement_u": 0.3,
+            "placement_max_displacement_u": 11.2,
+            "hpwl_before": 9873.9,
+            "hpwl_after": 10426.7,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 47,
+                "leaf_buffers": 0,
+                "avg_sink_wire_length_um": 223.87,
+                "path_depth_min": 2,
+                "path_depth_max": 2,
+                "leaf_load_cells": 3
+              }
+            ]
+          }
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:10:35.958Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:05.54",
+      "peak_memory_kb": 158996,
+      "elapsed_s": 5,
+      "memory_mb": 155,
+      "sha1sum": "4cfcc8d190e52f4f6393"
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart_rx"
+}

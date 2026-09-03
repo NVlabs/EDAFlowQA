@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 36,
+      "timestamp": "2026-01-27T23:54:17.505Z",
+      "design_name": "aes",
+      "technology_node": "sky130hs",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "aes"
+    ],
+    "technology_nodes": [
+      "sky130hs"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

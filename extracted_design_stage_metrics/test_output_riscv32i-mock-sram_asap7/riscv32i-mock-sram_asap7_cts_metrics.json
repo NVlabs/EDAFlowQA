@@ -1,0 +1,72 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -30.834,
+      "tns": -1736.4,
+      "clock_sink_wirelength_um": 20.91,
+      "hpwl": 1252.5,
+      "displacement": 227.8,
+      "violations": 97,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 97,
+            "clock_buffers_created": 9,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 2,
+            "avg_sink_wirelength_um": 20.91,
+            "placement_total_displacement_u": 53.6,
+            "placement_avg_displacement_u": 0.1,
+            "placement_max_displacement_u": 2.1,
+            "hpwl_before": 720.0,
+            "hpwl_after": 840.3,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 101,
+                "leaf_buffers": 0,
+                "avg_sink_wire_length_um": 20.91,
+                "path_depth_min": 2,
+                "path_depth_max": 2,
+                "leaf_load_cells": 4
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 230,
+          "start_metrics": {
+            "wns": -46.469,
+            "tns": -3379.3,
+            "violation_end_points": 97
+          },
+          "end_metrics": {
+            "wns": -30.834,
+            "tns": -1736.4,
+            "violation_end_points": 97
+          },
+          "placement_impact": {
+            "total_displacement_u": 227.8,
+            "avg_displacement_u": 0.3,
+            "max_displacement_u": 3.5,
+            "hpwl_before": 929.4,
+            "hpwl_after": 1252.5
+          }
+        }
+      ],
+      "report_metrics": "[2025-11-06T15:58:45.826Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:03.08",
+      "peak_memory_kb": 230832,
+      "elapsed_s": 3,
+      "memory_mb": 225,
+      "sha1sum": "20699956200b191f41c4"
+    }
+  },
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "fakeram7_256x32"
+}

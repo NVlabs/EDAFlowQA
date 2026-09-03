@@ -1,0 +1,11 @@
+[2026-01-26T20:45:48.959Z] Running synth_odb.tcl, stage 1_synth
+[2026-01-26T20:45:49.541Z] source /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/liberty_suppressions.tcl
+[2026-01-26T20:45:49.541Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:45:50.121Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+[2026-01-26T20:45:50.121Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:45:50.121Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:45:50.702Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+[2026-01-26T20:45:50.702Z] link_design aes_rcon
+[2026-01-26T20:45:50.702Z] source /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/setRC.tcl
+[2026-01-26T20:45:50.702Z] Elapsed time: 0:01.39[h:]min:sec. CPU time: user 1.28 sys 0.10 (100%). Peak memory: 196072KB.
+[2026-01-26T20:45:50.702Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/flow.sh 2_1_floorplan floorplan

@@ -1,0 +1,146 @@
+[2025-10-11T15:12:38.396Z] Running density_fill.tcl, stage 6_1_fill
+[2025-10-11T15:12:39.454Z] Elapsed time: 0:01.19[h:]min:sec. CPU time: user 1.12 sys 0.07 (100%). Peak memory: 122008KB.
+[2025-10-11T15:12:39.966Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:12:39.966Z] 6_1_fill                           1            119 c7139152c4b2e761b44f
+[2025-10-11T15:12:40.486Z] Running final_report.tcl, stage 6_report
+[2025-10-11T15:12:42.640Z] ########## IR report #################
+[2025-10-11T15:12:42.640Z] Net              : VDD
+[2025-10-11T15:12:42.640Z] Corner           : default
+[2025-10-11T15:12:42.640Z] Supply voltage   : 5.50e+00 V
+[2025-10-11T15:12:42.640Z] Worstcase voltage: 5.50e+00 V
+[2025-10-11T15:12:42.640Z] Average voltage  : 5.50e+00 V
+[2025-10-11T15:12:42.640Z] Average IR drop  : 4.06e-04 V
+[2025-10-11T15:12:42.640Z] Worstcase IR drop: 1.20e-03 V
+[2025-10-11T15:12:42.640Z] Percentage drop  : 0.02 %
+[2025-10-11T15:12:42.640Z] ######################################
+[2025-10-11T15:12:42.640Z] ########## IR report #################
+[2025-10-11T15:12:42.640Z] Net              : VSS
+[2025-10-11T15:12:42.640Z] Corner           : default
+[2025-10-11T15:12:42.640Z] Supply voltage   : 0.00e+00 V
+[2025-10-11T15:12:42.640Z] Worstcase voltage: 1.09e-03 V
+[2025-10-11T15:12:42.640Z] Average voltage  : 3.88e-04 V
+[2025-10-11T15:12:42.640Z] Average IR drop  : 3.88e-04 V
+[2025-10-11T15:12:42.640Z] Worstcase IR drop: 1.09e-03 V
+[2025-10-11T15:12:42.640Z] Percentage drop  : 0.02 %
+[2025-10-11T15:12:42.640Z] ######################################
+[2025-10-11T15:12:42.640Z] Cell type report:                       Count       Area
+[2025-10-11T15:12:42.640Z]   Macro                                     1   45571.58
+[2025-10-11T15:12:42.640Z]   Endcap cell                             260    1467.65
+[2025-10-11T15:12:42.640Z]   Fill cell                              1249   91801.38
+[2025-10-11T15:12:42.640Z]   Tap cell                                 94     530.61
+[2025-10-11T15:12:42.640Z]   Clock buffer                             11     874.94
+[2025-10-11T15:12:42.640Z]   Timing Repair Buffer                     44    1859.96
+[2025-10-11T15:12:42.640Z]   Inverter                                 23     389.49
+[2025-10-11T15:12:42.640Z]   Clock inverter                            1      28.22
+[2025-10-11T15:12:42.640Z]   Sequential cell                          35    2963.52
+[2025-10-11T15:12:42.640Z]   Multi-Input combinational cell          192    7685.40
+[2025-10-11T15:12:42.640Z]   Total                                  1910  153172.75
+[2025-10-11T15:12:42.640Z] Report metrics stage 6, finish...
+[2025-10-11T15:12:43.181Z] 
+[2025-10-11T15:12:43.181Z] ==========================================================================
+[2025-10-11T15:12:43.181Z] finish report_design_area
+[2025-10-11T15:12:43.181Z] --------------------------------------------------------------------------
+[2025-10-11T15:12:43.181Z] Design area 59373 u^2 35% utilization.
+[2025-10-11T15:12:43.181Z] [WARNING GUI-0076] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[2025-10-11T15:12:45.009Z] Elapsed time: 0:04.11[h:]min:sec. CPU time: user 4.63 sys 1.53 (150%). Peak memory: 190868KB.
+[2025-10-11T15:12:45.009Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:12:45.009Z] 6_report                           4            186                  N/A
+[2025-10-11T15:12:49.622Z] Warning: DEF UNITS does not match reader DBU (DEF UNITS is 2000 and corresponds to a DBU of 0.0005, but reader DBU is set to 0.001) (line=5, cell=, file=6_final.def)
+[2025-10-11T15:12:49.622Z] Warning: No mapping for purpose 'OUTLINE' - layer is ignored (line=6, cell=, file=6_final.def)
+[2025-10-11T15:12:49.622Z] Warning: No mapping for purpose 'BLOCKAGE' - layer is ignored (line=2266, cell=, file=6_final.def)
+[2025-10-11T15:12:49.622Z] [INFO] Reporting cells prior to loading DEF ...
+[2025-10-11T15:12:49.623Z] 	./results/gf180/uart-blocks_uart_rx/base/6_final.gds
+[2025-10-11T15:12:49.623Z] [INFO] All LEF cells have matching GDS/OAS cells
+[2025-10-11T15:12:49.623Z] [INFO] No orphan cells in the final layout
+[2025-10-11T15:12:49.623Z] Elapsed time: 0:02.99[h:]min:sec. CPU time: user 2.70 sys 0.28 (99%). Peak memory: 437144KB.
+[2025-10-11T15:12:50.702Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:12:50.702Z] 1_1_yosys_canonicalize             0             69 92b2bea991a0e62405c0
+[2025-10-11T15:12:50.702Z] 1_2_yosys                          2             72 5ca4a73674d2f24868b1
+[2025-10-11T15:12:50.702Z] 2_1_floorplan                      1            139 ebe3e13b99634360d347
+[2025-10-11T15:12:50.702Z] 2_2_floorplan_macro                1            117 ebe3e13b99634360d347
+[2025-10-11T15:12:50.702Z] 2_3_floorplan_tapcell              1            116 ec477fbedeb410d3e201
+[2025-10-11T15:12:50.702Z] 2_4_floorplan_pdn                  1            118 4fa5375a6f9d196fe85c
+[2025-10-11T15:12:50.702Z] 3_1_place_gp_skip_io               1            118 e9b3fb0f303170a5c0aa
+[2025-10-11T15:12:50.702Z] 3_2_place_iop                      1            117 133ed88c6ae2f723b50d
+[2025-10-11T15:12:50.702Z] 3_3_place_gp                       7            184 9e016bd83ddb7980706f
+[2025-10-11T15:12:50.702Z] 3_4_place_resized                  2            136 9e016bd83ddb7980706f
+[2025-10-11T15:12:50.702Z] 3_5_place_dp                       2            122 63d488e12b6812f8422d
+[2025-10-11T15:12:50.702Z] 4_1_cts                            5            155 4cfcc8d190e52f4f6393
+[2025-10-11T15:12:50.702Z] 5_1_grt                            4            201 6672b71cfa0d48817946
+[2025-10-11T15:12:50.702Z] 5_2_route                         23           1202 7624b3a1cc3511b2d1b4
+[2025-10-11T15:12:50.702Z] 5_3_fillcell                       1            121 110c2adfacd48bbaf581
+[2025-10-11T15:12:50.702Z] 6_1_fill                           1            118 110c2adfacd48bbaf581
+[2025-10-11T15:12:50.702Z] 6_1_merge                          2            425                  N/A
+[2025-10-11T15:12:50.702Z] 6_report                           4            182                  N/A
+[2025-10-11T15:12:50.702Z] generate_abstract                  1            121                  N/A
+[2025-10-11T15:12:50.702Z] Total                             60           1202                     
+[2025-10-11T15:12:50.702Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:12:50.702Z] 1_1_yosys_canonicalize             0             69 d4460c9538e523081672
+[2025-10-11T15:12:50.702Z] 1_2_yosys                          2             73 1c6081dd776893ff5608
+[2025-10-11T15:12:50.702Z] 2_1_floorplan                      1            139 c3f176cf079309b632c3
+[2025-10-11T15:12:50.702Z] 2_2_floorplan_macro                3            118 8eb86b4a29f00c6aede6
+[2025-10-11T15:12:50.702Z] 2_3_floorplan_tapcell              1            117 e6173e589292a97d843c
+[2025-10-11T15:12:50.702Z] 2_4_floorplan_pdn                  1            124 9088c669c25d1e0e618e
+[2025-10-11T15:12:50.702Z] 3_1_place_gp_skip_io               1            119 b4ecb9c3e807d9d55c19
+[2025-10-11T15:12:50.702Z] 3_2_place_iop                      1            119 3974c4b22a6396e07000
+[2025-10-11T15:12:50.702Z] 3_3_place_gp                       3            195 5dbf97e1dcdb701df82d
+[2025-10-11T15:12:50.702Z] 3_4_place_resized                  2            137 5dbf97e1dcdb701df82d
+[2025-10-11T15:12:50.702Z] 3_5_place_dp                       2            127 01cce14027e2e780f61f
+[2025-10-11T15:12:50.702Z] 4_1_cts                            9            162 f735fe784642ab1c5210
+[2025-10-11T15:12:50.702Z] 5_1_grt                            4            208 5246c98d979ac51e8489
+[2025-10-11T15:12:50.702Z] 5_2_route                         24           1260 0e4af9a667184885f9ab
+[2025-10-11T15:12:50.702Z] 5_3_fillcell                       1            124 c7139152c4b2e761b44f
+[2025-10-11T15:12:50.702Z] 6_1_fill                           1            119 c7139152c4b2e761b44f
+[2025-10-11T15:12:50.702Z] 6_1_merge                          2            426                  N/A
+[2025-10-11T15:12:50.702Z] 6_report                           4            186                  N/A
+[2025-10-11T15:12:50.702Z] Total                             62           1260                     
+[2025-10-11T15:12:50.702Z] echo ./designs/gf180/uart-blocks/ > ./reports/gf180/uart-blocks/base/design-dir.txt
+[2025-10-11T15:12:50.702Z] /usr/bin/python3 /tmp/workspace/nROAD-flow-scripts-Public_master/flow/util/genMetrics.py -d uart-blocks \
+[2025-10-11T15:12:50.702Z]     -p gf180 \
+[2025-10-11T15:12:50.702Z]     -v base \
+[2025-10-11T15:12:50.702Z]     --logs ./logs/gf180/uart-blocks/base \
+[2025-10-11T15:12:50.702Z]     --reports ./reports/gf180/uart-blocks/base \
+[2025-10-11T15:12:50.702Z]     --results ./results/gf180/uart-blocks/base \
+[2025-10-11T15:12:50.702Z]     -o ./reports/gf180/uart-blocks/base/metadata.json 2>&1 \
+[2025-10-11T15:12:50.702Z]     | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/reports/gf180/uart-blocks/base/metadata-generate.log
+[2025-10-11T15:12:50.702Z] [WARN] not a git repo
+[2025-10-11T15:12:50.702Z] [WARN] not a git repo
+[2025-10-11T15:12:50.702Z] [WARN] Tag synth__design__instance__count__stdcell not found in ./reports/gf180/uart-blocks/base/synth_stat.txt. Will use N/A.
+[2025-10-11T15:12:50.702Z] [WARN] Overwriting Tag finish__runtime__total
+[2025-10-11T15:12:50.702Z] [WARN] Overwriting Tag finish__cpu__total
+[2025-10-11T15:12:50.702Z] [WARN] Overwriting Tag finish__mem__peak
+[2025-10-11T15:12:50.702Z] /usr/bin/python3 /tmp/workspace/nROAD-flow-scripts-Public_master/flow/util/checkMetadata.py \
+[2025-10-11T15:12:50.702Z]     -m ./reports/gf180/uart-blocks/base/metadata.json \
+[2025-10-11T15:12:50.702Z]     -r ./designs/gf180/uart-blocks//rules-base.json 2>&1 \
+[2025-10-11T15:12:50.702Z]     | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/reports/gf180/uart-blocks/base/metadata-check.log
+[2025-10-11T15:12:50.702Z] [INFO] synth__design__instance__area__stdcell pass test: 53334.7828 <= 61300.0
+[2025-10-11T15:12:50.702Z] [INFO] constraints__clocks__count pass test: 1.0 == 1.0
+[2025-10-11T15:12:50.702Z] [INFO] placeopt__design__instance__area pass test: 60468.2 <= 69126.0
+[2025-10-11T15:12:50.702Z] [INFO] placeopt__design__instance__count__stdcell pass test: 648.0 <= 726.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedplace__design__violations pass test: 0.0 == 0.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__design__instance__count__setup_buffer pass test: 0.0 <= 63.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__design__instance__count__hold_buffer pass test: 0.0 <= 63.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__timing__setup__ws pass test: 1.70814 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__timing__setup__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__timing__hold__ws pass test: 0.46241 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] cts__timing__hold__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] globalroute__antenna_diodes_count pass test: 0.0 <= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] globalroute__timing__setup__ws pass test: 1.6979 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] globalroute__timing__setup__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] globalroute__timing__hold__ws pass test: 0.47746 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] globalroute__timing__hold__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__route__wirelength pass test: 16765.0 <= 17413.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__route__drc_errors pass test: 0.0 <= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__antenna__violating__nets pass test: 0.0 <= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__antenna_diodes_count pass test: 0.0 <= 5.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__timing__setup__ws pass test: 1.77189 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__timing__setup__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__timing__hold__ws pass test: 0.446945 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] detailedroute__timing__hold__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__timing__setup__ws pass test: 1.69968 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__timing__setup__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__timing__hold__ws pass test: 0.461581 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__timing__hold__tns pass test: 0.0 >= 0.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__design__instance__area pass test: 61371.4 <= 70132.0
+[2025-10-11T15:12:50.702Z] [INFO] finish__timing__wns_percent_delay pass test: 84.806905 >= -10.0
+[2025-10-11T15:12:50.702Z] All metadata rules passed (30 rules)

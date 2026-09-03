@@ -1,0 +1,53 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/bp_multi_top_nangate45/bp_multi_top_nangate45.txt
+Output directory: test_output_bp_multi_top_nangate45
+Timestamp: 2026-02-28T13:56:34.092874
+
+DESIGN INFO:
+  design_names=['bp_multi_top']
+  technology_nodes=['nangate45']
+  config_mks=['config.mk']
+  design_info_file=bp_multi_top_nangate45_design_info.json
+
+LINE CHECK:
+  log_total_lines=6211  chunks_total_lines=3544  chunks_covered_lines=3544  gaps=2667  overlaps=0  extracted_total_lines=1670
+  gap_file=bp_multi_top_nangate45_gap_lines.txt
+
+Total stage occurrences extracted: 5
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:   252 lines -> bp_multi_top_nangate45_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   138 lines -> bp_multi_top_nangate45_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:    74 lines -> bp_multi_top_nangate45_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   717 lines -> bp_multi_top_nangate45_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   489 lines -> bp_multi_top_nangate45_routing_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. floorplan_1                    (   74 lines)
+ 2. placement_1                    (  717 lines)
+ 3. cts_1                          (  252 lines)
+ 4. routing_1                      (  489 lines)
+ 5. final_1                        (  138 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. floorplan_1       area=N/A  util=44.0  wns=-3.657  tns=-3.7  viol=1  hpwl=N/A
+ 2. placement_1       area=1165503.7  util=24.1  wns=N/A  tns=N/A  viol=N/A  hpwl=3142554.5
+ 3. cts_1             area=N/A  util=N/A  wns=-4.439  tns=-4.4  viol=1  hpwl=3273640.8
+ 4. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 5. final_1           area=518857.000  util=N/A  ir_vdd_wc=0.004  ir_vss_wc=0.004
+================================================================================

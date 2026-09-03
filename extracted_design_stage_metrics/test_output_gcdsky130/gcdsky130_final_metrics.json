@@ -1,0 +1,322 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 1.8,
+      "worstcase_voltage_v": 1.8,
+      "average_voltage_v": 1.8,
+      "average_ir_drop_v": 0.000425,
+      "worstcase_ir_drop_v": 0.00104,
+      "percentage_drop": 0.06
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.000654,
+      "average_voltage_v": 0.000213,
+      "average_ir_drop_v": 0.000213,
+      "worstcase_ir_drop_v": 0.000654,
+      "percentage_drop": 0.04
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 239,
+    "fill_cell_area": 864.58,
+    "tap_cell_count": 72,
+    "tap_cell_area": 90.09,
+    "clock_buffer_count": 8,
+    "clock_buffer_area": 80.08,
+    "timing_repair_buffer_count": 188,
+    "timing_repair_buffer_area": 1737.92,
+    "inverter_count": 13,
+    "inverter_area": 48.8,
+    "sequential_cell_count": 35,
+    "sequential_cell_area": 1025.98,
+    "combinational_cell_count": 189,
+    "combinational_cell_area": 1794.22,
+    "total_cell_count": 744,
+    "total_cell_area": 5641.66
+  },
+  "design_metrics": {
+    "area": 4777.08,
+    "setup_wns": -2.3863,
+    "setup_tns": -101.92,
+    "hold_wns": 0.514831,
+    "hold_tns": 0.0,
+    "wns_percent_delay": -67.94317
+  },
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 0,
+      "memory_mb": 105,
+      "sha1sum": "742669aa6cc6c77cb186"
+    },
+    "6_report": {
+      "elapsed_s": 3,
+      "memory_mb": 169
+    },
+    "1_1_yosys_canonicalize": {
+      "elapsed_s": 0,
+      "memory_mb": 54,
+      "sha1sum": "18f911f8feeeeb2b66f4"
+    },
+    "1_2_yosys": {
+      "elapsed_s": 1,
+      "memory_mb": 57,
+      "sha1sum": "f3b02b04837908bc769f"
+    },
+    "2_1_floorplan": {
+      "elapsed_s": 3,
+      "memory_mb": 128,
+      "sha1sum": "1e90c5da216f1918f759"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_s": 0,
+      "memory_mb": 106,
+      "sha1sum": "1e90c5da216f1918f759"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_s": 0,
+      "memory_mb": 105,
+      "sha1sum": "dc81e28c0cf051227026"
+    },
+    "2_4_floorplan_pdn": {
+      "elapsed_s": 0,
+      "memory_mb": 107,
+      "sha1sum": "bddc77e72332cb2785b0"
+    },
+    "3_1_place_gp_skip_io": {
+      "elapsed_s": 0,
+      "memory_mb": 107,
+      "sha1sum": "f606767078861df7a7f7"
+    },
+    "3_2_place_iop": {
+      "elapsed_s": 0,
+      "memory_mb": 105,
+      "sha1sum": "4b2bd24ba1653f66c029"
+    },
+    "3_3_place_gp": {
+      "elapsed_s": 13,
+      "memory_mb": 188,
+      "sha1sum": "94631aadfbb3749e6007"
+    },
+    "3_4_place_resized": {
+      "elapsed_s": 1,
+      "memory_mb": 125,
+      "sha1sum": "94631aadfbb3749e6007"
+    },
+    "3_5_place_dp": {
+      "elapsed_s": 1,
+      "memory_mb": 110,
+      "sha1sum": "48f39e218b0dcb3b3e9b"
+    },
+    "4_1_cts": {
+      "elapsed_s": 14,
+      "memory_mb": 145,
+      "sha1sum": "5639158eab7e301dd9b3"
+    },
+    "5_1_grt": {
+      "elapsed_s": 17,
+      "memory_mb": 208,
+      "sha1sum": "1cf9231d70982b2951b7"
+    },
+    "5_2_route": {
+      "elapsed_s": 37,
+      "memory_mb": 938,
+      "sha1sum": "3e8512a96e2d3921a1d7"
+    },
+    "5_3_fillcell": {
+      "elapsed_s": 0,
+      "memory_mb": 108,
+      "sha1sum": "742669aa6cc6c77cb186"
+    },
+    "6_1_merge": {
+      "elapsed_s": 2,
+      "memory_mb": 429
+    }
+  },
+  "performance": {},
+  "test_metrics": {
+    "synth__design__instance__area__stdcell": {
+      "actual_value": 2402.304,
+      "operator": "<=",
+      "threshold_value": 2760.0,
+      "passed": true
+    },
+    "constraints__clocks__count": {
+      "actual_value": 1.0,
+      "operator": "==",
+      "threshold_value": 1.0,
+      "passed": true
+    },
+    "placeopt__design__instance__area": {
+      "actual_value": 3713.56,
+      "operator": "<=",
+      "threshold_value": 4271.0,
+      "passed": true
+    },
+    "placeopt__design__instance__count__stdcell": {
+      "actual_value": 451.0,
+      "operator": "<=",
+      "threshold_value": 519.0,
+      "passed": true
+    },
+    "detailedplace__design__violations": {
+      "actual_value": 0.0,
+      "operator": "==",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__design__instance__count__setup_buffer": {
+      "actual_value": 42.0,
+      "operator": "<=",
+      "threshold_value": 46.0,
+      "passed": true
+    },
+    "cts__design__instance__count__hold_buffer": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 42.0,
+      "passed": true
+    },
+    "cts__timing__setup__ws": {
+      "actual_value": -2.3374,
+      "operator": ">=",
+      "threshold_value": -2.39,
+      "passed": true
+    },
+    "cts__timing__setup__tns": {
+      "actual_value": -104.172,
+      "operator": ">=",
+      "threshold_value": -125.0,
+      "passed": true
+    },
+    "cts__timing__hold__ws": {
+      "actual_value": 0.473234,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__ws": {
+      "actual_value": -2.52945,
+      "operator": ">=",
+      "threshold_value": -2.58,
+      "passed": true
+    },
+    "globalroute__timing__setup__tns": {
+      "actual_value": -108.699,
+      "operator": ">=",
+      "threshold_value": -130.0,
+      "passed": true
+    },
+    "globalroute__timing__hold__ws": {
+      "actual_value": 0.529624,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__route__wirelength": {
+      "actual_value": 8413.0,
+      "operator": "<=",
+      "threshold_value": 9675.0,
+      "passed": true
+    },
+    "detailedroute__route__drc_errors": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna__violating__nets": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 5.0,
+      "passed": true
+    },
+    "detailedroute__timing__setup__ws": {
+      "actual_value": -2.09199,
+      "operator": ">=",
+      "threshold_value": -2.1469,
+      "passed": true
+    },
+    "detailedroute__timing__setup__tns": {
+      "actual_value": -88.6852,
+      "operator": ">=",
+      "threshold_value": -106.0,
+      "passed": true
+    },
+    "detailedroute__timing__hold__ws": {
+      "actual_value": 0.483805,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__setup__ws": {
+      "actual_value": -2.3863,
+      "operator": ">=",
+      "threshold_value": -2.44,
+      "passed": true
+    },
+    "finish__timing__setup__tns": {
+      "actual_value": -101.92,
+      "operator": ">=",
+      "threshold_value": -122.0,
+      "passed": true
+    },
+    "finish__timing__hold__ws": {
+      "actual_value": 0.514831,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__design__instance__area": {
+      "actual_value": 4777.08,
+      "operator": "<=",
+      "threshold_value": 5494.0,
+      "passed": true
+    },
+    "finish__timing__wns_percent_delay": {
+      "actual_value": -67.94317,
+      "operator": ">=",
+      "threshold_value": -79.41,
+      "passed": true
+    }
+  },
+  "design_name": "gcd",
+  "sub_design_name": "gcd"
+}

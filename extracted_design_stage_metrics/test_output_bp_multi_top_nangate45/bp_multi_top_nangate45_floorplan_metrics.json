@@ -1,0 +1,88 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "wns": -3.657,
+      "tns": -3.7,
+      "violations": 1,
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {
+            "tie_lo_instances": 793,
+            "tie_hi_instances": 547
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+          "iterations_count": 11,
+          "start_metrics": {
+            "wns": -3.677,
+            "tns": -3.7,
+            "violation_end_points": 1
+          },
+          "end_metrics": {
+            "wns": -3.657,
+            "tns": -3.7,
+            "violation_end_points": 1
+          }
+        }
+      ],
+      "elapsed_time": "0:28.40",
+      "peak_memory_kb": 646724,
+      "elapsed_s": 28,
+      "memory_mb": 631,
+      "sha1sum": "a61d1f1a9c904ba0fe05"
+    },
+    "2_2_floorplan_macro": {
+      "utilization": 44.0,
+      "density": 44.0,
+      "optimization_process": [
+        {
+          "type": "macro_placement",
+          "command": "rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/nangate45/bp_multi/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.4779999977350235",
+          "results": {
+            "num_std_cells": 122667,
+            "area_std_cells": 179594.11,
+            "num_macros": 26,
+            "area_macros": 512537.25,
+            "design_utilization": 44.0,
+            "floorplan_utilization": 22.0
+          }
+        }
+      ],
+      "elapsed_time": "0:12.77",
+      "peak_memory_kb": 712296,
+      "elapsed_s": 12,
+      "memory_mb": 695,
+      "sha1sum": "f3d8bf9ec6ccf0acdf73"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 1542,
+            "tapcells_inserted": 2110
+          }
+        }
+      ],
+      "elapsed_time": "0:00.71",
+      "peak_memory_kb": 232732,
+      "elapsed_s": 0,
+      "memory_mb": 227,
+      "sha1sum": "8e94525d4988cbf32c6b"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2025-11-06T16:03:45.858Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:03.40",
+      "peak_memory_kb": 387400,
+      "elapsed_s": 3,
+      "memory_mb": 378,
+      "sha1sum": "2d6bc2612ffb13bf8a4c"
+    }
+  },
+  "design_name": "bp_multi_top",
+  "sub_design_name": "bp_multi_top"
+}

@@ -1,0 +1,161 @@
+[2025-10-11T15:11:24.330Z] Using ABC speed script.
+[2025-10-11T15:11:24.330Z] Setting clock period to 6
+[2025-10-11T15:11:24.330Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+[2025-10-11T15:11:24.330Z] 2. Executing Liberty frontend: ./results/gf180/uart-blocks_uart_rx/base/uart_rx_typ.lib
+[2025-10-11T15:11:24.330Z] 3. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+[2025-10-11T15:11:24.842Z] 4. Executing Liberty frontend: ./results/gf180/uart-blocks_uart_rx/base/uart_rx_typ.lib
+[2025-10-11T15:11:24.842Z] 5. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/uart-no-param/uart.v
+[2025-10-11T15:11:24.842Z] 6. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/uart-no-param/uart_rx.v
+[2025-10-11T15:11:24.842Z] 7. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/uart-no-param/uart_tx.v
+[2025-10-11T15:11:24.842Z] 8. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:24.842Z] 9. Executing AST frontend in derive mode using pre-parsed AST for module `\uart'.
+[2025-10-11T15:11:24.842Z] 9.1. Analyzing design hierarchy..
+[2025-10-11T15:11:24.842Z] 9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\uart_tx'.
+[2025-10-11T15:11:24.842Z] 9.3. Analyzing design hierarchy..
+[2025-10-11T15:11:24.842Z] 9.4. Analyzing design hierarchy..
+[2025-10-11T15:11:24.842Z] 10. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-10-11T15:11:24.842Z] 11. Executing RTLIL backend.
+[2025-10-11T15:11:24.842Z] Warnings: 1 unique messages, 1 total
+[2025-10-11T15:11:24.842Z] End of script. Logfile hash: e00c7ea281, CPU: user 0.52s system 0.03s, MEM: 67.92 MB peak
+[2025-10-11T15:11:24.842Z] Yosys 0.58+35 (git sha1 89f32a415, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-10-11T15:11:24.842Z] Time spent: 96% 6x read_liberty (0 sec), 1% 2x write_rtlil (0 sec), ...
+[2025-10-11T15:11:24.842Z] Elapsed time: 0:00.68[h:]min:sec. CPU time: user 0.64 sys 0.04 (99%). Peak memory: 71568KB.
+[2025-10-11T15:11:25.355Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/gf180/uart-blocks/base/1_2_yosys.log
+[2025-10-11T15:11:25.355Z] Using ABC speed script.
+[2025-10-11T15:11:25.355Z] Setting clock period to 6
+[2025-10-11T15:11:25.355Z] 1. Executing RTLIL frontend.
+[2025-10-11T15:11:25.355Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:25.355Z] 2.1. Analyzing design hierarchy..
+[2025-10-11T15:11:25.355Z] 2.2. Analyzing design hierarchy..
+[2025-10-11T15:11:25.355Z] 3. Executing SYNTH pass.
+[2025-10-11T15:11:25.355Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:25.355Z] 3.1.1. Analyzing design hierarchy..
+[2025-10-11T15:11:25.355Z] 3.1.2. Analyzing design hierarchy..
+[2025-10-11T15:11:25.355Z] 3.2. Executing PROC pass (convert processes to netlists).
+[2025-10-11T15:11:25.355Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:25.355Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-10-11T15:11:25.355Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-10-11T15:11:25.355Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+[2025-10-11T15:11:25.355Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-10-11T15:11:25.355Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-10-11T15:11:25.355Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-10-11T15:11:25.355Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-10-11T15:11:25.355Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-10-11T15:11:25.355Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-10-11T15:11:25.355Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:25.355Z] 3.5. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:25.355Z] 3.7. Executing FSM pass (extract and optimize FSM).
+[2025-10-11T15:11:25.355Z] 3.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-10-11T15:11:25.355Z] 3.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-10-11T15:11:25.355Z] 3.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:25.355Z] 3.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:25.355Z] 3.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-10-11T15:11:25.355Z] 3.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-10-11T15:11:25.355Z] 3.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-10-11T15:11:25.355Z] 3.9. Executing WREDUCE pass (reducing word size of cells).
+[2025-10-11T15:11:25.355Z] 3.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2025-10-11T15:11:25.355Z] 3.13. Executing SHARE pass (SAT-based resource sharing).
+[2025-10-11T15:11:25.355Z] 3.15. Executing MEMORY pass.
+[2025-10-11T15:11:25.355Z] 3.15.1. Executing OPT_MEM pass (optimize memories).
+[2025-10-11T15:11:25.355Z] 3.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-10-11T15:11:25.355Z] 3.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-10-11T15:11:25.355Z] 3.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-10-11T15:11:25.355Z] 3.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-10-11T15:11:25.355Z] 3.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-10-11T15:11:25.355Z] 3.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-10-11T15:11:25.355Z] 3.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-10-11T15:11:25.355Z] 4. Executing CELLMATCH pass. (match cells)
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_1.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_2.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtn_4.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_1.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_2.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module gf180mcu_fd_sc_mcu9t5v0__icgtp_4.
+[2025-10-11T15:11:25.355Z] Warning: Ignoring blackbox module uart_rx.
+[2025-10-11T15:11:25.869Z] 5. Executing KEEP_HIERARCHY pass.
+[2025-10-11T15:11:25.869Z] 6. Executing SYNTH pass.
+[2025-10-11T15:11:25.869Z] 6.1. Executing PROC pass (convert processes to netlists).
+[2025-10-11T15:11:25.869Z] 6.1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:25.869Z] 6.1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-10-11T15:11:25.869Z] 6.1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-10-11T15:11:25.869Z] 6.1.4. Executing PROC_INIT pass (extract init attributes).
+[2025-10-11T15:11:25.869Z] 6.1.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-10-11T15:11:25.869Z] 6.1.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-10-11T15:11:25.869Z] 6.1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-10-11T15:11:25.869Z] 6.1.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-10-11T15:11:25.869Z] 6.1.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-10-11T15:11:25.869Z] 6.1.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-10-11T15:11:25.869Z] 6.1.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-10-11T15:11:25.869Z] 6.2. Executing FLATTEN pass (flatten design).
+[2025-10-11T15:11:25.869Z] 6.5. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:25.869Z] 6.7. Executing FSM pass (extract and optimize FSM).
+[2025-10-11T15:11:25.869Z] 6.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-10-11T15:11:25.869Z] 6.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-10-11T15:11:25.869Z] 6.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:25.869Z] 6.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-10-11T15:11:25.869Z] 6.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-10-11T15:11:25.869Z] 6.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-10-11T15:11:25.869Z] 6.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-10-11T15:11:25.869Z] 6.9. Executing WREDUCE pass (reducing word size of cells).
+[2025-10-11T15:11:25.869Z] 6.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2025-10-11T15:11:25.869Z] 6.13. Executing SHARE pass (SAT-based resource sharing).
+[2025-10-11T15:11:25.869Z] 6.15. Executing MEMORY pass.
+[2025-10-11T15:11:25.869Z] 6.15.1. Executing OPT_MEM pass (optimize memories).
+[2025-10-11T15:11:25.869Z] 6.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-10-11T15:11:25.869Z] 6.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-10-11T15:11:25.869Z] 6.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-10-11T15:11:25.869Z] 6.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-10-11T15:11:25.869Z] 6.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-10-11T15:11:25.869Z] 6.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-10-11T15:11:25.869Z] 6.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-10-11T15:11:25.869Z] 7. Executing SYNTH pass.
+[2025-10-11T15:11:25.869Z] 7.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2025-10-11T15:11:25.869Z] 7.3.6. Executing OPT_SHARE pass.
+[2025-10-11T15:11:25.869Z] 7.3.14. Executing OPT_SHARE pass.
+[2025-10-11T15:11:25.869Z] 7.4. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:25.869Z] 7.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2025-10-11T15:11:25.869Z] 7.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/common/lcu_kogge_stone.v
+[2025-10-11T15:11:25.869Z] 7.4.3. Continuing TECHMAP pass.
+[2025-10-11T15:11:25.869Z] 7.6. Executing ABC pass (technology mapping using ABC).
+[2025-10-11T15:11:25.869Z] 7.6.1. Extracting gate netlist of module `\uart' to `<abc-temp-dir>/input.blif'..
+[2025-10-11T15:11:25.869Z] 7.6.2. Extracting gate netlist of module `\uart_tx' to `<abc-temp-dir>/input.blif'..
+[2025-10-11T15:11:26.382Z] 7.8. Executing HIERARCHY pass (managing design hierarchy).
+[2025-10-11T15:11:26.382Z] 7.8.1. Analyzing design hierarchy..
+[2025-10-11T15:11:26.382Z] 7.8.2. Analyzing design hierarchy..
+[2025-10-11T15:11:26.382Z] 7.9. Printing statistics.
+[2025-10-11T15:11:26.382Z] 7.10. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:26.382Z] 8. Executing OPT pass (performing simple optimizations).
+[2025-10-11T15:11:26.382Z] 9. Executing EXTRACT_FA pass (find and extract full/half adders).
+[2025-10-11T15:11:26.382Z] 10. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:26.382Z] 10.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_adders.v
+[2025-10-11T15:11:26.382Z] 11. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:26.382Z] 11.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2025-10-11T15:11:26.382Z] 12. Executing OPT pass (performing simple optimizations).
+[2025-10-11T15:11:26.382Z] 13. Executing TECHMAP pass (map to technology primitives).
+[2025-10-11T15:11:26.382Z] 13.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/cells_latch.v
+[2025-10-11T15:11:26.382Z] 14. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2025-10-11T15:11:26.382Z] 14.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2025-10-11T15:11:26.382Z] 15. Executing OPT pass (performing simple optimizations).
+[2025-10-11T15:11:26.382Z] 16. Executing SETUNDEF pass (replace undef values with defined constants).
+[2025-10-11T15:11:26.382Z] abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz -liberty ./results/gf180/uart-blocks_uart_rx/base/uart_rx_typ.lib -dont_use *_1 -constr ./objects/gf180/uart-blocks/base/abc.constr -D 6
+[2025-10-11T15:11:26.382Z] 17. Executing ABC pass (technology mapping using ABC).
+[2025-10-11T15:11:26.382Z] 17.1.1. Executed ABC.
+[2025-10-11T15:11:27.427Z] 17.2.1. Executed ABC.
+[2025-10-11T15:11:27.427Z] 17.2.2. Re-integrating ABC results.
+[2025-10-11T15:11:27.427Z] 18. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2025-10-11T15:11:27.427Z] 19. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-10-11T15:11:27.427Z] 20. Executing HILOMAP pass (mapping to constant drivers).
+[2025-10-11T15:11:27.427Z] 21. Executing INSBUF pass (insert buffer cells for connected wires).
+[2025-10-11T15:11:27.427Z] 22. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:27.974Z] 23. Printing statistics.
+[2025-10-11T15:11:27.974Z] 24. Executing CHECK pass (checking for obvious problems).
+[2025-10-11T15:11:27.974Z] 25. Executing Verilog backend.
+[2025-10-11T15:11:27.974Z] 25.1. Executing BMUXMAP pass.
+[2025-10-11T15:11:27.974Z] 25.2. Executing DEMUXMAP pass.
+[2025-10-11T15:11:27.974Z] exec cp /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/gf180/uart-blocks/constraint.sdc ./results/gf180/uart-blocks/base/1_synth.sdc
+[2025-10-11T15:11:27.974Z] Warnings: 7 unique messages, 7 total
+[2025-10-11T15:11:27.974Z] End of script. Logfile hash: b77d101330, CPU: user 1.27s system 0.05s, MEM: 72.05 MB peak
+[2025-10-11T15:11:27.974Z] Yosys 0.58+35 (git sha1 89f32a415, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-10-11T15:11:27.974Z] Time spent: 48% 2x abc (1 sec), 9% 2x stat (0 sec), ...
+[2025-10-11T15:11:27.974Z] Elapsed time: 0:02.63[h:]min:sec. CPU time: user 2.52 sys 0.11 (100%). Peak memory: 75072KB.
+[2025-10-11T15:11:28.486Z] mkdir -p ./results/gf180/uart-blocks/base ./logs/gf180/uart-blocks/base ./reports/gf180/uart-blocks/base

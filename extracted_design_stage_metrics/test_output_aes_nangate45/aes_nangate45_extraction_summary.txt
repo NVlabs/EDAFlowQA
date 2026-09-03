@@ -1,0 +1,58 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/aes_nangate45_vs_aes_sky130hs/aes_nangate45.txt
+Output directory: test_output_aes_nangate45
+Timestamp: 2026-02-28T10:49:19.659728
+
+DESIGN INFO:
+  design_names=['aes']
+  technology_nodes=['nangate45']
+  config_mks=['config.mk']
+  design_info_file=aes_nangate45_design_info.json
+
+LINE CHECK:
+  log_total_lines=3464  chunks_total_lines=3380  chunks_covered_lines=3380  gaps=84  overlaps=0  extracted_total_lines=1345
+  gap_file=aes_nangate45_gap_lines.txt
+
+Total stage occurrences extracted: 6
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:    63 lines -> aes_nangate45_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   123 lines -> aes_nangate45_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:   515 lines -> aes_nangate45_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   264 lines -> aes_nangate45_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   229 lines -> aes_nangate45_routing_extract.txt
+
+SYNTHESIS (1 occurrence(s)):
+  #1:   151 lines -> aes_nangate45_synthesis_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  151 lines)
+ 2. floorplan_1                    (  515 lines)
+ 3. placement_1                    (  264 lines)
+ 4. cts_1                          (   63 lines)
+ 5. routing_1                      (  229 lines)
+ 6. final_1                        (  123 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=0.82 ns  cpu_s=35.31  warnings=3  errors=0
+ 2. floorplan_1       area=N/A  util=N/A  wns=-1.913  tns=-236.7  viol=130  hpwl=N/A
+ 3. placement_1       area=52785.0  util=38.7  wns=N/A  tns=N/A  viol=N/A  hpwl=193278.9
+ 4. cts_1             area=N/A  util=N/A  wns=0.012  tns=0.0  viol=0  hpwl=199246.8
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=20529.600  util=N/A  ir_vdd_wc=0.069  ir_vss_wc=0.066
+================================================================================

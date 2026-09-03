@@ -1,0 +1,287 @@
+{
+  "stage": "final",
+  "ir_drop": {},
+  "cell_counts": {
+    "macro_count": 21,
+    "macro_area": 5576.99,
+    "fill_cell_count": 26592,
+    "fill_cell_area": 5552.56,
+    "tap_cell_count": 4463,
+    "tap_cell_area": 130.14,
+    "clock_buffer_count": 68,
+    "clock_buffer_area": 26.32,
+    "timing_repair_buffer_count": 2266,
+    "timing_repair_buffer_area": 185.3,
+    "inverter_count": 872,
+    "inverter_area": 39.95,
+    "clock_inverter_count": 22,
+    "clock_inverter_area": 5.6,
+    "sequential_cell_count": 518,
+    "sequential_cell_area": 151.18,
+    "combinational_cell_count": 2609,
+    "combinational_cell_area": 308.7,
+    "total_cell_count": 37431,
+    "total_cell_area": 11976.73
+  },
+  "design_metrics": {
+    "setup_wns": -82.6084,
+    "setup_tns": -3154.68,
+    "hold_wns": 21.0148,
+    "hold_tns": 0.0,
+    "area": 6424.17
+  },
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 1,
+      "memory_mb": 220,
+      "sha1sum": "cf39ec153c54c34ff6d8"
+    },
+    "6_report": {
+      "elapsed_s": 5,
+      "memory_mb": 371
+    },
+    "1_1_yosys_canonicalize": {
+      "elapsed_s": 0,
+      "memory_mb": 79,
+      "sha1sum": "504e1a4ef92311e22ee7"
+    },
+    "1_2_yosys": {
+      "elapsed_s": 3,
+      "memory_mb": 148,
+      "sha1sum": "9b3a1c2585f66ae153f4"
+    },
+    "1_synth": {
+      "elapsed_s": 1,
+      "memory_mb": 200,
+      "sha1sum": "eb232bb106299fdbdb03"
+    },
+    "2_1_floorplan": {
+      "elapsed_s": 1,
+      "memory_mb": 223,
+      "sha1sum": "419e740a3f0eecc5df7e"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_s": 16,
+      "memory_mb": 234,
+      "sha1sum": "2f594744d53f2e4e8da7"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_s": 1,
+      "memory_mb": 197,
+      "sha1sum": "3c9918336951bb255d6e"
+    },
+    "2_4_floorplan_pdn": {
+      "elapsed_s": 1,
+      "memory_mb": 222,
+      "sha1sum": "b836ec099f0a0dd51486"
+    },
+    "3_1_place_gp_skip_io": {
+      "elapsed_s": 4,
+      "memory_mb": 215,
+      "sha1sum": "7c2cf1b59e0989172963"
+    },
+    "3_2_place_iop": {
+      "elapsed_s": 1,
+      "memory_mb": 206,
+      "sha1sum": "f69d0e8b292c3608ee0f"
+    },
+    "3_3_place_gp": {
+      "elapsed_s": 7,
+      "memory_mb": 441,
+      "sha1sum": "3c6145f4b6128eae512e"
+    },
+    "3_4_place_resized": {
+      "elapsed_s": 2,
+      "memory_mb": 229,
+      "sha1sum": "3c6145f4b6128eae512e"
+    },
+    "3_5_place_dp": {
+      "elapsed_s": 3,
+      "memory_mb": 261,
+      "sha1sum": "616ce7fc6e67a0cd2a57"
+    },
+    "4_1_cts": {
+      "elapsed_s": 10,
+      "memory_mb": 274,
+      "sha1sum": "1629f3aa4877b343417c"
+    },
+    "5_1_grt": {
+      "elapsed_s": 18,
+      "memory_mb": 572,
+      "sha1sum": "d7778438b464e048abb7"
+    },
+    "5_2_route": {
+      "elapsed_s": 116,
+      "memory_mb": 10909,
+      "sha1sum": "adb6fdcfffc5e757036e"
+    },
+    "5_3_fillcell": {
+      "elapsed_s": 1,
+      "memory_mb": 266,
+      "sha1sum": "cf39ec153c54c34ff6d8"
+    },
+    "6_1_merge": {
+      "elapsed_s": 2,
+      "memory_mb": 475
+    },
+    "generate_abstract": {
+      "elapsed_s": 1,
+      "memory_mb": 198
+    }
+  },
+  "performance": {},
+  "test_metrics": {
+    "synth__design__instance__area__stdcell": {
+      "actual_value": 1817.17294,
+      "operator": "<=",
+      "threshold_value": 2090.0,
+      "passed": true
+    },
+    "constraints__clocks__count": {
+      "actual_value": 1.0,
+      "operator": "==",
+      "threshold_value": 1.0,
+      "passed": true
+    },
+    "placeopt__design__instance__area": {
+      "actual_value": 6273.75,
+      "operator": "<=",
+      "threshold_value": 7210.0,
+      "passed": true
+    },
+    "placeopt__design__instance__count__stdcell": {
+      "actual_value": 9275.0,
+      "operator": "<=",
+      "threshold_value": 10573.0,
+      "passed": true
+    },
+    "detailedplace__design__violations": {
+      "actual_value": 0.0,
+      "operator": "==",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__design__instance__count__setup_buffer": {
+      "actual_value": 96.0,
+      "operator": "<=",
+      "threshold_value": 919.0,
+      "passed": true
+    },
+    "cts__design__instance__count__hold_buffer": {
+      "actual_value": 1321.0,
+      "operator": "<=",
+      "threshold_value": 1445.0,
+      "passed": true
+    },
+    "cts__timing__setup__ws": {
+      "actual_value": -139.335,
+      "operator": ">=",
+      "threshold_value": -162.0,
+      "passed": true
+    },
+    "cts__timing__setup__tns": {
+      "actual_value": -8939.6,
+      "operator": ">=",
+      "threshold_value": -9030.0,
+      "passed": true
+    },
+    "cts__timing__hold__ws": {
+      "actual_value": 0.0208028,
+      "operator": ">=",
+      "threshold_value": -22.5,
+      "passed": true
+    },
+    "cts__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -90.0,
+      "passed": true
+    },
+    "globalroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 100.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__ws": {
+      "actual_value": -150.121,
+      "operator": ">=",
+      "threshold_value": -164.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__tns": {
+      "actual_value": -8450.39,
+      "operator": ">=",
+      "threshold_value": -8540.0,
+      "passed": true
+    },
+    "globalroute__timing__hold__ws": {
+      "actual_value": 15.2519,
+      "operator": ">=",
+      "threshold_value": -22.5,
+      "passed": true
+    },
+    "globalroute__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -90.0,
+      "passed": true
+    },
+    "detailedroute__route__wirelength": {
+      "actual_value": 51309.0,
+      "operator": "<=",
+      "threshold_value": 52923.0,
+      "passed": true
+    },
+    "detailedroute__route__drc_errors": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna__violating__nets": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 100.0,
+      "passed": true
+    },
+    "finish__timing__setup__ws": {
+      "actual_value": -82.6084,
+      "operator": ">=",
+      "threshold_value": -98.3,
+      "passed": true
+    },
+    "finish__timing__setup__tns": {
+      "actual_value": -3154.68,
+      "operator": ">=",
+      "threshold_value": -3240.0,
+      "passed": true
+    },
+    "finish__timing__hold__ws": {
+      "actual_value": 21.0148,
+      "operator": ">=",
+      "threshold_value": -22.5,
+      "passed": true
+    },
+    "finish__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": -90.0,
+      "passed": true
+    },
+    "finish__design__instance__area": {
+      "actual_value": 6424.17,
+      "operator": "<=",
+      "threshold_value": 7332.0,
+      "passed": true
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_cipher_top"
+}

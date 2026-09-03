@@ -1,0 +1,118 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 24192.0,
+      "area": 59373.0,
+      "utilization": 35,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/gf180/uart-blocks/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 24192.0,
+            "total_resource": 67205,
+            "total_demand": 2017,
+            "total_usage_percent": 3.0,
+            "total_overflow": 0
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 0.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 0.0,
+            "hpwl_before": 14784.5,
+            "hpwl_after": 14784.5,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 0.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 0.0,
+            "hpwl_before": 14784.5,
+            "hpwl_after": 14784.5,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:12:09.322Z] Report metrics stage 5, global route...",
+      "elapsed_time": "0:04.54",
+      "peak_memory_kb": 213592,
+      "elapsed_s": 4,
+      "memory_mb": 208,
+      "sha1sum": "5246c98d979ac51e8489"
+    },
+    "5_2_route": {
+      "wirelength_um": 16765.0,
+      "total_vias": 2007,
+      "violations": 0,
+      "area": 59373.0,
+      "utilization": 35,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/gf180/uart-blocks/base/5_route_drc.rpt -output_maze ./results/gf180/uart-blocks/base/maze.log -disable_via_gen -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 69,
+              "wirelength_um": 16912.0,
+              "vias": 2020
+            },
+            {
+              "iteration": 1,
+              "violations": 9,
+              "wirelength_um": 16762.0,
+              "vias": 1998
+            },
+            {
+              "iteration": 2,
+              "violations": 0,
+              "wirelength_um": 16765.0,
+              "vias": 2007
+            }
+          ],
+          "final_wirelength_um": 16765.0,
+          "final_vias": 2007,
+          "final_violations": 0
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:12:34.048Z] Report metrics stage 5, detailed route...",
+      "elapsed_time": "0:24.39",
+      "peak_memory_kb": 1291052,
+      "elapsed_s": 24,
+      "memory_mb": 1260,
+      "sha1sum": "0e4af9a667184885f9ab"
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:01.22",
+      "peak_memory_kb": 127632,
+      "elapsed_s": 1,
+      "memory_mb": 124,
+      "sha1sum": "c7139152c4b2e761b44f"
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart"
+}

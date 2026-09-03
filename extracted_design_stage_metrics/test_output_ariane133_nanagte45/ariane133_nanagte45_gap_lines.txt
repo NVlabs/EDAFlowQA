@@ -1,0 +1,89 @@
+Log file: ./design_artifacts/ariane133_nanagte45/ariane133_nanagte45.txt
+Total log lines: 6221
+Uncovered line count: 84
+Gap ranges (0-based, end exclusive): [(0, 84)]
+--------------------------------------------------------------------------------
+L1: [2026-01-26T20:41:44.652Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:e656b3
+L2: [2026-01-26T20:41:44.652Z] 
+L3: [2026-01-26T20:41:44.652Z] error: no such object: openroad/flow-ubuntu22.04-dev:e656b3
+L4: [2026-01-26T20:43:38.740Z] + docker pull openroad/flow-ubuntu22.04-dev:e656b3
+L5: [2026-01-26T20:43:39.314Z] e656b3: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2026-01-26T20:43:39.314Z] 6f4ebca3e823: Pulling fs layer
+L7: [2026-01-26T20:43:39.314Z] 18da84cd7e7e: Pulling fs layer
+L8: [2026-01-26T20:43:39.314Z] 09e3a651a419: Pulling fs layer
+L9: [2026-01-26T20:43:39.314Z] 0d7066ea17ad: Pulling fs layer
+L10: [2026-01-26T20:43:39.314Z] 4d823595d30b: Pulling fs layer
+L11: [2026-01-26T20:43:39.314Z] d17520e33d2d: Pulling fs layer
+L12: [2026-01-26T20:43:39.314Z] 37854d3794f9: Pulling fs layer
+L13: [2026-01-26T20:43:39.888Z] 4d823595d30b: Download complete
+L14: [2026-01-26T20:43:39.888Z] 09e3a651a419: Download complete
+L15: [2026-01-26T20:43:39.888Z] 18da84cd7e7e: Download complete
+L16: [2026-01-26T20:43:39.888Z] d17520e33d2d: Download complete
+L17: [2026-01-26T20:43:39.888Z] 6f4ebca3e823: Download complete
+L18: [2026-01-26T20:43:39.888Z] b1770a8f3314: Download complete
+L19: [2026-01-26T20:43:39.888Z] 0d7066ea17ad: Download complete
+L20: [2026-01-26T20:43:40.462Z] 6f4ebca3e823: Pull complete
+L21: [2026-01-26T20:43:40.462Z] 4d823595d30b: Pull complete
+L22: [2026-01-26T20:43:40.462Z] 09e3a651a419: Pull complete
+L23: [2026-01-26T20:43:40.462Z] 18da84cd7e7e: Pull complete
+L24: [2026-01-26T20:43:40.462Z] d17520e33d2d: Pull complete
+L25: [2026-01-26T20:44:03.284Z] 37854d3794f9: Download complete
+L26: [2026-01-26T20:44:19.595Z] 0d7066ea17ad: Pull complete
+L27: [2026-01-26T20:44:19.595Z] 37854d3794f9: Pull complete
+L28: [2026-01-26T20:44:19.595Z] Digest: sha256:7e155fab53594c9122be9cc1888ab7fa9a65a5c4858281bcbc48f6ea12bfd72b
+L29: [2026-01-26T20:44:19.595Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:e656b3
+L30: [2026-01-26T20:44:19.595Z] docker.io/openroad/flow-ubuntu22.04-dev:e656b3
+L31: [2026-01-26T20:46:42.371Z] + git config --system --add safe.directory *
+L32: [2026-01-26T20:49:27.027Z] + nice flow/test/test_helper.sh ariane133 nangate45
+L33: [2026-01-26T20:49:27.027Z] +++ readlink -f flow/test/test_helper.sh
+L34: [2026-01-26T20:49:27.027Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L35: [2026-01-26T20:49:27.027Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L36: [2026-01-26T20:49:27.027Z] + DESIGN_NAME=ariane133
+L37: [2026-01-26T20:49:27.027Z] + PLATFORM=nangate45
+L38: [2026-01-26T20:49:27.027Z] + CONFIG_MK=config.mk
+L39: [2026-01-26T20:49:27.027Z] + '[' 2 -ge 4 ']'
+L40: [2026-01-26T20:49:27.027Z] + TARGET='finish metadata'
+L41: [2026-01-26T20:49:27.027Z] + DESIGN_CONFIG=./designs/nangate45/ariane133/config.mk
+L42: [2026-01-26T20:49:27.027Z] + LOG_FILE=./logs/nangate45/ariane133.log
+L43: [2026-01-26T20:49:27.027Z] + mkdir -p ./logs/nangate45
+L44: [2026-01-26T20:49:27.027Z] + __make='make DESIGN_CONFIG=./designs/nangate45/ariane133/config.mk'
+L45: [2026-01-26T20:49:27.027Z] + '[' -n '' ']'
+L46: [2026-01-26T20:49:27.027Z] ++ dirname ./logs/nangate45/ariane133.log
+L47: [2026-01-26T20:49:27.027Z] + mkdir -p ./logs/nangate45
+L48: [2026-01-26T20:49:27.027Z] + make DESIGN_CONFIG=./designs/nangate45/ariane133/config.mk clean_all clean_metadata
+L49: [2026-01-26T20:49:27.027Z] + tee ./logs/nangate45/ariane133.log
+L50: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/1_* ./results/nangate45/ariane133/base/mem*.json
+L51: [2026-01-26T20:49:27.027Z] rm -f ./reports/nangate45/ariane133/base/synth_*
+L52: [2026-01-26T20:49:27.027Z] rm -f ./logs/nangate45/ariane133/base/1_*
+L53: [2026-01-26T20:49:27.027Z] rm -f 
+L54: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/clock_period.txt
+L55: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/2_*floorplan*.odb ./results/nangate45/ariane133/base/2_floorplan.sdc ./results/nangate45/ariane133/base/2_*.v ./results/nangate45/ariane133/base/2_*.def
+L56: [2026-01-26T20:49:27.027Z] rm -f ./reports/nangate45/ariane133/base/2_*
+L57: [2026-01-26T20:49:27.027Z] rm -f ./logs/nangate45/ariane133/base/2_*
+L58: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/3_*place*.odb
+L59: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/3_place.sdc
+L60: [2026-01-26T20:49:27.027Z] rm -f ./results/nangate45/ariane133/base/3_*.def ./results/nangate45/ariane133/base/3_*.v
+L61: [2026-01-26T20:49:27.027Z] rm -f ./reports/nangate45/ariane133/base/3_*
+L62: [2026-01-26T20:49:27.027Z] rm -f ./logs/nangate45/ariane133/base/3_*
+L63: [2026-01-26T20:49:27.027Z] rm -rf ./results/nangate45/ariane133/base/4_*cts*.odb ./results/nangate45/ariane133/base/4_cts.sdc ./results/nangate45/ariane133/base/4_*.v ./results/nangate45/ariane133/base/4_*.def
+L64: [2026-01-26T20:49:27.028Z] rm -f  ./reports/nangate45/ariane133/base/4_*
+L65: [2026-01-26T20:49:27.028Z] rm -rf ./logs/nangate45/ariane133/base/4_*
+L66: [2026-01-26T20:49:27.028Z] rm -rf ./results/nangate45/ariane133/base/route.guide ./results/nangate45/ariane133/base/output_guide.mod ./results/nangate45/ariane133/base/updated_clks.sdc
+L67: [2026-01-26T20:49:27.028Z] rm -rf ./results/nangate45/ariane133/base/5_*.odb ./results/nangate45/ariane133/base/5_route.sdc ./results/nangate45/ariane133/base/5_*.def ./results/nangate45/ariane133/base/5_*.v
+L68: [2026-01-26T20:49:27.028Z] rm -f  ./reports/nangate45/ariane133/base/5_*
+L69: [2026-01-26T20:49:27.028Z] rm -f  ./logs/nangate45/ariane133/base/5_*
+L70: [2026-01-26T20:49:27.028Z] rm -rf ./results/nangate45/ariane133/base/6_*.gds ./results/nangate45/ariane133/base/6_*.oas ./results/nangate45/ariane133/base/6_*.odb ./results/nangate45/ariane133/base/6_*.v ./results/nangate45/ariane133/base/6_*.def ./results/nangate45/ariane133/base/6_*.sdc ./results/nangate45/ariane133/base/6_*.spef
+L71: [2026-01-26T20:49:27.028Z] rm -rf ./reports/nangate45/ariane133/base/6_*.rpt
+L72: [2026-01-26T20:49:27.028Z] rm -f  ./logs/nangate45/ariane133/base/6_*
+L73: [2026-01-26T20:49:27.028Z] rm -f ./reports/nangate45/ariane133/base/design-dir.txt
+L74: [2026-01-26T20:49:27.028Z] rm -f ./reports/nangate45/ariane133/base/metadata*.*
+L75: [2026-01-26T20:49:27.028Z] rm -f ./results/nangate45/ariane133/base/ariane.lib ./results/nangate45/ariane133/base/ariane.lef
+L76: [2026-01-26T20:49:27.028Z] rm -rf ./objects/nangate45/ariane133/base
+L77: [2026-01-26T20:49:27.028Z] make: Nothing to be done for 'clean_metadata'.
+L78: [2026-01-26T20:49:27.028Z] + set +e
+L79: [2026-01-26T20:49:27.028Z] + eval make DESIGN_CONFIG=./designs/nangate45/ariane133/config.mk 'finish metadata'
+L80: [2026-01-26T20:49:27.028Z] + tee -a ./logs/nangate45/ariane133.log
+L81: [2026-01-26T20:49:27.028Z] ++ make DESIGN_CONFIG=./designs/nangate45/ariane133/config.mk finish metadata
+L82: [2026-01-26T20:49:27.601Z] mkdir -p results/nangate45/ariane133/base/
+L83: [2026-01-26T20:49:27.601Z] echo 3.0 > results/nangate45/ariane133/base/clock_period.txt
+L84: [2026-01-26T20:49:27.601Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/nangate45/ariane133/base/1_1_yosys_canonicalize.log

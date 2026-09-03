@@ -1,0 +1,330 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 5.5,
+      "worstcase_voltage_v": 5.5,
+      "average_voltage_v": 5.5,
+      "average_ir_drop_v": 0.000406,
+      "worstcase_ir_drop_v": 0.0012,
+      "percentage_drop": 0.02
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.00109,
+      "average_voltage_v": 0.000388,
+      "average_ir_drop_v": 0.000388,
+      "worstcase_ir_drop_v": 0.00109,
+      "percentage_drop": 0.02
+    }
+  },
+  "cell_counts": {
+    "macro_count": 1,
+    "macro_area": 45571.58,
+    "fill_cell_count": 1249,
+    "fill_cell_area": 91801.38,
+    "tap_cell_count": 94,
+    "tap_cell_area": 530.61,
+    "clock_buffer_count": 11,
+    "clock_buffer_area": 874.94,
+    "timing_repair_buffer_count": 44,
+    "timing_repair_buffer_area": 1859.96,
+    "inverter_count": 23,
+    "inverter_area": 389.49,
+    "clock_inverter_count": 1,
+    "clock_inverter_area": 28.22,
+    "sequential_cell_count": 35,
+    "sequential_cell_area": 2963.52,
+    "combinational_cell_count": 192,
+    "combinational_cell_area": 7685.4,
+    "total_cell_count": 1910,
+    "total_cell_area": 153172.75
+  },
+  "design_metrics": {
+    "area": 61371.4,
+    "setup_wns": 1.69968,
+    "setup_tns": 0.0,
+    "hold_wns": 0.461581,
+    "hold_tns": 0.0,
+    "wns_percent_delay": 84.806905
+  },
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 1,
+      "memory_mb": 119,
+      "sha1sum": "c7139152c4b2e761b44f"
+    },
+    "6_report": {
+      "elapsed_s": 4,
+      "memory_mb": 186
+    },
+    "1_1_yosys_canonicalize": {
+      "elapsed_s": 0,
+      "memory_mb": 69,
+      "sha1sum": "d4460c9538e523081672"
+    },
+    "1_2_yosys": {
+      "elapsed_s": 2,
+      "memory_mb": 73,
+      "sha1sum": "1c6081dd776893ff5608"
+    },
+    "2_1_floorplan": {
+      "elapsed_s": 1,
+      "memory_mb": 139,
+      "sha1sum": "c3f176cf079309b632c3"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_s": 3,
+      "memory_mb": 118,
+      "sha1sum": "8eb86b4a29f00c6aede6"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_s": 1,
+      "memory_mb": 117,
+      "sha1sum": "e6173e589292a97d843c"
+    },
+    "2_4_floorplan_pdn": {
+      "elapsed_s": 1,
+      "memory_mb": 124,
+      "sha1sum": "9088c669c25d1e0e618e"
+    },
+    "3_1_place_gp_skip_io": {
+      "elapsed_s": 1,
+      "memory_mb": 119,
+      "sha1sum": "b4ecb9c3e807d9d55c19"
+    },
+    "3_2_place_iop": {
+      "elapsed_s": 1,
+      "memory_mb": 119,
+      "sha1sum": "3974c4b22a6396e07000"
+    },
+    "3_3_place_gp": {
+      "elapsed_s": 3,
+      "memory_mb": 195,
+      "sha1sum": "5dbf97e1dcdb701df82d"
+    },
+    "3_4_place_resized": {
+      "elapsed_s": 2,
+      "memory_mb": 137,
+      "sha1sum": "5dbf97e1dcdb701df82d"
+    },
+    "3_5_place_dp": {
+      "elapsed_s": 2,
+      "memory_mb": 127,
+      "sha1sum": "01cce14027e2e780f61f"
+    },
+    "4_1_cts": {
+      "elapsed_s": 9,
+      "memory_mb": 162,
+      "sha1sum": "f735fe784642ab1c5210"
+    },
+    "5_1_grt": {
+      "elapsed_s": 4,
+      "memory_mb": 208,
+      "sha1sum": "5246c98d979ac51e8489"
+    },
+    "5_2_route": {
+      "elapsed_s": 24,
+      "memory_mb": 1260,
+      "sha1sum": "0e4af9a667184885f9ab"
+    },
+    "5_3_fillcell": {
+      "elapsed_s": 1,
+      "memory_mb": 124,
+      "sha1sum": "c7139152c4b2e761b44f"
+    },
+    "6_1_merge": {
+      "elapsed_s": 2,
+      "memory_mb": 426
+    },
+    "generate_abstract": {
+      "elapsed_s": 1,
+      "memory_mb": 121
+    }
+  },
+  "performance": {},
+  "test_metrics": {
+    "synth__design__instance__area__stdcell": {
+      "actual_value": 53334.7828,
+      "operator": "<=",
+      "threshold_value": 61300.0,
+      "passed": true
+    },
+    "constraints__clocks__count": {
+      "actual_value": 1.0,
+      "operator": "==",
+      "threshold_value": 1.0,
+      "passed": true
+    },
+    "placeopt__design__instance__area": {
+      "actual_value": 60468.2,
+      "operator": "<=",
+      "threshold_value": 69126.0,
+      "passed": true
+    },
+    "placeopt__design__instance__count__stdcell": {
+      "actual_value": 648.0,
+      "operator": "<=",
+      "threshold_value": 726.0,
+      "passed": true
+    },
+    "detailedplace__design__violations": {
+      "actual_value": 0.0,
+      "operator": "==",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__design__instance__count__setup_buffer": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 63.0,
+      "passed": true
+    },
+    "cts__design__instance__count__hold_buffer": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 63.0,
+      "passed": true
+    },
+    "cts__timing__setup__ws": {
+      "actual_value": 1.70814,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__timing__setup__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__timing__hold__ws": {
+      "actual_value": 0.46241,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "cts__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__ws": {
+      "actual_value": 1.6979,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__setup__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__hold__ws": {
+      "actual_value": 0.47746,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "globalroute__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__route__wirelength": {
+      "actual_value": 16765.0,
+      "operator": "<=",
+      "threshold_value": 17413.0,
+      "passed": true
+    },
+    "detailedroute__route__drc_errors": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna__violating__nets": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__antenna_diodes_count": {
+      "actual_value": 0.0,
+      "operator": "<=",
+      "threshold_value": 5.0,
+      "passed": true
+    },
+    "detailedroute__timing__setup__ws": {
+      "actual_value": 1.77189,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__timing__setup__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__timing__hold__ws": {
+      "actual_value": 0.446945,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "detailedroute__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__setup__ws": {
+      "actual_value": 1.69968,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__setup__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__hold__ws": {
+      "actual_value": 0.461581,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__timing__hold__tns": {
+      "actual_value": 0.0,
+      "operator": ">=",
+      "threshold_value": 0.0,
+      "passed": true
+    },
+    "finish__design__instance__area": {
+      "actual_value": 61371.4,
+      "operator": "<=",
+      "threshold_value": 70132.0,
+      "passed": true
+    },
+    "finish__timing__wns_percent_delay": {
+      "actual_value": 84.806905,
+      "operator": ">=",
+      "threshold_value": -10.0,
+      "passed": true
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart"
+}

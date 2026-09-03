@@ -1,0 +1,16 @@
+violation type: Vertical congestion
+	srcs: net:_06131_ net:_06212_ net:_06233_ net:_06289_ net:_06582_ net:net5520 net:net5531 net:net5537 net:net5550 net:net5545 net:net5560 net:net6759 net:net6768 net:net6781 net:clknet_0_clk
+	comment: capacity:15 usage:16 overflow:1
+	bbox = (144.0000, 237.6000) - (151.2000, 244.8000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_02251_ net:_02292_ net:_02391_ net:_02469_ net:net350 net:net7250 net:net4943 net:net6068 net:net6071 net:net6105 net:net6104 net:net6130 net:net6133 net:net7835 net:clknet_0_clk net:net7196 net:net4816
+	comment: capacity:17 usage:18 overflow:1
+	bbox = (345.6000, 72.0000) - (352.8000, 79.2000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_02072_ net:_02145_ net:_02251_ net:_02292_ net:_02341_ net:_02387_ net:_02391_ net:_02469_ net:net350 net:net7250 net:net6068 net:net6105 net:net6104 net:net6159 net:clknet_0_clk net:net7196 net:net4816
+	comment: capacity:17 usage:18 overflow:1
+	bbox = (345.6000, 64.8000) - (352.8000, 72.0000) on Layer -
+violation type: Vertical congestion
+	srcs: net:_06131_ net:_06197_ net:_06212_ net:_06233_ net:_06289_ net:_06399_ net:net5520 net:net5531 net:net5538 net:net5550 net:net5545 net:net6768 net:net6781 net:net7789 net:clknet_0_clk
+	comment: capacity:15 usage:16 overflow:1
+	bbox = (144.0000, 244.8000) - (151.2000, 252.0000) on Layer -

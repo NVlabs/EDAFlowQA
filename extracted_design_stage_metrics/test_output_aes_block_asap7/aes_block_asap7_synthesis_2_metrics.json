@@ -1,0 +1,21 @@
+{
+  "stage": "synthesis",
+  "total_runs": 1,
+  "runs": [
+    {
+      "run_number": 1,
+      "script_name": "synthesis",
+      "design_name": "aes_sbox",
+      "timing": {
+        "clock_period_set_count": 0
+      },
+      "statistics": {
+        "cells": {},
+        "chip_area": {}
+      },
+      "check": {}
+    }
+  ],
+  "design_name": "aes-block",
+  "sub_design_name": "aes_sbox"
+}

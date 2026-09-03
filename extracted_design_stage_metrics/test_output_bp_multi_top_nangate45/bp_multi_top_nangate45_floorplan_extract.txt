@@ -1,0 +1,74 @@
+[2025-11-06T16:03:38.814Z] Running floorplan.tcl, stage 2_1_floorplan
+[2025-11-06T16:03:40.268Z] ==========================================================================
+[2025-11-06T16:03:40.268Z] Floorplan check_setup
+[2025-11-06T16:03:40.268Z] --------------------------------------------------------------------------
+[2025-11-06T16:03:42.174Z] number instances in verilog is 121383
+[2025-11-06T16:03:42.433Z] Repair tie lo fanout...
+[2025-11-06T16:03:42.433Z] [INFO RSZ-0042] Inserted 793 tie LOGIC0_X1 instances.
+[2025-11-06T16:03:42.433Z] Repair tie hi fanout...
+[2025-11-06T16:03:42.433Z] [INFO RSZ-0042] Inserted 547 tie LOGIC1_X1 instances.
+[2025-11-06T16:03:42.433Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose
+[2025-11-06T16:03:42.433Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2025-11-06T16:03:42.951Z]    Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+[2025-11-06T16:03:42.951Z]           | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+[2025-11-06T16:03:42.951Z] --------------------------------------------------------------------------------------------------------------
+[2025-11-06T16:03:42.951Z]         0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -3.677 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:43.787Z]        10 |       0 |       6 |        0 |      0 |     3 |    +0.0% |   -3.680 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:44.045Z]        20 |       0 |      13 |        0 |      0 |     6 |    +0.0% |   -3.671 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:44.305Z]        30 |       0 |      22 |        0 |      0 |     7 |    +0.0% |   -3.657 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:44.564Z]        40 |       0 |      31 |        0 |      0 |     8 |    +0.0% |   -3.664 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:44.823Z]        50 |       0 |      41 |        0 |      0 |     8 |    +0.0% |   -3.669 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.082Z]        60 |       0 |      51 |        0 |      0 |     8 |    +0.0% |   -3.673 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.599Z]        70 |       0 |      61 |        0 |      0 |     8 |    +0.0% |   -3.678 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.858Z]        80 |       0 |      71 |        0 |      0 |     8 |    +0.0% |   -3.682 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.858Z]        80 |       0 |      22 |        0 |      0 |     7 |    +0.0% |   -3.657 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.858Z]     final |       0 |      22 |        0 |      0 |     7 |    +0.0% |   -3.657 |       -3.7 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:03:45.858Z] --------------------------------------------------------------------------------------------------------------
+[2025-11-06T16:03:45.858Z] [INFO RSZ-0051] Resized 22 instances: 22 up, 0 up match, 0 down, 0 VT
+[2025-11-06T16:03:45.858Z] [WARNING RSZ-0062] Unable to repair all setup violations.
+[2025-11-06T16:03:45.858Z] Default units for flow
+[2025-11-06T16:03:45.858Z]  time 1ns
+[2025-11-06T16:03:45.858Z]  capacitance 1fF
+[2025-11-06T16:03:45.858Z]  resistance 1kohm
+[2025-11-06T16:03:45.858Z]  voltage 1v
+[2025-11-06T16:03:45.858Z]  current 1mA
+[2025-11-06T16:03:45.858Z]  power 1nW
+[2025-11-06T16:03:45.858Z]  distance 1um
+[2025-11-06T16:03:45.858Z] Report metrics stage 2, floorplan final...
+[2025-11-06T16:04:07.801Z] ==========================================================================
+[2025-11-06T16:04:07.801Z] floorplan final report_design_area
+[2025-11-06T16:04:07.801Z] --------------------------------------------------------------------------
+[2025-11-06T16:04:07.801Z] Design area 512533 um^2 44% utilization.
+[2025-11-06T16:04:07.801Z] Elapsed time: 0:28.40[h:]min:sec. CPU time: user 33.93 sys 39.05 (256%). Peak memory: 646724KB.
+[2025-11-06T16:04:07.801Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T16:04:07.801Z] 2_1_floorplan                     28            631 a61d1f1a9c904ba0fe05
+[2025-11-06T16:04:07.801Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2025-11-06T16:04:09.011Z] Placement density is 0.4779999977350235, computed from PLACE_DENSITY_LB_ADDON  0.05 and lower bound 0.4399999976158142
+[2025-11-06T16:04:09.011Z] rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/nangate45/bp_multi/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.4779999977350235
+[2025-11-06T16:04:09.011Z] Die Area: (0.00, 0.00) (1100.00, 1100.00),  Floorplan Area: (10.07, 9.80) (1089.84, 1089.20)
+[2025-11-06T16:04:09.011Z] 	Number of std cell instances: 122667
+[2025-11-06T16:04:09.011Z] 	Area of std cell instances: 179594.11
+[2025-11-06T16:04:09.011Z] 	Number of macros: 26
+[2025-11-06T16:04:09.011Z] 	Area of macros: 332943.12
+[2025-11-06T16:04:09.011Z] 	Halo width: 10.00
+[2025-11-06T16:04:09.011Z] 	Halo height: 10.00
+[2025-11-06T16:04:09.011Z] 	Area of macros with halos: 456265.59
+[2025-11-06T16:04:09.011Z] 	Area of std cell instances + Area of macros: 512537.25
+[2025-11-06T16:04:09.011Z] 	Floorplan area: 1165503.62
+[2025-11-06T16:04:09.011Z] 	Design Utilization: 0.44
+[2025-11-06T16:04:09.011Z] 	Floorplan Utilization: 0.22
+[2025-11-06T16:04:09.011Z] 	Manufacturing Grid: 10
+[2025-11-06T16:04:21.226Z] Took 11 seconds: rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/nangate45/bp_multi/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.4779999977350235
+[2025-11-06T16:04:21.226Z] Elapsed time: 0:12.77[h:]min:sec. CPU time: user 159.11 sys 0.24 (1247%). Peak memory: 712296KB.
+[2025-11-06T16:04:21.226Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T16:04:21.226Z] 2_2_floorplan_macro               12            695 f3d8bf9ec6ccf0acdf73
+[2025-11-06T16:04:21.226Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2025-11-06T16:04:21.226Z] [INFO TAP-0004] Inserted 1542 endcaps.
+[2025-11-06T16:04:21.226Z] [INFO TAP-0005] Inserted 2110 tapcells.
+[2025-11-06T16:04:21.226Z] Elapsed time: 0:00.71[h:]min:sec. CPU time: user 0.66 sys 0.05 (100%). Peak memory: 232732KB.
+[2025-11-06T16:04:21.485Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T16:04:21.485Z] 2_3_floorplan_tapcell              0            227 8e94525d4988cbf32c6b
+[2025-11-06T16:04:21.485Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2025-11-06T16:04:25.059Z] Elapsed time: 0:03.40[h:]min:sec. CPU time: user 3.30 sys 0.10 (100%). Peak memory: 387400KB.
+[2025-11-06T16:04:25.059Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T16:04:25.059Z] 2_4_floorplan_pdn                  3            378 2d6bc2612ffb13bf8a4c

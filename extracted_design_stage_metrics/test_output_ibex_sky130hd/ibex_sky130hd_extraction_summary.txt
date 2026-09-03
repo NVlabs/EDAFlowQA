@@ -1,0 +1,58 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/ibex_sky130hd/ibex_sky130hd.txt
+Output directory: test_output_ibex_sky130hd
+Timestamp: 2026-02-28T15:49:03.836193
+
+DESIGN INFO:
+  design_names=['ibex']
+  technology_nodes=['sky130hd']
+  config_mks=['config.mk']
+  design_info_file=ibex_sky130hd_design_info.json
+
+LINE CHECK:
+  log_total_lines=3847  chunks_total_lines=3763  chunks_covered_lines=3763  gaps=84  overlaps=0  extracted_total_lines=1836
+  gap_file=ibex_sky130hd_gap_lines.txt
+
+Total stage occurrences extracted: 6
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:   159 lines -> ibex_sky130hd_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   122 lines -> ibex_sky130hd_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:    48 lines -> ibex_sky130hd_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   583 lines -> ibex_sky130hd_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   729 lines -> ibex_sky130hd_routing_extract.txt
+
+SYNTHESIS (1 occurrence(s)):
+  #1:   195 lines -> ibex_sky130hd_synthesis_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  195 lines)
+ 2. floorplan_1                    (   48 lines)
+ 3. placement_1                    (  583 lines)
+ 4. cts_1                          (  159 lines)
+ 5. routing_1                      (  729 lines)
+ 6. final_1                        (  122 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=10.0 ns  cpu_s=56.06  warnings=3  errors=0
+ 2. floorplan_1       area=N/A  util=N/A  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 3. placement_1       area=283021.4  util=52.3  wns=N/A  tns=N/A  viol=N/A  hpwl=502836.7
+ 4. cts_1             area=N/A  util=N/A  wns=-0.033  tns=-0.1  viol=0  hpwl=531327.2
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=157137.000  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.001
+================================================================================

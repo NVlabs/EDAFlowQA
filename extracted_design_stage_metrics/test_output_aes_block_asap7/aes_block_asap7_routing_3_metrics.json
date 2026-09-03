@@ -1,0 +1,129 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 59217.0,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/asap7/aes-block/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 59217.0,
+            "total_resource": 2178682,
+            "total_demand": 89726,
+            "total_usage_percent": 4.12,
+            "total_overflow": 0
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 0.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 0.0,
+            "hpwl_before": 49591.1,
+            "hpwl_after": 49591.1,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 473,
+          "start_metrics": {
+            "wns": -154.106,
+            "tns": -8938.7,
+            "violation_end_points": 188
+          },
+          "end_metrics": {
+            "wns": -150.039,
+            "tns": -8527.2,
+            "violation_end_points": 182
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 43.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 1.0,
+            "hpwl_before": 49632.3,
+            "hpwl_after": 49664.4,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:49:03.677Z] Report metrics stage 5, global route...",
+      "elapsed_time": "0:18.43",
+      "peak_memory_kb": 586052,
+      "elapsed_s": 18,
+      "memory_mb": 572,
+      "sha1sum": "d7778438b464e048abb7"
+    },
+    "5_2_route": {
+      "wirelength_um": 51309.0,
+      "total_vias": 46307,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/asap7/aes-block/base/5_route_drc.rpt -output_maze ./results/asap7/aes-block/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 400,
+              "wirelength_um": 51417.0,
+              "vias": 47304
+            },
+            {
+              "iteration": 1,
+              "violations": 20,
+              "wirelength_um": 51312.0,
+              "vias": 46398
+            },
+            {
+              "iteration": 2,
+              "violations": 0,
+              "wirelength_um": 51309.0,
+              "vias": 46307
+            }
+          ],
+          "final_wirelength_um": 51309.0,
+          "final_vias": 46307,
+          "final_violations": 0
+        }
+      ],
+      "elapsed_time": "1:56.56",
+      "peak_memory_kb": 11171584,
+      "elapsed_s": 116,
+      "memory_mb": 10909,
+      "sha1sum": "adb6fdcfffc5e757036e"
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:01.75",
+      "peak_memory_kb": 273332,
+      "elapsed_s": 1,
+      "memory_mb": 266,
+      "sha1sum": "cf39ec153c54c34ff6d8"
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_cipher_top"
+}

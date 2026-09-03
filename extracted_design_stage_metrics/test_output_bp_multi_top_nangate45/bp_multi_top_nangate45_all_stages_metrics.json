@@ -1,0 +1,1066 @@
+{
+  "design_name": "bp_multi_top",
+  "sub_design_names": [
+    "bp_multi_top"
+  ],
+  "design_info": {
+    "runs": [
+      {
+        "line": 41,
+        "timestamp": "2025-11-06T16:02:18.494Z",
+        "design_name": "bp_multi_top",
+        "technology_node": "nangate45",
+        "config_mk": "config.mk"
+      }
+    ]
+  },
+  "log_file": "./design_artifacts/bp_multi_top_nangate45/bp_multi_top_nangate45.txt",
+  "timestamp": "2026-02-28T13:56:34.092874",
+  "flow_execution_summary": {
+    "design_name": "bp_multi_top",
+    "technology_node": "nangate45",
+    "log_file": "./design_artifacts/bp_multi_top_nangate45/bp_multi_top_nangate45.txt",
+    "timestamp": "2026-02-28T13:56:34.092874",
+    "execute_successfully": true,
+    "exit_code": 0,
+    "exit_line": "[2025-11-06T16:23:24.128Z] + exit 0",
+    "errors_detected": [
+      {
+        "line": 3,
+        "content": "[2025-11-06T15:58:08.851Z] Error: No such object: openroad/flow-ubuntu22.04-dev:ee5a20"
+      }
+    ],
+    "total_stages": 5,
+    "stages": [
+      {
+        "sequence_number": 1,
+        "stage_type": "floorplan",
+        "occurrence": 1,
+        "sub_design_name": "bp_multi_top",
+        "line_range": {
+          "start": 2667,
+          "end": 3238
+        },
+        "extracted_lines": 74,
+        "output_file": "bp_multi_top_nangate45_floorplan_extract.txt",
+        "metrics_file": "bp_multi_top_nangate45_floorplan_metrics.json"
+      },
+      {
+        "sequence_number": 2,
+        "stage_type": "placement",
+        "occurrence": 1,
+        "sub_design_name": "bp_multi_top",
+        "line_range": {
+          "start": 3238,
+          "end": 4341
+        },
+        "extracted_lines": 717,
+        "output_file": "bp_multi_top_nangate45_placement_extract.txt",
+        "metrics_file": "bp_multi_top_nangate45_placement_metrics.json"
+      },
+      {
+        "sequence_number": 3,
+        "stage_type": "cts",
+        "occurrence": 1,
+        "sub_design_name": "bp_multi_top",
+        "line_range": {
+          "start": 4341,
+          "end": 4729
+        },
+        "extracted_lines": 252,
+        "output_file": "bp_multi_top_nangate45_cts_extract.txt",
+        "metrics_file": "bp_multi_top_nangate45_cts_metrics.json"
+      },
+      {
+        "sequence_number": 4,
+        "stage_type": "routing",
+        "occurrence": 1,
+        "sub_design_name": "bp_multi_top",
+        "line_range": {
+          "start": 4729,
+          "end": 5987
+        },
+        "extracted_lines": 489,
+        "output_file": "bp_multi_top_nangate45_routing_extract.txt",
+        "metrics_file": "bp_multi_top_nangate45_routing_metrics.json"
+      },
+      {
+        "sequence_number": 5,
+        "stage_type": "final",
+        "occurrence": 1,
+        "sub_design_name": "bp_multi_top",
+        "line_range": {
+          "start": 5987,
+          "end": 6211
+        },
+        "extracted_lines": 138,
+        "output_file": "bp_multi_top_nangate45_final_extract.txt",
+        "metrics_file": "bp_multi_top_nangate45_final_metrics.json"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "sequence_number": 1,
+      "stage": "floorplan",
+      "occurrence": 1,
+      "design_name": "bp_multi_top",
+      "sub_design_name": "bp_multi_top",
+      "metrics_file": "test_output_bp_multi_top_nangate45/bp_multi_top_nangate45_floorplan_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "wns": -3.657,
+            "tns": -3.7,
+            "violations": 1,
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {
+                  "tie_lo_instances": 793,
+                  "tie_hi_instances": 547
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+                "iterations_count": 11,
+                "start_metrics": {
+                  "wns": -3.677,
+                  "tns": -3.7,
+                  "violation_end_points": 1
+                },
+                "end_metrics": {
+                  "wns": -3.657,
+                  "tns": -3.7,
+                  "violation_end_points": 1
+                }
+              }
+            ],
+            "elapsed_time": "0:28.40",
+            "peak_memory_kb": 646724,
+            "elapsed_s": 28,
+            "memory_mb": 631,
+            "sha1sum": "a61d1f1a9c904ba0fe05"
+          },
+          "2_2_floorplan_macro": {
+            "utilization": 44.0,
+            "density": 44.0,
+            "optimization_process": [
+              {
+                "type": "macro_placement",
+                "command": "rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/nangate45/bp_multi/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.4779999977350235",
+                "results": {
+                  "num_std_cells": 122667,
+                  "area_std_cells": 179594.11,
+                  "num_macros": 26,
+                  "area_macros": 512537.25,
+                  "design_utilization": 44.0,
+                  "floorplan_utilization": 22.0
+                }
+              }
+            ],
+            "elapsed_time": "0:12.77",
+            "peak_memory_kb": 712296,
+            "elapsed_s": 12,
+            "memory_mb": 695,
+            "sha1sum": "f3d8bf9ec6ccf0acdf73"
+          },
+          "2_3_floorplan_tapcell": {
+            "optimization_process": [
+              {
+                "type": "tapcell_insertion",
+                "results": {
+                  "endcaps_inserted": 1542,
+                  "tapcells_inserted": 2110
+                }
+              }
+            ],
+            "elapsed_time": "0:00.71",
+            "peak_memory_kb": 232732,
+            "elapsed_s": 0,
+            "memory_mb": 227,
+            "sha1sum": "8e94525d4988cbf32c6b"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2025-11-06T16:03:45.858Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:03.40",
+            "peak_memory_kb": 387400,
+            "elapsed_s": 3,
+            "memory_mb": 378,
+            "sha1sum": "2d6bc2612ffb13bf8a4c"
+          }
+        },
+        "design_name": "bp_multi_top",
+        "sub_design_name": "bp_multi_top"
+      }
+    },
+    {
+      "sequence_number": 2,
+      "stage": "placement",
+      "occurrence": 1,
+      "design_name": "bp_multi_top",
+      "sub_design_name": "bp_multi_top",
+      "metrics_file": "test_output_bp_multi_top_nangate45/bp_multi_top_nangate45_placement_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 3272866.0,
+            "area": 1165503.738,
+            "utilization": 25.407,
+            "density": 25.407,
+            "overflow": 0.0992,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.306999990940094 -pad_left 0 -pad_right 0",
+                "iterations_count": 382,
+                "start_metrics": {
+                  "overflow": 0.9764,
+                  "hpwl": 5637674.0
+                },
+                "end_metrics": {
+                  "overflow": 0.0992,
+                  "hpwl": 3272866.0
+                },
+                "results": {
+                  "movable_instances": 122667,
+                  "fixed_instances": 7636,
+                  "num_nets": 141751,
+                  "num_pins": 415193,
+                  "core_area_um2": 1165503.738,
+                  "fixed_instances_area_um2": 458656.618,
+                  "movable_instances_area_um2": 179590.166,
+                  "standard_cells_area_um2": 179590.166,
+                  "utilization": 25.407,
+                  "target_density": 30.7,
+                  "final_overflow": 0.0992,
+                  "final_hpwl_um": 3272866.0
+                }
+              }
+            ],
+            "elapsed_s": 23,
+            "memory_mb": 619,
+            "sha1sum": "c8741f8d0050783dd31f"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers metal5 -ver_layers metal6",
+                "results": {
+                  "io_nets_hpwl_um": 766808.56
+                }
+              }
+            ],
+            "elapsed_s": 0,
+            "memory_mb": 308,
+            "sha1sum": "bffcfbd8e092b2c93e3b"
+          },
+          "3_3_place_gp": {
+            "hpwl": 3154719.0,
+            "area": 1165503.738,
+            "utilization": 24.06,
+            "density": 24.06,
+            "overflow": 0.0985,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 10979
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 701,
+                  "buffer_type": "BUF_X1",
+                  "output_buffers": 612
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.2975 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+                "iterations_count": 1828,
+                "start_metrics": {
+                  "overflow": 0.9261,
+                  "hpwl": 2192254.0
+                },
+                "end_metrics": {
+                  "overflow": 0.0985,
+                  "hpwl": 3154719.0
+                },
+                "results": {
+                  "movable_instances": 113001,
+                  "fixed_instances": 7636,
+                  "num_nets": 132085,
+                  "num_pins": 397314,
+                  "core_area_um2": 1165503.738,
+                  "fixed_instances_area_um2": 458656.618,
+                  "movable_instances_area_um2": 214899.737,
+                  "standard_cells_area_um2": 170069.228,
+                  "utilization": 24.06,
+                  "target_density": 30.4,
+                  "final_overflow": 0.0985,
+                  "final_hpwl_um": 3154719.0
+                }
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:08:10.560Z] Report metrics stage 3, global place...",
+            "elapsed_s": 227,
+            "memory_mb": 1619,
+            "sha1sum": "cd58edbf668da81a1028"
+          },
+          "3_4_place_resized": {
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:08:51.035Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 101,
+            "memory_mb": 693,
+            "sha1sum": "dfcae3bf9251c2308d74"
+          },
+          "3_5_place_dp": {
+            "hpwl": 3142554.5,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 104358.0,
+                  "average_displacement_u": 0.8,
+                  "max_displacement_u": 50.3,
+                  "original_hpwl_u": 3155299.2,
+                  "legalized_hpwl_u": 3228035.4,
+                  "delta_hpwl_percent": 2.0,
+                  "final_hpwl_u": 3142554.5,
+                  "final_delta_hpwl_percent": -2.6
+                }
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:10:50.376Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 106,
+            "memory_mb": 958,
+            "sha1sum": "3b5cebe0bbf8b6a59d0a"
+          }
+        },
+        "design_name": "bp_multi_top",
+        "sub_design_name": "bp_multi_top",
+        "design_metrics_final": {
+          "placeopt__design__instance__area": 512111.0,
+          "placeopt__design__instance__count__stdcell": 127896.0
+        }
+      }
+    },
+    {
+      "sequence_number": 3,
+      "stage": "cts",
+      "occurrence": 1,
+      "design_name": "bp_multi_top",
+      "sub_design_name": "bp_multi_top",
+      "metrics_file": "test_output_bp_multi_top_nangate45/bp_multi_top_nangate45_cts_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "wns": -4.439,
+            "tns": -4.4,
+            "clock_sink_wirelength_um": 857.09,
+            "hpwl": 3273640.8,
+            "displacement": 497.1,
+            "violations": 1,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+                "results": {
+                  "total_sinks": 16174,
+                  "clock_buffers_created": 3061,
+                  "min_buffer_depth": 7,
+                  "max_buffer_depth": 8,
+                  "avg_sink_wirelength_um": 857.09,
+                  "placement_total_displacement_u": 5308.1,
+                  "placement_avg_displacement_u": 0.0,
+                  "placement_max_displacement_u": 4.6,
+                  "hpwl_before": 3248749.6,
+                  "hpwl_after": 3272479.9,
+                  "clock_nets": [
+                    {
+                      "name": "clk_i",
+                      "sinks": 26,
+                      "leaf_buffers": 7,
+                      "avg_sink_wire_length_um": 1952.27,
+                      "path_depth_min": 2,
+                      "path_depth_max": 3,
+                      "leaf_load_cells": 2157
+                    },
+                    {
+                      "name": "clk_i_regs",
+                      "sinks": 18328,
+                      "leaf_buffers": 2710,
+                      "avg_sink_wire_length_um": 857.09,
+                      "path_depth_min": 7,
+                      "path_depth_max": 8,
+                      "leaf_load_cells": 2157
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose",
+                "iterations_count": 177,
+                "start_metrics": {
+                  "wns": -7.567,
+                  "tns": -613.3,
+                  "violation_end_points": 90
+                },
+                "end_metrics": {
+                  "wns": -4.439,
+                  "tns": -4.4,
+                  "violation_end_points": 1
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_timing_summary",
+                "hold_buffers_inserted": 10
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:12:56.075Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "1:25.14",
+            "peak_memory_kb": 1024848,
+            "elapsed_s": 85,
+            "memory_mb": 1000,
+            "sha1sum": "4f4a114d9158636d19ff"
+          }
+        },
+        "design_name": "bp_multi_top",
+        "sub_design_name": "bp_multi_top",
+        "design_metrics_final": {
+          "cts__design__instance__count__setup_buffer": 19.0,
+          "cts__design__instance__count__hold_buffer": 10.0,
+          "cts__timing__setup__ws": -4.43924,
+          "cts__timing__setup__tns": -4.43924,
+          "cts__timing__hold__ws": 0.0360504,
+          "cts__timing__hold__tns": 0.0
+        }
+      }
+    },
+    {
+      "sequence_number": 4,
+      "stage": "routing",
+      "occurrence": 1,
+      "design_name": "bp_multi_top",
+      "sub_design_name": "bp_multi_top",
+      "metrics_file": "test_output_bp_multi_top_nangate45/bp_multi_top_nangate45_routing_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 4370608.0,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/nangate45/bp_multi/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 4370608.0,
+                  "total_resource": 6860331,
+                  "total_demand": 1729426,
+                  "total_usage_percent": 25.21,
+                  "total_overflow": 0,
+                  "per_layer_metrics": [
+                    {
+                      "layer": "metal1",
+                      "resource": 0,
+                      "demand": 0,
+                      "usage_percent": 0.0,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal2",
+                      "resource": 968864,
+                      "demand": 384475,
+                      "usage_percent": 39.68,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal3",
+                      "resource": 1362638,
+                      "demand": 554410,
+                      "usage_percent": 40.69,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal4",
+                      "resource": 943109,
+                      "demand": 293129,
+                      "usage_percent": 31.08,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal5",
+                      "resource": 1261658,
+                      "demand": 288237,
+                      "usage_percent": 22.85,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal6",
+                      "resource": 1264226,
+                      "demand": 155699,
+                      "usage_percent": 12.32,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal7",
+                      "resource": 240818,
+                      "demand": 20044,
+                      "usage_percent": 8.32,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal8",
+                      "resource": 274050,
+                      "demand": 14529,
+                      "usage_percent": 5.3,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal9",
+                      "resource": 272484,
+                      "demand": 12600,
+                      "usage_percent": 4.62,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    },
+                    {
+                      "layer": "metal10",
+                      "resource": 272484,
+                      "demand": 6303,
+                      "usage_percent": 2.31,
+                      "overflow_h": 0,
+                      "overflow_v": 0,
+                      "overflow_total": 0
+                    }
+                  ]
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 51.8,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 2.8,
+                  "hpwl_before": 3274099.8,
+                  "hpwl_after": 3274117.1,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose",
+                "iterations_count": 7,
+                "start_metrics": {
+                  "wns": -4.558,
+                  "tns": -4.6,
+                  "violation_end_points": 1
+                },
+                "end_metrics": {
+                  "wns": -4.54,
+                  "tns": -4.5,
+                  "violation_end_points": 1
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 10.4,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 1.4,
+                  "hpwl_before": 3274118.0,
+                  "hpwl_after": 3274123.0,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:15:07.602Z] Report metrics stage 5, global route...",
+            "elapsed_time": "2:27.26",
+            "peak_memory_kb": 2832208,
+            "elapsed_s": 147,
+            "memory_mb": 2765,
+            "sha1sum": "0c6c613d56b365ff0c53",
+            "design_metrics_final": {
+              "globalroute__antenna_diodes_count": 0.0,
+              "globalroute__timing__setup__ws": -4.54005,
+              "globalroute__timing__setup__tns": -4.54005,
+              "globalroute__timing__hold__ws": 0.0360452,
+              "globalroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_2_route": {
+            "wirelength_um": 3663381.0,
+            "total_vias": 852622,
+            "violations": 0,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/nangate45/bp_multi/base/5_route_drc.rpt -output_maze ./results/nangate45/bp_multi/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 23567,
+                    "wirelength_um": 3673563.0,
+                    "vias": 858479
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 4827,
+                    "wirelength_um": 3664359.0,
+                    "vias": 850777
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 2639,
+                    "wirelength_um": 3663005.0,
+                    "vias": 849346
+                  },
+                  {
+                    "iteration": 3,
+                    "violations": 123,
+                    "wirelength_um": 3663281.0,
+                    "vias": 852446
+                  },
+                  {
+                    "iteration": 4,
+                    "violations": 43,
+                    "wirelength_um": 3663307.0,
+                    "vias": 852528
+                  },
+                  {
+                    "iteration": 5,
+                    "violations": 43,
+                    "wirelength_um": 3663307.0,
+                    "vias": 852528
+                  },
+                  {
+                    "iteration": 6,
+                    "violations": 33,
+                    "wirelength_um": 3663313.0,
+                    "vias": 852549
+                  },
+                  {
+                    "iteration": 7,
+                    "violations": 23,
+                    "wirelength_um": 3663331.0,
+                    "vias": 852580
+                  },
+                  {
+                    "iteration": 8,
+                    "violations": 0,
+                    "wirelength_um": 3663381.0,
+                    "vias": 852622
+                  }
+                ],
+                "final_wirelength_um": 3663381.0,
+                "final_vias": 852622,
+                "final_violations": 0
+              }
+            ],
+            "report_metrics": "[2025-11-06T16:18:54.044Z] Report metrics stage 5, detailed route...",
+            "elapsed_time": "3:36.44",
+            "peak_memory_kb": 6935488,
+            "elapsed_s": 216,
+            "memory_mb": 6772,
+            "sha1sum": "488ae8a6beb2179552b5",
+            "design_metrics_final": {
+              "detailedroute__route__wirelength": 3663381.0,
+              "detailedroute__route__drc_errors": 0.0,
+              "detailedroute__antenna__violating__nets": 0.0,
+              "detailedroute__antenna_diodes_count": 0.0,
+              "detailedroute__timing__setup__ws": -3.70812,
+              "detailedroute__timing__setup__tns": -3.70812,
+              "detailedroute__timing__hold__ws": 0.0278645,
+              "detailedroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:03.44",
+            "peak_memory_kb": 765992,
+            "elapsed_s": 3,
+            "memory_mb": 748,
+            "sha1sum": "a385afd5edcd21f3f594"
+          }
+        },
+        "design_name": "bp_multi_top",
+        "sub_design_name": "bp_multi_top"
+      }
+    },
+    {
+      "sequence_number": 5,
+      "stage": "final",
+      "occurrence": 1,
+      "design_name": "bp_multi_top",
+      "sub_design_name": "bp_multi_top",
+      "metrics_file": "test_output_bp_multi_top_nangate45/bp_multi_top_nangate45_final_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 1.1,
+            "worstcase_voltage_v": 1.1,
+            "average_voltage_v": 1.1,
+            "average_ir_drop_v": 0.000677,
+            "worstcase_ir_drop_v": 0.00436,
+            "percentage_drop": 0.4
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.00414,
+            "average_voltage_v": 0.000664,
+            "average_ir_drop_v": 0.000664,
+            "worstcase_ir_drop_v": 0.00414,
+            "percentage_drop": 0.38
+          }
+        },
+        "cell_counts": {
+          "macro_count": 26,
+          "macro_area": 332943.12,
+          "fill_cell_count": 214749,
+          "fill_cell_area": 618073.88,
+          "tap_cell_count": 7610,
+          "tap_cell_area": 2024.26,
+          "clock_buffer_count": 4429,
+          "clock_buffer_area": 5200.03,
+          "timing_repair_buffer_count": 8663,
+          "timing_repair_buffer_area": 7822.0,
+          "inverter_count": 13044,
+          "inverter_area": 7055.65,
+          "clock_inverter_count": 807,
+          "clock_inverter_area": 570.84,
+          "sequential_cell_count": 16174,
+          "sequential_cell_area": 73168.09,
+          "combinational_cell_count": 82470,
+          "combinational_cell_area": 90072.92,
+          "total_cell_count": 347972,
+          "total_cell_area": 1136930.78
+        },
+        "design_metrics": {
+          "setup_wns": -4.54122,
+          "setup_tns": -4.54122,
+          "hold_wns": 0.0342924,
+          "hold_tns": 0.0,
+          "area": 518857.0
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 1,
+            "memory_mb": 454,
+            "sha1sum": "a385afd5edcd21f3f594"
+          },
+          "6_report": {
+            "elapsed_s": 152,
+            "memory_mb": 2599
+          },
+          "1_1_yosys_canonicalize": {
+            "elapsed_s": 2,
+            "memory_mb": 377,
+            "sha1sum": "e46c84ac45806033d08b"
+          },
+          "1_2_yosys": {
+            "elapsed_s": 76,
+            "memory_mb": 435,
+            "sha1sum": "9b2523e05f27d2ac6923"
+          },
+          "2_1_floorplan": {
+            "elapsed_s": 28,
+            "memory_mb": 631,
+            "sha1sum": "a61d1f1a9c904ba0fe05"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_s": 12,
+            "memory_mb": 695,
+            "sha1sum": "f3d8bf9ec6ccf0acdf73"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_s": 0,
+            "memory_mb": 227,
+            "sha1sum": "8e94525d4988cbf32c6b"
+          },
+          "2_4_floorplan_pdn": {
+            "elapsed_s": 3,
+            "memory_mb": 378,
+            "sha1sum": "2d6bc2612ffb13bf8a4c"
+          },
+          "3_1_place_gp_skip_io": {
+            "elapsed_s": 23,
+            "memory_mb": 619,
+            "sha1sum": "c8741f8d0050783dd31f"
+          },
+          "3_2_place_iop": {
+            "elapsed_s": 0,
+            "memory_mb": 308,
+            "sha1sum": "bffcfbd8e092b2c93e3b"
+          },
+          "3_3_place_gp": {
+            "elapsed_s": 227,
+            "memory_mb": 1619,
+            "sha1sum": "cd58edbf668da81a1028"
+          },
+          "3_4_place_resized": {
+            "elapsed_s": 101,
+            "memory_mb": 693,
+            "sha1sum": "dfcae3bf9251c2308d74"
+          },
+          "3_5_place_dp": {
+            "elapsed_s": 106,
+            "memory_mb": 958,
+            "sha1sum": "3b5cebe0bbf8b6a59d0a"
+          },
+          "4_1_cts": {
+            "elapsed_s": 85,
+            "memory_mb": 1000,
+            "sha1sum": "4f4a114d9158636d19ff"
+          },
+          "5_1_grt": {
+            "elapsed_s": 147,
+            "memory_mb": 2765,
+            "sha1sum": "0c6c613d56b365ff0c53"
+          },
+          "5_2_route": {
+            "elapsed_s": 216,
+            "memory_mb": 6772,
+            "sha1sum": "488ae8a6beb2179552b5"
+          },
+          "5_3_fillcell": {
+            "elapsed_s": 3,
+            "memory_mb": 748,
+            "sha1sum": "a385afd5edcd21f3f594"
+          },
+          "6_1_merge": {
+            "elapsed_s": 6,
+            "memory_mb": 980
+          }
+        },
+        "performance": {},
+        "test_metrics": {
+          "synth__design__instance__area__stdcell": {
+            "actual_value": 511820.404,
+            "operator": "<=",
+            "threshold_value": 586679.15,
+            "passed": true
+          },
+          "constraints__clocks__count": {
+            "actual_value": 1.0,
+            "operator": "==",
+            "threshold_value": 1.0,
+            "passed": true
+          },
+          "placeopt__design__instance__area": {
+            "actual_value": 512111.0,
+            "operator": "<=",
+            "threshold_value": 587567.0,
+            "passed": true
+          },
+          "placeopt__design__instance__count__stdcell": {
+            "actual_value": 127896.0,
+            "operator": "<=",
+            "threshold_value": 143977.0,
+            "passed": true
+          },
+          "detailedplace__design__violations": {
+            "actual_value": 0.0,
+            "operator": "==",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__design__instance__count__setup_buffer": {
+            "actual_value": 19.0,
+            "operator": "<=",
+            "threshold_value": 12520.0,
+            "passed": true
+          },
+          "cts__design__instance__count__hold_buffer": {
+            "actual_value": 10.0,
+            "operator": "<=",
+            "threshold_value": 12520.0,
+            "passed": true
+          },
+          "cts__timing__setup__ws": {
+            "actual_value": -4.43924,
+            "operator": ">=",
+            "threshold_value": -4.6,
+            "passed": true
+          },
+          "cts__timing__setup__tns": {
+            "actual_value": -4.43924,
+            "operator": ">=",
+            "threshold_value": -5.28,
+            "passed": true
+          },
+          "cts__timing__hold__ws": {
+            "actual_value": 0.0360504,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__ws": {
+            "actual_value": -4.54005,
+            "operator": ">=",
+            "threshold_value": -4.71,
+            "passed": true
+          },
+          "globalroute__timing__setup__tns": {
+            "actual_value": -4.54005,
+            "operator": ">=",
+            "threshold_value": -5.4,
+            "passed": true
+          },
+          "globalroute__timing__hold__ws": {
+            "actual_value": 0.0360452,
+            "operator": ">=",
+            "threshold_value": -0.24,
+            "passed": true
+          },
+          "globalroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -0.96,
+            "passed": true
+          },
+          "detailedroute__route__wirelength": {
+            "actual_value": 3663381.0,
+            "operator": "<=",
+            "threshold_value": 4180077.0,
+            "passed": true
+          },
+          "detailedroute__route__drc_errors": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna__violating__nets": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 5.0,
+            "passed": true
+          },
+          "detailedroute__timing__setup__ws": {
+            "actual_value": -3.70812,
+            "operator": ">=",
+            "threshold_value": -6.13,
+            "passed": true
+          },
+          "detailedroute__timing__setup__tns": {
+            "actual_value": -3.70812,
+            "operator": ">=",
+            "threshold_value": -607.0,
+            "passed": true
+          },
+          "detailedroute__timing__hold__ws": {
+            "actual_value": 0.0278645,
+            "operator": ">=",
+            "threshold_value": -1.48,
+            "passed": true
+          },
+          "detailedroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -105.0,
+            "passed": true
+          },
+          "finish__timing__setup__ws": {
+            "actual_value": -4.54122,
+            "operator": ">=",
+            "threshold_value": -4.68,
+            "passed": true
+          },
+          "finish__timing__setup__tns": {
+            "actual_value": -4.54122,
+            "operator": ">=",
+            "threshold_value": -5.36,
+            "passed": true
+          },
+          "finish__timing__hold__ws": {
+            "actual_value": 0.0342924,
+            "operator": ">=",
+            "threshold_value": -0.0317,
+            "passed": true
+          },
+          "finish__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -0.1086,
+            "passed": true
+          },
+          "finish__design__instance__area": {
+            "actual_value": 518857.0,
+            "operator": "<=",
+            "threshold_value": 595583.0,
+            "passed": true
+          }
+        },
+        "design_name": "bp_multi_top",
+        "sub_design_name": "bp_multi_top"
+      }
+    }
+  ]
+}

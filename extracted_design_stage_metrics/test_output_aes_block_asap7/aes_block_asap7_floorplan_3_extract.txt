@@ -1,0 +1,65 @@
+[2026-01-26T20:47:48.682Z] Running floorplan.tcl, stage 2_1_floorplan
+[2026-01-26T20:47:49.844Z] ==========================================================================
+[2026-01-26T20:47:49.844Z] Floorplan check_setup
+[2026-01-26T20:47:49.844Z] --------------------------------------------------------------------------
+[2026-01-26T20:47:49.844Z] number instances in verilog is 4193
+[2026-01-26T20:47:49.844Z] [WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.052, 2.160).
+[2026-01-26T20:47:49.844Z] Repair tie lo fanout...
+[2026-01-26T20:47:49.844Z] Repair tie hi fanout...
+[2026-01-26T20:47:49.844Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose
+[2026-01-26T20:47:49.844Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2026-01-26T20:47:49.844Z] Default units for flow
+[2026-01-26T20:47:49.844Z]  time 1ps
+[2026-01-26T20:47:49.844Z]  capacitance 1fF
+[2026-01-26T20:47:49.844Z]  resistance 1kohm
+[2026-01-26T20:47:49.844Z]  voltage 1v
+[2026-01-26T20:47:49.844Z]  current 1mA
+[2026-01-26T20:47:49.844Z]  power 1pW
+[2026-01-26T20:47:49.844Z]  distance 1um
+[2026-01-26T20:47:50.424Z] Report metrics stage 2, floorplan final...
+[2026-01-26T20:47:50.424Z] ==========================================================================
+[2026-01-26T20:47:50.424Z] floorplan final report_design_area
+[2026-01-26T20:47:50.424Z] --------------------------------------------------------------------------
+[2026-01-26T20:47:50.424Z] Design area 6086 um^2 40% utilization.
+[2026-01-26T20:47:50.424Z] write_db ./results/asap7/aes-block/base/2_1_floorplan.odb
+[2026-01-26T20:47:50.424Z] write_sdc -no_timestamp ./results/asap7/aes-block/base/2_1_floorplan.sdc
+[2026-01-26T20:47:50.424Z] Elapsed time: 0:01.87[h:]min:sec. CPU time: user 1.87 sys 0.24 (112%). Peak memory: 228740KB.
+[2026-01-26T20:47:50.424Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:47:50.424Z] 2_1_floorplan                      1            223 419e740a3f0eecc5df7e
+[2026-01-26T20:47:51.005Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2026-01-26T20:47:52.166Z] rtl_macro_placer -max_num_level 2 -halo_width 3 -halo_height 3 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/asap7/aes-block/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.53 -data_flow_driven
+[2026-01-26T20:47:52.166Z] Die Area: (0.00, 0.00) (127.35, 127.35),  Floorplan Area: (2.05, 2.16) (125.33, 125.28)
+[2026-01-26T20:47:52.166Z] 	Number of std cell instances: 4172
+[2026-01-26T20:47:52.166Z] 	Area of std cell instances: 509.47
+[2026-01-26T20:47:52.166Z] 	Number of macros: 21
+[2026-01-26T20:47:52.166Z] 	Area of macros: 5576.99
+[2026-01-26T20:47:52.166Z] 	Halo width: 3.00
+[2026-01-26T20:47:52.166Z] 	Halo height: 3.00
+[2026-01-26T20:47:52.166Z] 	Area of macros with halos: 10420.68
+[2026-01-26T20:47:52.166Z] 	Area of std cell instances + Area of macros: 6086.46
+[2026-01-26T20:47:52.166Z] 	Floorplan area: 15178.48
+[2026-01-26T20:47:52.166Z] 	Design Utilization: 0.40
+[2026-01-26T20:47:52.166Z] 	Floorplan Utilization: 0.05
+[2026-01-26T20:47:52.166Z] 	Manufacturing Grid: 1
+[2026-01-26T20:48:08.556Z] Took 16 seconds: rtl_macro_placer -max_num_level 2 -halo_width 3 -halo_height 3 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/asap7/aes-block/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.53 -data_flow_driven
+[2026-01-26T20:48:08.556Z] write_db ./results/asap7/aes-block/base/2_2_floorplan_macro.odb
+[2026-01-26T20:48:08.556Z] Elapsed time: 0:16.62[h:]min:sec. CPU time: user 30.48 sys 24.43 (330%). Peak memory: 240436KB.
+[2026-01-26T20:48:08.556Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:48:08.556Z] 2_2_floorplan_macro               16            234 2f594744d53f2e4e8da7
+[2026-01-26T20:48:08.556Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2026-01-26T20:48:09.136Z] Tap and End Cap cell insertion
+[2026-01-26T20:48:09.136Z]   TAP Cell          : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:48:09.136Z]   ENDCAP Cell       : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:48:09.136Z]   Halo Around Macro : 2 2
+[2026-01-26T20:48:09.136Z]   TAP Cell Distance : 25
+[2026-01-26T20:48:09.136Z] [INFO TAP-0004] Inserted 912 endcaps.
+[2026-01-26T20:48:09.136Z] [INFO TAP-0005] Inserted 363 tapcells.
+[2026-01-26T20:48:09.136Z] write_db ./results/asap7/aes-block/base/2_3_floorplan_tapcell.odb
+[2026-01-26T20:48:09.136Z] Elapsed time: 0:01.45[h:]min:sec. CPU time: user 1.38 sys 0.07 (100%). Peak memory: 201928KB.
+[2026-01-26T20:48:09.136Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:48:09.136Z] 2_3_floorplan_tapcell              1            197 3c9918336951bb255d6e
+[2026-01-26T20:48:09.716Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2026-01-26T20:48:11.459Z] write_db ./results/asap7/aes-block/base/2_4_floorplan_pdn.odb
+[2026-01-26T20:48:11.459Z] Elapsed time: 0:01.95[h:]min:sec. CPU time: user 1.82 sys 0.13 (100%). Peak memory: 228012KB.
+[2026-01-26T20:48:11.459Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:48:11.459Z] 2_4_floorplan_pdn                  1            222 b836ec099f0a0dd51486

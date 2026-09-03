@@ -1,0 +1,46 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "clock_sink_wirelength_um": 7.53,
+      "hpwl": 170.3,
+      "displacement": 0.0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 12,
+            "clock_buffers_created": 3,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 2,
+            "avg_sink_wirelength_um": 7.53,
+            "placement_total_displacement_u": 1.2,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 0.4,
+            "hpwl_before": 166.8,
+            "hpwl_after": 170.3,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 12,
+                "leaf_buffers": 0,
+                "avg_sink_wire_length_um": 7.53,
+                "path_depth_min": 2,
+                "path_depth_max": 2
+              }
+            ]
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:46:10.594Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:02.06",
+      "peak_memory_kb": 225992,
+      "elapsed_s": 2,
+      "memory_mb": 220,
+      "sha1sum": "6777eda774ade1bb800d"
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_rcon"
+}

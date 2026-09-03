@@ -1,0 +1,82 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -70.23,
+      "tns": -377.4,
+      "clock_sink_wirelength_um": 47.16,
+      "hpwl": 49682.5,
+      "displacement": 80.6,
+      "violations": 15,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 10 -sink_clustering_max_diameter 50",
+          "results": {
+            "total_sinks": 1056,
+            "clock_buffers_created": 119,
+            "min_buffer_depth": 4,
+            "max_buffer_depth": 4,
+            "avg_sink_wirelength_um": 47.16,
+            "placement_total_displacement_u": 117.1,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 1.9,
+            "hpwl_before": 47274.2,
+            "hpwl_after": 48263.6,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 4,
+                "leaf_buffers": 0,
+                "avg_sink_wire_length_um": 62.95,
+                "path_depth_min": 2,
+                "path_depth_max": 2,
+                "leaf_load_cells": 8
+              },
+              {
+                "name": "clk_regs",
+                "sinks": 1064,
+                "leaf_buffers": 106,
+                "avg_sink_wire_length_um": 47.16,
+                "path_depth_min": 3,
+                "path_depth_max": 4,
+                "leaf_load_cells": 8
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 468,
+          "start_metrics": {
+            "wns": -190.602,
+            "tns": -5239.0,
+            "violation_end_points": 354
+          },
+          "end_metrics": {
+            "wns": -70.23,
+            "tns": -377.4,
+            "violation_end_points": 15
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "removed_buffers": 3,
+          "hold_buffers_inserted": 1,
+          "resized_instances": 225,
+          "cloned_instances": 14
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:02:02.187Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "1:44.22",
+      "peak_memory_kb": 378616,
+      "elapsed_s": 104,
+      "memory_mb": 369,
+      "sha1sum": "239f6275adea35d7bc60"
+    }
+  },
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "riscv_top"
+}

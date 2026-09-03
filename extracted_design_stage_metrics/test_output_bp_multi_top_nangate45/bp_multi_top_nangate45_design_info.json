@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 41,
+      "timestamp": "2025-11-06T16:02:18.494Z",
+      "design_name": "bp_multi_top",
+      "technology_node": "nangate45",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "bp_multi_top"
+    ],
+    "technology_nodes": [
+      "nangate45"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

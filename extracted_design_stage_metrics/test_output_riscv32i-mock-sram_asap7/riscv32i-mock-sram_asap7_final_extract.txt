@@ -1,0 +1,63 @@
+[2025-11-06T15:59:06.089Z] Running density_fill.tcl, stage 6_1_fill
+[2025-11-06T15:59:07.132Z] Elapsed time: 0:00.92[h:]min:sec. CPU time: user 0.88 sys 0.04 (100%). Peak memory: 191496KB.
+[2025-11-06T15:59:07.132Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T15:59:07.132Z] 6_1_fill                           0            187 09c735cc16353c27e465
+[2025-11-06T15:59:07.392Z] Running final_report.tcl, stage 6_report
+[2025-11-06T15:59:08.741Z] ########## IR report #################
+[2025-11-06T15:59:08.741Z] Net              : VDD
+[2025-11-06T15:59:08.741Z] Corner           : default
+[2025-11-06T15:59:08.741Z] Supply voltage   : 7.70e-01 V
+[2025-11-06T15:59:08.741Z] Worstcase voltage: 7.69e-01 V
+[2025-11-06T15:59:08.741Z] Average voltage  : 7.70e-01 V
+[2025-11-06T15:59:08.741Z] Average IR drop  : 2.28e-04 V
+[2025-11-06T15:59:08.741Z] Worstcase IR drop: 8.59e-04 V
+[2025-11-06T15:59:08.741Z] Percentage drop  : 0.11 %
+[2025-11-06T15:59:08.741Z] ######################################
+[2025-11-06T15:59:08.741Z] ########## IR report #################
+[2025-11-06T15:59:08.741Z] Net              : VSS
+[2025-11-06T15:59:08.741Z] Corner           : default
+[2025-11-06T15:59:08.741Z] Supply voltage   : 0.00e+00 V
+[2025-11-06T15:59:08.741Z] Worstcase voltage: 8.59e-04 V
+[2025-11-06T15:59:08.741Z] Average voltage  : 2.31e-04 V
+[2025-11-06T15:59:08.741Z] Average IR drop  : 2.31e-04 V
+[2025-11-06T15:59:08.741Z] Worstcase IR drop: 8.59e-04 V
+[2025-11-06T15:59:08.741Z] Percentage drop  : 0.11 %
+[2025-11-06T15:59:08.741Z] ######################################
+[2025-11-06T15:59:08.741Z] Cell type report:                       Count       Area
+[2025-11-06T15:59:08.741Z]   Fill cell                               405      31.76
+[2025-11-06T15:59:08.741Z]   Tap cell                                224       6.53
+[2025-11-06T15:59:08.741Z]   Clock buffer                             13       2.00
+[2025-11-06T15:59:08.741Z]   Timing Repair Buffer                    119      14.19
+[2025-11-06T15:59:08.741Z]   Inverter                                 34       1.66
+[2025-11-06T15:59:08.741Z]   Sequential cell                          97      28.29
+[2025-11-06T15:59:08.741Z]   Multi-Input combinational cell          269      28.26
+[2025-11-06T15:59:08.741Z]   Total                                  1161     112.67
+[2025-11-06T15:59:08.741Z] Report metrics stage 6, finish...
+[2025-11-06T15:59:08.741Z] 
+[2025-11-06T15:59:08.741Z] ==========================================================================
+[2025-11-06T15:59:08.741Z] finish report_design_area
+[2025-11-06T15:59:08.741Z] --------------------------------------------------------------------------
+[2025-11-06T15:59:08.741Z] Design area 74 um^2 66% utilization.
+[2025-11-06T15:59:08.741Z] [WARNING GUI-0076] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[2025-11-06T15:59:09.000Z] Elapsed time: 0:01.57[h:]min:sec. CPU time: user 1.61 sys 0.26 (119%). Peak memory: 258660KB.
+[2025-11-06T15:59:09.259Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T15:59:09.259Z] 6_report                           1            252                  N/A
+[2025-11-06T15:59:10.720Z] Warning: DEF UNITS does not match reader DBU (DEF UNITS is 1000 and corresponds to a DBU of 0.001, but reader DBU is set to 0.00025) (line=5, cell=, file=6_final.def)
+[2025-11-06T15:59:10.720Z] [INFO] Reporting cells prior to loading DEF ...
+[2025-11-06T15:59:10.720Z] [INFO] GDS_ALLOW_EMPTY=fakeram.*
+[2025-11-06T15:59:10.720Z] [INFO] All LEF cells have matching GDS/OAS cells
+[2025-11-06T15:59:10.720Z] [INFO] No orphan cells in the final layout
+[2025-11-06T15:59:10.980Z] Elapsed time: 0:01.16[h:]min:sec. CPU time: user 1.04 sys 0.10 (98%). Peak memory: 435528KB.
+[2025-11-06T15:59:11.239Z] (env time -f 'Elapsed time: %E[h:]min:sec. CPU time: user %U sys %S (%P). Peak memory: %MKB.' /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/OpenROAD/bin/openroad -exit -no_init -threads 32  /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/generate_abstract.tcl -metrics ./logs/asap7/riscv32i-mock-sram_fakeram7_256x32/base/generate_abstract.json) 2>&1 | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/logs/asap7/riscv32i-mock-sram_fakeram7_256x32/base/generate_abstract.log
+[2025-11-06T15:59:11.239Z] OpenROAD v2.0-25909-g09a2160ebb 
+[2025-11-06T15:59:11.239Z] Features included (+) or not (-): +GPU +GUI +Python
+[2025-11-06T15:59:11.239Z] This program is licensed under the BSD-3 license. See the LICENSE file for details.
+[2025-11-06T15:59:11.239Z] Components of this program may be licensed under more restrictive licenses which must be honored.
+[2025-11-06T15:59:11.239Z] [INFO ORD-0030] Using 32 thread(s).
+[2025-11-06T15:59:11.498Z] load_design 6_final.odb 6_final.sdc
+[2025-11-06T15:59:12.277Z] read_spef ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/6_final.spef
+[2025-11-06T15:59:12.277Z] Generating abstract views
+[2025-11-06T15:59:12.277Z] write_timing_model ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32_typ.lib
+[2025-11-06T15:59:12.277Z] write_abstract_lef -bloat_occupied_layers ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32.lef
+[2025-11-06T15:59:12.277Z] Elapsed time: 0:01.00[h:]min:sec. CPU time: user 1.05 sys 0.13 (118%). Peak memory: 195916KB.
+[2025-11-06T15:59:12.277Z] echo 1000 > results/asap7/riscv32i-mock-sram/base/clock_period.txt

@@ -1,0 +1,63 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "wns": -2.039,
+      "tns": -78.6,
+      "area": 2441.0,
+      "utilization": 43,
+      "density": 43,
+      "violations": 46,
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp -match_cell_footprint",
+          "iterations_count": 73,
+          "start_metrics": {
+            "wns": -2.376,
+            "tns": -88.7,
+            "violation_end_points": 55
+          },
+          "end_metrics": {
+            "wns": -2.039,
+            "tns": -78.6,
+            "violation_end_points": 46
+          }
+        }
+      ],
+      "elapsed_time": "0:03.17",
+      "peak_memory_kb": 131932,
+      "elapsed_s": 3,
+      "memory_mb": 128,
+      "sha1sum": "1e90c5da216f1918f759"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_time": "0:00.71",
+      "peak_memory_kb": 108560,
+      "elapsed_s": 0,
+      "memory_mb": 106,
+      "sha1sum": "1e90c5da216f1918f759"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_time": "0:00.70",
+      "peak_memory_kb": 108228,
+      "elapsed_s": 0,
+      "memory_mb": 105,
+      "sha1sum": "dc81e28c0cf051227026"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2025-10-11T15:12:01.760Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:00.74",
+      "peak_memory_kb": 110364,
+      "elapsed_s": 0,
+      "memory_mb": 107,
+      "sha1sum": "bddc77e72332cb2785b0"
+    }
+  },
+  "design_name": "gcd",
+  "sub_design_name": "gcd"
+}

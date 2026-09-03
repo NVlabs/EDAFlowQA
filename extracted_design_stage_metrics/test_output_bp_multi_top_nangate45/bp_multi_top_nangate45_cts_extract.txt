@@ -1,0 +1,252 @@
+[2025-11-06T16:12:11.868Z] Running cts.tcl, stage 4_1_cts
+[2025-11-06T16:12:11.868Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2025-11-06T16:12:11.868Z]                     CLKBUF_X3
+[2025-11-06T16:12:11.868Z] [INFO CTS-0028]  Total number of sinks: 26.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0028]  Total number of sinks: 16174.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0018]     Created 10 clock buffers.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0018]     Created 3061 clock buffers.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 7.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 8.
+[2025-11-06T16:12:11.868Z] [INFO CTS-0098] Clock net "clk_i"
+[2025-11-06T16:12:11.868Z] [INFO CTS-0099]  Sinks 26
+[2025-11-06T16:12:11.868Z] [INFO CTS-0100]  Leaf buffers 7
+[2025-11-06T16:12:11.868Z] [INFO CTS-0101]  Average sink wire length 1952.27 um
+[2025-11-06T16:12:11.868Z] [INFO CTS-0102]  Path depth 2 - 3
+[2025-11-06T16:12:11.868Z] [INFO CTS-0207]  Leaf load cells 2157
+[2025-11-06T16:12:11.868Z] [INFO CTS-0098] Clock net "clk_i_regs"
+[2025-11-06T16:12:11.868Z] [INFO CTS-0099]  Sinks 18328
+[2025-11-06T16:12:11.868Z] [INFO CTS-0100]  Leaf buffers 2710
+[2025-11-06T16:12:11.868Z] [INFO CTS-0101]  Average sink wire length 857.09 um
+[2025-11-06T16:12:11.868Z] [INFO CTS-0102]  Path depth 7 - 8
+[2025-11-06T16:12:11.868Z] [INFO CTS-0207]  Leaf load cells 2157
+[2025-11-06T16:12:15.160Z] [INFO RSZ-0048] Inserted 4 buffers in 2 nets.
+[2025-11-06T16:12:21.728Z] Took 11 seconds: clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2025-11-06T16:12:25.021Z] Placement Analysis
+[2025-11-06T16:12:25.021Z] ---------------------------------
+[2025-11-06T16:12:25.021Z] total displacement       5308.1 u
+[2025-11-06T16:12:25.021Z] average displacement        0.0 u
+[2025-11-06T16:12:25.021Z] max displacement            4.6 u
+[2025-11-06T16:12:25.021Z] original HPWL         3248749.6 u
+[2025-11-06T16:12:25.021Z] legalized HPWL        3272479.9 u
+[2025-11-06T16:12:25.021Z] delta HPWL                    1 %
+[2025-11-06T16:12:25.021Z] 
+[2025-11-06T16:12:28.314Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose
+[2025-11-06T16:12:36.791Z] [INFO RSZ-0094] Found 90 endpoints with setup violations.
+[2025-11-06T16:12:36.791Z]    Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+[2025-11-06T16:12:36.791Z]           | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+[2025-11-06T16:12:36.791Z] --------------------------------------------------------------------------------------------------------------
+[2025-11-06T16:12:36.791Z]         0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -7.567 |     -613.3 |     90 | me.genblk1_0__bp_cce_top.bp_cce/pc_inst_ram.cce_inst_ram.macro_mem/mem/w_mask_in[0]
+[2025-11-06T16:12:42.063Z]        10 |       0 |       7 |        2 |      0 |     0 |    +0.0% | -50801332.000 | -879432960.0 |     90 | me.genblk1_0__bp_cce_top.bp_cce/pc_inst_ram.cce_inst_ram.macro_mem/mem/w_mask_in[0]
+[2025-11-06T16:12:42.063Z]        20 |       0 |      14 |        5 |      0 |     0 |    +0.0% | -2130066.000 | -59839068.0 |     90 | me.genblk1_0__bp_cce_top.bp_cce/pc_inst_ram.cce_inst_ram.macro_mem/mem/w_mask_in[0]
+[2025-11-06T16:12:42.063Z]        30 |       0 |      17 |       12 |      0 |     0 |    +0.0% |   -5.077 |     -250.4 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:42.322Z]        40 |       0 |      26 |       13 |      0 |     0 |    +0.0% |   -5.051 |     -250.4 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:42.581Z]        50 |       0 |      35 |       14 |      0 |     0 |    +0.0% |   -5.031 |     -250.4 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:42.581Z]        60 |       0 |      45 |       14 |      0 |     0 |    +0.0% |   -5.014 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:42.840Z]        70 |       0 |      51 |       16 |      0 |     2 |    +0.0% |   -5.019 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.099Z]        80 |       0 |      61 |       16 |      0 |     2 |    +0.0% |   -5.004 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.099Z]        90 |       0 |      71 |       16 |      0 |     2 |    +0.0% |   -4.988 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.358Z]       100 |       0 |      81 |       16 |      0 |     2 |    +0.0% |   -4.973 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.618Z]       110 |       0 |      91 |       16 |      0 |     2 |    +0.0% |   -4.960 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.618Z]       120 |       0 |     101 |       16 |      0 |     2 |    +0.0% |   -4.941 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:43.877Z]       130 |       0 |     111 |       16 |      0 |     2 |    +0.0% |   -4.930 |     -250.3 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.137Z]       140 |       0 |     121 |       16 |      0 |     2 |    +0.0% |   -4.919 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.137Z]       150 |       0 |     131 |       16 |      0 |     2 |    +0.0% |   -4.906 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.396Z]       160 |       0 |     141 |       16 |      0 |     2 |    +0.0% |   -4.897 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.656Z]       170 |       0 |     151 |       16 |      0 |     2 |    +0.0% |   -4.888 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.656Z]       180 |       0 |     161 |       16 |      0 |     2 |    +0.0% |   -4.879 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:44.915Z]       190 |       0 |     171 |       16 |      0 |     2 |    +0.0% |   -4.875 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.175Z]       200 |       0 |     181 |       16 |      0 |     2 |    +0.0% |   -4.868 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.175Z]       210 |       0 |     191 |       16 |      0 |     2 |    +0.0% |   -4.864 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.435Z]       220 |       0 |     201 |       16 |      0 |     2 |    +0.1% |   -4.856 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.694Z]       230 |       0 |     211 |       16 |      0 |     2 |    +0.1% |   -4.850 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.694Z]       240 |       0 |     221 |       16 |      0 |     2 |    +0.1% |   -4.841 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:45.953Z]       250 |       0 |     231 |       16 |      0 |     2 |    +0.1% |   -4.835 |     -250.2 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.213Z]       260 |       0 |     241 |       16 |      0 |     2 |    +0.1% |   -4.827 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.213Z]       270 |       0 |     251 |       16 |      0 |     2 |    +0.1% |   -4.820 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.473Z]       280 |       0 |     261 |       16 |      0 |     2 |    +0.1% |   -4.809 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.473Z]       290 |       0 |     271 |       16 |      0 |     2 |    +0.1% |   -4.805 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.732Z]       300 |       0 |     281 |       16 |      0 |     2 |    +0.1% |   -4.800 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:46.992Z]       310 |       0 |     291 |       16 |      0 |     2 |    +0.1% |   -4.793 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.251Z]       320 |       0 |     301 |       16 |      0 |     2 |    +0.1% |   -4.787 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.251Z]       330 |       0 |     311 |       16 |      0 |     2 |    +0.1% |   -4.782 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.511Z]       340 |       0 |     321 |       16 |      0 |     2 |    +0.1% |   -4.772 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.511Z]       350 |       0 |     331 |       16 |      0 |     2 |    +0.1% |   -4.768 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.771Z]       360 |       0 |     341 |       16 |      0 |     2 |    +0.1% |   -4.761 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:47.771Z]       370 |       0 |     350 |       16 |      0 |     3 |    +0.1% |   -4.752 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.030Z]       380 |       0 |     359 |       16 |      0 |     4 |    +0.1% |   -4.752 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.030Z]       390 |       0 |     369 |       16 |      0 |     4 |    +0.1% |   -4.746 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.290Z]       400 |       0 |     379 |       16 |      0 |     4 |    +0.1% |   -4.741 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.290Z]       410 |       0 |     389 |       16 |      0 |     4 |    +0.1% |   -4.730 |     -250.1 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.549Z]       420 |       0 |     398 |       16 |      0 |     5 |    +0.1% |   -4.725 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.549Z]       430 |       0 |     408 |       16 |      0 |     5 |    +0.1% |   -4.715 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.808Z]       440 |       0 |     418 |       16 |      0 |     5 |    +0.1% |   -4.704 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:48.809Z]       450 |       0 |     428 |       16 |      0 |     5 |    +0.1% |   -4.692 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.068Z]       460 |       0 |     438 |       16 |      0 |     5 |    +0.1% |   -4.681 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.068Z]       470 |       0 |     448 |       16 |      0 |     5 |    +0.1% |   -4.670 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.327Z]       480 |       0 |     458 |       16 |      0 |     5 |    +0.1% |   -4.655 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.327Z]       490 |       0 |     468 |       16 |      0 |     5 |    +0.1% |   -4.645 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.586Z]       500 |       0 |     475 |       16 |      0 |     8 |    +0.1% |   -4.645 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.845Z]       510 |       0 |     485 |       16 |      0 |     8 |    +0.1% |   -4.633 |     -250.0 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:49.845Z]       520 |       0 |     495 |       16 |      0 |     8 |    +0.1% |   -4.623 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.104Z]       530 |       0 |     505 |       16 |      0 |     8 |    +0.1% |   -4.612 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.104Z]       540 |       0 |     515 |       16 |      0 |     8 |    +0.1% |   -4.599 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.364Z]       550 |       0 |     525 |       16 |      0 |     8 |    +0.1% |   -4.590 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.364Z]       560 |       0 |     535 |       16 |      0 |     8 |    +0.1% |   -4.583 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.624Z]       570 |       0 |     545 |       16 |      0 |     8 |    +0.1% |   -4.571 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.624Z]       580 |       0 |     554 |       16 |      0 |     9 |    +0.1% |   -4.566 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.883Z]       590 |       0 |     564 |       16 |      0 |     9 |    +0.1% |   -4.555 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:50.883Z]       600 |       0 |     574 |       16 |      0 |     9 |    +0.1% |   -4.545 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.142Z]       610 |       0 |     584 |       16 |      0 |     9 |    +0.1% |   -4.536 |     -249.9 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.142Z]       620 |       0 |     594 |       16 |      0 |     9 |    +0.2% |   -4.527 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.401Z]       630 |       0 |     604 |       16 |      0 |     9 |    +0.2% |   -4.521 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.660Z]       640 |       0 |     614 |       16 |      0 |     9 |    +0.2% |   -4.510 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.660Z]       650 |       0 |     624 |       16 |      0 |     9 |    +0.2% |   -4.501 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.919Z]       660 |       0 |     634 |       16 |      0 |     9 |    +0.2% |   -4.491 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:51.919Z]       670 |       0 |     643 |       16 |      0 |    10 |    +0.2% |   -4.482 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.179Z]       680 |       0 |     653 |       16 |      0 |    10 |    +0.2% |   -4.472 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.438Z]       690 |       0 |     662 |       16 |      0 |    11 |    +0.2% |   -4.466 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.438Z]       700 |       0 |     672 |       16 |      0 |    11 |    +0.2% |   -4.454 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.697Z]       710 |       0 |     682 |       16 |      0 |    11 |    +0.2% |   -4.444 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.697Z]       720 |       0 |     690 |       16 |      0 |    13 |    +0.2% |   -4.445 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.957Z]       727 |       0 |     684 |       16 |      0 |    11 |    +0.2% |   -4.441 |     -249.8 |     90 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       730 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     89 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       730 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     88 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       731 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     87 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       732 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     86 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       733 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     85 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       734 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     84 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       735 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     83 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       736 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     82 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       737 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     81 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       738 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     80 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       739 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     79 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       740 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     79 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       740 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     78 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       741 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     77 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       742 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     76 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       743 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     75 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       744 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     74 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       745 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     73 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       746 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     72 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       747 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     71 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       748 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     70 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       749 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     69 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       750 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     69 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       750 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     68 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       751 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     67 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       752 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     66 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       753 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     65 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       754 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     64 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       755 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     63 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       756 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     62 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       757 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     61 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       758 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     60 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       759 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     59 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       760 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     59 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       760 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     58 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       761 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     57 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       762 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     56 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       763 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     55 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       764 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     54 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       765 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     53 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       766 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     52 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       767 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     51 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       768 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     50 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       769 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     49 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       770 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     49 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       770 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     48 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       771 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     47 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       772 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     46 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       773 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     45 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       774 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     44 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       775 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     43 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       776 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     42 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       777 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     41 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       778 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     40 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       779 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     39 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       780 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     39 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       780 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     38 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       781 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     37 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       782 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     36 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       783 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     35 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       784 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     34 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       785 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     33 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       786 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     32 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       787 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     31 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       788 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     30 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       789 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     29 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       790 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     29 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       790 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     28 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       791 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     27 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       792 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     26 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       793 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     25 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       794 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     24 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       795 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     23 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       796 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     22 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       797 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     21 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       798 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     20 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:52.958Z]       799 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     19 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.218Z]       800 |       0 |     685 |       17 |      0 |    11 |    +0.2% |   -4.441 |      -75.4 |     19 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.218Z]       809 |       0 |     689 |       17 |      0 |    11 |    +0.2% |   -4.439 |      -75.4 |     19 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.218Z]       810 |       0 |     689 |       17 |      0 |    11 |    +0.2% |   -4.439 |      -75.4 |     19 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       818 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     17 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       819 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     16 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       820 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     16 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       820 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     15 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       821 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     14 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       822 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     13 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       823 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     12 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.478Z]       824 |       0 |     696 |       18 |      0 |    11 |    +0.2% |   -4.439 |      -39.8 |     11 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       830 |       0 |     700 |       19 |      0 |    11 |    +0.2% |   -4.439 |      -36.3 |     11 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       833 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      9 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       834 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      8 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       835 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      7 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       836 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      6 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       837 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      5 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       838 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      4 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       839 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      3 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       840 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      3 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       840 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      2 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       841 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       842 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      0 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.479Z]       843 |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      0 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.738Z]      844* |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.738Z]     final |       0 |     703 |       19 |      0 |    11 |    +0.2% |   -4.439 |       -4.4 |      1 | rof1_0__core/fe.bp_fe_pc_gen_1.genblk1_branch_prediction_1.btb_1.read_valid_o$_DFF_P_/D
+[2025-11-06T16:12:53.738Z] --------------------------------------------------------------------------------------------------------------
+[2025-11-06T16:12:53.738Z] [INFO RSZ-0045] Inserted 19 buffers, 11 to split loads.
+[2025-11-06T16:12:53.738Z] [INFO RSZ-0051] Resized 703 instances: 703 up, 0 up match, 0 down, 0 VT
+[2025-11-06T16:12:53.738Z] [WARNING RSZ-0062] Unable to repair all setup violations.
+[2025-11-06T16:12:54.307Z] Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+[2025-11-06T16:12:54.307Z] --------------------------------------------------------------------------------------
+[2025-11-06T16:12:54.307Z]         0 |       0 |       0 |            0 |    +0.0% |  -0.325 | -18.722 | me.genblk1_0__bp_cce_top.bp_cce/pc_inst_ram.cce_inst_ram.macro_mem/mem/w_mask_in[7]
+[2025-11-06T16:12:54.307Z]        10 |       1 |       2 |            0 |    +0.0% |  -0.224 |  -2.706 | rof1_0__core/be.be_mmu.dcache/data_mem_1__data_mem.macro_mem/mem/w_mask_in[25]
+[2025-11-06T16:12:54.307Z]        20 |       1 |       2 |            0 |    +0.0% |  -0.224 |  -2.706 | rof1_0__core/be.be_mmu.dcache/data_mem_1__data_mem.macro_mem/mem/w_mask_in[25]
+[2025-11-06T16:12:54.307Z]        30 |       1 |       2 |            0 |    +0.0% |  -0.224 |  -2.706 | rof1_0__core/be.be_mmu.dcache/data_mem_1__data_mem.macro_mem/mem/w_mask_in[25]
+[2025-11-06T16:12:54.307Z]        40 |       1 |       2 |            0 |    +0.0% |  -0.224 |  -2.706 | rof1_0__core/be.be_mmu.dcache/data_mem_1__data_mem.macro_mem/mem/w_mask_in[25]
+[2025-11-06T16:12:54.307Z]        50 |       1 |       2 |            0 |    +0.0% |  -0.224 |  -2.706 | rof1_0__core/be.be_mmu.dcache/data_mem_1__data_mem.macro_mem/mem/w_mask_in[25]
+[2025-11-06T16:12:54.307Z]        60 |       3 |      10 |            0 |    +0.0% |   0.036 |   0.000 | rof1_0__core/be.be_calculator/calc_stage_reg.data_o[296]$_DFF_P_/D
+[2025-11-06T16:12:54.307Z]        70 |       3 |      10 |            0 |    +0.0% |   0.036 |   0.000 | rof1_0__core/be.be_calculator/calc_stage_reg.data_o[296]$_DFF_P_/D
+[2025-11-06T16:12:54.567Z]     final |       3 |      10 |            0 |    +0.0% |   0.036 |   0.000 | rof1_0__core/be.be_calculator/calc_stage_reg.data_o[296]$_DFF_P_/D
+[2025-11-06T16:12:54.567Z] --------------------------------------------------------------------------------------
+[2025-11-06T16:12:54.567Z] [INFO RSZ-0032] Inserted 10 hold buffers.
+[2025-11-06T16:12:54.567Z] Took 27 seconds: repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose
+[2025-11-06T16:12:55.506Z] Placement Analysis
+[2025-11-06T16:12:55.506Z] ---------------------------------
+[2025-11-06T16:12:55.506Z] total displacement        497.1 u
+[2025-11-06T16:12:55.506Z] average displacement        0.0 u
+[2025-11-06T16:12:55.506Z] max displacement           11.2 u
+[2025-11-06T16:12:55.506Z] original HPWL         3273329.5 u
+[2025-11-06T16:12:55.506Z] legalized HPWL        3273640.8 u
+[2025-11-06T16:12:55.506Z] delta HPWL                    0 %
+[2025-11-06T16:12:55.506Z] 
+[2025-11-06T16:12:56.075Z] Report metrics stage 4, cts final...
+[2025-11-06T16:13:34.807Z] 
+[2025-11-06T16:13:34.807Z] ==========================================================================
+[2025-11-06T16:13:34.807Z] cts final report_design_area
+[2025-11-06T16:13:34.807Z] --------------------------------------------------------------------------
+[2025-11-06T16:13:34.807Z] Design area 516773 um^2 44% utilization.
+[2025-11-06T16:13:34.807Z] Elapsed time: 1:25.14[h:]min:sec. CPU time: user 138.12 sys 283.19 (494%). Peak memory: 1024848KB.
+[2025-11-06T16:13:34.807Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-11-06T16:13:34.807Z] 4_1_cts                           85           1000 4f4a114d9158636d19ff

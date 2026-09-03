@@ -1,0 +1,249 @@
+{
+  "stage": "synthesis",
+  "total_runs": 1,
+  "runs": [
+    {
+      "run_number": 1,
+      "script_name": "synth",
+      "design_name": "fakeram7_256x32",
+      "steps": [
+        {
+          "number": "1",
+          "description": "Executing RTLIL frontend.",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "2",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "2.1",
+          "description": "Analyzing design hierarchy..",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "2.2",
+          "description": "Analyzing design hierarchy..",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3",
+          "description": "Executing SYNTH pass.",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.1",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.2",
+          "description": "Executing PROC pass (convert processes to netlists).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.3",
+          "description": "Executing FLATTEN pass (flatten design).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.6",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.8",
+          "description": "Executing FSM pass (extract and optimize FSM).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.10",
+          "description": "Executing WREDUCE pass (reducing word size of cells).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.13",
+          "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.14",
+          "description": "Executing SHARE pass (SAT-based resource sharing).",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "3.16",
+          "description": "Executing MEMORY pass.",
+          "timestamp": "2025-11-06T15:58:28.148Z"
+        },
+        {
+          "number": "4",
+          "description": "Executing SYNTH pass.",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.2",
+          "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.4",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.6",
+          "description": "Executing ABC pass (technology mapping using ABC).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.8",
+          "description": "Executing HIERARCHY pass (managing design hierarchy).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.9",
+          "description": "Printing statistics.",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "4.10",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "5",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "6",
+          "description": "Executing EXTRACT_FA pass (find and extract full/half adders).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "7",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "7.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_adders_R.v",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "8",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "8.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "9",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "10",
+          "description": "Executing TECHMAP pass (map to technology primitives).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "10.1",
+          "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_latch_R.v",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "11",
+          "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+          "timestamp": "2025-11-06T15:58:28.408Z"
+        },
+        {
+          "number": "11.1",
+          "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+          "timestamp": "2025-11-06T15:58:28.667Z"
+        },
+        {
+          "number": "12",
+          "description": "Executing OPT pass (performing simple optimizations).",
+          "timestamp": "2025-11-06T15:58:28.667Z"
+        },
+        {
+          "number": "13",
+          "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+          "timestamp": "2025-11-06T15:58:28.667Z"
+        },
+        {
+          "number": "14",
+          "description": "Executing ABC pass (technology mapping using ABC).",
+          "timestamp": "2025-11-06T15:58:28.667Z"
+        },
+        {
+          "number": "15",
+          "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+          "timestamp": "2025-11-06T15:58:29.236Z"
+        },
+        {
+          "number": "16",
+          "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+          "timestamp": "2025-11-06T15:58:29.236Z"
+        },
+        {
+          "number": "17",
+          "description": "Executing HILOMAP pass (mapping to constant drivers).",
+          "timestamp": "2025-11-06T15:58:29.236Z"
+        },
+        {
+          "number": "18",
+          "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+          "timestamp": "2025-11-06T15:58:29.236Z"
+        },
+        {
+          "number": "19",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2025-11-06T15:58:29.236Z"
+        },
+        {
+          "number": "20",
+          "description": "Printing statistics.",
+          "timestamp": "2025-11-06T15:58:29.495Z"
+        },
+        {
+          "number": "21",
+          "description": "Executing CHECK pass (checking for obvious problems).",
+          "timestamp": "2025-11-06T15:58:29.495Z"
+        },
+        {
+          "number": "22",
+          "description": "Executing Verilog backend.",
+          "timestamp": "2025-11-06T15:58:29.495Z"
+        },
+        {
+          "number": "22.1",
+          "description": "Executing BMUXMAP pass.",
+          "timestamp": "2025-11-06T15:58:29.495Z"
+        },
+        {
+          "number": "22.2",
+          "description": "Executing DEMUXMAP pass.",
+          "timestamp": "2025-11-06T15:58:29.495Z"
+        }
+      ],
+      "timing": {
+        "clock_period_ns": 1000.0,
+        "clock_period_set_count": 1
+      },
+      "statistics": {
+        "cells": {},
+        "chip_area": {}
+      },
+      "check": {}
+    }
+  ],
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "fakeram7_256x32"
+}

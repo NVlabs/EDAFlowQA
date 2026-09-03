@@ -1,0 +1,358 @@
+Log file: ./design_artifacts/aes_block_asap7_log/aes_block_asap7.txt
+Total log lines: 6728
+Uncovered line count: 353
+Gap ranges (0-based, end exclusive): [(0, 353)]
+--------------------------------------------------------------------------------
+L1: [2026-01-26T20:38:59.338Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:e656b3
+L2: [2026-01-26T20:38:59.338Z] 
+L3: [2026-01-26T20:38:59.338Z] error: no such object: openroad/flow-ubuntu22.04-dev:e656b3
+L4: [2026-01-26T20:39:23.931Z] + docker pull openroad/flow-ubuntu22.04-dev:e656b3
+L5: [2026-01-26T20:39:24.513Z] e656b3: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2026-01-26T20:39:24.514Z] 6f4ebca3e823: Pulling fs layer
+L7: [2026-01-26T20:39:24.514Z] 4d823595d30b: Pulling fs layer
+L8: [2026-01-26T20:39:24.514Z] 09e3a651a419: Pulling fs layer
+L9: [2026-01-26T20:39:24.514Z] 37854d3794f9: Pulling fs layer
+L10: [2026-01-26T20:39:24.514Z] 18da84cd7e7e: Pulling fs layer
+L11: [2026-01-26T20:39:24.514Z] d17520e33d2d: Pulling fs layer
+L12: [2026-01-26T20:39:24.514Z] 0d7066ea17ad: Pulling fs layer
+L13: [2026-01-26T20:39:25.096Z] 4d823595d30b: Download complete
+L14: [2026-01-26T20:39:25.096Z] 09e3a651a419: Download complete
+L15: [2026-01-26T20:39:25.096Z] 18da84cd7e7e: Download complete
+L16: [2026-01-26T20:39:25.096Z] d17520e33d2d: Download complete
+L17: [2026-01-26T20:39:25.096Z] 0d7066ea17ad: Download complete
+L18: [2026-01-26T20:39:25.096Z] b1770a8f3314: Download complete
+L19: [2026-01-26T20:39:25.679Z] 6f4ebca3e823: Download complete
+L20: [2026-01-26T20:39:25.679Z] 6f4ebca3e823: Pull complete
+L21: [2026-01-26T20:39:26.260Z] 4d823595d30b: Pull complete
+L22: [2026-01-26T20:39:26.260Z] 09e3a651a419: Pull complete
+L23: [2026-01-26T20:39:26.260Z] 18da84cd7e7e: Pull complete
+L24: [2026-01-26T20:39:26.260Z] d17520e33d2d: Pull complete
+L25: [2026-01-26T20:39:42.674Z] 37854d3794f9: Download complete
+L26: [2026-01-26T20:39:59.085Z] 0d7066ea17ad: Pull complete
+L27: [2026-01-26T20:39:59.085Z] 37854d3794f9: Pull complete
+L28: [2026-01-26T20:39:59.085Z] Digest: sha256:7e155fab53594c9122be9cc1888ab7fa9a65a5c4858281bcbc48f6ea12bfd72b
+L29: [2026-01-26T20:39:59.085Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:e656b3
+L30: [2026-01-26T20:39:59.085Z] docker.io/openroad/flow-ubuntu22.04-dev:e656b3
+L31: [2026-01-26T20:44:04.521Z] + git config --system --add safe.directory *
+L32: [2026-01-26T20:45:44.916Z] + nice flow/test/test_helper.sh aes-block asap7
+L33: [2026-01-26T20:45:44.916Z] +++ readlink -f flow/test/test_helper.sh
+L34: [2026-01-26T20:45:44.916Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L35: [2026-01-26T20:45:44.916Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L36: [2026-01-26T20:45:44.916Z] + DESIGN_NAME=aes-block
+L37: [2026-01-26T20:45:44.916Z] + PLATFORM=asap7
+L38: [2026-01-26T20:45:44.916Z] + CONFIG_MK=config.mk
+L39: [2026-01-26T20:45:44.917Z] + '[' 2 -ge 4 ']'
+L40: [2026-01-26T20:45:44.917Z] + TARGET='finish metadata'
+L41: [2026-01-26T20:45:44.917Z] + DESIGN_CONFIG=./designs/asap7/aes-block/config.mk
+L42: [2026-01-26T20:45:44.917Z] + LOG_FILE=./logs/asap7/aes-block.log
+L43: [2026-01-26T20:45:44.917Z] + mkdir -p ./logs/asap7
+L44: [2026-01-26T20:45:44.917Z] + __make='make DESIGN_CONFIG=./designs/asap7/aes-block/config.mk'
+L45: [2026-01-26T20:45:44.917Z] + '[' -n '' ']'
+L46: [2026-01-26T20:45:44.917Z] ++ dirname ./logs/asap7/aes-block.log
+L47: [2026-01-26T20:45:44.917Z] + mkdir -p ./logs/asap7
+L48: [2026-01-26T20:45:44.917Z] + make DESIGN_CONFIG=./designs/asap7/aes-block/config.mk clean_all clean_metadata
+L49: [2026-01-26T20:45:44.917Z] + tee ./logs/asap7/aes-block.log
+L50: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/1_* ./results/asap7/aes-block/base/mem*.json
+L51: [2026-01-26T20:45:44.917Z] rm -f ./reports/asap7/aes-block/base/synth_*
+L52: [2026-01-26T20:45:44.917Z] rm -f ./logs/asap7/aes-block/base/1_*
+L53: [2026-01-26T20:45:44.917Z] rm -f 
+L54: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/clock_period.txt
+L55: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/2_*floorplan*.odb ./results/asap7/aes-block/base/2_floorplan.sdc ./results/asap7/aes-block/base/2_*.v ./results/asap7/aes-block/base/2_*.def
+L56: [2026-01-26T20:45:44.917Z] rm -f ./reports/asap7/aes-block/base/2_*
+L57: [2026-01-26T20:45:44.917Z] rm -f ./logs/asap7/aes-block/base/2_*
+L58: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/3_*place*.odb
+L59: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/3_place.sdc
+L60: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/3_*.def ./results/asap7/aes-block/base/3_*.v
+L61: [2026-01-26T20:45:44.917Z] rm -f ./reports/asap7/aes-block/base/3_*
+L62: [2026-01-26T20:45:44.917Z] rm -f ./logs/asap7/aes-block/base/3_*
+L63: [2026-01-26T20:45:44.917Z] rm -rf ./results/asap7/aes-block/base/4_*cts*.odb ./results/asap7/aes-block/base/4_cts.sdc ./results/asap7/aes-block/base/4_*.v ./results/asap7/aes-block/base/4_*.def
+L64: [2026-01-26T20:45:44.917Z] rm -f  ./reports/asap7/aes-block/base/4_*
+L65: [2026-01-26T20:45:44.917Z] rm -rf ./logs/asap7/aes-block/base/4_*
+L66: [2026-01-26T20:45:44.917Z] rm -rf ./results/asap7/aes-block/base/route.guide ./results/asap7/aes-block/base/output_guide.mod ./results/asap7/aes-block/base/updated_clks.sdc
+L67: [2026-01-26T20:45:44.917Z] rm -rf ./results/asap7/aes-block/base/5_*.odb ./results/asap7/aes-block/base/5_route.sdc ./results/asap7/aes-block/base/5_*.def ./results/asap7/aes-block/base/5_*.v
+L68: [2026-01-26T20:45:44.917Z] rm -f  ./reports/asap7/aes-block/base/5_*
+L69: [2026-01-26T20:45:44.917Z] rm -f  ./logs/asap7/aes-block/base/5_*
+L70: [2026-01-26T20:45:44.917Z] rm -rf ./results/asap7/aes-block/base/6_*.gds ./results/asap7/aes-block/base/6_*.oas ./results/asap7/aes-block/base/6_*.odb ./results/asap7/aes-block/base/6_*.v ./results/asap7/aes-block/base/6_*.def ./results/asap7/aes-block/base/6_*.sdc ./results/asap7/aes-block/base/6_*.spef
+L71: [2026-01-26T20:45:44.917Z] rm -rf ./reports/asap7/aes-block/base/6_*.rpt
+L72: [2026-01-26T20:45:44.917Z] rm -f  ./logs/asap7/aes-block/base/6_*
+L73: [2026-01-26T20:45:44.917Z] rm -f ./reports/asap7/aes-block/base/design-dir.txt
+L74: [2026-01-26T20:45:44.917Z] rm -f ./reports/asap7/aes-block/base/metadata*.*
+L75: [2026-01-26T20:45:44.917Z] rm -f ./results/asap7/aes-block/base/aes_cipher_top.lib ./results/asap7/aes-block/base/aes_cipher_top.lef
+L76: [2026-01-26T20:45:44.917Z] rm -rf ./objects/asap7/aes-block/base
+L77: [2026-01-26T20:45:44.917Z] make: Nothing to be done for 'clean_metadata'.
+L78: [2026-01-26T20:45:44.917Z] + set +e
+L79: [2026-01-26T20:45:44.917Z] + eval make DESIGN_CONFIG=./designs/asap7/aes-block/config.mk 'finish metadata'
+L80: [2026-01-26T20:45:44.917Z] + tee -a ./logs/asap7/aes-block.log
+L81: [2026-01-26T20:45:44.917Z] ++ make DESIGN_CONFIG=./designs/asap7/aes-block/config.mk finish metadata
+L82: [2026-01-26T20:45:45.496Z] mkdir -p results/asap7/aes-block_aes_rcon/base/
+L83: [2026-01-26T20:45:45.496Z] echo 450 > results/asap7/aes-block_aes_rcon/base/clock_period.txt
+L84: [2026-01-26T20:45:46.055Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/asap7/aes-block_aes_rcon/base/1_1_yosys_canonicalize.log
+L85: [2026-01-26T20:45:46.055Z] Using ABC area script.
+L86: [2026-01-26T20:45:46.055Z] Extracting clock period from SDC file: ./results/asap7/aes-block_aes_rcon/base/clock_period.txt
+L87: [2026-01-26T20:45:46.055Z] Setting clock period to 450
+L88: [2026-01-26T20:45:46.055Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+L89: [2026-01-26T20:45:46.055Z] 2. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+L90: [2026-01-26T20:45:46.055Z] 3. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+L91: [2026-01-26T20:45:46.635Z] 4. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+L92: [2026-01-26T20:45:46.635Z] 5. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+L93: [2026-01-26T20:45:46.635Z] 6. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+L94: [2026-01-26T20:45:46.635Z] 7. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+L95: [2026-01-26T20:45:46.635Z] 8. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+L96: [2026-01-26T20:45:46.635Z] 9. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+L97: [2026-01-26T20:45:46.635Z] 10. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+L98: [2026-01-26T20:45:46.635Z] 11. Executing Verilog-2005 frontend: ./designs/src/aes/aes_cipher_top.v
+L99: [2026-01-26T20:45:46.635Z] 12. Executing Verilog-2005 frontend: ./designs/src/aes/aes_inv_cipher_top.v
+L100: [2026-01-26T20:45:46.635Z] 13. Executing Verilog-2005 frontend: ./designs/src/aes/aes_inv_sbox.v
+L101: [2026-01-26T20:45:46.635Z] 14. Executing Verilog-2005 frontend: ./designs/src/aes/aes_key_expand_128.v
+L102: [2026-01-26T20:45:46.635Z] 15. Executing Verilog-2005 frontend: ./designs/src/aes/aes_rcon.v
+L103: [2026-01-26T20:45:46.635Z] 16. Executing Verilog-2005 frontend: ./designs/src/aes/aes_sbox.v
+L104: [2026-01-26T20:45:46.635Z] 17. Executing Verilog-2005 frontend: ./designs/src/aes/timescale.v
+L105: [2026-01-26T20:45:46.635Z] 18. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+L106: [2026-01-26T20:45:46.635Z] 19. Executing HIERARCHY pass (managing design hierarchy).
+L107: [2026-01-26T20:45:46.635Z] 20. Executing AST frontend in derive mode using pre-parsed AST for module `\aes_rcon'.
+L108: [2026-01-26T20:45:46.635Z] 20.1. Analyzing design hierarchy..
+L109: [2026-01-26T20:45:46.635Z] 20.2. Analyzing design hierarchy..
+L110: [2026-01-26T20:45:46.635Z] 21. Executing OPT_CLEAN pass (remove unused cells and wires).
+L111: [2026-01-26T20:45:46.635Z] Warning: Ignoring module aes_rcon because it contains processes (run 'proc' command first).
+L112: [2026-01-26T20:45:46.635Z] 22. Executing RTLIL backend.
+L113: [2026-01-26T20:45:46.635Z] Warnings: 1 unique messages, 1 total
+L114: [2026-01-26T20:45:46.635Z] End of script. Logfile hash: 31697edad4, CPU: user 0.67s system 0.03s, MEM: 75.88 MB peak
+L115: [2026-01-26T20:45:46.635Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+L116: [2026-01-26T20:45:46.635Z] Time spent: 96% 12x read_liberty (0 sec), 1% 16x read_verilog (0 sec), ...
+L117: [2026-01-26T20:45:46.635Z] Elapsed time: 0:00.78[h:]min:sec. CPU time: user 0.74 sys 0.03 (99%). Peak memory: 81284KB.
+L118: [2026-01-26T20:45:47.215Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/asap7/aes-block_aes_rcon/base/1_2_yosys.log
+L119: [2026-01-26T20:45:47.216Z] Using ABC area script.
+L120: [2026-01-26T20:45:47.216Z] Extracting clock period from SDC file: ./results/asap7/aes-block_aes_rcon/base/clock_period.txt
+L121: [2026-01-26T20:45:47.216Z] Setting clock period to 450
+L122: [2026-01-26T20:45:47.216Z] 1. Executing RTLIL frontend.
+L123: [2026-01-26T20:45:47.216Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+L124: [2026-01-26T20:45:47.216Z] 2.1. Analyzing design hierarchy..
+L125: [2026-01-26T20:45:47.216Z] 2.2. Analyzing design hierarchy..
+L126: [2026-01-26T20:45:47.216Z] 3. Executing SYNTH pass.
+L127: [2026-01-26T20:45:47.216Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+L128: [2026-01-26T20:45:47.216Z] 3.1.1. Analyzing design hierarchy..
+L129: [2026-01-26T20:45:47.216Z] 3.1.2. Analyzing design hierarchy..
+L130: [2026-01-26T20:45:47.216Z] 3.2. Executing PROC pass (convert processes to netlists).
+L131: [2026-01-26T20:45:47.216Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+L132: [2026-01-26T20:45:47.216Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+L133: [2026-01-26T20:45:47.216Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+L134: [2026-01-26T20:45:47.216Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+L135: [2026-01-26T20:45:47.216Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+L136: [2026-01-26T20:45:47.216Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+L137: [2026-01-26T20:45:47.216Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+L138: [2026-01-26T20:45:47.216Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+L139: [2026-01-26T20:45:47.216Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+L140: [2026-01-26T20:45:47.216Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+L141: [2026-01-26T20:45:47.216Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+L142: [2026-01-26T20:45:47.216Z] 3.2.12. Executing OPT_EXPR pass (perform const folding).
+L143: [2026-01-26T20:45:47.216Z] 3.3. Executing FLATTEN pass (flatten design).
+L144: [2026-01-26T20:45:47.216Z] 3.4. Executing OPT_EXPR pass (perform const folding).
+L145: [2026-01-26T20:45:47.216Z] 3.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+L146: [2026-01-26T20:45:47.216Z] 3.6. Executing CHECK pass (checking for obvious problems).
+L147: [2026-01-26T20:45:47.216Z] 3.7. Executing OPT pass (performing simple optimizations).
+L148: [2026-01-26T20:45:47.216Z] 3.7.1. Executing OPT_EXPR pass (perform const folding).
+L149: [2026-01-26T20:45:47.216Z] 3.7.2. Executing OPT_MERGE pass (detect identical cells).
+L150: [2026-01-26T20:45:47.216Z] 3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L151: [2026-01-26T20:45:47.216Z] 3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L152: [2026-01-26T20:45:47.216Z] 3.7.5. Executing OPT_MERGE pass (detect identical cells).
+L153: [2026-01-26T20:45:47.216Z] 3.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+L154: [2026-01-26T20:45:47.216Z] 3.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+L155: [2026-01-26T20:45:47.216Z] 3.7.8. Executing OPT_EXPR pass (perform const folding).
+L156: [2026-01-26T20:45:47.216Z] 3.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+L157: [2026-01-26T20:45:47.216Z] 3.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L158: [2026-01-26T20:45:47.216Z] 3.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L159: [2026-01-26T20:45:47.216Z] 3.7.12. Executing OPT_MERGE pass (detect identical cells).
+L160: [2026-01-26T20:45:47.216Z] 3.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+L161: [2026-01-26T20:45:47.216Z] 3.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+L162: [2026-01-26T20:45:47.216Z] 3.7.15. Executing OPT_EXPR pass (perform const folding).
+L163: [2026-01-26T20:45:47.216Z] 3.7.16. Finished fast OPT passes. (There is nothing left to do.)
+L164: [2026-01-26T20:45:47.216Z] 3.8. Executing FSM pass (extract and optimize FSM).
+L165: [2026-01-26T20:45:47.216Z] 3.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+L166: [2026-01-26T20:45:47.216Z] 3.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+L167: [2026-01-26T20:45:47.216Z] 3.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+L168: [2026-01-26T20:45:47.216Z] 3.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+L169: [2026-01-26T20:45:47.216Z] 3.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+L170: [2026-01-26T20:45:47.216Z] 3.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+L171: [2026-01-26T20:45:47.216Z] 3.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+L172: [2026-01-26T20:45:47.216Z] 3.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+L173: [2026-01-26T20:45:47.216Z] 3.9. Executing OPT pass (performing simple optimizations).
+L174: [2026-01-26T20:45:47.216Z] 3.9.1. Executing OPT_EXPR pass (perform const folding).
+L175: [2026-01-26T20:45:47.216Z] 3.9.2. Executing OPT_MERGE pass (detect identical cells).
+L176: [2026-01-26T20:45:47.216Z] 3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L177: [2026-01-26T20:45:47.216Z] 3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L178: [2026-01-26T20:45:47.216Z] 3.9.5. Executing OPT_MERGE pass (detect identical cells).
+L179: [2026-01-26T20:45:47.216Z] 3.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+L180: [2026-01-26T20:45:47.216Z] 3.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+L181: [2026-01-26T20:45:47.216Z] 3.9.8. Executing OPT_EXPR pass (perform const folding).
+L182: [2026-01-26T20:45:47.216Z] 3.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+L183: [2026-01-26T20:45:47.216Z] 3.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L184: [2026-01-26T20:45:47.216Z] 3.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L185: [2026-01-26T20:45:47.216Z] 3.9.12. Executing OPT_MERGE pass (detect identical cells).
+L186: [2026-01-26T20:45:47.216Z] 3.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+L187: [2026-01-26T20:45:47.216Z] 3.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+L188: [2026-01-26T20:45:47.216Z] 3.9.15. Executing OPT_EXPR pass (perform const folding).
+L189: [2026-01-26T20:45:47.216Z] 3.9.16. Finished fast OPT passes. (There is nothing left to do.)
+L190: [2026-01-26T20:45:47.216Z] 3.10. Executing WREDUCE pass (reducing word size of cells).
+L191: [2026-01-26T20:45:47.216Z] 3.11. Executing PEEPOPT pass (run peephole optimizers).
+L192: [2026-01-26T20:45:47.216Z] 3.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+L193: [2026-01-26T20:45:47.216Z] 3.13. Executing ALUMACC pass (create $alu and $macc cells).
+L194: [2026-01-26T20:45:47.216Z] 3.14. Executing SHARE pass (SAT-based resource sharing).
+L195: [2026-01-26T20:45:47.216Z] 3.15. Executing OPT pass (performing simple optimizations).
+L196: [2026-01-26T20:45:47.216Z] 3.15.1. Executing OPT_EXPR pass (perform const folding).
+L197: [2026-01-26T20:45:47.216Z] 3.15.2. Executing OPT_MERGE pass (detect identical cells).
+L198: [2026-01-26T20:45:47.216Z] 3.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L199: [2026-01-26T20:45:47.216Z] 3.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L200: [2026-01-26T20:45:47.216Z] 3.15.5. Executing OPT_MERGE pass (detect identical cells).
+L201: [2026-01-26T20:45:47.216Z] 3.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+L202: [2026-01-26T20:45:47.216Z] 3.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+L203: [2026-01-26T20:45:47.216Z] 3.15.8. Executing OPT_EXPR pass (perform const folding).
+L204: [2026-01-26T20:45:47.216Z] 3.15.9. Finished fast OPT passes. (There is nothing left to do.)
+L205: [2026-01-26T20:45:47.216Z] 3.16. Executing MEMORY pass.
+L206: [2026-01-26T20:45:47.216Z] 3.16.1. Executing OPT_MEM pass (optimize memories).
+L207: [2026-01-26T20:45:47.216Z] 3.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+L208: [2026-01-26T20:45:47.216Z] 3.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+L209: [2026-01-26T20:45:47.216Z] 3.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+L210: [2026-01-26T20:45:47.216Z] 3.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+L211: [2026-01-26T20:45:47.216Z] 3.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+L212: [2026-01-26T20:45:47.216Z] 3.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+L213: [2026-01-26T20:45:47.216Z] 3.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+L214: [2026-01-26T20:45:47.216Z] 3.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+L215: [2026-01-26T20:45:47.216Z] 3.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+L216: [2026-01-26T20:45:47.216Z] 3.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+L217: [2026-01-26T20:45:47.216Z] 4. Executing SYNTH pass.
+L218: [2026-01-26T20:45:47.216Z] 4.1. Executing OPT pass (performing simple optimizations).
+L219: [2026-01-26T20:45:47.216Z] 4.1.1. Executing OPT_EXPR pass (perform const folding).
+L220: [2026-01-26T20:45:47.216Z] 4.1.2. Executing OPT_MERGE pass (detect identical cells).
+L221: [2026-01-26T20:45:47.216Z] 4.1.3. Executing OPT_DFF pass (perform DFF optimizations).
+L222: [2026-01-26T20:45:47.216Z] 4.1.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+L223: [2026-01-26T20:45:47.216Z] 4.1.5. Rerunning OPT passes. (Removed registers in this run.)
+L224: [2026-01-26T20:45:47.216Z] 4.1.6. Executing OPT_EXPR pass (perform const folding).
+L225: [2026-01-26T20:45:47.216Z] 4.1.7. Executing OPT_MERGE pass (detect identical cells).
+L226: [2026-01-26T20:45:47.216Z] 4.1.8. Executing OPT_DFF pass (perform DFF optimizations).
+L227: [2026-01-26T20:45:47.216Z] 4.1.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+L228: [2026-01-26T20:45:47.216Z] 4.1.10. Finished fast OPT passes.
+L229: [2026-01-26T20:45:47.216Z] 4.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+L230: [2026-01-26T20:45:47.216Z] 4.3. Executing OPT pass (performing simple optimizations).
+L231: [2026-01-26T20:45:47.216Z] 4.3.1. Executing OPT_EXPR pass (perform const folding).
+L232: [2026-01-26T20:45:47.216Z] 4.3.2. Executing OPT_MERGE pass (detect identical cells).
+L233: [2026-01-26T20:45:47.216Z] 4.3.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L234: [2026-01-26T20:45:47.216Z] 4.3.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L235: [2026-01-26T20:45:47.216Z] 4.3.5. Executing OPT_MERGE pass (detect identical cells).
+L236: [2026-01-26T20:45:47.216Z] 4.3.6. Executing OPT_SHARE pass.
+L237: [2026-01-26T20:45:47.216Z] 4.3.7. Executing OPT_DFF pass (perform DFF optimizations).
+L238: [2026-01-26T20:45:47.216Z] 4.3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+L239: [2026-01-26T20:45:47.216Z] 4.3.9. Executing OPT_EXPR pass (perform const folding).
+L240: [2026-01-26T20:45:47.216Z] 4.3.10. Rerunning OPT passes. (Maybe there is more to do..)
+L241: [2026-01-26T20:45:47.216Z] 4.3.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L242: [2026-01-26T20:45:47.216Z] 4.3.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L243: [2026-01-26T20:45:47.216Z] 4.3.13. Executing OPT_MERGE pass (detect identical cells).
+L244: [2026-01-26T20:45:47.216Z] 4.3.14. Executing OPT_SHARE pass.
+L245: [2026-01-26T20:45:47.216Z] 4.3.15. Executing OPT_DFF pass (perform DFF optimizations).
+L246: [2026-01-26T20:45:47.216Z] 4.3.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+L247: [2026-01-26T20:45:47.216Z] 4.3.17. Executing OPT_EXPR pass (perform const folding).
+L248: [2026-01-26T20:45:47.216Z] 4.3.18. Rerunning OPT passes. (Maybe there is more to do..)
+L249: [2026-01-26T20:45:47.216Z] 4.3.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L250: [2026-01-26T20:45:47.216Z] 4.3.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L251: [2026-01-26T20:45:47.216Z] 4.3.21. Executing OPT_MERGE pass (detect identical cells).
+L252: [2026-01-26T20:45:47.216Z] 4.3.22. Executing OPT_SHARE pass.
+L253: [2026-01-26T20:45:47.216Z] 4.3.23. Executing OPT_DFF pass (perform DFF optimizations).
+L254: [2026-01-26T20:45:47.216Z] 4.3.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+L255: [2026-01-26T20:45:47.216Z] 4.3.25. Executing OPT_EXPR pass (perform const folding).
+L256: [2026-01-26T20:45:47.216Z] 4.3.26. Finished fast OPT passes. (There is nothing left to do.)
+L257: [2026-01-26T20:45:47.216Z] 4.4. Executing TECHMAP pass (map to technology primitives).
+L258: [2026-01-26T20:45:47.216Z] 4.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+L259: [2026-01-26T20:45:47.216Z] 4.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/common/lcu_kogge_stone.v
+L260: [2026-01-26T20:45:47.216Z] 4.4.3. Continuing TECHMAP pass.
+L261: [2026-01-26T20:45:47.216Z] 4.5. Executing OPT pass (performing simple optimizations).
+L262: [2026-01-26T20:45:47.216Z] 4.5.1. Executing OPT_EXPR pass (perform const folding).
+L263: [2026-01-26T20:45:47.216Z] 4.5.2. Executing OPT_MERGE pass (detect identical cells).
+L264: [2026-01-26T20:45:47.216Z] 4.5.3. Executing OPT_DFF pass (perform DFF optimizations).
+L265: [2026-01-26T20:45:47.216Z] 4.5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+L266: [2026-01-26T20:45:47.216Z] 4.5.5. Finished fast OPT passes.
+L267: [2026-01-26T20:45:47.216Z] 4.6. Executing ABC pass (technology mapping using ABC).
+L268: [2026-01-26T20:45:47.216Z] 4.6.1. Extracting gate netlist of module `\aes_rcon' to `<abc-temp-dir>/input.blif'..
+L269: [2026-01-26T20:45:47.216Z] 4.7. Executing OPT pass (performing simple optimizations).
+L270: [2026-01-26T20:45:47.216Z] 4.7.1. Executing OPT_EXPR pass (perform const folding).
+L271: [2026-01-26T20:45:47.216Z] 4.7.2. Executing OPT_MERGE pass (detect identical cells).
+L272: [2026-01-26T20:45:47.216Z] 4.7.3. Executing OPT_DFF pass (perform DFF optimizations).
+L273: [2026-01-26T20:45:47.216Z] 4.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+L274: [2026-01-26T20:45:47.216Z] 4.7.5. Finished fast OPT passes.
+L275: [2026-01-26T20:45:47.216Z] 4.8. Executing HIERARCHY pass (managing design hierarchy).
+L276: [2026-01-26T20:45:47.216Z] 4.8.1. Analyzing design hierarchy..
+L277: [2026-01-26T20:45:47.216Z] 4.8.2. Analyzing design hierarchy..
+L278: [2026-01-26T20:45:47.216Z] 4.9. Printing statistics.
+L279: [2026-01-26T20:45:47.216Z] 4.10. Executing CHECK pass (checking for obvious problems).
+L280: [2026-01-26T20:45:47.216Z] 5. Executing OPT pass (performing simple optimizations).
+L281: [2026-01-26T20:45:47.216Z] 5.1. Executing OPT_EXPR pass (perform const folding).
+L282: [2026-01-26T20:45:47.216Z] 5.2. Executing OPT_MERGE pass (detect identical cells).
+L283: [2026-01-26T20:45:47.216Z] 5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L284: [2026-01-26T20:45:47.216Z] 5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L285: [2026-01-26T20:45:47.216Z] 5.5. Executing OPT_MERGE pass (detect identical cells).
+L286: [2026-01-26T20:45:47.216Z] 5.6. Executing OPT_DFF pass (perform DFF optimizations).
+L287: [2026-01-26T20:45:47.216Z] 5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+L288: [2026-01-26T20:45:47.216Z] 5.8. Executing OPT_EXPR pass (perform const folding).
+L289: [2026-01-26T20:45:47.216Z] 5.9. Finished fast OPT passes. (There is nothing left to do.)
+L290: [2026-01-26T20:45:47.216Z] 6. Executing EXTRACT_FA pass (find and extract full/half adders).
+L291: [2026-01-26T20:45:47.216Z] 7. Executing TECHMAP pass (map to technology primitives).
+L292: [2026-01-26T20:45:47.216Z] 7.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_adders_R.v
+L293: [2026-01-26T20:45:47.216Z] 7.2. Continuing TECHMAP pass.
+L294: [2026-01-26T20:45:47.216Z] 8. Executing TECHMAP pass (map to technology primitives).
+L295: [2026-01-26T20:45:47.216Z] 8.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+L296: [2026-01-26T20:45:47.216Z] 8.2. Continuing TECHMAP pass.
+L297: [2026-01-26T20:45:47.216Z] 9. Executing OPT pass (performing simple optimizations).
+L298: [2026-01-26T20:45:47.216Z] 9.1. Executing OPT_EXPR pass (perform const folding).
+L299: [2026-01-26T20:45:47.216Z] 9.2. Executing OPT_MERGE pass (detect identical cells).
+L300: [2026-01-26T20:45:47.216Z] 9.3. Executing OPT_DFF pass (perform DFF optimizations).
+L301: [2026-01-26T20:45:47.216Z] 9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+L302: [2026-01-26T20:45:47.216Z] 9.5. Finished fast OPT passes.
+L303: [2026-01-26T20:45:47.216Z] 10. Executing TECHMAP pass (map to technology primitives).
+L304: [2026-01-26T20:45:47.216Z] 10.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_latch_R.v
+L305: [2026-01-26T20:45:47.216Z] 10.2. Continuing TECHMAP pass.
+L306: [2026-01-26T20:45:47.216Z] 11. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+L307: [2026-01-26T20:45:47.797Z] 11.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+L308: [2026-01-26T20:45:47.797Z] 12. Executing OPT pass (performing simple optimizations).
+L309: [2026-01-26T20:45:47.797Z] 12.1. Executing OPT_EXPR pass (perform const folding).
+L310: [2026-01-26T20:45:47.797Z] 12.2. Executing OPT_MERGE pass (detect identical cells).
+L311: [2026-01-26T20:45:47.797Z] 12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L312: [2026-01-26T20:45:47.797Z] 12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L313: [2026-01-26T20:45:47.797Z] 12.5. Executing OPT_MERGE pass (detect identical cells).
+L314: [2026-01-26T20:45:47.797Z] 12.6. Executing OPT_DFF pass (perform DFF optimizations).
+L315: [2026-01-26T20:45:47.797Z] 12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+L316: [2026-01-26T20:45:47.797Z] 12.8. Executing OPT_EXPR pass (perform const folding).
+L317: [2026-01-26T20:45:47.797Z] 12.9. Rerunning OPT passes. (Maybe there is more to do..)
+L318: [2026-01-26T20:45:47.797Z] 12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+L319: [2026-01-26T20:45:47.797Z] 12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+L320: [2026-01-26T20:45:47.797Z] 12.12. Executing OPT_MERGE pass (detect identical cells).
+L321: [2026-01-26T20:45:47.797Z] 12.13. Executing OPT_DFF pass (perform DFF optimizations).
+L322: [2026-01-26T20:45:47.797Z] 12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+L323: [2026-01-26T20:45:47.797Z] 12.15. Executing OPT_EXPR pass (perform const folding).
+L324: [2026-01-26T20:45:47.797Z] 12.16. Finished fast OPT passes. (There is nothing left to do.)
+L325: [2026-01-26T20:45:47.797Z] 13. Executing SETUNDEF pass (replace undef values with defined constants).
+L326: [2026-01-26T20:45:47.797Z] abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_area.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib -dont_use *x1p*_ASAP7* -dont_use *xp*_ASAP7* -dont_use SDF* -dont_use ICG* -constr ./objects/asap7/aes-block_aes_rcon/base/abc.constr -D 450
+L327: [2026-01-26T20:45:47.797Z] 14. Executing ABC pass (technology mapping using ABC).
+L328: [2026-01-26T20:45:47.797Z] 14.1. Extracting gate netlist of module `\aes_rcon' to `<abc-temp-dir>/input.blif'..
+L329: [2026-01-26T20:45:48.378Z] 14.1.1. Executed ABC.
+L330: [2026-01-26T20:45:48.378Z] 14.1.2. Re-integrating ABC results.
+L331: [2026-01-26T20:45:48.378Z] 15. Executing SPLITNETS pass (splitting up multi-bit signals).
+L332: [2026-01-26T20:45:48.378Z] 16. Executing OPT_CLEAN pass (remove unused cells and wires).
+L333: [2026-01-26T20:45:48.378Z] 17. Executing HILOMAP pass (mapping to constant drivers).
+L334: [2026-01-26T20:45:48.378Z] 18. Executing INSBUF pass (insert buffer cells for connected wires).
+L335: [2026-01-26T20:45:48.378Z] 19. Executing CHECK pass (checking for obvious problems).
+L336: [2026-01-26T20:45:48.378Z] 20. Printing statistics.
+L337: [2026-01-26T20:45:48.378Z] 21. Executing CHECK pass (checking for obvious problems).
+L338: [2026-01-26T20:45:48.378Z] 22. Executing Verilog backend.
+L339: [2026-01-26T20:45:48.378Z] 22.1. Executing BMUXMAP pass.
+L340: [2026-01-26T20:45:48.378Z] 22.2. Executing DEMUXMAP pass.
+L341: [2026-01-26T20:45:48.378Z] exec cp ./designs/asap7/aes/constraint.sdc ./results/asap7/aes-block_aes_rcon/base/1_synth.sdc
+L342: [2026-01-26T20:45:48.378Z] End of script. Logfile hash: 2bfca82cb1, CPU: user 0.85s system 0.07s, MEM: 142.52 MB peak
+L343: [2026-01-26T20:45:48.378Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+L344: [2026-01-26T20:45:48.378Z] Time spent: 39% 2x abc (0 sec), 23% 1x dfflibmap (0 sec), ...
+L345: [2026-01-26T20:45:48.378Z] Elapsed time: 0:01.60[h:]min:sec. CPU time: user 1.49 sys 0.10 (100%). Peak memory: 147992KB.
+L346: [2026-01-26T20:45:48.378Z] cp ./designs/asap7/aes/constraint.sdc ./results/asap7/aes-block_aes_rcon/base/1_2_yosys.sdc
+L347: [2026-01-26T20:45:48.959Z] OpenROAD 26Q1-342-g7c57b1b222 
+L348: [2026-01-26T20:45:48.959Z] Features included (+) or not (-): +GPU +GUI +Python
+L349: [2026-01-26T20:45:48.959Z] This program is licensed under the BSD-3 license. See the LICENSE file for details.
+L350: [2026-01-26T20:45:48.959Z] Components of this program may be licensed under more restrictive licenses which must be honored.
+L351: [2026-01-26T20:45:48.959Z] [INFO ORD-0030] Using 30 thread(s).
+L352: [2026-01-26T20:45:48.959Z] mkdir -p ./objects/asap7/aes-block_aes_rcon/base
+L353: [2026-01-26T20:45:48.959Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/flow.sh 1_synth synth_odb

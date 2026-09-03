@@ -1,0 +1,157 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 12199.0,
+      "area": 4687.0,
+      "utilization": 83,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/sky130hd/gcd/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 12199.0,
+            "total_resource": 3649,
+            "total_demand": 1001,
+            "total_usage_percent": 27.43,
+            "total_overflow": 0
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 0.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 0.0,
+            "hpwl_before": 6613.0,
+            "hpwl_after": 6613.0,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100",
+          "iterations_count": 211,
+          "start_metrics": {
+            "wns": -2.682,
+            "tns": -118.0,
+            "violation_end_points": 85
+          },
+          "end_metrics": {
+            "wns": -2.472,
+            "tns": -107.0,
+            "violation_end_points": 85
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 987.3,
+            "avg_displacement_u": 2.0,
+            "max_displacement_u": 18.8,
+            "hpwl_before": 6794.7,
+            "hpwl_after": 7680.6,
+            "delta_hpwl_percent": 13.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:13:01.593Z] Report metrics stage 5, global route...",
+      "elapsed_time": "0:17.20",
+      "peak_memory_kb": 213084,
+      "elapsed_s": 17,
+      "memory_mb": 208,
+      "sha1sum": "1cf9231d70982b2951b7",
+      "design_metrics_final": {
+        "globalroute__antenna_diodes_count": 0.0,
+        "globalroute__timing__setup__ws": -2.52945,
+        "globalroute__timing__setup__tns": -108.699,
+        "globalroute__timing__hold__ws": 0.529624,
+        "globalroute__timing__hold__tns": 0.0
+      }
+    },
+    "5_2_route": {
+      "wirelength_um": 8413.0,
+      "total_vias": 2644,
+      "violations": 0,
+      "area": 4687.0,
+      "utilization": 83,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/sky130hd/gcd/base/5_route_drc.rpt -output_maze ./results/sky130hd/gcd/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 110,
+              "wirelength_um": 8489.0,
+              "vias": 2634
+            },
+            {
+              "iteration": 1,
+              "violations": 56,
+              "wirelength_um": 8370.0,
+              "vias": 2609
+            },
+            {
+              "iteration": 2,
+              "violations": 39,
+              "wirelength_um": 8418.0,
+              "vias": 2611
+            },
+            {
+              "iteration": 3,
+              "violations": 0,
+              "wirelength_um": 8413.0,
+              "vias": 2644
+            }
+          ],
+          "final_wirelength_um": 8413.0,
+          "final_vias": 2644,
+          "final_violations": 0
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:13:39.535Z] Report metrics stage 5, detailed route...",
+      "elapsed_time": "0:37.55",
+      "peak_memory_kb": 960536,
+      "elapsed_s": 37,
+      "memory_mb": 938,
+      "sha1sum": "3e8512a96e2d3921a1d7",
+      "design_metrics_final": {
+        "detailedroute__route__wirelength": 8413.0,
+        "detailedroute__route__drc_errors": 0.0,
+        "detailedroute__antenna__violating__nets": 0.0,
+        "detailedroute__antenna_diodes_count": 0.0,
+        "detailedroute__timing__setup__ws": -2.09199,
+        "detailedroute__timing__setup__tns": -88.6852,
+        "detailedroute__timing__hold__ws": 0.483805,
+        "detailedroute__timing__hold__tns": 0.0
+      }
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:00.73",
+      "peak_memory_kb": 111036,
+      "elapsed_s": 0,
+      "memory_mb": 108,
+      "sha1sum": "742669aa6cc6c77cb186"
+    }
+  },
+  "design_name": "gcd",
+  "sub_design_name": "gcd"
+}

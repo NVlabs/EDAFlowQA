@@ -1,0 +1,278 @@
+[2026-01-26T20:49:27.601Z] Using ABC speed script.
+[2026-01-26T20:49:27.601Z] Setting clock period to 3.0
+[2026-01-26T20:49:27.601Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+[2026-01-26T20:49:27.601Z] 2. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/fakeram45_256x16.lib
+[2026-01-26T20:49:27.601Z] 3. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+[2026-01-26T20:49:27.601Z] 4. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/fakeram45_256x16.lib
+[2026-01-26T20:49:27.601Z] 5. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/ariane133/ariane.sv2v.v
+[2026-01-26T20:49:30.251Z] 6. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/nangate45/ariane133/macros.v
+[2026-01-26T20:49:30.251Z] 7. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_clkgate.v
+[2026-01-26T20:49:30.251Z] 8. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:30.251Z] 9. Executing AST frontend in derive mode using pre-parsed AST for module `\ariane'.
+[2026-01-26T20:49:30.251Z] 9.1. Analyzing design hierarchy..
+[2026-01-26T20:49:30.251Z] 9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\std_cache_subsystem_0000000080000000'.
+[2026-01-26T20:49:30.251Z] 9.3. Executing AST frontend in derive mode using pre-parsed AST for module `\controller'.
+[2026-01-26T20:49:30.251Z] 9.4. Executing AST frontend in derive mode using pre-parsed AST for module `\perf_counters'.
+[2026-01-26T20:49:30.251Z] 9.5. Executing AST frontend in derive mode using pre-parsed AST for module `\csr_regfile_0000000000000000_1'.
+[2026-01-26T20:49:31.528Z] 9.6. Executing AST frontend in derive mode using pre-parsed AST for module `\commit_stage'.
+[2026-01-26T20:49:31.528Z] 9.7. Executing AST frontend in derive mode using pre-parsed AST for module `\ex_stage'.
+[2026-01-26T20:49:31.528Z] 9.8. Executing AST frontend in derive mode using pre-parsed AST for module `\issue_stage_NR_ENTRIES8_NR_WB_PORTS4'.
+[2026-01-26T20:49:31.528Z] 9.9. Executing AST frontend in derive mode using pre-parsed AST for module `\id_stage'.
+[2026-01-26T20:49:31.528Z] 9.10. Executing AST frontend in derive mode using pre-parsed AST for module `\frontend_0000000000000000'.
+[2026-01-26T20:49:31.528Z] 9.11. Analyzing design hierarchy..
+[2026-01-26T20:49:31.528Z] 9.12. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_v2_DEPTH8'.
+[2026-01-26T20:49:31.528Z] 9.13. Executing AST frontend in derive mode using pre-parsed AST for module `\instr_scan'.
+[2026-01-26T20:49:31.528Z] 9.14. Executing AST frontend in derive mode using pre-parsed AST for module `\bht_NR_ENTRIES128'.
+[2026-01-26T20:49:31.528Z] 9.15. Executing AST frontend in derive mode using pre-parsed AST for module `\btb_NR_ENTRIES64'.
+[2026-01-26T20:49:32.817Z] 9.16. Executing AST frontend in derive mode using pre-parsed AST for module `\ras_DEPTH2'.
+[2026-01-26T20:49:32.817Z] 9.17. Executing AST frontend in derive mode using pre-parsed AST for module `\decoder'.
+[2026-01-26T20:49:32.817Z] 9.18. Executing AST frontend in derive mode using pre-parsed AST for module `\compressed_decoder'.
+[2026-01-26T20:49:32.817Z] 9.19. Executing AST frontend in derive mode using pre-parsed AST for module `\instr_realigner'.
+[2026-01-26T20:49:32.817Z] 9.20. Executing AST frontend in derive mode using pre-parsed AST for module `\issue_read_operands'.
+[2026-01-26T20:49:32.817Z] 9.21. Executing AST frontend in derive mode using pre-parsed AST for module `\scoreboard_00000008_00000004'.
+[2026-01-26T20:49:34.754Z] 9.22. Executing AST frontend in derive mode using pre-parsed AST for module `\re_name'.
+[2026-01-26T20:49:34.754Z] 9.23. Executing AST frontend in derive mode using pre-parsed AST for module `\load_store_unit'.
+[2026-01-26T20:49:34.754Z] 9.24. Executing AST frontend in derive mode using pre-parsed AST for module `\mult'.
+[2026-01-26T20:49:34.754Z] 9.25. Executing AST frontend in derive mode using pre-parsed AST for module `\csr_buffer'.
+[2026-01-26T20:49:34.754Z] 9.26. Executing AST frontend in derive mode using pre-parsed AST for module `\branch_unit'.
+[2026-01-26T20:49:34.754Z] 9.27. Executing AST frontend in derive mode using pre-parsed AST for module `\alu'.
+[2026-01-26T20:49:34.754Z] 9.28. Executing AST frontend in derive mode using pre-parsed AST for module `\stream_demux_N_OUP3'.
+[2026-01-26T20:49:34.754Z] 9.29. Executing AST frontend in derive mode using pre-parsed AST for module `\stream_mux_N_INP3'.
+[2026-01-26T20:49:34.754Z] 9.30. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_v3_DATA_WIDTH2_DEPTH4'.
+[2026-01-26T20:49:34.754Z] 9.31. Executing AST frontend in derive mode using pre-parsed AST for module `\stream_arbiter_N_INP3_1'.
+[2026-01-26T20:49:34.754Z] 9.32. Executing AST frontend in derive mode using pre-parsed AST for module `\stream_arbiter_N_INP3'.
+[2026-01-26T20:49:34.754Z] 9.33. Executing AST frontend in derive mode using pre-parsed AST for module `\std_nbdcache_0000000080000000'.
+[2026-01-26T20:49:34.754Z] 9.34. Executing AST frontend in derive mode using pre-parsed AST for module `\std_icache'.
+[2026-01-26T20:49:34.754Z] 9.35. Analyzing design hierarchy..
+[2026-01-26T20:49:34.754Z] 9.36. Executing AST frontend in derive mode using pre-parsed AST for module `\lfsr_8bit_00000004'.
+[2026-01-26T20:49:34.754Z] 9.37. Executing AST frontend in derive mode using pre-parsed AST for module `\lzc_00000004'.
+[2026-01-26T20:49:34.754Z] 9.38. Executing AST frontend in derive mode using pre-parsed AST for module `\sram_00000080_00000100'.
+[2026-01-26T20:49:34.754Z] 9.39. Executing AST frontend in derive mode using pre-parsed AST for module `\sram_0000002d_00000100'.
+[2026-01-26T20:49:34.754Z] 9.40. Executing AST frontend in derive mode using pre-parsed AST for module `\tag_cmp_4_0000000c_00000008'.
+[2026-01-26T20:49:34.754Z] 9.41. Executing AST frontend in derive mode using pre-parsed AST for module `\sram_00000040_256'.
+[2026-01-26T20:49:34.754Z] 9.42. Executing AST frontend in derive mode using pre-parsed AST for module `\sram_0000002c_256'.
+[2026-01-26T20:49:34.754Z] 9.43. Executing AST frontend in derive mode using pre-parsed AST for module `\miss_handler_NR_PORTS3'.
+[2026-01-26T20:49:34.754Z] 9.44. Executing AST frontend in derive mode using pre-parsed AST for module `\cache_ctrl_0000000080000000'.
+[2026-01-26T20:49:34.754Z] 9.45. Executing AST frontend in derive mode using pre-parsed AST for module `\rrarbiter_NUM_REQ3_LOCK_IN1'.
+[2026-01-26T20:49:34.754Z] 9.46. Executing AST frontend in derive mode using pre-parsed AST for module `\serdiv_WIDTH64'.
+[2026-01-26T20:49:35.329Z] 9.47. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplier'.
+[2026-01-26T20:49:35.329Z] 9.48. Executing AST frontend in derive mode using pre-parsed AST for module `\lsu_bypass'.
+[2026-01-26T20:49:35.329Z] 9.49. Executing AST frontend in derive mode using pre-parsed AST for module `\pipe_reg_simple_Depth0'.
+[2026-01-26T20:49:35.329Z] 9.50. Executing AST frontend in derive mode using pre-parsed AST for module `\pipe_reg_simple_Depth1'.
+[2026-01-26T20:49:35.329Z] 9.51. Executing AST frontend in derive mode using pre-parsed AST for module `\load_unit'.
+[2026-01-26T20:49:35.329Z] 9.52. Executing AST frontend in derive mode using pre-parsed AST for module `\store_unit'.
+[2026-01-26T20:49:35.329Z] 9.53. Executing AST frontend in derive mode using pre-parsed AST for module `\mmu_16_16_00000001'.
+[2026-01-26T20:49:35.329Z] 9.54. Executing AST frontend in derive mode using pre-parsed AST for module `\ariane_regfile_64_2_00000002_1'.
+[2026-01-26T20:49:35.943Z] 9.55. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_v3_0_00000020_00000008'.
+[2026-01-26T20:49:35.943Z] 9.56. Analyzing design hierarchy..
+[2026-01-26T20:49:35.943Z] 9.57. Executing AST frontend in derive mode using pre-parsed AST for module `\ptw_s00000001'.
+[2026-01-26T20:49:35.943Z] 9.58. Executing AST frontend in derive mode using pre-parsed AST for module `\tlb_00000010_00000001'.
+[2026-01-26T20:49:36.517Z] 9.59. Executing AST frontend in derive mode using pre-parsed AST for module `\amo_buffer'.
+[2026-01-26T20:49:36.517Z] 9.60. Executing AST frontend in derive mode using pre-parsed AST for module `\store_buffer'.
+[2026-01-26T20:49:36.517Z] 9.61. Executing AST frontend in derive mode using pre-parsed AST for module `\lzc_WIDTH64_MODE1'.
+[2026-01-26T20:49:36.517Z] 9.62. Executing AST frontend in derive mode using pre-parsed AST for module `\lzc_00000003'.
+[2026-01-26T20:49:36.517Z] 9.63. Executing AST frontend in derive mode using pre-parsed AST for module `\amo_alu'.
+[2026-01-26T20:49:36.517Z] 9.64. Executing AST frontend in derive mode using pre-parsed AST for module `\lfsr_8bit_00000008'.
+[2026-01-26T20:49:36.517Z] 9.65. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_adapter_00000080_4_00000004'.
+[2026-01-26T20:49:36.517Z] 9.66. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_adapter_64_4_00000004'.
+[2026-01-26T20:49:36.517Z] 9.67. Executing AST frontend in derive mode using pre-parsed AST for module `\arbiter_00000003_64'.
+[2026-01-26T20:49:36.517Z] 9.68. Executing AST frontend in derive mode using pre-parsed AST for module `\SyncSpRamBeNx64_00000008_00000100_0_2'.
+[2026-01-26T20:49:36.517Z] 9.69. Executing AST frontend in derive mode using pre-parsed AST for module `\SyncSpRamBeNx64_00000008_00000100_0_2_d44'.
+[2026-01-26T20:49:36.517Z] 9.70. Executing AST frontend in derive mode using pre-parsed AST for module `\limping_SyncSpRamBeNx64_00000008_00000100_0_2'.
+[2026-01-26T20:49:36.517Z] 9.71. Executing AST frontend in derive mode using pre-parsed AST for module `\SyncSpRamBeNx64_00000008_00000100_0_2_d45'.
+[2026-01-26T20:49:36.517Z] 9.72. Analyzing design hierarchy..
+[2026-01-26T20:49:36.517Z] 9.73. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_v2_DEPTH1_ALM_EMPTY_TH0_ALM_FULL_TH0'.
+[2026-01-26T20:49:36.517Z] 9.74. Analyzing design hierarchy..
+[2026-01-26T20:49:36.517Z] 9.75. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_v3_0_00000020_00000001'.
+[2026-01-26T20:49:36.517Z] 9.76. Analyzing design hierarchy..
+[2026-01-26T20:49:36.517Z] 9.77. Analyzing design hierarchy..
+[2026-01-26T20:49:36.517Z] 10. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2026-01-26T20:49:37.089Z] 11. Executing RTLIL backend.
+[2026-01-26T20:49:38.303Z] Warnings: 668 unique messages, 668 total
+[2026-01-26T20:49:38.303Z] End of script. Logfile hash: ddc70ecfb0, CPU: user 9.66s system 0.52s, MEM: 1161.47 MB peak
+[2026-01-26T20:49:38.303Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2026-01-26T20:49:38.303Z] Time spent: 64% 1x hierarchy (6 sec), 23% 6x read_verilog (2 sec), ...
+[2026-01-26T20:49:38.303Z] Elapsed time: 0:10.58[h:]min:sec. CPU time: user 9.98 sys 0.59 (99%). Peak memory: 1192676KB.
+[2026-01-26T20:49:38.920Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/nangate45/ariane133/base/1_2_yosys.log
+[2026-01-26T20:49:38.920Z] Using ABC speed script.
+[2026-01-26T20:49:38.920Z] Setting clock period to 3.0
+[2026-01-26T20:49:38.920Z] 1. Executing RTLIL frontend.
+[2026-01-26T20:49:39.520Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:39.520Z] 2.1. Analyzing design hierarchy..
+[2026-01-26T20:49:39.520Z] 2.2. Analyzing design hierarchy..
+[2026-01-26T20:49:39.520Z] 3. Executing SYNTH pass.
+[2026-01-26T20:49:39.520Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:39.520Z] 3.1.1. Analyzing design hierarchy..
+[2026-01-26T20:49:39.520Z] 3.1.2. Analyzing design hierarchy..
+[2026-01-26T20:49:39.520Z] 3.2. Executing PROC pass (convert processes to netlists).
+[2026-01-26T20:49:39.520Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:49:39.520Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2026-01-26T20:49:39.520Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2026-01-26T20:49:39.520Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+[2026-01-26T20:49:39.520Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+[2026-01-26T20:49:40.093Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2026-01-26T20:49:40.093Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2026-01-26T20:49:40.093Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2026-01-26T20:49:40.665Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2026-01-26T20:49:40.665Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2026-01-26T20:49:40.665Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:49:43.007Z] 3.5. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:49:44.203Z] Warning: Wire std_nbdcache_0000000080000000.\dirty_wdata_63 is used but has no driver.
+[2026-01-26T20:49:44.203Z] Warning: Wire std_nbdcache_0000000080000000.\dirty_wdata_62 is used but has no driver.
+[2026-01-26T20:49:44.203Z] Warning: Wire std_nbdcache_0000000080000000.\dirty_wdata_61 is used but has no driver.
+[2026-01-26T20:49:58.093Z] 3.7. Executing FSM pass (extract and optimize FSM).
+[2026-01-26T20:49:58.093Z] 3.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2026-01-26T20:49:58.093Z] 3.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2026-01-26T20:49:58.093Z] 3.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:49:58.760Z] 3.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:49:58.760Z] 3.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2026-01-26T20:49:58.760Z] 3.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2026-01-26T20:49:58.760Z] 3.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2026-01-26T20:50:14.206Z] 3.9. Executing WREDUCE pass (reducing word size of cells).
+[2026-01-26T20:50:16.003Z] 3.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2026-01-26T20:50:16.003Z] 3.13. Executing SHARE pass (SAT-based resource sharing).
+[2026-01-26T20:50:25.099Z] 3.15. Executing MEMORY pass.
+[2026-01-26T20:50:25.099Z] 3.15.1. Executing OPT_MEM pass (optimize memories).
+[2026-01-26T20:50:25.099Z] 3.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2026-01-26T20:50:25.099Z] 3.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2026-01-26T20:50:25.678Z] 3.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2026-01-26T20:50:25.678Z] 3.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2026-01-26T20:50:26.825Z] 3.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2026-01-26T20:50:27.399Z] 3.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2026-01-26T20:50:27.973Z] 3.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2026-01-26T20:50:28.546Z] 4. Executing CELLMATCH pass. (match cells)
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATETST_X1.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATETST_X2.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATETST_X4.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATETST_X8.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATE_X1.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATE_X2.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATE_X4.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module CLKGATE_X8.
+[2026-01-26T20:50:28.547Z] Warning: Ignoring blackbox module fakeram45_256x16.
+[2026-01-26T20:50:28.547Z] 5. Executing KEEP_HIERARCHY pass.
+[2026-01-26T20:50:29.120Z] 6. Executing SYNTH pass.
+[2026-01-26T20:50:29.120Z] 6.1. Executing PROC pass (convert processes to netlists).
+[2026-01-26T20:50:29.120Z] 6.1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:50:29.120Z] 6.1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2026-01-26T20:50:29.120Z] 6.1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2026-01-26T20:50:29.120Z] 6.1.4. Executing PROC_INIT pass (extract init attributes).
+[2026-01-26T20:50:29.120Z] 6.1.5. Executing PROC_ARST pass (detect async resets in processes).
+[2026-01-26T20:50:29.120Z] 6.1.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2026-01-26T20:50:29.120Z] 6.1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2026-01-26T20:50:29.120Z] 6.1.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2026-01-26T20:50:29.120Z] 6.1.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2026-01-26T20:50:29.120Z] 6.1.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2026-01-26T20:50:29.120Z] 6.1.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:50:29.701Z] 6.2. Executing FLATTEN pass (flatten design).
+[2026-01-26T20:50:31.514Z] 6.5. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:50:39.914Z] 6.7. Executing FSM pass (extract and optimize FSM).
+[2026-01-26T20:50:39.914Z] 6.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2026-01-26T20:50:39.914Z] 6.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2026-01-26T20:50:39.914Z] 6.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:50:40.521Z] 6.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:50:40.521Z] 6.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2026-01-26T20:50:40.521Z] 6.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2026-01-26T20:50:40.521Z] 6.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2026-01-26T20:50:44.800Z] 6.9. Executing WREDUCE pass (reducing word size of cells).
+[2026-01-26T20:50:46.629Z] 6.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2026-01-26T20:50:46.629Z] 6.13. Executing SHARE pass (SAT-based resource sharing).
+[2026-01-26T20:50:51.513Z] 6.15. Executing MEMORY pass.
+[2026-01-26T20:50:51.513Z] 6.15.1. Executing OPT_MEM pass (optimize memories).
+[2026-01-26T20:50:51.513Z] 6.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2026-01-26T20:50:51.513Z] 6.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2026-01-26T20:50:52.146Z] 6.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2026-01-26T20:50:52.146Z] 6.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2026-01-26T20:50:53.294Z] 6.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2026-01-26T20:50:53.294Z] 6.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2026-01-26T20:50:53.885Z] 6.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2026-01-26T20:50:57.100Z] 7. Executing SYNTH pass.
+[2026-01-26T20:51:01.805Z] 7.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2026-01-26T20:51:05.473Z] 7.3.6. Executing OPT_SHARE pass.
+[2026-01-26T20:51:09.747Z] 7.3.14. Executing OPT_SHARE pass.
+[2026-01-26T20:51:14.002Z] 7.3.22. Executing OPT_SHARE pass.
+[2026-01-26T20:51:17.656Z] 7.3.30. Executing OPT_SHARE pass.
+[2026-01-26T20:51:20.010Z] 7.4. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:51:20.010Z] 7.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:51:20.010Z] 7.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/common/lcu_kogge_stone.v
+[2026-01-26T20:51:20.010Z] 7.4.3. Continuing TECHMAP pass.
+[2026-01-26T20:51:31.209Z] 7.6. Executing ABC pass (technology mapping using ABC).
+[2026-01-26T20:51:31.209Z] 7.6.1. Extracting gate netlist of module `\SyncSpRamBeNx64_00000008_00000100_0_2' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:31.209Z] 7.6.2. Extracting gate netlist of module `\SyncSpRamBeNx64_00000008_00000100_0_2_d44' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:31.209Z] 7.6.3. Extracting gate netlist of module `\SyncSpRamBeNx64_00000008_00000100_0_2_d45' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:31.209Z] 7.6.4. Extracting gate netlist of module `\ariane' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:31.782Z] 7.6.5. Extracting gate netlist of module `\csr_regfile_0000000000000000_1' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:34.418Z] 7.6.6. Extracting gate netlist of module `\ex_stage' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:34.991Z] 7.6.7. Extracting gate netlist of module `\frontend_0000000000000000' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:36.187Z] 7.6.8. Extracting gate netlist of module `\issue_read_operands' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:36.760Z] 7.6.9. Extracting gate netlist of module `\miss_handler_NR_PORTS3' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:37.333Z] 7.6.10. Extracting gate netlist of module `\mmu_16_16_00000001' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:37.906Z] 7.6.11. Extracting gate netlist of module `\multiplier' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:39.785Z] 7.6.12. Extracting gate netlist of module `\perf_counters' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:40.357Z] 7.6.13. Extracting gate netlist of module `\scoreboard_00000008_00000004' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:51:44.775Z] 7.6.14. Extracting gate netlist of module `\std_nbdcache_0000000080000000' to `<abc-temp-dir>/input.blif'..
+[2026-01-26T20:52:02.815Z] 7.8. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:52:02.815Z] 7.8.1. Analyzing design hierarchy..
+[2026-01-26T20:52:02.815Z] 7.8.2. Analyzing design hierarchy..
+[2026-01-26T20:52:03.388Z] 7.9. Printing statistics.
+[2026-01-26T20:52:03.388Z] 7.10. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:52:05.267Z] 8. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:52:19.126Z] 9. Executing EXTRACT_FA pass (find and extract full/half adders).
+[2026-01-26T20:53:12.148Z] 10. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:53:12.148Z] 10.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_adders.v
+[2026-01-26T20:53:12.148Z] 11. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:53:12.148Z] 11.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:53:12.148Z] 12. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:53:13.343Z] 13. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:53:13.343Z] 13.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_latch.v
+[2026-01-26T20:53:13.917Z] 14. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2026-01-26T20:53:13.917Z] 14.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2026-01-26T20:53:13.917Z] 15. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:53:27.834Z] 16. Executing SETUNDEF pass (replace undef values with defined constants).
+[2026-01-26T20:53:27.834Z] abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/fakeram45_256x16.lib -dont_use TAPCELL_X1 -dont_use FILLCELL_X1 -dont_use AOI211_X1 -dont_use OAI211_X1 -constr ./objects/nangate45/ariane133/base/abc.constr -D 3.0
+[2026-01-26T20:53:27.834Z] 17. Executing ABC pass (technology mapping using ABC).
+[2026-01-26T20:53:28.407Z] 17.1.1. Executed ABC.
+[2026-01-26T20:53:28.407Z] 17.1.2. Re-integrating ABC results.
+[2026-01-26T20:53:28.407Z] 17.2.1. Executed ABC.
+[2026-01-26T20:53:28.407Z] 17.2.2. Re-integrating ABC results.
+[2026-01-26T20:53:28.407Z] 17.3.1. Executed ABC.
+[2026-01-26T20:53:28.407Z] 17.3.2. Re-integrating ABC results.
+[2026-01-26T20:53:35.132Z] 17.4.1. Executed ABC.
+[2026-01-26T20:53:35.132Z] 17.4.2. Re-integrating ABC results.
+[2026-01-26T20:54:02.100Z] 17.5.1. Executed ABC.
+[2026-01-26T20:54:02.100Z] 17.5.2. Re-integrating ABC results.
+[2026-01-26T20:54:24.909Z] 17.6.1. Executed ABC.
+[2026-01-26T20:54:24.909Z] 17.6.2. Re-integrating ABC results.
+[2026-01-26T20:55:18.049Z] 17.7.1. Executed ABC.
+[2026-01-26T20:55:18.049Z] 17.7.2. Re-integrating ABC results.
+[2026-01-26T20:55:26.168Z] 17.8.1. Executed ABC.
+[2026-01-26T20:55:26.168Z] 17.8.2. Re-integrating ABC results.
+[2026-01-26T20:55:37.750Z] 17.9.1. Executed ABC.
+[2026-01-26T20:55:37.750Z] 17.9.2. Re-integrating ABC results.
+[2026-01-26T20:55:57.034Z] 17.10.1. Executed ABC.
+[2026-01-26T20:55:57.034Z] 17.10.2. Re-integrating ABC results.
+[2026-01-26T20:55:59.671Z] 17.11.1. Executed ABC.
+[2026-01-26T20:55:59.671Z] 17.11.2. Re-integrating ABC results.
+[2026-01-26T20:56:11.250Z] 17.12.1. Executed ABC.
+[2026-01-26T20:56:11.250Z] 17.12.2. Re-integrating ABC results.
+[2026-01-26T20:56:48.990Z] 17.13.1. Executed ABC.
+[2026-01-26T20:56:48.990Z] 17.13.2. Re-integrating ABC results.
+[2026-01-26T20:56:48.990Z] 17.14.1. Executed ABC.
+[2026-01-26T20:56:48.990Z] 17.14.2. Re-integrating ABC results.
+[2026-01-26T20:56:48.990Z] Took 201 seconds: abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/fakeram45_256x16.lib -dont_use TAPCELL_X1 -dont_use FILLCELL_X1 -dont_use AOI211_X1 -dont_use OAI211_X1 -constr ./objects/nangate45/ariane133/base/abc.constr -D 3.0
+[2026-01-26T20:56:48.990Z] 18. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2026-01-26T20:56:48.990Z] 19. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2026-01-26T20:56:51.624Z] 20. Executing HILOMAP pass (mapping to constant drivers).
+[2026-01-26T20:56:51.624Z] 21. Executing INSBUF pass (insert buffer cells for connected wires).
+[2026-01-26T20:56:51.624Z] 22. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:56:52.821Z] 23. Printing statistics.
+[2026-01-26T20:56:52.821Z] 24. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:56:52.821Z] 25. Executing Verilog backend.
+[2026-01-26T20:56:52.821Z] 25.1. Executing BMUXMAP pass.
+[2026-01-26T20:56:52.821Z] 25.2. Executing DEMUXMAP pass.
+[2026-01-26T20:57:00.923Z] exec cp /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/nangate45/ariane133/ariane.sdc ./results/nangate45/ariane133/base/1_synth.sdc
+[2026-01-26T20:57:00.923Z] Warnings: 51 unique messages, 51 total
+[2026-01-26T20:57:00.923Z] End of script. Logfile hash: 4eb6bcc3b2, CPU: user 235.42s system 1.08s, MEM: 711.03 MB peak
+[2026-01-26T20:57:00.923Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2026-01-26T20:57:00.923Z] Time spent: 48% 2x abc (214 sec), 10% 51x opt_clean (47 sec), ...
+[2026-01-26T20:57:00.923Z] Elapsed time: 7:22.18[h:]min:sec. CPU time: user 444.68 sys 2.95 (101%). Peak memory: 789492KB.

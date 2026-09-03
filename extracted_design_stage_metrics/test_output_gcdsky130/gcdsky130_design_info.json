@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 42,
+      "timestamp": "2025-10-11T15:11:53.284Z",
+      "design_name": "gcd",
+      "technology_node": "sky130hd",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "gcd"
+    ],
+    "technology_nodes": [
+      "sky130hd"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

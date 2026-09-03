@@ -1,0 +1,4 @@
+violation type: Vertical congestion
+	srcs: net:_08327_ net:_09839_ net:_10473_ net:_10835_ net:_11733_ net:net2190 net:net3124 net:net3120 net:net2171 net:delaynet_1_core_clock net:net3200 net:net3027
+	comment: capacity:12 usage:13 overflow:1
+	bbox = (144.9000, 179.4000) - (151.8000, 186.3000) on Layer -

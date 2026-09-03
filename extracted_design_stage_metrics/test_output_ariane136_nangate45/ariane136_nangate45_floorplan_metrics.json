@@ -1,0 +1,77 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {
+            "tie_lo_instances": 1376,
+            "tie_hi_instances": 2195
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {}
+        }
+      ],
+      "elapsed_time": "0:30.54",
+      "peak_memory_kb": 773756,
+      "elapsed_s": 30,
+      "memory_mb": 755,
+      "sha1sum": "9d2d46f7b4ea12c76f27"
+    },
+    "2_2_floorplan_macro": {
+      "utilization": 36.0,
+      "density": 36.0,
+      "optimization_process": [
+        {
+          "type": "macro_placement",
+          "command": "rtl_macro_placer -max_num_level 2 -halo_width 10 -halo_height 10 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/nangate45/ariane136/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.35 -data_flow_driven",
+          "results": {
+            "num_std_cells": 170737,
+            "area_std_cells": 308658.42,
+            "num_macros": 136,
+            "area_macros": 737741.96,
+            "design_utilization": 36.0,
+            "floorplan_utilization": 19.0
+          }
+        }
+      ],
+      "elapsed_time": "0:54.28",
+      "peak_memory_kb": 1745880,
+      "elapsed_s": 54,
+      "memory_mb": 1704,
+      "sha1sum": "715e14749941e7d59e81"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 2050,
+            "tapcells_inserted": 4248
+          }
+        }
+      ],
+      "elapsed_time": "0:01.65",
+      "peak_memory_kb": 290984,
+      "elapsed_s": 1,
+      "memory_mb": 284,
+      "sha1sum": "2dbc23f29501ca4464da"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2026-01-26T20:57:36.618Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:07.78",
+      "peak_memory_kb": 590696,
+      "elapsed_s": 7,
+      "memory_mb": 576,
+      "sha1sum": "5d514a3058dc2a6bb925"
+    }
+  },
+  "design_name": "ariane136",
+  "sub_design_name": "ariane"
+}

@@ -1,0 +1,58 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {}
+        }
+      ],
+      "elapsed_time": "0:01.48",
+      "peak_memory_kb": 216912,
+      "elapsed_s": 1,
+      "memory_mb": 211,
+      "sha1sum": "d707274d1ec6e5207ad1"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_time": "0:01.38",
+      "peak_memory_kb": 194296,
+      "elapsed_s": 1,
+      "memory_mb": 189,
+      "sha1sum": "d707274d1ec6e5207ad1"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 36,
+            "tapcells_inserted": 0
+          }
+        }
+      ],
+      "elapsed_time": "0:01.38",
+      "peak_memory_kb": 194736,
+      "elapsed_s": 1,
+      "memory_mb": 190,
+      "sha1sum": "9415f0ac95d935abd980"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2026-01-26T20:45:52.444Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:01.38",
+      "peak_memory_kb": 195916,
+      "elapsed_s": 1,
+      "memory_mb": 191,
+      "sha1sum": "8e848c1db6d74ed524cb"
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_rcon"
+}

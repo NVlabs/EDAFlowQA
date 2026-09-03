@@ -1,0 +1,87 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -0.364,
+      "tns": -625.8,
+      "clock_sink_wirelength_um": 1024.97,
+      "hpwl": 6410426.4,
+      "displacement": 340.2,
+      "violations": 2821,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 20779,
+            "clock_buffers_created": 3692,
+            "min_buffer_depth": 7,
+            "max_buffer_depth": 8,
+            "avg_sink_wirelength_um": 1024.97,
+            "placement_total_displacement_u": 7877.7,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 12.2,
+            "hpwl_before": 6360903.2,
+            "hpwl_after": 6408893.8,
+            "clock_nets": [
+              {
+                "name": "clk_i",
+                "sinks": 132,
+                "leaf_buffers": 40,
+                "avg_sink_wire_length_um": 1842.33,
+                "path_depth_min": 3,
+                "path_depth_max": 4
+              },
+              {
+                "name": "clk_i_regs",
+                "sinks": 23656,
+                "leaf_buffers": 3377,
+                "avg_sink_wire_length_um": 1024.97,
+                "path_depth_min": 7,
+                "path_depth_max": 8
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose",
+          "iterations_count": 301,
+          "start_metrics": {
+            "wns": -0.469,
+            "tns": -903.9,
+            "violation_end_points": 3157
+          },
+          "end_metrics": {
+            "wns": -0.364,
+            "tns": -625.8,
+            "violation_end_points": 2821
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "removed_buffers": 3,
+          "hold_buffers_inserted": 6,
+          "resized_instances": 240
+        }
+      ],
+      "report_metrics": "[2026-01-26T21:24:19.685Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "6:33.44",
+      "peak_memory_kb": 1565168,
+      "elapsed_s": 393,
+      "memory_mb": 1528,
+      "sha1sum": "8746e2c93e19bfbedfe7"
+    }
+  },
+  "design_name": "ariane133",
+  "sub_design_name": "ariane",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 77.0,
+    "cts__design__instance__count__hold_buffer": 6.0,
+    "cts__timing__setup__ws": -0.36444,
+    "cts__timing__setup__tns": -625.761,
+    "cts__timing__hold__ws": 0.00816264,
+    "cts__timing__hold__tns": 0.0
+  }
+}

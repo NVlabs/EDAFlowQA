@@ -1,0 +1,74 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {}
+        }
+      ],
+      "elapsed_time": "0:04.43",
+      "peak_memory_kb": 249512,
+      "elapsed_s": 4,
+      "memory_mb": 243,
+      "sha1sum": "856c5461354538e96b3a"
+    },
+    "2_2_floorplan_macro": {
+      "utilization": 34.0,
+      "density": 34.0,
+      "optimization_process": [
+        {
+          "type": "macro_placement",
+          "command": "rtl_macro_placer -max_num_level 2 -halo_width 2 -halo_height 2 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/asap7/riscv32i-mock-sram/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.4160000032186508",
+          "results": {
+            "num_std_cells": 9443,
+            "area_std_cells": 1128.6,
+            "num_macros": 4,
+            "area_macros": 1878.07,
+            "design_utilization": 34.0,
+            "floorplan_utilization": 23.0
+          }
+        }
+      ],
+      "elapsed_time": "0:12.98",
+      "peak_memory_kb": 274272,
+      "elapsed_s": 12,
+      "memory_mb": 267,
+      "sha1sum": "8ad3605942b5a8747507"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 590,
+            "tapcells_inserted": 232
+          }
+        }
+      ],
+      "elapsed_time": "0:00.95",
+      "peak_memory_kb": 199404,
+      "elapsed_s": 0,
+      "memory_mb": 194,
+      "sha1sum": "dd4a6fe536d178c02e10"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2025-11-06T15:59:31.696Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:01.09",
+      "peak_memory_kb": 215132,
+      "elapsed_s": 1,
+      "memory_mb": 210,
+      "sha1sum": "42106c23931b93cb40f5"
+    }
+  },
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "riscv_top"
+}

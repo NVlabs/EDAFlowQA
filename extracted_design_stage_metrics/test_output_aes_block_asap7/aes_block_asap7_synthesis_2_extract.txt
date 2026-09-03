@@ -1,0 +1,12 @@
+[2026-01-26T20:46:35.081Z] Running synth_odb.tcl, stage 1_synth
+[2026-01-26T20:46:35.081Z] source /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/liberty_suppressions.tcl
+[2026-01-26T20:46:35.081Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:46:35.661Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+[2026-01-26T20:46:35.661Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:46:36.242Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+[2026-01-26T20:46:36.242Z] read_liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+[2026-01-26T20:46:36.822Z] link_design aes_sbox
+[2026-01-26T20:46:36.822Z] [WARNING STA-0366] port 'clk' not found.
+[2026-01-26T20:46:36.822Z] source /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/setRC.tcl
+[2026-01-26T20:46:36.822Z] Elapsed time: 0:01.43[h:]min:sec. CPU time: user 1.31 sys 0.12 (100%). Peak memory: 197888KB.
+[2026-01-26T20:46:36.822Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/flow.sh 2_1_floorplan floorplan

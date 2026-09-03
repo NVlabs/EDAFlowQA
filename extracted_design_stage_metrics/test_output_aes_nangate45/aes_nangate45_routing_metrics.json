@@ -1,0 +1,199 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 358299.0,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/nangate45/aes/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 358299.0,
+            "total_resource": 339681,
+            "total_demand": 83082,
+            "total_usage_percent": 24.46,
+            "total_overflow": 0,
+            "per_layer_metrics": [
+              {
+                "layer": "metal1",
+                "resource": 0,
+                "demand": 0,
+                "usage_percent": 0.0,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal2",
+                "resource": 51994,
+                "demand": 24948,
+                "usage_percent": 47.98,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal3",
+                "resource": 75099,
+                "demand": 31714,
+                "usage_percent": 42.23,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal4",
+                "resource": 53208,
+                "demand": 13696,
+                "usage_percent": 25.74,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal5",
+                "resource": 54062,
+                "demand": 8550,
+                "usage_percent": 15.82,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal6",
+                "resource": 54079,
+                "demand": 3918,
+                "usage_percent": 7.24,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal7",
+                "resource": 16925,
+                "demand": 243,
+                "usage_percent": 1.44,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal8",
+                "resource": 19350,
+                "demand": 1,
+                "usage_percent": 0.01,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal9",
+                "resource": 7482,
+                "demand": 12,
+                "usage_percent": 0.16,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              },
+              {
+                "layer": "metal10",
+                "resource": 7482,
+                "demand": 0,
+                "usage_percent": 0.0,
+                "overflow_h": 0,
+                "overflow_v": 0,
+                "overflow_total": 0
+              }
+            ]
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:51:52.171Z] Report metrics stage 5, global route...",
+      "elapsed_time": "0:12.24",
+      "peak_memory_kb": 491296,
+      "elapsed_s": 12,
+      "memory_mb": 479,
+      "sha1sum": "ba5cb49b0fe3d4539542",
+      "design_metrics_final": {
+        "globalroute__antenna_diodes_count": 0.0,
+        "globalroute__timing__setup__ws": -0.0134869,
+        "globalroute__timing__setup__tns": -0.0657322,
+        "globalroute__timing__hold__ws": -0.00782223,
+        "globalroute__timing__hold__tns": -0.0841164
+      }
+    },
+    "5_2_route": {
+      "wirelength_um": 245113.0,
+      "total_vias": 128995,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/nangate45/aes/base/5_route_drc.rpt -output_maze ./results/nangate45/aes/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 6281,
+              "wirelength_um": 247799.0,
+              "vias": 128210
+            },
+            {
+              "iteration": 1,
+              "violations": 2523,
+              "wirelength_um": 245771.0,
+              "vias": 127131
+            },
+            {
+              "iteration": 2,
+              "violations": 2324,
+              "wirelength_um": 245356.0,
+              "vias": 126902
+            },
+            {
+              "iteration": 3,
+              "violations": 135,
+              "wirelength_um": 245117.0,
+              "vias": 128986
+            },
+            {
+              "iteration": 4,
+              "violations": 0,
+              "wirelength_um": 245113.0,
+              "vias": 128995
+            }
+          ],
+          "final_wirelength_um": 245113.0,
+          "final_vias": 128995,
+          "final_violations": 0
+        }
+      ],
+      "elapsed_time": "1:43.92",
+      "peak_memory_kb": 2780208,
+      "elapsed_s": 103,
+      "memory_mb": 2715,
+      "sha1sum": "8a8c756452745289c4ac",
+      "design_metrics_final": {
+        "detailedroute__route__wirelength": 245113.0,
+        "detailedroute__route__drc_errors": 0.0,
+        "detailedroute__antenna__violating__nets": 0.0,
+        "detailedroute__antenna_diodes_count": 0.0
+      }
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:00.76",
+      "peak_memory_kb": 167296,
+      "elapsed_s": 0,
+      "memory_mb": 163,
+      "sha1sum": "345c385c940a41976fc5"
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top"
+}

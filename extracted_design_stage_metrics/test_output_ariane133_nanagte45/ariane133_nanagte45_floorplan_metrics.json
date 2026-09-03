@@ -1,0 +1,85 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {
+            "tie_lo_instances": 1367,
+            "tie_hi_instances": 2131
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+          "iterations_count": 230,
+          "start_metrics": {
+            "wns": -1.111,
+            "tns": -3245.1,
+            "violation_end_points": 4026
+          },
+          "end_metrics": {
+            "wns": -0.853,
+            "tns": -492.1,
+            "violation_end_points": 4009
+          }
+        }
+      ],
+      "elapsed_time": "2:32.44",
+      "peak_memory_kb": 772924,
+      "elapsed_s": 152,
+      "memory_mb": 754,
+      "sha1sum": "45975685b94aba763b76"
+    },
+    "2_2_floorplan_macro": {
+      "utilization": 50.0,
+      "density": 50.0,
+      "optimization_process": [
+        {
+          "type": "macro_placement",
+          "command": "rtl_macro_placer -max_num_level 1 -max_num_inst 80000 -min_num_inst 8000 -max_num_macro 10 -min_num_macro 1 -halo_width 8 -halo_height 8 -min_ar 0.33 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -report_directory ./objects/nangate45/ariane133/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 0.0 -fence_uy 0.0 -target_util 0.3 -data_flow_driven",
+          "results": {
+            "num_std_cells": 166821,
+            "area_std_cells": 305083.38,
+            "num_macros": 132,
+            "area_macros": 721546.81,
+            "design_utilization": 50.0,
+            "floorplan_utilization": 30.0
+          }
+        }
+      ],
+      "elapsed_time": "1:14.53",
+      "peak_memory_kb": 1275696,
+      "elapsed_s": 74,
+      "memory_mb": 1245,
+      "sha1sum": "7020f5eb5391b33d27c8"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 1712,
+            "tapcells_inserted": 2510
+          }
+        }
+      ],
+      "elapsed_time": "0:01.56",
+      "peak_memory_kb": 285280,
+      "elapsed_s": 1,
+      "memory_mb": 278,
+      "sha1sum": "a25045723f132d032b96"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2026-01-26T20:59:19.117Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:05.80",
+      "peak_memory_kb": 506548,
+      "elapsed_s": 5,
+      "memory_mb": 494,
+      "sha1sum": "0a5b16a3a37e4535a31c"
+    }
+  },
+  "design_name": "ariane133",
+  "sub_design_name": "ariane"
+}

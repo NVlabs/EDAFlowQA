@@ -1,0 +1,929 @@
+{
+  "design_name": "aes",
+  "sub_design_names": [
+    "aes_cipher_top"
+  ],
+  "design_info": {
+    "runs": [
+      {
+        "line": 36,
+        "timestamp": "2026-01-27T23:49:52.530Z",
+        "design_name": "aes",
+        "technology_node": "asap7",
+        "config_mk": "config.mk"
+      }
+    ]
+  },
+  "log_file": "./design_artifacts/aes_asap7_vs_aes_sky130hs/aes_asap7.txt",
+  "timestamp": "2026-02-28T10:49:17.927484",
+  "flow_execution_summary": {
+    "design_name": "aes",
+    "technology_node": "asap7",
+    "log_file": "./design_artifacts/aes_asap7_vs_aes_sky130hs/aes_asap7.txt",
+    "timestamp": "2026-02-28T10:49:17.927484",
+    "execute_successfully": true,
+    "exit_code": 0,
+    "exit_line": "[2026-01-27T23:57:29.352Z] + exit 0",
+    "errors_detected": [
+      {
+        "line": 3,
+        "content": "[2026-01-27T23:43:22.963Z] error: no such object: openroad/flow-ubuntu22.04-dev:750295"
+      }
+    ],
+    "total_stages": 6,
+    "stages": [
+      {
+        "sequence_number": 1,
+        "stage_type": "synthesis",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 370,
+          "end": 387
+        },
+        "extracted_lines": 11,
+        "output_file": "aes_asap7_synthesis_extract.txt",
+        "metrics_file": "aes_asap7_synthesis_metrics.json"
+      },
+      {
+        "sequence_number": 2,
+        "stage_type": "floorplan",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 387,
+          "end": 1805
+        },
+        "extracted_lines": 369,
+        "output_file": "aes_asap7_floorplan_extract.txt",
+        "metrics_file": "aes_asap7_floorplan_metrics.json"
+      },
+      {
+        "sequence_number": 3,
+        "stage_type": "placement",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 1805,
+          "end": 2274
+        },
+        "extracted_lines": 321,
+        "output_file": "aes_asap7_placement_extract.txt",
+        "metrics_file": "aes_asap7_placement_metrics.json"
+      },
+      {
+        "sequence_number": 4,
+        "stage_type": "cts",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 2274,
+          "end": 2737
+        },
+        "extracted_lines": 416,
+        "output_file": "aes_asap7_cts_extract.txt",
+        "metrics_file": "aes_asap7_cts_metrics.json"
+      },
+      {
+        "sequence_number": 5,
+        "stage_type": "routing",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 2737,
+          "end": 4033
+        },
+        "extracted_lines": 745,
+        "output_file": "aes_asap7_routing_extract.txt",
+        "metrics_file": "aes_asap7_routing_metrics.json"
+      },
+      {
+        "sequence_number": 6,
+        "stage_type": "final",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 4033,
+          "end": 4230
+        },
+        "extracted_lines": 121,
+        "output_file": "aes_asap7_final_extract.txt",
+        "metrics_file": "aes_asap7_final_metrics.json"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "sequence_number": 1,
+      "stage": "synthesis",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_synthesis_metrics.json",
+      "metrics": {
+        "stage": "synthesis",
+        "total_runs": 1,
+        "runs": [
+          {
+            "run_number": 1,
+            "script_name": "synthesis",
+            "design_name": "aes_cipher_top",
+            "timing": {
+              "clock_period_set_count": 0
+            },
+            "statistics": {
+              "cells": {},
+              "chip_area": {}
+            },
+            "check": {}
+          }
+        ],
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 2,
+      "stage": "floorplan",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_floorplan_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "wns": -77.73,
+            "tns": -4080.0,
+            "violations": 132,
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {}
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose",
+                "iterations_count": 310,
+                "start_metrics": {
+                  "wns": -155.758,
+                  "tns": -10834.7,
+                  "violation_end_points": 160
+                },
+                "end_metrics": {
+                  "wns": -77.73,
+                  "tns": -4080.0,
+                  "violation_end_points": 132
+                }
+              }
+            ],
+            "elapsed_time": "0:17.39",
+            "peak_memory_kb": 266744,
+            "elapsed_s": 17,
+            "memory_mb": 260,
+            "sha1sum": "152523b8951aaad89a34"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_time": "0:01.38",
+            "peak_memory_kb": 221860,
+            "elapsed_s": 1,
+            "memory_mb": 216,
+            "sha1sum": "152523b8951aaad89a34"
+          },
+          "2_3_floorplan_tapcell": {
+            "optimization_process": [
+              {
+                "type": "tapcell_insertion",
+                "results": {
+                  "endcaps_inserted": 478,
+                  "tapcells_inserted": 241
+                }
+              }
+            ],
+            "elapsed_time": "0:01.36",
+            "peak_memory_kb": 213668,
+            "elapsed_s": 1,
+            "memory_mb": 208,
+            "sha1sum": "1bc80b4d277772d5ded7"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2026-01-27T23:50:26.535Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:01.51",
+            "peak_memory_kb": 226480,
+            "elapsed_s": 1,
+            "memory_mb": 221,
+            "sha1sum": "69485f49e24c9f106eff"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 3,
+      "stage": "placement",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_placement_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 49910.16,
+            "area": 4181.544,
+            "utilization": 43.899,
+            "density": 43.899,
+            "overflow": 0.0993,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.65 -pad_left 0 -pad_right 0",
+                "iterations_count": 420,
+                "start_metrics": {
+                  "overflow": 0.9933,
+                  "hpwl": 11135.66
+                },
+                "end_metrics": {
+                  "overflow": 0.0993,
+                  "hpwl": 49910.16
+                },
+                "results": {
+                  "movable_instances": 15690,
+                  "fixed_instances": 719,
+                  "num_nets": 16227,
+                  "num_pins": 53068,
+                  "core_area_um2": 4181.544,
+                  "fixed_instances_area_um2": 20.966,
+                  "movable_instances_area_um2": 1826.455,
+                  "standard_cells_area_um2": 1826.455,
+                  "utilization": 43.899,
+                  "target_density": 65.0,
+                  "final_overflow": 0.0993,
+                  "final_hpwl_um": 49910.16
+                }
+              }
+            ],
+            "elapsed_s": 5,
+            "memory_mb": 237,
+            "sha1sum": "fc0e2e1ea69a2af1d514"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers M4 -ver_layers M5",
+                "results": {
+                  "io_nets_hpwl_um": 10264.77
+                }
+              }
+            ],
+            "elapsed_s": 1,
+            "memory_mb": 218,
+            "sha1sum": "471f724489a426737e2b"
+          },
+          "3_3_place_gp": {
+            "hpwl": 52818.89,
+            "area": 4181.544,
+            "utilization": 41.998,
+            "density": 41.998,
+            "overflow": 0.0988,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 1126
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 258,
+                  "buffer_type": "BUFx2_ASAP7_75t_R",
+                  "output_buffers": 129
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.65 -pad_left 0 -pad_right 0 -routability_driven -timing_driven -min_phi_coef 0.95 -max_phi_coef 1.05",
+                "iterations_count": 383,
+                "start_metrics": {
+                  "overflow": 0.9066,
+                  "hpwl": 26741.37
+                },
+                "end_metrics": {
+                  "overflow": 0.0988,
+                  "hpwl": 52818.89
+                },
+                "results": {
+                  "movable_instances": 14951,
+                  "fixed_instances": 719,
+                  "num_nets": 15488,
+                  "num_pins": 51978,
+                  "core_area_um2": 4181.544,
+                  "fixed_instances_area_um2": 20.966,
+                  "movable_instances_area_um2": 1747.375,
+                  "standard_cells_area_um2": 1747.375,
+                  "utilization": 41.998,
+                  "target_density": 65.0,
+                  "final_overflow": 0.0988,
+                  "final_hpwl_um": 52818.89
+                }
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:51:01.666Z] Report metrics stage 3, global place...",
+            "elapsed_s": 21,
+            "memory_mb": 558,
+            "sha1sum": "afe6f168d12accd41f76"
+          },
+          "3_4_place_resized": {
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:51:07.884Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 6,
+            "memory_mb": 271,
+            "sha1sum": "afe6f168d12accd41f76"
+          },
+          "3_5_place_dp": {
+            "hpwl": 53096.2,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 3448.0,
+                  "average_displacement_u": 0.2,
+                  "max_displacement_u": 0.9,
+                  "original_hpwl_u": 52831.6,
+                  "legalized_hpwl_u": 55411.6,
+                  "delta_hpwl_percent": 5.0,
+                  "final_hpwl_u": 53096.2,
+                  "final_delta_hpwl_percent": -4.2
+                }
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:51:17.065Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 8,
+            "memory_mb": 296,
+            "sha1sum": "0f44aa42ac0db968c45f"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top",
+        "design_metrics_final": {
+          "placeopt__design__instance__area": 1879.84,
+          "placeopt__design__instance__count__stdcell": 17937.0
+        }
+      }
+    },
+    {
+      "sequence_number": 4,
+      "stage": "cts",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_cts_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "wns": -21.801,
+            "tns": -531.4,
+            "clock_sink_wirelength_um": 95.32,
+            "hpwl": 55488.3,
+            "displacement": 456.4,
+            "violations": 68,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+                "results": {
+                  "total_sinks": 562,
+                  "clock_buffers_created": 40,
+                  "min_buffer_depth": 3,
+                  "max_buffer_depth": 3,
+                  "avg_sink_wirelength_um": 95.32,
+                  "placement_total_displacement_u": 154.5,
+                  "placement_avg_displacement_u": 0.0,
+                  "placement_max_displacement_u": 1.2,
+                  "hpwl_before": 53859.8,
+                  "hpwl_after": 54821.6,
+                  "clock_nets": [
+                    {
+                      "name": "clk",
+                      "sinks": 594,
+                      "leaf_buffers": 35,
+                      "avg_sink_wire_length_um": 95.32,
+                      "path_depth_min": 2,
+                      "path_depth_max": 3
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+                "iterations_count": 334,
+                "start_metrics": {
+                  "wns": -49.099,
+                  "tns": -2321.4,
+                  "violation_end_points": 146
+                },
+                "end_metrics": {
+                  "wns": -21.801,
+                  "tns": -531.4,
+                  "violation_end_points": 68
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_timing_summary",
+                "removed_buffers": 2,
+                "inserted_buffers": 176,
+                "hold_buffers_inserted": 272,
+                "resized_instances": 218,
+                "cloned_instances": 5
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:52:35.660Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "1:11.50",
+            "peak_memory_kb": 656396,
+            "elapsed_s": 71,
+            "memory_mb": 641,
+            "sha1sum": "d12cbca7d42bc3b138ad"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top",
+        "design_metrics_final": {
+          "cts__design__instance__count__setup_buffer": 176.0,
+          "cts__design__instance__count__hold_buffer": 272.0,
+          "cts__timing__setup__ws": -21.8011,
+          "cts__timing__setup__tns": -531.416,
+          "cts__timing__hold__ws": 0.00931893,
+          "cts__timing__hold__tns": 0.0
+        }
+      }
+    },
+    {
+      "sequence_number": 5,
+      "stage": "routing",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_routing_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 90717.0,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/asap7/aes/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 90717.0,
+                  "total_resource": 700378,
+                  "total_demand": 112431,
+                  "total_usage_percent": 16.05,
+                  "total_overflow": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 55488.3,
+                  "hpwl_after": 55488.3,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+                "iterations_count": 460,
+                "start_metrics": {
+                  "wns": -39.525,
+                  "tns": -2662.5,
+                  "violation_end_points": 160
+                },
+                "end_metrics": {
+                  "wns": -31.852,
+                  "tns": -1847.7,
+                  "violation_end_points": 128
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 248.1,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 1.5,
+                  "hpwl_before": 55794.8,
+                  "hpwl_after": 55976.7,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:53:29.450Z] Report metrics stage 5, global route...",
+            "elapsed_time": "0:59.72",
+            "peak_memory_kb": 704708,
+            "elapsed_s": 59,
+            "memory_mb": 688,
+            "sha1sum": "308d7bd8990523e19fd5",
+            "design_metrics_final": {
+              "globalroute__antenna_diodes_count": 0.0,
+              "globalroute__timing__setup__ws": -33.1612,
+              "globalroute__timing__setup__tns": -1936.53,
+              "globalroute__timing__hold__ws": 8.16591,
+              "globalroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_2_route": {
+            "wirelength_um": 65609.0,
+            "total_vias": 164405,
+            "violations": 0,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/asap7/aes/base/5_route_drc.rpt -output_maze ./results/asap7/aes/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 2517,
+                    "wirelength_um": 66315.0,
+                    "vias": 170411
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 133,
+                    "wirelength_um": 65668.0,
+                    "vias": 164682
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 0,
+                    "wirelength_um": 65609.0,
+                    "vias": 164405
+                  }
+                ],
+                "final_wirelength_um": 65609.0,
+                "final_vias": 164405,
+                "final_violations": 0
+              }
+            ],
+            "elapsed_time": "2:59.66",
+            "peak_memory_kb": 13825920,
+            "elapsed_s": 179,
+            "memory_mb": 13501,
+            "sha1sum": "be59873f25e2030f9808",
+            "design_metrics_final": {
+              "detailedroute__route__wirelength": 65609.0,
+              "detailedroute__route__drc_errors": 0.0,
+              "detailedroute__antenna__violating__nets": 0.0,
+              "detailedroute__antenna_diodes_count": 0.0
+            }
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:01.77",
+            "peak_memory_kb": 271096,
+            "elapsed_s": 1,
+            "memory_mb": 264,
+            "sha1sum": "a41727bdce5142984360"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 6,
+      "stage": "final",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_asap7/aes_asap7_final_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 0.77,
+            "worstcase_voltage_v": 0.746,
+            "average_voltage_v": 0.763,
+            "average_ir_drop_v": 0.00735,
+            "worstcase_ir_drop_v": 0.0243,
+            "percentage_drop": 3.15
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.0251,
+            "average_voltage_v": 0.00739,
+            "average_ir_drop_v": 0.00739,
+            "worstcase_ir_drop_v": 0.0251,
+            "percentage_drop": 3.26
+          }
+        },
+        "cell_counts": {
+          "fill_cell_count": 20707,
+          "fill_cell_area": 2200.65,
+          "tap_cell_count": 719,
+          "tap_cell_area": 20.97,
+          "clock_buffer_count": 50,
+          "clock_buffer_area": 20.66,
+          "timing_repair_buffer_count": 3341,
+          "timing_repair_buffer_area": 320.12,
+          "inverter_count": 1179,
+          "inverter_area": 54.33,
+          "clock_inverter_count": 22,
+          "clock_inverter_area": 5.21,
+          "sequential_cell_count": 562,
+          "sequential_cell_area": 164.2,
+          "combinational_cell_count": 12825,
+          "combinational_cell_area": 1395.36,
+          "total_cell_count": 39406,
+          "total_cell_area": 4181.54
+        },
+        "design_metrics": {
+          "setup_wns": -28.1409,
+          "setup_tns": -835.652,
+          "hold_wns": 14.8949,
+          "hold_tns": 0.0,
+          "area": 1980.9
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 1,
+            "memory_mb": 238,
+            "sha1sum": "a41727bdce5142984360"
+          },
+          "6_report": {
+            "elapsed_s": 19,
+            "memory_mb": 635
+          },
+          "1_1_yosys_canonicalize": {
+            "elapsed_s": 0,
+            "memory_mb": 79,
+            "sha1sum": "9cece676d146ab2d41e2"
+          },
+          "1_2_yosys": {
+            "elapsed_s": 14,
+            "memory_mb": 332,
+            "sha1sum": "74d129835a46ba76743d"
+          },
+          "1_synth": {
+            "elapsed_s": 1,
+            "memory_mb": 228,
+            "sha1sum": "a58246b49bf728f071e0"
+          },
+          "2_1_floorplan": {
+            "elapsed_s": 17,
+            "memory_mb": 260,
+            "sha1sum": "152523b8951aaad89a34"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_s": 1,
+            "memory_mb": 216,
+            "sha1sum": "152523b8951aaad89a34"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_s": 1,
+            "memory_mb": 208,
+            "sha1sum": "1bc80b4d277772d5ded7"
+          },
+          "2_4_floorplan_pdn": {
+            "elapsed_s": 1,
+            "memory_mb": 221,
+            "sha1sum": "69485f49e24c9f106eff"
+          },
+          "3_1_place_gp_skip_io": {
+            "elapsed_s": 5,
+            "memory_mb": 237,
+            "sha1sum": "fc0e2e1ea69a2af1d514"
+          },
+          "3_2_place_iop": {
+            "elapsed_s": 1,
+            "memory_mb": 218,
+            "sha1sum": "471f724489a426737e2b"
+          },
+          "3_3_place_gp": {
+            "elapsed_s": 21,
+            "memory_mb": 558,
+            "sha1sum": "afe6f168d12accd41f76"
+          },
+          "3_4_place_resized": {
+            "elapsed_s": 6,
+            "memory_mb": 271,
+            "sha1sum": "afe6f168d12accd41f76"
+          },
+          "3_5_place_dp": {
+            "elapsed_s": 8,
+            "memory_mb": 296,
+            "sha1sum": "0f44aa42ac0db968c45f"
+          },
+          "4_1_cts": {
+            "elapsed_s": 71,
+            "memory_mb": 641,
+            "sha1sum": "d12cbca7d42bc3b138ad"
+          },
+          "5_1_grt": {
+            "elapsed_s": 59,
+            "memory_mb": 688,
+            "sha1sum": "308d7bd8990523e19fd5"
+          },
+          "5_2_route": {
+            "elapsed_s": 179,
+            "memory_mb": 13501,
+            "sha1sum": "be59873f25e2030f9808"
+          },
+          "5_3_fillcell": {
+            "elapsed_s": 1,
+            "memory_mb": 264,
+            "sha1sum": "a41727bdce5142984360"
+          },
+          "6_1_merge": {
+            "elapsed_s": 2,
+            "memory_mb": 503
+          }
+        },
+        "performance": {},
+        "test_metrics": {
+          "synth__design__instance__area__stdcell": {
+            "actual_value": 1683.64008,
+            "operator": "<=",
+            "threshold_value": 1928.39,
+            "passed": true
+          },
+          "constraints__clocks__count": {
+            "actual_value": 1.0,
+            "operator": "==",
+            "threshold_value": 1.0,
+            "passed": true
+          },
+          "placeopt__design__instance__area": {
+            "actual_value": 1879.84,
+            "operator": "<=",
+            "threshold_value": 2162.0,
+            "passed": true
+          },
+          "placeopt__design__instance__count__stdcell": {
+            "actual_value": 17937.0,
+            "operator": "<=",
+            "threshold_value": 19594.0,
+            "passed": true
+          },
+          "detailedplace__design__violations": {
+            "actual_value": 0.0,
+            "operator": "==",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__design__instance__count__setup_buffer": {
+            "actual_value": 176.0,
+            "operator": "<=",
+            "threshold_value": 1704.0,
+            "passed": true
+          },
+          "cts__design__instance__count__hold_buffer": {
+            "actual_value": 272.0,
+            "operator": "<=",
+            "threshold_value": 1704.0,
+            "passed": true
+          },
+          "cts__timing__setup__ws": {
+            "actual_value": -21.8011,
+            "operator": ">=",
+            "threshold_value": -34.8,
+            "passed": true
+          },
+          "cts__timing__setup__tns": {
+            "actual_value": -531.416,
+            "operator": ">=",
+            "threshold_value": -607.0,
+            "passed": true
+          },
+          "cts__timing__hold__ws": {
+            "actual_value": 0.00931893,
+            "operator": ">=",
+            "threshold_value": -19.0,
+            "passed": true
+          },
+          "cts__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -76.0,
+            "passed": true
+          },
+          "globalroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 100.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__ws": {
+            "actual_value": -33.1612,
+            "operator": ">=",
+            "threshold_value": -47.4,
+            "passed": true
+          },
+          "globalroute__timing__setup__tns": {
+            "actual_value": -1936.53,
+            "operator": ">=",
+            "threshold_value": -2010.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__ws": {
+            "actual_value": 8.16591,
+            "operator": ">=",
+            "threshold_value": -19.0,
+            "passed": true
+          },
+          "globalroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -76.0,
+            "passed": true
+          },
+          "detailedroute__route__wirelength": {
+            "actual_value": 65609.0,
+            "operator": "<=",
+            "threshold_value": 72539.0,
+            "passed": true
+          },
+          "detailedroute__route__drc_errors": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna__violating__nets": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna_diodes_count": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 100.0,
+            "passed": true
+          },
+          "finish__timing__setup__ws": {
+            "actual_value": -28.1409,
+            "operator": ">=",
+            "threshold_value": -44.3,
+            "passed": true
+          },
+          "finish__timing__setup__tns": {
+            "actual_value": -835.652,
+            "operator": ">=",
+            "threshold_value": -911.0,
+            "passed": true
+          },
+          "finish__timing__hold__ws": {
+            "actual_value": 14.8949,
+            "operator": ">=",
+            "threshold_value": -19.0,
+            "passed": true
+          },
+          "finish__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -76.0,
+            "passed": true
+          },
+          "finish__design__instance__area": {
+            "actual_value": 1980.9,
+            "operator": "<=",
+            "threshold_value": 2269.0,
+            "passed": true
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    }
+  ]
+}

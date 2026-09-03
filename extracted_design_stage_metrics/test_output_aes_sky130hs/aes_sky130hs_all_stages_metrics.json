@@ -1,0 +1,1248 @@
+{
+  "design_name": "aes",
+  "sub_design_names": [
+    "aes_cipher_top"
+  ],
+  "design_info": {
+    "runs": [
+      {
+        "line": 36,
+        "timestamp": "2026-01-27T23:54:17.505Z",
+        "design_name": "aes",
+        "technology_node": "sky130hs",
+        "config_mk": "config.mk"
+      }
+    ]
+  },
+  "log_file": "./design_artifacts/aes_sky130hs_vs_aes_sky130hd/aes_sky130hs.txt",
+  "timestamp": "2026-02-28T11:27:55.464818",
+  "flow_execution_summary": {
+    "design_name": "aes",
+    "technology_node": "sky130hs",
+    "log_file": "./design_artifacts/aes_sky130hs_vs_aes_sky130hd/aes_sky130hs.txt",
+    "timestamp": "2026-02-28T11:27:55.464818",
+    "execute_successfully": true,
+    "exit_code": 0,
+    "exit_line": "[2026-01-28T00:02:19.023Z] + exit 0",
+    "errors_detected": [
+      {
+        "line": 3,
+        "content": "[2026-01-27T23:48:00.099Z] error: no such object: openroad/flow-ubuntu22.04-dev:750295"
+      }
+    ],
+    "total_stages": 6,
+    "stages": [
+      {
+        "sequence_number": 1,
+        "stage_type": "synthesis",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 84,
+          "end": 402
+        },
+        "extracted_lines": 151,
+        "output_file": "aes_sky130hs_synthesis_extract.txt",
+        "metrics_file": "aes_sky130hs_synthesis_metrics.json"
+      },
+      {
+        "sequence_number": 2,
+        "stage_type": "floorplan",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 402,
+          "end": 480
+        },
+        "extracted_lines": 46,
+        "output_file": "aes_sky130hs_floorplan_extract.txt",
+        "metrics_file": "aes_sky130hs_floorplan_metrics.json"
+      },
+      {
+        "sequence_number": 3,
+        "stage_type": "placement",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 480,
+          "end": 1072
+        },
+        "extracted_lines": 395,
+        "output_file": "aes_sky130hs_placement_extract.txt",
+        "metrics_file": "aes_sky130hs_placement_metrics.json"
+      },
+      {
+        "sequence_number": 4,
+        "stage_type": "cts",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 1072,
+          "end": 1253
+        },
+        "extracted_lines": 127,
+        "output_file": "aes_sky130hs_cts_extract.txt",
+        "metrics_file": "aes_sky130hs_cts_metrics.json"
+      },
+      {
+        "sequence_number": 5,
+        "stage_type": "routing",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 1253,
+          "end": 2818
+        },
+        "extracted_lines": 761,
+        "output_file": "aes_sky130hs_routing_extract.txt",
+        "metrics_file": "aes_sky130hs_routing_metrics.json"
+      },
+      {
+        "sequence_number": 6,
+        "stage_type": "final",
+        "occurrence": 1,
+        "sub_design_name": "aes_cipher_top",
+        "line_range": {
+          "start": 2818,
+          "end": 3005
+        },
+        "extracted_lines": 122,
+        "output_file": "aes_sky130hs_final_extract.txt",
+        "metrics_file": "aes_sky130hs_final_metrics.json"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "sequence_number": 1,
+      "stage": "synthesis",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_synthesis_metrics.json",
+      "metrics": {
+        "stage": "synthesis",
+        "total_runs": 1,
+        "runs": [
+          {
+            "run_number": 1,
+            "script_name": "synth",
+            "design_name": "aes_cipher_top",
+            "steps": [
+              {
+                "number": "1",
+                "description": "Executing RTLIL frontend.",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "2",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "2.1",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "2.2",
+                "description": "Analyzing design hierarchy..",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3",
+                "description": "Executing SYNTH pass.",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.1",
+                "description": "Executing HIERARCHY pass (managing design hierarchy).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.2",
+                "description": "Executing PROC pass (convert processes to netlists).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.3",
+                "description": "Executing FLATTEN pass (flatten design).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.6",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.8",
+                "description": "Executing FSM pass (extract and optimize FSM).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.10",
+                "description": "Executing WREDUCE pass (reducing word size of cells).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.13",
+                "description": "Executing ALUMACC pass (create $alu and $macc cells).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.14",
+                "description": "Executing SHARE pass (SAT-based resource sharing).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "3.16",
+                "description": "Executing MEMORY pass.",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "4",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "4.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "5.1",
+                "description": "Executing WRAPCELL pass. (wrap selected cells)",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "5.2",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "5.3",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "5.4",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "5.5",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "6.1",
+                "description": "Executing WRAPCELL pass. (wrap selected cells)",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "6.2",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "6.3",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "7",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "8",
+                "description": "Executing MEMORY_MAP pass (converting memories to logic and flip-flops).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "9",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2026-01-27T23:54:18.336Z"
+              },
+              {
+                "number": "10",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:19.247Z"
+              },
+              {
+                "number": "10.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+                "timestamp": "2026-01-27T23:54:19.247Z"
+              },
+              {
+                "number": "10.2",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v",
+                "timestamp": "2026-01-27T23:54:19.247Z"
+              },
+              {
+                "number": "11",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2026-01-27T23:54:19.247Z"
+              },
+              {
+                "number": "12",
+                "description": "Executing EXTRACT_FA pass (find and extract full/half adders).",
+                "timestamp": "2026-01-27T23:54:19.247Z"
+              },
+              {
+                "number": "13",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "13.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hs/cells_adders_hs.v",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "14",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "14.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "15",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "16",
+                "description": "Executing TECHMAP pass (map to technology primitives).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "16.1",
+                "description": "Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/sky130hs/cells_latch_hs.v",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "17",
+                "description": "Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "17.1",
+                "description": "Executing DFFLEGALIZE pass (convert FFs to types supported by the target).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "18",
+                "description": "Executing OPT pass (performing simple optimizations).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "19",
+                "description": "Executing SETUNDEF pass (replace undef values with defined constants).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20",
+                "description": "Executing ABC_NEW pass.",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20.1",
+                "description": "Executing ABC9_OPS pass (helper functions for ABC9).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20.2",
+                "description": "Executing BOX_DERIVE pass. (derive modules for boxes)",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20.3",
+                "description": "Executing ABC9_OPS pass (helper functions for ABC9).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20.4",
+                "description": "Executing ABC9_OPS pass (helper functions for ABC9).",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "number": "20.6",
+                "description": "Executing ABC9_OPS pass (helper functions for ABC9).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "21",
+                "description": "Executing SPLITNETS pass (splitting up multi-bit signals).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "22",
+                "description": "Executing OPT_CLEAN pass (remove unused cells and wires).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "23",
+                "description": "Executing HILOMAP pass (mapping to constant drivers).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "24",
+                "description": "Executing INSBUF pass (insert buffer cells for connected wires).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "25",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "26",
+                "description": "Printing statistics.",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "27",
+                "description": "Executing CHECK pass (checking for obvious problems).",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "28",
+                "description": "Executing Verilog backend.",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "28.1",
+                "description": "Executing BMUXMAP pass.",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              },
+              {
+                "number": "28.2",
+                "description": "Executing DEMUXMAP pass.",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              }
+            ],
+            "timing": {
+              "clock_period_ns": 2.8,
+              "clock_period_set_count": 1
+            },
+            "warnings": [
+              {
+                "message": "Feature 'abc_new' is experimental.",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "message": "Feature 'write_xaiger2' is experimental.",
+                "timestamp": "2026-01-27T23:54:25.043Z"
+              },
+              {
+                "message": "Feature 'read_xaiger2' is experimental.",
+                "timestamp": "2026-01-27T23:54:47.708Z"
+              }
+            ],
+            "statistics": {
+              "cells": {},
+              "chip_area": {}
+            },
+            "check": {}
+          }
+        ],
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 2,
+      "stage": "floorplan",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_floorplan_metrics.json",
+      "metrics": {
+        "stage": "floorplan",
+        "substages": {
+          "2_1_floorplan": {
+            "optimization_process": [
+              {
+                "type": "repair_tie_fanout",
+                "results": {}
+              }
+            ],
+            "elapsed_time": "0:01.87",
+            "peak_memory_kb": 187520,
+            "elapsed_s": 1,
+            "memory_mb": 183,
+            "sha1sum": "405d5ef0812085445d42"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_time": "0:00.93",
+            "peak_memory_kb": 162088,
+            "elapsed_s": 0,
+            "memory_mb": 158,
+            "sha1sum": "405d5ef0812085445d42"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_time": "0:00.92",
+            "peak_memory_kb": 156088,
+            "elapsed_s": 0,
+            "memory_mb": 152,
+            "sha1sum": "dcc206d9642a9d66e951"
+          },
+          "2_4_floorplan_pdn": {
+            "report_metrics": "[2026-01-27T23:54:50.182Z] Report metrics stage 2, floorplan final...",
+            "elapsed_time": "0:01.05",
+            "peak_memory_kb": 167156,
+            "elapsed_s": 1,
+            "memory_mb": 163,
+            "sha1sum": "c089bf88c829ba168dbe"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 3,
+      "stage": "placement",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_placement_metrics.json",
+      "metrics": {
+        "stage": "placement",
+        "substages": {
+          "3_1_place_gp_skip_io": {
+            "hpwl": 286791.5,
+            "area": 254633.112,
+            "utilization": 47.79,
+            "density": 47.79,
+            "overflow": 0.0995,
+            "optimization_process": [
+              {
+                "type": "global_placement",
+                "command": "global_placement -skip_io -density 0.619999991953373 -pad_left 0 -pad_right 0",
+                "iterations_count": 418,
+                "start_metrics": {
+                  "overflow": 0.9985,
+                  "hpwl": 24076.19
+                },
+                "end_metrics": {
+                  "overflow": 0.0995,
+                  "hpwl": 286791.5
+                },
+                "results": {
+                  "movable_instances": 10933,
+                  "fixed_instances": 2754,
+                  "num_nets": 11196,
+                  "num_pins": 43905,
+                  "core_area_um2": 254633.112,
+                  "fixed_instances_area_um2": 4401.994,
+                  "movable_instances_area_um2": 119584.719,
+                  "standard_cells_area_um2": 119584.719,
+                  "utilization": 47.79,
+                  "target_density": 62.0,
+                  "final_overflow": 0.0995,
+                  "final_hpwl_um": 286791.5
+                }
+              }
+            ],
+            "elapsed_s": 2,
+            "memory_mb": 177,
+            "sha1sum": "883e6f641aa5512525d7"
+          },
+          "3_2_place_iop": {
+            "optimization_process": [
+              {
+                "type": "io_placement",
+                "command": "place_pins -hor_layers met3 -ver_layers met2",
+                "results": {
+                  "io_nets_hpwl_um": 64237.16
+                }
+              }
+            ],
+            "elapsed_s": 0,
+            "memory_mb": 161,
+            "sha1sum": "a5de0399e9e0662bdcc9"
+          },
+          "3_3_place_gp": {
+            "hpwl": 472778.2,
+            "area": 254633.112,
+            "utilization": 48.9,
+            "density": 48.9,
+            "overflow": 0.0988,
+            "optimization_process": [
+              {
+                "type": "buffer_removal",
+                "results": {
+                  "removed_buffers": 0
+                }
+              },
+              {
+                "type": "buffer_insertion",
+                "results": {
+                  "input_buffers": 258,
+                  "buffer_type": "sky130_fd_sc_hs__buf_1",
+                  "output_buffers": 129
+                }
+              },
+              {
+                "type": "global_placement",
+                "command": "global_placement -density 0.6275000071525574 -pad_left 0 -pad_right 0 -routability_driven -timing_driven -min_phi_coef 0.95 -max_phi_coef 1.05",
+                "iterations_count": 712,
+                "start_metrics": {
+                  "overflow": 0.9495,
+                  "hpwl": 133118.5
+                },
+                "end_metrics": {
+                  "overflow": 0.0988,
+                  "hpwl": 472778.2
+                },
+                "results": {
+                  "movable_instances": 11320,
+                  "fixed_instances": 2754,
+                  "num_nets": 11583,
+                  "num_pins": 45067,
+                  "core_area_um2": 254633.112,
+                  "fixed_instances_area_um2": 4401.994,
+                  "movable_instances_area_um2": 243051.987,
+                  "standard_cells_area_um2": 122363.867,
+                  "utilization": 48.9,
+                  "target_density": 97.13000000000001,
+                  "final_overflow": 0.0988,
+                  "final_hpwl_um": 472778.2
+                }
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:55:16.904Z] Report metrics stage 3, global place...",
+            "elapsed_s": 18,
+            "memory_mb": 379,
+            "sha1sum": "a4b8c2e986775de2f9cf"
+          },
+          "3_4_place_resized": {
+            "optimization_process": [
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose -match_cell_footprint",
+                "iterations_count": 0
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:55:20.765Z] Report metrics stage 3, resizer...",
+            "elapsed_s": 4,
+            "memory_mb": 212,
+            "sha1sum": "8798ca5b0a086d5f5d5c"
+          },
+          "3_5_place_dp": {
+            "hpwl": 460348.6,
+            "optimization_process": [
+              {
+                "type": "detailed_placement",
+                "results": {
+                  "total_displacement_u": 36892.5,
+                  "average_displacement_u": 2.2,
+                  "max_displacement_u": 15.4,
+                  "original_hpwl_u": 473115.6,
+                  "legalized_hpwl_u": 496709.1,
+                  "delta_hpwl_percent": 5.0,
+                  "final_hpwl_u": 460348.6,
+                  "final_delta_hpwl_percent": -7.3
+                }
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:55:26.326Z] Report metrics stage 3, detailed place...",
+            "elapsed_s": 5,
+            "memory_mb": 232,
+            "sha1sum": "17ce551fc6dbc12c6236"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top",
+        "design_metrics_final": {
+          "placeopt__design__instance__area": 141108.0,
+          "placeopt__design__instance__count__stdcell": 17101.0
+        }
+      }
+    },
+    {
+      "sequence_number": 4,
+      "stage": "cts",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_cts_metrics.json",
+      "metrics": {
+        "stage": "cts",
+        "substages": {
+          "4_1_cts": {
+            "wns": -0.039,
+            "tns": -0.0,
+            "clock_sink_wirelength_um": 770.01,
+            "hpwl": 481307.6,
+            "displacement": 727.4,
+            "violations": 0,
+            "optimization_process": [
+              {
+                "type": "clock_tree_synthesis",
+                "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 10 -sink_clustering_max_diameter 50",
+                "results": {
+                  "total_sinks": 562,
+                  "clock_buffers_created": 119,
+                  "min_buffer_depth": 2,
+                  "max_buffer_depth": 3,
+                  "avg_sink_wirelength_um": 770.01,
+                  "placement_total_displacement_u": 4220.4,
+                  "placement_avg_displacement_u": 0.2,
+                  "placement_max_displacement_u": 25.7,
+                  "hpwl_before": 468066.9,
+                  "hpwl_after": 479537.9,
+                  "clock_nets": [
+                    {
+                      "name": "clk",
+                      "sinks": 658,
+                      "leaf_buffers": 102,
+                      "avg_sink_wire_length_um": 770.01,
+                      "path_depth_min": 2,
+                      "path_depth_max": 3
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -verbose",
+                "iterations_count": 73,
+                "start_metrics": {
+                  "wns": -0.552,
+                  "tns": -4.7,
+                  "violation_end_points": 52
+                },
+                "end_metrics": {
+                  "wns": -0.039,
+                  "tns": -0.0,
+                  "violation_end_points": 0
+                },
+                "placement_impact": {
+                  "total_displacement_u": 727.4,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 14.3,
+                  "hpwl_before": 480844.6,
+                  "hpwl_after": 481307.6
+                }
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:55:33.836Z] Report metrics stage 4, cts final...",
+            "elapsed_time": "0:06.40",
+            "peak_memory_kb": 253264,
+            "elapsed_s": 6,
+            "memory_mb": 247,
+            "sha1sum": "c871574c08022ba5caf6"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top",
+        "design_metrics_final": {
+          "cts__design__instance__count__setup_buffer": 42.0,
+          "cts__design__instance__count__hold_buffer": 0.0,
+          "cts__timing__setup__ws": -0.0386249,
+          "cts__timing__setup__tns": -0.0386249,
+          "cts__timing__hold__ws": 0.145176,
+          "cts__timing__hold__tns": 0.0
+        }
+      }
+    },
+    {
+      "sequence_number": 5,
+      "stage": "routing",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_routing_metrics.json",
+      "metrics": {
+        "stage": "routing",
+        "substages": {
+          "5_1_grt": {
+            "wirelength_um": 879256.0,
+            "optimization_process": [
+              {
+                "type": "global_route",
+                "command": "global_route -congestion_report_file ./reports/sky130hs/aes/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+                "results": {
+                  "total_wirelength_um": 879256.0,
+                  "total_resource": 170302,
+                  "total_demand": 80719,
+                  "total_usage_percent": 47.4,
+                  "total_overflow": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "repair_design",
+                "command": "repair_design -verbose",
+                "iterations_count": 0
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 0.0,
+                  "avg_displacement_u": 0.0,
+                  "max_displacement_u": 0.0,
+                  "hpwl_before": 481307.6,
+                  "hpwl_after": 481307.6,
+                  "delta_hpwl_percent": 0.0
+                }
+              },
+              {
+                "type": "repair_timing",
+                "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+                "iterations_count": 377,
+                "start_metrics": {
+                  "wns": -0.505,
+                  "tns": -36.6,
+                  "violation_end_points": 157
+                },
+                "end_metrics": {
+                  "wns": -0.066,
+                  "tns": -0.5,
+                  "violation_end_points": 0
+                },
+                "placement_impact": {}
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {
+                  "total_displacement_u": 6445.4,
+                  "avg_displacement_u": 0.4,
+                  "max_displacement_u": 19.6,
+                  "hpwl_before": 492153.8,
+                  "hpwl_after": 496997.2,
+                  "delta_hpwl_percent": 1.0
+                }
+              },
+              {
+                "type": "global_route",
+                "command": "global_route -start_incremental",
+                "results": {},
+                "placement_impact": {}
+              }
+            ],
+            "report_metrics": "[2026-01-27T23:56:42.743Z] Report metrics stage 5, global route...",
+            "elapsed_time": "1:09.14",
+            "peak_memory_kb": 637180,
+            "elapsed_s": 69,
+            "memory_mb": 622,
+            "sha1sum": "22de3f3aa36ea02c08b1",
+            "design_metrics_final": {
+              "globalroute__antenna_diodes_count": 11.0,
+              "globalroute__timing__setup__ws": -0.104111,
+              "globalroute__timing__setup__tns": -1.8569,
+              "globalroute__timing__hold__ws": 0.110165,
+              "globalroute__timing__hold__tns": 0.0
+            }
+          },
+          "5_2_route": {
+            "wirelength_um": 616374.0,
+            "total_vias": 124410,
+            "violations": 0,
+            "optimization_process": [
+              {
+                "type": "detailed_route",
+                "command": "detailed_route -output_drc ./reports/sky130hs/aes/base/5_route_drc.rpt -output_maze ./results/sky130hs/aes/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+                "drc_iterations": [
+                  {
+                    "iteration": 0,
+                    "violations": 19208,
+                    "wirelength_um": 625603.0,
+                    "vias": 120525
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 13071,
+                    "wirelength_um": 620081.0,
+                    "vias": 119656
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 12585,
+                    "wirelength_um": 618372.0,
+                    "vias": 119216
+                  },
+                  {
+                    "iteration": 3,
+                    "violations": 2306,
+                    "wirelength_um": 616372.0,
+                    "vias": 124093
+                  },
+                  {
+                    "iteration": 4,
+                    "violations": 221,
+                    "wirelength_um": 616297.0,
+                    "vias": 124372
+                  },
+                  {
+                    "iteration": 5,
+                    "violations": 0,
+                    "wirelength_um": 616342.0,
+                    "vias": 124393
+                  },
+                  {
+                    "iteration": 0,
+                    "violations": 105,
+                    "wirelength_um": 616421.0,
+                    "vias": 124390
+                  },
+                  {
+                    "iteration": 1,
+                    "violations": 32,
+                    "wirelength_um": 616379.0,
+                    "vias": 124394
+                  },
+                  {
+                    "iteration": 2,
+                    "violations": 0,
+                    "wirelength_um": 616374.0,
+                    "vias": 124410
+                  }
+                ],
+                "final_wirelength_um": 616374.0,
+                "final_vias": 124410,
+                "final_violations": 0
+              }
+            ],
+            "elapsed_time": "5:01.62",
+            "peak_memory_kb": 3916680,
+            "elapsed_s": 301,
+            "memory_mb": 3824,
+            "sha1sum": "c0e668e36a28b78aa21c",
+            "design_metrics_final": {
+              "detailedroute__route__wirelength": 616374.0,
+              "detailedroute__route__drc_errors": 0.0,
+              "detailedroute__antenna__violating__nets": 0.0,
+              "detailedroute__antenna_diodes_count": 7.0
+            }
+          },
+          "5_3_fillcell": {
+            "elapsed_time": "0:01.16",
+            "peak_memory_kb": 209948,
+            "elapsed_s": 1,
+            "memory_mb": 205,
+            "sha1sum": "ed6433da89128f296b31"
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    },
+    {
+      "sequence_number": 6,
+      "stage": "final",
+      "occurrence": 1,
+      "design_name": "aes",
+      "sub_design_name": "aes_cipher_top",
+      "metrics_file": "test_output_aes_sky130hs/aes_sky130hs_final_metrics.json",
+      "metrics": {
+        "stage": "final",
+        "ir_drop": {
+          "vdd": {
+            "supply_voltage_v": 1.8,
+            "worstcase_voltage_v": 1.79,
+            "average_voltage_v": 1.8,
+            "average_ir_drop_v": 0.00114,
+            "worstcase_ir_drop_v": 0.00681,
+            "percentage_drop": 0.38
+          },
+          "vss": {
+            "supply_voltage_v": 0.0,
+            "worstcase_voltage_v": 0.00326,
+            "average_voltage_v": 0.00108,
+            "average_ir_drop_v": 0.00108,
+            "worstcase_ir_drop_v": 0.00326,
+            "percentage_drop": 0.18
+          }
+        },
+        "cell_counts": {
+          "fill_cell_count": 16872,
+          "fill_cell_area": 99291.01,
+          "tap_cell_count": 2754,
+          "tap_cell_area": 4401.99,
+          "clock_buffer_count": 135,
+          "clock_buffer_area": 4162.23,
+          "timing_repair_buffer_count": 3905,
+          "timing_repair_buffer_area": 34614.95,
+          "inverter_count": 39,
+          "inverter_area": 228.57,
+          "clock_inverter_count": 80,
+          "clock_inverter_area": 1232.37,
+          "sequential_cell_count": 562,
+          "sequential_cell_area": 17560.02,
+          "combinational_cell_count": 10350,
+          "combinational_cell_area": 93084.42,
+          "total_cell_count": 34715,
+          "total_cell_area": 254633.11
+        },
+        "design_metrics": {
+          "setup_wns": -0.0216114,
+          "setup_tns": -0.0809999,
+          "hold_wns": 0.11781,
+          "hold_tns": 0.0,
+          "area": 155342.0
+        },
+        "flow_summary": {
+          "6_1_fill": {
+            "elapsed_s": 1,
+            "memory_mb": 183,
+            "sha1sum": "ed6433da89128f296b31"
+          },
+          "6_report": {
+            "elapsed_s": 11,
+            "memory_mb": 554
+          },
+          "1_1_yosys_canonicalize": {
+            "elapsed_s": 0,
+            "memory_mb": 117,
+            "sha1sum": "da905d5cfd5ad64c7487"
+          },
+          "1_2_yosys": {
+            "elapsed_s": 28,
+            "memory_mb": 141,
+            "sha1sum": "79f0ad3f66b3594cdf20"
+          },
+          "1_synth": {
+            "elapsed_s": 1,
+            "memory_mb": 169,
+            "sha1sum": "77784bbadfe27555e2e1"
+          },
+          "2_1_floorplan": {
+            "elapsed_s": 1,
+            "memory_mb": 183,
+            "sha1sum": "405d5ef0812085445d42"
+          },
+          "2_2_floorplan_macro": {
+            "elapsed_s": 0,
+            "memory_mb": 158,
+            "sha1sum": "405d5ef0812085445d42"
+          },
+          "2_3_floorplan_tapcell": {
+            "elapsed_s": 0,
+            "memory_mb": 152,
+            "sha1sum": "dcc206d9642a9d66e951"
+          },
+          "2_4_floorplan_pdn": {
+            "elapsed_s": 1,
+            "memory_mb": 163,
+            "sha1sum": "c089bf88c829ba168dbe"
+          },
+          "3_1_place_gp_skip_io": {
+            "elapsed_s": 2,
+            "memory_mb": 177,
+            "sha1sum": "883e6f641aa5512525d7"
+          },
+          "3_2_place_iop": {
+            "elapsed_s": 0,
+            "memory_mb": 161,
+            "sha1sum": "a5de0399e9e0662bdcc9"
+          },
+          "3_3_place_gp": {
+            "elapsed_s": 18,
+            "memory_mb": 379,
+            "sha1sum": "a4b8c2e986775de2f9cf"
+          },
+          "3_4_place_resized": {
+            "elapsed_s": 4,
+            "memory_mb": 212,
+            "sha1sum": "8798ca5b0a086d5f5d5c"
+          },
+          "3_5_place_dp": {
+            "elapsed_s": 5,
+            "memory_mb": 232,
+            "sha1sum": "17ce551fc6dbc12c6236"
+          },
+          "4_1_cts": {
+            "elapsed_s": 6,
+            "memory_mb": 247,
+            "sha1sum": "c871574c08022ba5caf6"
+          },
+          "5_1_grt": {
+            "elapsed_s": 69,
+            "memory_mb": 622,
+            "sha1sum": "22de3f3aa36ea02c08b1"
+          },
+          "5_2_route": {
+            "elapsed_s": 301,
+            "memory_mb": 3824,
+            "sha1sum": "c0e668e36a28b78aa21c"
+          },
+          "5_3_fillcell": {
+            "elapsed_s": 1,
+            "memory_mb": 205,
+            "sha1sum": "ed6433da89128f296b31"
+          },
+          "6_1_merge": {
+            "elapsed_s": 1,
+            "memory_mb": 500
+          }
+        },
+        "performance": {},
+        "test_metrics": {
+          "synth__design__instance__area__stdcell": {
+            "actual_value": 102914.5824,
+            "operator": "<=",
+            "threshold_value": 118000.0,
+            "passed": true
+          },
+          "constraints__clocks__count": {
+            "actual_value": 1.0,
+            "operator": "==",
+            "threshold_value": 1.0,
+            "passed": true
+          },
+          "placeopt__design__instance__area": {
+            "actual_value": 141108.0,
+            "operator": "<=",
+            "threshold_value": 162274.0,
+            "passed": true
+          },
+          "placeopt__design__instance__count__stdcell": {
+            "actual_value": 17101.0,
+            "operator": "<=",
+            "threshold_value": 19666.0,
+            "passed": true
+          },
+          "detailedplace__design__violations": {
+            "actual_value": 0.0,
+            "operator": "==",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "cts__design__instance__count__setup_buffer": {
+            "actual_value": 42.0,
+            "operator": "<=",
+            "threshold_value": 1492.0,
+            "passed": true
+          },
+          "cts__design__instance__count__hold_buffer": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 1492.0,
+            "passed": true
+          },
+          "cts__timing__setup__ws": {
+            "actual_value": -0.0386249,
+            "operator": ">=",
+            "threshold_value": -0.144,
+            "passed": true
+          },
+          "cts__timing__setup__tns": {
+            "actual_value": -0.0386249,
+            "operator": ">=",
+            "threshold_value": -0.564,
+            "passed": true
+          },
+          "cts__timing__hold__ws": {
+            "actual_value": 0.145176,
+            "operator": ">=",
+            "threshold_value": -0.14,
+            "passed": true
+          },
+          "cts__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -0.56,
+            "passed": true
+          },
+          "globalroute__antenna_diodes_count": {
+            "actual_value": 11.0,
+            "operator": "<=",
+            "threshold_value": 100.0,
+            "passed": true
+          },
+          "globalroute__timing__setup__ws": {
+            "actual_value": -0.104111,
+            "operator": ">=",
+            "threshold_value": -0.244,
+            "passed": true
+          },
+          "globalroute__timing__setup__tns": {
+            "actual_value": -1.8569,
+            "operator": ">=",
+            "threshold_value": -2.42,
+            "passed": true
+          },
+          "globalroute__timing__hold__ws": {
+            "actual_value": 0.110165,
+            "operator": ">=",
+            "threshold_value": -0.14,
+            "passed": true
+          },
+          "globalroute__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -0.56,
+            "passed": true
+          },
+          "detailedroute__route__wirelength": {
+            "actual_value": 616374.0,
+            "operator": "<=",
+            "threshold_value": 708830.0,
+            "passed": true
+          },
+          "detailedroute__route__drc_errors": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna__violating__nets": {
+            "actual_value": 0.0,
+            "operator": "<=",
+            "threshold_value": 0.0,
+            "passed": true
+          },
+          "detailedroute__antenna_diodes_count": {
+            "actual_value": 7.0,
+            "operator": "<=",
+            "threshold_value": 100.0,
+            "passed": true
+          },
+          "finish__timing__setup__ws": {
+            "actual_value": -0.0216114,
+            "operator": ">=",
+            "threshold_value": -0.161,
+            "passed": true
+          },
+          "finish__timing__setup__tns": {
+            "actual_value": -0.0809999,
+            "operator": ">=",
+            "threshold_value": -0.632,
+            "passed": true
+          },
+          "finish__timing__hold__ws": {
+            "actual_value": 0.11781,
+            "operator": ">=",
+            "threshold_value": -0.14,
+            "passed": true
+          },
+          "finish__timing__hold__tns": {
+            "actual_value": 0.0,
+            "operator": ">=",
+            "threshold_value": -0.56,
+            "passed": true
+          },
+          "finish__design__instance__area": {
+            "actual_value": 155342.0,
+            "operator": "<=",
+            "threshold_value": 178643.0,
+            "passed": true
+          }
+        },
+        "design_name": "aes",
+        "sub_design_name": "aes_cipher_top"
+      }
+    }
+  ]
+}

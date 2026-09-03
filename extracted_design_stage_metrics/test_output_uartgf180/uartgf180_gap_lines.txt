@@ -1,0 +1,92 @@
+Log file: ./design_artifacts/uartgf180/uartgf180.txt
+Total log lines: 3858
+Uncovered line count: 87
+Gap ranges (0-based, end exclusive): [(0, 87)]
+--------------------------------------------------------------------------------
+L1: [2025-10-11T15:03:06.267Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:2f17ad
+L2: [2025-10-11T15:03:06.267Z] 
+L3: [2025-10-11T15:03:06.267Z] Error: No such object: openroad/flow-ubuntu22.04-dev:2f17ad
+L4: [2025-10-11T15:03:18.594Z] + docker pull openroad/flow-ubuntu22.04-dev:2f17ad
+L5: [2025-10-11T15:03:18.594Z] 2f17ad: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2025-10-11T15:03:18.594Z] 3713021b0277: Already exists
+L7: [2025-10-11T15:03:18.594Z] 3a5e9772043a: Pulling fs layer
+L8: [2025-10-11T15:03:18.594Z] 4026b60abc07: Pulling fs layer
+L9: [2025-10-11T15:03:18.594Z] b932253d8a19: Pulling fs layer
+L10: [2025-10-11T15:03:18.594Z] c836a3bb3235: Pulling fs layer
+L11: [2025-10-11T15:03:18.594Z] a41c330d8a6f: Pulling fs layer
+L12: [2025-10-11T15:03:18.594Z] 7ba9432c2643: Pulling fs layer
+L13: [2025-10-11T15:03:18.594Z] a41c330d8a6f: Waiting
+L14: [2025-10-11T15:03:18.594Z] c836a3bb3235: Waiting
+L15: [2025-10-11T15:03:19.107Z] 3a5e9772043a: Verifying Checksum
+L16: [2025-10-11T15:03:19.107Z] 3a5e9772043a: Download complete
+L17: [2025-10-11T15:03:19.107Z] b932253d8a19: Download complete
+L18: [2025-10-11T15:03:19.107Z] 4026b60abc07: Download complete
+L19: [2025-10-11T15:03:19.107Z] 3a5e9772043a: Pull complete
+L20: [2025-10-11T15:03:19.107Z] 4026b60abc07: Pull complete
+L21: [2025-10-11T15:03:19.107Z] b932253d8a19: Pull complete
+L22: [2025-10-11T15:03:19.107Z] c836a3bb3235: Verifying Checksum
+L23: [2025-10-11T15:03:19.107Z] c836a3bb3235: Download complete
+L24: [2025-10-11T15:03:19.107Z] c836a3bb3235: Pull complete
+L25: [2025-10-11T15:03:19.107Z] 7ba9432c2643: Verifying Checksum
+L26: [2025-10-11T15:03:19.107Z] 7ba9432c2643: Download complete
+L27: [2025-10-11T15:03:45.114Z] a41c330d8a6f: Verifying Checksum
+L28: [2025-10-11T15:03:45.114Z] a41c330d8a6f: Download complete
+L29: [2025-10-11T15:04:28.614Z] a41c330d8a6f: Pull complete
+L30: [2025-10-11T15:04:28.615Z] 7ba9432c2643: Pull complete
+L31: [2025-10-11T15:04:28.615Z] Digest: sha256:de3c4425d63075c63934c83ceee655ab694d184cc1a0c32d4cfe21ecf4683677
+L32: [2025-10-11T15:04:28.615Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:2f17ad
+L33: [2025-10-11T15:04:28.615Z] docker.io/openroad/flow-ubuntu22.04-dev:2f17ad
+L34: [2025-10-11T15:07:26.317Z] + git config --system --add safe.directory *
+L35: [2025-10-11T15:09:56.293Z] + nice flow/test/test_helper.sh uart-blocks gf180
+L36: [2025-10-11T15:09:56.296Z] +++ readlink -f flow/test/test_helper.sh
+L37: [2025-10-11T15:09:56.296Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L38: [2025-10-11T15:09:56.296Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L39: [2025-10-11T15:09:56.296Z] + DESIGN_NAME=uart-blocks
+L40: [2025-10-11T15:09:56.296Z] + PLATFORM=gf180
+L41: [2025-10-11T15:09:56.296Z] + CONFIG_MK=config.mk
+L42: [2025-10-11T15:09:56.296Z] + '[' 2 -ge 4 ']'
+L43: [2025-10-11T15:09:56.296Z] + TARGET='finish metadata'
+L44: [2025-10-11T15:09:56.296Z] + DESIGN_CONFIG=./designs/gf180/uart-blocks/config.mk
+L45: [2025-10-11T15:09:56.296Z] + LOG_FILE=./logs/gf180/uart-blocks.log
+L46: [2025-10-11T15:09:56.296Z] + mkdir -p ./logs/gf180
+L47: [2025-10-11T15:09:56.296Z] + __make='make DESIGN_CONFIG=./designs/gf180/uart-blocks/config.mk'
+L48: [2025-10-11T15:09:56.296Z] + '[' -n '' ']'
+L49: [2025-10-11T15:09:56.296Z] ++ dirname ./logs/gf180/uart-blocks.log
+L50: [2025-10-11T15:09:56.296Z] + mkdir -p ./logs/gf180
+L51: [2025-10-11T15:09:56.296Z] + make DESIGN_CONFIG=./designs/gf180/uart-blocks/config.mk clean_all clean_metadata
+L52: [2025-10-11T15:09:56.296Z] + tee ./logs/gf180/uart-blocks.log
+L53: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/1_* ./results/gf180/uart-blocks/base/mem*.json
+L54: [2025-10-11T15:09:56.808Z] rm -f ./reports/gf180/uart-blocks/base/synth_*
+L55: [2025-10-11T15:09:56.808Z] rm -f ./logs/gf180/uart-blocks/base/1_*
+L56: [2025-10-11T15:09:56.808Z] rm -f 
+L57: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/clock_period.txt
+L58: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/2_*floorplan*.odb ./results/gf180/uart-blocks/base/2_floorplan.sdc ./results/gf180/uart-blocks/base/2_*.v ./results/gf180/uart-blocks/base/2_*.def
+L59: [2025-10-11T15:09:56.808Z] rm -f ./reports/gf180/uart-blocks/base/2_*
+L60: [2025-10-11T15:09:56.808Z] rm -f ./logs/gf180/uart-blocks/base/2_*
+L61: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/3_*place*.odb
+L62: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/3_place.sdc
+L63: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/3_*.def ./results/gf180/uart-blocks/base/3_*.v
+L64: [2025-10-11T15:09:56.808Z] rm -f ./reports/gf180/uart-blocks/base/3_*
+L65: [2025-10-11T15:09:56.808Z] rm -f ./logs/gf180/uart-blocks/base/3_*
+L66: [2025-10-11T15:09:56.808Z] rm -rf ./results/gf180/uart-blocks/base/4_*cts*.odb ./results/gf180/uart-blocks/base/4_cts.sdc ./results/gf180/uart-blocks/base/4_*.v ./results/gf180/uart-blocks/base/4_*.def
+L67: [2025-10-11T15:09:56.808Z] rm -f  ./reports/gf180/uart-blocks/base/4_*
+L68: [2025-10-11T15:09:56.808Z] rm -rf ./logs/gf180/uart-blocks/base/4_*
+L69: [2025-10-11T15:09:56.808Z] rm -rf ./results/gf180/uart-blocks/base/route.guide ./results/gf180/uart-blocks/base/output_guide.mod ./results/gf180/uart-blocks/base/updated_clks.sdc
+L70: [2025-10-11T15:09:56.808Z] rm -rf ./results/gf180/uart-blocks/base/5_*.odb ./results/gf180/uart-blocks/base/5_route.sdc ./results/gf180/uart-blocks/base/5_*.def ./results/gf180/uart-blocks/base/5_*.v
+L71: [2025-10-11T15:09:56.808Z] rm -f  ./reports/gf180/uart-blocks/base/5_*
+L72: [2025-10-11T15:09:56.808Z] rm -f  ./logs/gf180/uart-blocks/base/5_*
+L73: [2025-10-11T15:09:56.808Z] rm -rf ./results/gf180/uart-blocks/base/6_*.gds ./results/gf180/uart-blocks/base/6_*.oas ./results/gf180/uart-blocks/base/6_*.odb ./results/gf180/uart-blocks/base/6_*.v ./results/gf180/uart-blocks/base/6_*.def ./results/gf180/uart-blocks/base/6_*.sdc ./results/gf180/uart-blocks/base/6_*.spef
+L74: [2025-10-11T15:09:56.808Z] rm -rf ./reports/gf180/uart-blocks/base/6_*.rpt
+L75: [2025-10-11T15:09:56.808Z] rm -f  ./logs/gf180/uart-blocks/base/6_*
+L76: [2025-10-11T15:09:56.808Z] rm -f ./reports/gf180/uart-blocks/base/design-dir.txt
+L77: [2025-10-11T15:09:56.808Z] rm -f ./reports/gf180/uart-blocks/base/metadata*.*
+L78: [2025-10-11T15:09:56.808Z] rm -f ./results/gf180/uart-blocks/base/uart.lib ./results/gf180/uart-blocks/base/uart.lef
+L79: [2025-10-11T15:09:56.808Z] rm -rf ./objects/gf180/uart-blocks/base
+L80: [2025-10-11T15:09:56.808Z] make: Nothing to be done for 'clean_metadata'.
+L81: [2025-10-11T15:09:56.808Z] + set +e
+L82: [2025-10-11T15:09:56.808Z] + eval make DESIGN_CONFIG=./designs/gf180/uart-blocks/config.mk 'finish metadata'
+L83: [2025-10-11T15:09:56.808Z] + tee -a ./logs/gf180/uart-blocks.log
+L84: [2025-10-11T15:09:56.808Z] ++ make DESIGN_CONFIG=./designs/gf180/uart-blocks/config.mk finish metadata
+L85: [2025-10-11T15:09:57.883Z] mkdir -p results/gf180/uart-blocks_uart_rx/base/
+L86: [2025-10-11T15:09:57.883Z] echo 6 > results/gf180/uart-blocks_uart_rx/base/clock_period.txt
+L87: [2025-10-11T15:09:58.396Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/gf180/uart-blocks_uart_rx/base/1_1_yosys_canonicalize.log

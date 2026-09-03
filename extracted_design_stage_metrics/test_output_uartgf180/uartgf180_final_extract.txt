@@ -1,0 +1,65 @@
+[2025-10-11T15:11:10.320Z] Running density_fill.tcl, stage 6_1_fill
+[2025-10-11T15:11:11.345Z] Elapsed time: 0:01.19[h:]min:sec. CPU time: user 1.12 sys 0.07 (100%). Peak memory: 121024KB.
+[2025-10-11T15:11:11.345Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:11.345Z] 6_1_fill                           1            118 110c2adfacd48bbaf581
+[2025-10-11T15:11:12.369Z] Running final_report.tcl, stage 6_report
+[2025-10-11T15:11:14.468Z] ########## IR report #################
+[2025-10-11T15:11:14.468Z] Net              : VDD
+[2025-10-11T15:11:14.468Z] Corner           : default
+[2025-10-11T15:11:14.468Z] Supply voltage   : 5.50e+00 V
+[2025-10-11T15:11:14.468Z] Worstcase voltage: 5.50e+00 V
+[2025-10-11T15:11:14.468Z] Average voltage  : 5.50e+00 V
+[2025-10-11T15:11:14.468Z] Average IR drop  : 1.07e-03 V
+[2025-10-11T15:11:14.468Z] Worstcase IR drop: 1.66e-03 V
+[2025-10-11T15:11:14.468Z] Percentage drop  : 0.03 %
+[2025-10-11T15:11:14.468Z] ######################################
+[2025-10-11T15:11:14.468Z] ########## IR report #################
+[2025-10-11T15:11:14.468Z] Net              : VSS
+[2025-10-11T15:11:14.468Z] Corner           : default
+[2025-10-11T15:11:14.468Z] Supply voltage   : 0.00e+00 V
+[2025-10-11T15:11:14.468Z] Worstcase voltage: 1.51e-03 V
+[2025-10-11T15:11:14.468Z] Average voltage  : 1.08e-03 V
+[2025-10-11T15:11:14.468Z] Average IR drop  : 1.08e-03 V
+[2025-10-11T15:11:14.468Z] Worstcase IR drop: 1.51e-03 V
+[2025-10-11T15:11:14.468Z] Percentage drop  : 0.03 %
+[2025-10-11T15:11:14.468Z] ######################################
+[2025-10-11T15:11:14.468Z] Cell type report:                       Count       Area
+[2025-10-11T15:11:14.468Z]   Endcap cell                              80     451.58
+[2025-10-11T15:11:14.468Z]   Fill cell                               753   26708.37
+[2025-10-11T15:11:14.468Z]   Tap cell                                 42     237.08
+[2025-10-11T15:11:14.468Z]   Clock buffer                              6     304.82
+[2025-10-11T15:11:14.468Z]   Timing Repair Buffer                     31    1312.42
+[2025-10-11T15:11:14.468Z]   Inverter                                 15     254.02
+[2025-10-11T15:11:14.468Z]   Clock inverter                            2      50.80
+[2025-10-11T15:11:14.468Z]   Sequential cell                          44    3725.57
+[2025-10-11T15:11:14.468Z]   Multi-Input combinational cell          230    9065.55
+[2025-10-11T15:11:14.468Z]   Total                                  1203   42110.21
+[2025-10-11T15:11:14.468Z] Report metrics stage 6, finish...
+[2025-10-11T15:11:14.980Z] 
+[2025-10-11T15:11:14.980Z] ==========================================================================
+[2025-10-11T15:11:14.980Z] finish report_design_area
+[2025-10-11T15:11:14.980Z] --------------------------------------------------------------------------
+[2025-10-11T15:11:14.980Z] Design area 14713 u^2 35% utilization.
+[2025-10-11T15:11:14.980Z] [WARNING GUI-0076] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[2025-10-11T15:11:16.676Z] Elapsed time: 0:04.14[h:]min:sec. CPU time: user 4.64 sys 1.57 (150%). Peak memory: 186572KB.
+[2025-10-11T15:11:16.676Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:11:16.676Z] 6_report                           4            182                  N/A
+[2025-10-11T15:11:20.670Z] Warning: DEF UNITS does not match reader DBU (DEF UNITS is 2000 and corresponds to a DBU of 0.0005, but reader DBU is set to 0.001) (line=5, cell=, file=6_final.def)
+[2025-10-11T15:11:20.670Z] Warning: No mapping for purpose 'OUTLINE' - layer is ignored (line=6, cell=, file=6_final.def)
+[2025-10-11T15:11:20.670Z] [INFO] Reporting cells prior to loading DEF ...
+[2025-10-11T15:11:20.670Z] [INFO] All LEF cells have matching GDS/OAS cells
+[2025-10-11T15:11:20.670Z] [INFO] No orphan cells in the final layout
+[2025-10-11T15:11:21.208Z] Elapsed time: 0:02.95[h:]min:sec. CPU time: user 2.61 sys 0.29 (98%). Peak memory: 435696KB.
+[2025-10-11T15:11:22.232Z] (env time -f 'Elapsed time: %E[h:]min:sec. CPU time: user %U sys %S (%P). Peak memory: %MKB.' /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/OpenROAD/bin/openroad -exit -no_init -threads 32  /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/generate_abstract.tcl -metrics ./logs/gf180/uart-blocks_uart_rx/base/generate_abstract.json) 2>&1 | tee /tmp/workspace/nROAD-flow-scripts-Public_master/flow/logs/gf180/uart-blocks_uart_rx/base/generate_abstract.log
+[2025-10-11T15:11:22.232Z] OpenROAD v2.0-25296-g0064f2d9f3 
+[2025-10-11T15:11:22.232Z] Features included (+) or not (-): +GPU +GUI +Python
+[2025-10-11T15:11:22.232Z] This program is licensed under the BSD-3 license. See the LICENSE file for details.
+[2025-10-11T15:11:22.232Z] Components of this program may be licensed under more restrictive licenses which must be honored.
+[2025-10-11T15:11:22.232Z] [INFO ORD-0030] Using 32 thread(s).
+[2025-10-11T15:11:22.232Z] load_design 6_final.odb 6_final.sdc
+[2025-10-11T15:11:23.306Z] read_spef ./results/gf180/uart-blocks_uart_rx/base/6_final.spef
+[2025-10-11T15:11:23.306Z] Generating abstract views
+[2025-10-11T15:11:23.306Z] write_timing_model ./results/gf180/uart-blocks_uart_rx/base/uart_rx_typ.lib
+[2025-10-11T15:11:23.818Z] write_abstract_lef -bloat_occupied_layers ./results/gf180/uart-blocks_uart_rx/base/uart_rx.lef
+[2025-10-11T15:11:23.818Z] Elapsed time: 0:01.54[h:]min:sec. CPU time: user 1.72 sys 0.52 (145%). Peak memory: 124424KB.
+[2025-10-11T15:11:23.818Z] echo 6 > results/gf180/uart-blocks/base/clock_period.txt

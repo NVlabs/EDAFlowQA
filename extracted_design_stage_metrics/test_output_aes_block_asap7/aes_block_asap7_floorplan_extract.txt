@@ -1,0 +1,52 @@
+[2026-01-26T20:45:50.702Z] Running floorplan.tcl, stage 2_1_floorplan
+[2026-01-26T20:45:52.444Z] ==========================================================================
+[2026-01-26T20:45:52.444Z] Floorplan check_setup
+[2026-01-26T20:45:52.444Z] --------------------------------------------------------------------------
+[2026-01-26T20:45:52.444Z] number instances in verilog is 95
+[2026-01-26T20:45:52.444Z] [WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.052, 2.160).
+[2026-01-26T20:45:52.444Z] Repair tie lo fanout...
+[2026-01-26T20:45:52.444Z] [INFO RSZ-0042] Inserted 24 tie TIELOx1_ASAP7_75t_R instances.
+[2026-01-26T20:45:52.444Z] Repair tie hi fanout...
+[2026-01-26T20:45:52.444Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,buffer,vt_swap -verbose
+[2026-01-26T20:45:52.444Z] [WARNING EST-0027] no estimated parasitics. Using wire load models.
+[2026-01-26T20:45:52.444Z] Default units for flow
+[2026-01-26T20:45:52.444Z]  time 1ps
+[2026-01-26T20:45:52.444Z]  capacitance 1fF
+[2026-01-26T20:45:52.444Z]  resistance 1kohm
+[2026-01-26T20:45:52.444Z]  voltage 1v
+[2026-01-26T20:45:52.444Z]  current 1mA
+[2026-01-26T20:45:52.444Z]  power 1pW
+[2026-01-26T20:45:52.444Z]  distance 1um
+[2026-01-26T20:45:52.444Z] Report metrics stage 2, floorplan final...
+[2026-01-26T20:45:52.444Z] ==========================================================================
+[2026-01-26T20:45:52.444Z] floorplan final report_design_area
+[2026-01-26T20:45:52.444Z] --------------------------------------------------------------------------
+[2026-01-26T20:45:52.444Z] Design area 12 um^2 48% utilization.
+[2026-01-26T20:45:52.444Z] write_db ./results/asap7/aes-block_aes_rcon/base/2_1_floorplan.odb
+[2026-01-26T20:45:52.444Z] write_sdc -no_timestamp ./results/asap7/aes-block_aes_rcon/base/2_1_floorplan.sdc
+[2026-01-26T20:45:52.444Z] Elapsed time: 0:01.48[h:]min:sec. CPU time: user 1.34 sys 0.14 (100%). Peak memory: 216912KB.
+[2026-01-26T20:45:52.444Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:45:52.444Z] 2_1_floorplan                      1            211 d707274d1ec6e5207ad1
+[2026-01-26T20:45:53.024Z] Running macro_place.tcl, stage 2_2_floorplan_macro
+[2026-01-26T20:45:54.306Z] No macros found: Skipping macro_placement
+[2026-01-26T20:45:54.306Z] write_db ./results/asap7/aes-block_aes_rcon/base/2_2_floorplan_macro.odb
+[2026-01-26T20:45:54.306Z] Elapsed time: 0:01.38[h:]min:sec. CPU time: user 1.27 sys 0.10 (100%). Peak memory: 194296KB.
+[2026-01-26T20:45:54.306Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:45:54.306Z] 2_2_floorplan_macro                1            189 d707274d1ec6e5207ad1
+[2026-01-26T20:45:54.306Z] Running tapcell.tcl, stage 2_3_floorplan_tapcell
+[2026-01-26T20:45:56.052Z] Tap and End Cap cell insertion
+[2026-01-26T20:45:56.052Z]   TAP Cell          : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:45:56.052Z]   ENDCAP Cell       : TAPCELL_ASAP7_75t_R
+[2026-01-26T20:45:56.052Z]   Halo Around Macro : 2 2
+[2026-01-26T20:45:56.052Z]   TAP Cell Distance : 25
+[2026-01-26T20:45:56.052Z] [INFO TAP-0004] Inserted 36 endcaps.
+[2026-01-26T20:45:56.052Z] [INFO TAP-0005] Inserted 0 tapcells.
+[2026-01-26T20:45:56.052Z] write_db ./results/asap7/aes-block_aes_rcon/base/2_3_floorplan_tapcell.odb
+[2026-01-26T20:45:56.052Z] Elapsed time: 0:01.38[h:]min:sec. CPU time: user 1.29 sys 0.08 (100%). Peak memory: 194736KB.
+[2026-01-26T20:45:56.052Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:45:56.052Z] 2_3_floorplan_tapcell              1            190 9415f0ac95d935abd980
+[2026-01-26T20:45:56.052Z] Running pdn.tcl, stage 2_4_floorplan_pdn
+[2026-01-26T20:45:57.793Z] write_db ./results/asap7/aes-block_aes_rcon/base/2_4_floorplan_pdn.odb
+[2026-01-26T20:45:57.793Z] Elapsed time: 0:01.38[h:]min:sec. CPU time: user 1.31 sys 0.07 (100%). Peak memory: 195916KB.
+[2026-01-26T20:45:57.793Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:45:57.793Z] 2_4_floorplan_pdn                  1            191 8e848c1db6d74ed524cb

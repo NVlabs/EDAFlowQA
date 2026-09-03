@@ -1,0 +1,76 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/uartgf180/uartgf180.txt
+Output directory: test_output_uartgf180
+Timestamp: 2026-02-28T17:57:53.789343
+
+DESIGN INFO:
+  design_names=['uart-blocks']
+  technology_nodes=['gf180']
+  config_mks=['config.mk']
+  design_info_file=uartgf180_design_info.json
+
+LINE CHECK:
+  log_total_lines=3858  chunks_total_lines=3771  chunks_covered_lines=3771  gaps=87  overlaps=0  extracted_total_lines=1710
+  gap_file=uartgf180_gap_lines.txt
+
+Total stage occurrences extracted: 12
+--------------------------------------------------------------------------------
+
+CTS (2 occurrence(s)):
+  #1:    43 lines -> uartgf180_cts_extract.txt
+  #2:    48 lines -> uartgf180_cts_2_extract.txt
+
+FINAL (2 occurrence(s)):
+  #1:    65 lines -> uartgf180_final_extract.txt
+  #2:   146 lines -> uartgf180_final_2_extract.txt
+
+FLOORPLAN (2 occurrence(s)):
+  #1:    42 lines -> uartgf180_floorplan_extract.txt
+  #2:    55 lines -> uartgf180_floorplan_2_extract.txt
+
+PLACEMENT (2 occurrence(s)):
+  #1:   321 lines -> uartgf180_placement_extract.txt
+  #2:   316 lines -> uartgf180_placement_2_extract.txt
+
+ROUTING (2 occurrence(s)):
+  #1:   200 lines -> uartgf180_routing_extract.txt
+  #2:   202 lines -> uartgf180_routing_2_extract.txt
+
+SYNTHESIS (2 occurrence(s)):
+  #1:   111 lines -> uartgf180_synthesis_extract.txt
+  #2:   161 lines -> uartgf180_synthesis_2_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  111 lines)
+ 2. floorplan_1                    (   42 lines)
+ 3. placement_1                    (  321 lines)
+ 4. cts_1                          (   43 lines)
+ 5. routing_1                      (  200 lines)
+ 6. final_1                        (   65 lines)
+ 7. synthesis_2                    (  161 lines)
+ 8. floorplan_2                    (   55 lines)
+ 9. placement_2                    (  316 lines)
+10. cts_2                          (   48 lines)
+11. routing_2                      (  202 lines)
+12. final_2                        (  146 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=6.0 ns  cpu_s=2.66  warnings=0  errors=0
+ 2. floorplan_1       area=13164.0  util=31  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 3. placement_1       area=14358.0  util=34  wns=N/A  tns=N/A  viol=N/A  hpwl=9452.8
+ 4. cts_1             area=14713.0  util=35  wns=N/A  tns=N/A  viol=N/A  hpwl=10426.7
+ 5. routing_1         area=14713.0  util=35  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=14713.000  util=N/A  ir_vdd_wc=0.002  ir_vss_wc=0.002
+ 7. synthesis_2       clock=6.0 ns  cpu_s=2.63  warnings=7  errors=0
+ 8. floorplan_2       area=56796.0  util=34.0  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 9. placement_2       area=58470.0  util=35  wns=N/A  tns=N/A  viol=N/A  hpwl=13442.8
+10. cts_2             area=59373.0  util=35  wns=N/A  tns=N/A  viol=N/A  hpwl=14784.5
+11. routing_2         area=59373.0  util=35  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+12. final_2           area=61371.400  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.001
+================================================================================

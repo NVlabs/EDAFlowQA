@@ -1,0 +1,136 @@
+{
+  "stage": "routing",
+  "substages": {
+    "5_1_grt": {
+      "wirelength_um": 79315.0,
+      "optimization_process": [
+        {
+          "type": "global_route",
+          "command": "global_route -congestion_report_file ./reports/asap7/riscv32i-mock-sram/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose",
+          "results": {
+            "total_wirelength_um": 79315.0,
+            "total_resource": 965246,
+            "total_demand": 114516,
+            "total_usage_percent": 11.86,
+            "total_overflow": 0
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 0.0,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 0.0,
+            "hpwl_before": 49682.5,
+            "hpwl_after": 49682.5,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 711,
+          "start_metrics": {
+            "wns": -89.653,
+            "tns": -9547.2,
+            "violation_end_points": 617
+          },
+          "end_metrics": {
+            "wns": -68.715,
+            "tns": -364.1,
+            "violation_end_points": 2
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {
+            "total_displacement_u": 21.8,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 1.5,
+            "hpwl_before": 50114.8,
+            "hpwl_after": 50130.4,
+            "delta_hpwl_percent": 0.0
+          }
+        },
+        {
+          "type": "global_route",
+          "command": "global_route -start_incremental",
+          "results": {},
+          "placement_impact": {}
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:02:54.016Z] Report metrics stage 5, global route...",
+      "elapsed_time": "0:51.65",
+      "peak_memory_kb": 608560,
+      "elapsed_s": 51,
+      "memory_mb": 594,
+      "sha1sum": "015773b9df13b1453b87"
+    },
+    "5_2_route": {
+      "wirelength_um": 64319.0,
+      "total_vias": 117030,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "detailed_route",
+          "command": "detailed_route -output_drc ./reports/asap7/riscv32i-mock-sram/base/5_route_drc.rpt -output_maze ./results/asap7/riscv32i-mock-sram/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5",
+          "drc_iterations": [
+            {
+              "iteration": 0,
+              "violations": 3356,
+              "wirelength_um": 64480.0,
+              "vias": 117209
+            },
+            {
+              "iteration": 1,
+              "violations": 605,
+              "wirelength_um": 64305.0,
+              "vias": 116647
+            },
+            {
+              "iteration": 2,
+              "violations": 418,
+              "wirelength_um": 64295.0,
+              "vias": 116680
+            },
+            {
+              "iteration": 3,
+              "violations": 0,
+              "wirelength_um": 64319.0,
+              "vias": 117030
+            }
+          ],
+          "final_wirelength_um": 64319.0,
+          "final_vias": 117030,
+          "final_violations": 0
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:05:48.215Z] Report metrics stage 5, detailed route...",
+      "elapsed_time": "2:53.17",
+      "peak_memory_kb": 22196956,
+      "elapsed_s": 173,
+      "memory_mb": 21676,
+      "sha1sum": "f95b72a55e4c5306d35d"
+    },
+    "5_3_fillcell": {
+      "elapsed_time": "0:01.15",
+      "peak_memory_kb": 249016,
+      "elapsed_s": 1,
+      "memory_mb": 243,
+      "sha1sum": "f039522be1edc6d5bf98"
+    }
+  },
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "riscv_top"
+}

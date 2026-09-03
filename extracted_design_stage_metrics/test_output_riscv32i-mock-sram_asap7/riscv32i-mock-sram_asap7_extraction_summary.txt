@@ -1,0 +1,76 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/riscv32i-mock-sram_asap7/riscv32i-mock-sram_asap7.txt
+Output directory: test_output_riscv32i-mock-sram_asap7
+Timestamp: 2026-02-28T16:47:12.764052
+
+DESIGN INFO:
+  design_names=['riscv32i-mock-sram']
+  technology_nodes=['asap7']
+  config_mks=['config.mk']
+  design_info_file=riscv32i-mock-sram_asap7_design_info.json
+
+LINE CHECK:
+  log_total_lines=6361  chunks_total_lines=6272  chunks_covered_lines=6272  gaps=89  overlaps=0  extracted_total_lines=3741
+  gap_file=riscv32i-mock-sram_asap7_gap_lines.txt
+
+Total stage occurrences extracted: 12
+--------------------------------------------------------------------------------
+
+CTS (2 occurrence(s)):
+  #1:   282 lines -> riscv32i-mock-sram_asap7_cts_extract.txt
+  #2:   539 lines -> riscv32i-mock-sram_asap7_cts_2_extract.txt
+
+FINAL (2 occurrence(s)):
+  #1:    63 lines -> riscv32i-mock-sram_asap7_final_extract.txt
+  #2:   165 lines -> riscv32i-mock-sram_asap7_final_2_extract.txt
+
+FLOORPLAN (2 occurrence(s)):
+  #1:   179 lines -> riscv32i-mock-sram_asap7_floorplan_extract.txt
+  #2:    62 lines -> riscv32i-mock-sram_asap7_floorplan_2_extract.txt
+
+PLACEMENT (2 occurrence(s)):
+  #1:   329 lines -> riscv32i-mock-sram_asap7_placement_extract.txt
+  #2:   306 lines -> riscv32i-mock-sram_asap7_placement_2_extract.txt
+
+ROUTING (2 occurrence(s)):
+  #1:   485 lines -> riscv32i-mock-sram_asap7_routing_extract.txt
+  #2:   968 lines -> riscv32i-mock-sram_asap7_routing_2_extract.txt
+
+SYNTHESIS (2 occurrence(s)):
+  #1:   119 lines -> riscv32i-mock-sram_asap7_synthesis_extract.txt
+  #2:   244 lines -> riscv32i-mock-sram_asap7_synthesis_2_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (  119 lines)
+ 2. floorplan_1                    (  179 lines)
+ 3. placement_1                    (  329 lines)
+ 4. cts_1                          (  282 lines)
+ 5. routing_1                      (  485 lines)
+ 6. final_1                        (   63 lines)
+ 7. synthesis_2                    (  244 lines)
+ 8. floorplan_2                    (   62 lines)
+ 9. placement_2                    (  306 lines)
+10. cts_2                          (  539 lines)
+11. routing_2                      (  968 lines)
+12. final_2                        (  165 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=1000.0 ns  cpu_s=1.21  warnings=0  errors=0
+ 2. floorplan_1       area=N/A  util=N/A  wns=-25.809  tns=-983.4  viol=94  hpwl=N/A
+ 3. placement_1       area=112.7  util=59.1  wns=N/A  tns=N/A  viol=N/A  hpwl=665.5
+ 4. cts_1             area=N/A  util=N/A  wns=-30.834  tns=-1736.4  viol=97  hpwl=1252.5
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=N/A  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.001
+ 7. synthesis_2       clock=1000.0 ns  cpu_s=16.78  warnings=32  errors=0
+ 8. floorplan_2       area=N/A  util=34.0  wns=N/A  tns=N/A  viol=N/A  hpwl=N/A
+ 9. placement_2       area=5569.9  util=25.9  wns=N/A  tns=N/A  viol=N/A  hpwl=45844.9
+10. cts_2             area=N/A  util=N/A  wns=-70.230  tns=-377.4  viol=15  hpwl=49682.5
+11. routing_2         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+12. final_2           area=1979.820  util=N/A  ir_vdd_wc=0.001  ir_vss_wc=0.001
+================================================================================

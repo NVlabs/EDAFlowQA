@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 41,
+      "timestamp": "2025-11-06T15:58:26.592Z",
+      "design_name": "riscv32i-mock-sram",
+      "technology_node": "asap7",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "riscv32i-mock-sram"
+    ],
+    "technology_nodes": [
+      "asap7"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

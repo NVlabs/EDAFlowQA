@@ -1,0 +1,244 @@
+[2025-11-06T15:59:12.536Z] Using ABC speed script.
+[2025-11-06T15:59:12.536Z] Setting clock period to 1000
+[2025-11-06T15:59:12.536Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:12.796Z] 2. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+[2025-11-06T15:59:12.796Z] 3. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:12.796Z] 4. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:12.796Z] 5. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+[2025-11-06T15:59:12.796Z] 6. Executing Liberty frontend: ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32_typ.lib
+[2025-11-06T15:59:12.796Z] 7. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:13.056Z] 8. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+[2025-11-06T15:59:13.056Z] 9. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:13.056Z] 10. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+[2025-11-06T15:59:13.056Z] 11. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+[2025-11-06T15:59:13.056Z] 12. Executing Liberty frontend: ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32_typ.lib
+[2025-11-06T15:59:13.056Z] 13. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/adder.v
+[2025-11-06T15:59:13.056Z] 14. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/alu.v
+[2025-11-06T15:59:13.056Z] 15. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/aludec.v
+[2025-11-06T15:59:13.056Z] 16. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/controller.v
+[2025-11-06T15:59:13.056Z] 17. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/datapath.v
+[2025-11-06T15:59:13.056Z] 18. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/dmem.v
+[2025-11-06T15:59:13.056Z] 19. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/flopenr.v
+[2025-11-06T15:59:13.056Z] 20. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/flopens.v
+[2025-11-06T15:59:13.056Z] 21. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/flopr.v
+[2025-11-06T15:59:13.056Z] 22. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/magcompare2b.v
+[2025-11-06T15:59:13.056Z] 23. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/magcompare2c.v
+[2025-11-06T15:59:13.056Z] 24. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/magcompare32.v
+[2025-11-06T15:59:13.056Z] 25. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/maindec.v
+[2025-11-06T15:59:13.056Z] 26. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/mux2.v
+[2025-11-06T15:59:13.056Z] 27. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/mux3.v
+[2025-11-06T15:59:13.056Z] 28. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/mux4.v
+[2025-11-06T15:59:13.056Z] 29. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/mux5.v
+[2025-11-06T15:59:13.056Z] 30. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/mux8.v
+[2025-11-06T15:59:13.056Z] 31. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/regfile.v
+[2025-11-06T15:59:13.056Z] 32. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/riscv.v
+[2025-11-06T15:59:13.056Z] 33. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/rom.v
+[2025-11-06T15:59:13.056Z] 34. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/shifter.v
+[2025-11-06T15:59:13.056Z] 35. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/signext.v
+[2025-11-06T15:59:13.056Z] 36. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/top.v
+[2025-11-06T15:59:13.056Z] 37. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+[2025-11-06T15:59:13.056Z] 38. Executing HIERARCHY pass (managing design hierarchy).
+[2025-11-06T15:59:13.056Z] 39. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_top'.
+[2025-11-06T15:59:13.056Z] 39.1. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 39.2. Executing AST frontend in derive mode using pre-parsed AST for module `\dmem'.
+[2025-11-06T15:59:13.056Z] Warning: wire '\we_mem' is assigned in a block at /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/dmem.v:33.3-33.19.
+[2025-11-06T15:59:13.056Z] Warning: wire '\we_mem' is assigned in a block at /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/dmem.v:35.3-35.19.
+[2025-11-06T15:59:13.056Z] Warning: wire '\we_mem' is assigned in a block at /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/riscv32i/dmem.v:37.3-37.19.
+[2025-11-06T15:59:13.056Z] 39.3. Executing AST frontend in derive mode using pre-parsed AST for module `\mux2'.
+[2025-11-06T15:59:13.056Z] 39.4. Executing AST frontend in derive mode using pre-parsed AST for module `\ROM'.
+[2025-11-06T15:59:13.056Z] 39.5. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv'.
+[2025-11-06T15:59:13.056Z] 39.6. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 39.7. Executing AST frontend in derive mode using pre-parsed AST for module `\datapath'.
+[2025-11-06T15:59:13.056Z] 39.8. Executing AST frontend in derive mode using pre-parsed AST for module `\controller'.
+[2025-11-06T15:59:13.056Z] 39.9. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 39.10. Executing AST frontend in derive mode using pre-parsed AST for module `\mux2'.
+[2025-11-06T15:59:13.056Z] 39.11. Executing AST frontend in derive mode using pre-parsed AST for module `\mux2'.
+[2025-11-06T15:59:13.056Z] 39.12. Executing AST frontend in derive mode using pre-parsed AST for module `\aludec'.
+[2025-11-06T15:59:13.056Z] 39.13. Executing AST frontend in derive mode using pre-parsed AST for module `\maindec'.
+[2025-11-06T15:59:13.056Z] 39.14. Executing AST frontend in derive mode using pre-parsed AST for module `\mux3'.
+[2025-11-06T15:59:13.056Z] 39.15. Executing AST frontend in derive mode using pre-parsed AST for module `\shifter'.
+[2025-11-06T15:59:13.056Z] 39.16. Executing AST frontend in derive mode using pre-parsed AST for module `\alu'.
+[2025-11-06T15:59:13.056Z] 39.17. Executing AST frontend in derive mode using pre-parsed AST for module `\magcompare32'.
+[2025-11-06T15:59:13.056Z] 39.18. Executing AST frontend in derive mode using pre-parsed AST for module `\adder'.
+[2025-11-06T15:59:13.056Z] 39.19. Executing AST frontend in derive mode using pre-parsed AST for module `\signext'.
+[2025-11-06T15:59:13.056Z] 39.20. Executing AST frontend in derive mode using pre-parsed AST for module `\regfile'.
+[2025-11-06T15:59:13.056Z] 39.21. Executing AST frontend in derive mode using pre-parsed AST for module `\mux2'.
+[2025-11-06T15:59:13.056Z] 39.22. Executing AST frontend in derive mode using pre-parsed AST for module `\flopr'.
+[2025-11-06T15:59:13.056Z] 39.23. Executing AST frontend in derive mode using pre-parsed AST for module `\flopenr'.
+[2025-11-06T15:59:13.056Z] 39.24. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 39.25. Executing AST frontend in derive mode using pre-parsed AST for module `\mux5'.
+[2025-11-06T15:59:13.056Z] 39.26. Executing AST frontend in derive mode using pre-parsed AST for module `\magcompare2c'.
+[2025-11-06T15:59:13.056Z] 39.27. Executing AST frontend in derive mode using pre-parsed AST for module `\magcompare2b'.
+[2025-11-06T15:59:13.056Z] 39.28. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 39.29. Analyzing design hierarchy..
+[2025-11-06T15:59:13.056Z] 40. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-11-06T15:59:13.056Z] 41. Executing RTLIL backend.
+[2025-11-06T15:59:13.056Z] Warnings: 18 unique messages, 18 total
+[2025-11-06T15:59:13.056Z] End of script. Logfile hash: cb6e663293, CPU: user 0.53s system 0.02s, MEM: 77.85 MB peak
+[2025-11-06T15:59:13.056Z] Yosys 0.58+89 (git sha1 75eff54b3, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-11-06T15:59:13.056Z] Time spent: 95% 14x read_liberty (0 sec), 1% 1x hierarchy (0 sec), ...
+[2025-11-06T15:59:13.056Z] Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.57 sys 0.02 (100%). Peak memory: 81440KB.
+[2025-11-06T15:59:13.316Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/asap7/riscv32i-mock-sram/base/1_2_yosys.log
+[2025-11-06T15:59:13.316Z] Using ABC speed script.
+[2025-11-06T15:59:13.316Z] Setting clock period to 1000
+[2025-11-06T15:59:13.316Z] 1. Executing RTLIL frontend.
+[2025-11-06T15:59:13.316Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+[2025-11-06T15:59:13.316Z] 2.1. Analyzing design hierarchy..
+[2025-11-06T15:59:13.316Z] 2.2. Analyzing design hierarchy..
+[2025-11-06T15:59:13.316Z] 3. Executing SYNTH pass.
+[2025-11-06T15:59:13.316Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+[2025-11-06T15:59:13.316Z] 3.1.1. Analyzing design hierarchy..
+[2025-11-06T15:59:13.316Z] 3.1.2. Analyzing design hierarchy..
+[2025-11-06T15:59:13.316Z] 3.2. Executing PROC pass (convert processes to netlists).
+[2025-11-06T15:59:13.316Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-11-06T15:59:13.316Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-11-06T15:59:13.316Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-11-06T15:59:13.316Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+[2025-11-06T15:59:13.316Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-11-06T15:59:13.316Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-11-06T15:59:13.316Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-11-06T15:59:13.316Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-11-06T15:59:13.316Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-11-06T15:59:13.316Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-11-06T15:59:13.316Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-11-06T15:59:13.316Z] 3.5. Executing CHECK pass (checking for obvious problems).
+[2025-11-06T15:59:13.316Z] 3.7. Executing FSM pass (extract and optimize FSM).
+[2025-11-06T15:59:13.316Z] 3.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-11-06T15:59:13.316Z] 3.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-11-06T15:59:13.316Z] 3.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-11-06T15:59:13.316Z] 3.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-11-06T15:59:13.316Z] 3.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-11-06T15:59:13.316Z] 3.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-11-06T15:59:13.316Z] 3.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-11-06T15:59:13.577Z] 3.9. Executing WREDUCE pass (reducing word size of cells).
+[2025-11-06T15:59:13.577Z] 3.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2025-11-06T15:59:13.577Z] 3.13. Executing SHARE pass (SAT-based resource sharing).
+[2025-11-06T15:59:13.577Z] 3.15. Executing MEMORY pass.
+[2025-11-06T15:59:13.577Z] 3.15.1. Executing OPT_MEM pass (optimize memories).
+[2025-11-06T15:59:13.577Z] 3.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-11-06T15:59:13.577Z] 3.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-11-06T15:59:13.577Z] 3.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-11-06T15:59:13.577Z] 3.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-11-06T15:59:13.577Z] 3.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-11-06T15:59:13.577Z] 3.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-11-06T15:59:13.577Z] 3.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-11-06T15:59:13.577Z] 4. Executing CELLMATCH pass. (match cells)
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx1_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx2_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx2p67DC_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx3_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx4DC_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx4_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx5_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx5p33DC_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx6p67DC_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module ICGx8DC_ASAP7_75t_R.
+[2025-11-06T15:59:13.577Z] Warning: Ignoring blackbox module fakeram7_256x32.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO322x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO331x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO331x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO332x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO332x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO333x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AO333x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AOI322xp5_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AOI331xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AOI332xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module AOI333xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA331x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA331x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA332x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA332x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA333x1_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OA333x2_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OAI322xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OAI331xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OAI332xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] Warning: Skipping module OAI333xp33_ASAP7_75t_R with more than 6 inputs bits.
+[2025-11-06T15:59:13.577Z] 5. Executing KEEP_HIERARCHY pass.
+[2025-11-06T15:59:13.577Z] 6. Executing SYNTH pass.
+[2025-11-06T15:59:13.577Z] 6.1. Executing PROC pass (convert processes to netlists).
+[2025-11-06T15:59:13.577Z] 6.1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-11-06T15:59:13.577Z] 6.1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-11-06T15:59:13.577Z] 6.1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-11-06T15:59:13.577Z] 6.1.4. Executing PROC_INIT pass (extract init attributes).
+[2025-11-06T15:59:13.577Z] 6.1.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-11-06T15:59:13.577Z] 6.1.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-11-06T15:59:13.577Z] 6.1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-11-06T15:59:13.577Z] 6.1.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-11-06T15:59:13.577Z] 6.1.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-11-06T15:59:13.577Z] 6.1.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-11-06T15:59:13.577Z] 6.1.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-11-06T15:59:13.577Z] 6.2. Executing FLATTEN pass (flatten design).
+[2025-11-06T15:59:13.577Z] 6.5. Executing CHECK pass (checking for obvious problems).
+[2025-11-06T15:59:13.577Z] 6.7. Executing FSM pass (extract and optimize FSM).
+[2025-11-06T15:59:13.577Z] 6.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-11-06T15:59:13.577Z] 6.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-11-06T15:59:13.577Z] 6.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-11-06T15:59:13.577Z] 6.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-11-06T15:59:13.577Z] 6.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-11-06T15:59:13.577Z] 6.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-11-06T15:59:13.577Z] 6.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-11-06T15:59:13.577Z] 6.9. Executing WREDUCE pass (reducing word size of cells).
+[2025-11-06T15:59:13.577Z] 6.12. Executing ALUMACC pass (create $alu and $macc cells).
+[2025-11-06T15:59:13.577Z] 6.13. Executing SHARE pass (SAT-based resource sharing).
+[2025-11-06T15:59:13.577Z] 6.15. Executing MEMORY pass.
+[2025-11-06T15:59:13.577Z] 6.15.1. Executing OPT_MEM pass (optimize memories).
+[2025-11-06T15:59:13.577Z] 6.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-11-06T15:59:13.577Z] 6.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-11-06T15:59:13.577Z] 6.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-11-06T15:59:13.577Z] 6.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-11-06T15:59:13.837Z] 6.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-11-06T15:59:13.837Z] 6.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-11-06T15:59:13.837Z] 6.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-11-06T15:59:13.837Z] 7. Executing SYNTH pass.
+[2025-11-06T15:59:13.837Z] 7.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2025-11-06T15:59:13.837Z] 7.3.6. Executing OPT_SHARE pass.
+[2025-11-06T15:59:13.837Z] 7.3.14. Executing OPT_SHARE pass.
+[2025-11-06T15:59:13.837Z] 7.3.22. Executing OPT_SHARE pass.
+[2025-11-06T15:59:13.837Z] 7.4. Executing TECHMAP pass (map to technology primitives).
+[2025-11-06T15:59:13.837Z] 7.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2025-11-06T15:59:13.837Z] 7.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/common/lcu_kogge_stone.v
+[2025-11-06T15:59:13.837Z] 7.4.3. Continuing TECHMAP pass.
+[2025-11-06T15:59:14.097Z] 7.6. Executing ABC pass (technology mapping using ABC).
+[2025-11-06T15:59:14.097Z] 7.6.1. Extracting gate netlist of module `\riscv_top' to `<abc-temp-dir>/input.blif'..
+[2025-11-06T15:59:14.357Z] 7.8. Executing HIERARCHY pass (managing design hierarchy).
+[2025-11-06T15:59:14.357Z] 7.8.1. Analyzing design hierarchy..
+[2025-11-06T15:59:14.357Z] 7.8.2. Analyzing design hierarchy..
+[2025-11-06T15:59:14.357Z] 7.9. Printing statistics.
+[2025-11-06T15:59:14.357Z] 7.10. Executing CHECK pass (checking for obvious problems).
+[2025-11-06T15:59:14.357Z] 8. Executing OPT pass (performing simple optimizations).
+[2025-11-06T15:59:14.617Z] 9. Executing EXTRACT_FA pass (find and extract full/half adders).
+[2025-11-06T15:59:15.187Z] 10. Executing TECHMAP pass (map to technology primitives).
+[2025-11-06T15:59:15.187Z] 10.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_adders_R.v
+[2025-11-06T15:59:15.187Z] 11. Executing TECHMAP pass (map to technology primitives).
+[2025-11-06T15:59:15.187Z] 11.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2025-11-06T15:59:15.187Z] 12. Executing OPT pass (performing simple optimizations).
+[2025-11-06T15:59:15.187Z] 13. Executing TECHMAP pass (map to technology primitives).
+[2025-11-06T15:59:15.187Z] 13.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/yoSys/cells_latch_R.v
+[2025-11-06T15:59:15.187Z] 14. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2025-11-06T15:59:15.448Z] 14.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2025-11-06T15:59:15.448Z] 15. Executing OPT pass (performing simple optimizations).
+[2025-11-06T15:59:15.708Z] 16. Executing SETUNDEF pass (replace undef values with defined constants).
+[2025-11-06T15:59:15.708Z] abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib -liberty ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32_typ.lib -dont_use *x1p*_ASAP7* -dont_use *xp*_ASAP7* -dont_use SDF* -dont_use ICG* -constr ./objects/asap7/riscv32i-mock-sram/base/abc.constr -D 1000
+[2025-11-06T15:59:15.708Z] 17. Executing ABC pass (technology mapping using ABC).
+[2025-11-06T15:59:30.600Z] 17.1.1. Executed ABC.
+[2025-11-06T15:59:30.600Z] 17.1.2. Re-integrating ABC results.
+[2025-11-06T15:59:30.600Z] Took 14 seconds: abc -script /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/abc_speed.script -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz -liberty /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib -liberty ./results/asap7/riscv32i-mock-sram_fakeram7_256x32/base/fakeram7_256x32_typ.lib -dont_use *x1p*_ASAP7* -dont_use *xp*_ASAP7* -dont_use SDF* -dont_use ICG* -constr ./objects/asap7/riscv32i-mock-sram/base/abc.constr -D 1000
+[2025-11-06T15:59:30.600Z] 18. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2025-11-06T15:59:30.600Z] 19. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-11-06T15:59:30.600Z] 20. Executing HILOMAP pass (mapping to constant drivers).
+[2025-11-06T15:59:30.600Z] 21. Executing INSBUF pass (insert buffer cells for connected wires).
+[2025-11-06T15:59:30.600Z] 22. Executing CHECK pass (checking for obvious problems).
+[2025-11-06T15:59:30.600Z] 23. Printing statistics.
+[2025-11-06T15:59:30.600Z] 24. Executing CHECK pass (checking for obvious problems).
+[2025-11-06T15:59:30.600Z] 25. Executing Verilog backend.
+[2025-11-06T15:59:30.600Z] 25.1. Executing BMUXMAP pass.
+[2025-11-06T15:59:30.600Z] 25.2. Executing DEMUXMAP pass.
+[2025-11-06T15:59:30.600Z] exec cp /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/asap7/riscv32i/constraint.sdc ./results/asap7/riscv32i-mock-sram/base/1_synth.sdc
+[2025-11-06T15:59:30.600Z] Warnings: 32 unique messages, 32 total
+[2025-11-06T15:59:30.600Z] End of script. Logfile hash: b5abf9b9e5, CPU: user 2.64s system 0.03s, MEM: 158.82 MB peak
+[2025-11-06T15:59:30.600Z] Yosys 0.58+89 (git sha1 75eff54b3, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2025-11-06T15:59:30.600Z] Time spent: 84% 2x abc (14 sec), 3% 1x extract_fa (0 sec), ...
+[2025-11-06T15:59:30.600Z] Elapsed time: 0:16.79[h:]min:sec. CPU time: user 16.71 sys 0.07 (99%). Peak memory: 164172KB.
+[2025-11-06T15:59:30.600Z] mkdir -p ./results/asap7/riscv32i-mock-sram/base ./logs/asap7/riscv32i-mock-sram/base ./reports/asap7/riscv32i-mock-sram/base

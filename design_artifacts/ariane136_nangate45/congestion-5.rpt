@@ -1,0 +1,8 @@
+violation type: Vertical congestion
+	srcs: net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[242\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[72\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[74\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[75\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[770\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[936\] net:net2632 net:net2640 net:net2701 net:net2702 net:net2876
+	comment: capacity:10 usage:11 overflow:1
+	bbox = (1182.7500, 1031.7000) - (1185.6000, 1034.5500) on Layer -
+violation type: Vertical congestion
+	srcs: net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[243\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[498\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[670\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[678\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[679\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[681\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[687\] net:i_cache_subsystem.i_nbdcache/i_tag_cmp.rdata_i\[691\] net:i_cache_subsystem.i_nbdcache/net26012 net:i_cache_subsystem.i_nbdcache/net25966 net:i_cache_subsystem.i_nbdcache/net25584 net:i_cache_subsystem.i_nbdcache/net25560 net:i_cache_subsystem.i_nbdcache/net25534 net:i_cache_subsystem.i_nbdcache/net25509 net:i_cache_subsystem.i_nbdcache/net25484 net:i_cache_subsystem.i_nbdcache/net25486 net:i_cache_subsystem.i_nbdcache/net25461 net:i_cache_subsystem.i_nbdcache/net24636 net:i_cache_subsystem.i_nbdcache/net25994 net:net2518 net:net2524
+	comment: capacity:20 usage:21 overflow:1
+	bbox = (1145.7000, 1031.7000) - (1148.5500, 1034.5500) on Layer -

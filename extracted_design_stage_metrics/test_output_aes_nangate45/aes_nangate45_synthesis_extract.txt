@@ -1,0 +1,151 @@
+[2026-01-26T20:49:26.360Z] Using ABC speed script.
+[2026-01-26T20:49:26.360Z] Setting clock period to 0.82
+[2026-01-26T20:49:26.360Z] 1. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+[2026-01-26T20:49:26.360Z] 2. Executing Liberty frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+[2026-01-26T20:49:26.360Z] 3. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_cipher_top.v
+[2026-01-26T20:49:26.360Z] 4. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_inv_cipher_top.v
+[2026-01-26T20:49:26.360Z] 5. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_inv_sbox.v
+[2026-01-26T20:49:26.360Z] 6. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_key_expand_128.v
+[2026-01-26T20:49:26.360Z] 7. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_rcon.v
+[2026-01-26T20:49:26.360Z] 8. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_sbox.v
+[2026-01-26T20:49:26.360Z] 9. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/timescale.v
+[2026-01-26T20:49:26.360Z] 10. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_clkgate.v
+[2026-01-26T20:49:26.360Z] 11. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:26.360Z] 12. Executing AST frontend in derive mode using pre-parsed AST for module `\aes_cipher_top'.
+[2026-01-26T20:49:26.946Z] 12.1. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 12.2. Executing AST frontend in derive mode using pre-parsed AST for module `\aes_sbox'.
+[2026-01-26T20:49:26.946Z] 12.3. Executing AST frontend in derive mode using pre-parsed AST for module `\aes_key_expand_128'.
+[2026-01-26T20:49:26.946Z] Warning: Replacing memory \w with list of registers. See /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/src/aes/aes_key_expand_128.v:73
+[2026-01-26T20:49:26.946Z] 12.4. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 12.5. Executing AST frontend in derive mode using pre-parsed AST for module `\aes_rcon'.
+[2026-01-26T20:49:26.946Z] 12.6. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 12.7. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 13. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2026-01-26T20:49:26.946Z] 14. Executing RTLIL backend.
+[2026-01-26T20:49:26.946Z] Warnings: 5 unique messages, 5 total
+[2026-01-26T20:49:26.946Z] End of script. Logfile hash: 22c4838be1, CPU: user 0.09s system 0.01s, MEM: 36.14 MB peak
+[2026-01-26T20:49:26.946Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2026-01-26T20:49:26.946Z] Time spent: 64% 4x read_liberty (0 sec), 13% 16x read_verilog (0 sec), ...
+[2026-01-26T20:49:26.946Z] Elapsed time: 0:00.17[h:]min:sec. CPU time: user 0.15 sys 0.01 (98%). Peak memory: 41356KB.
+[2026-01-26T20:49:26.946Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.tcl ./logs/nangate45/aes/base/1_2_yosys.log
+[2026-01-26T20:49:26.946Z] Using ABC speed script.
+[2026-01-26T20:49:26.946Z] Setting clock period to 0.82
+[2026-01-26T20:49:26.946Z] 1. Executing RTLIL frontend.
+[2026-01-26T20:49:26.946Z] 2. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:26.946Z] 2.1. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 2.2. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 3. Executing SYNTH pass.
+[2026-01-26T20:49:26.946Z] 3.1. Executing HIERARCHY pass (managing design hierarchy).
+[2026-01-26T20:49:26.946Z] 3.1.1. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 3.1.2. Analyzing design hierarchy..
+[2026-01-26T20:49:26.946Z] 3.2. Executing PROC pass (convert processes to netlists).
+[2026-01-26T20:49:26.946Z] 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:49:26.946Z] 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2026-01-26T20:49:26.946Z] 3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2026-01-26T20:49:26.946Z] 3.2.4. Executing PROC_INIT pass (extract init attributes).
+[2026-01-26T20:49:26.946Z] 3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+[2026-01-26T20:49:26.946Z] 3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2026-01-26T20:49:26.946Z] 3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2026-01-26T20:49:26.946Z] 3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2026-01-26T20:49:26.946Z] 3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2026-01-26T20:49:26.946Z] 3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2026-01-26T20:49:26.946Z] 3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2026-01-26T20:49:26.946Z] 3.3. Executing FLATTEN pass (flatten design).
+[2026-01-26T20:49:26.946Z] 3.6. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:49:26.946Z] 3.8. Executing FSM pass (extract and optimize FSM).
+[2026-01-26T20:49:26.946Z] 3.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2026-01-26T20:49:26.946Z] 3.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2026-01-26T20:49:26.946Z] 3.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:49:26.946Z] 3.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2026-01-26T20:49:26.946Z] 3.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2026-01-26T20:49:26.946Z] 3.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2026-01-26T20:49:26.946Z] 3.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2026-01-26T20:49:26.946Z] 3.10. Executing WREDUCE pass (reducing word size of cells).
+[2026-01-26T20:49:26.946Z] 3.13. Executing ALUMACC pass (create $alu and $macc cells).
+[2026-01-26T20:49:26.946Z] 3.14. Executing SHARE pass (SAT-based resource sharing).
+[2026-01-26T20:49:26.946Z] 3.16. Executing MEMORY pass.
+[2026-01-26T20:49:26.946Z] 3.16.1. Executing OPT_MEM pass (optimize memories).
+[2026-01-26T20:49:26.946Z] 3.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2026-01-26T20:49:26.946Z] 3.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2026-01-26T20:49:26.946Z] 3.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2026-01-26T20:49:26.946Z] 3.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2026-01-26T20:49:26.946Z] 3.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2026-01-26T20:49:26.946Z] 3.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2026-01-26T20:49:26.946Z] 3.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2026-01-26T20:49:26.946Z] 4. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:26.946Z] 4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 5.1. Executing WRAPCELL pass. (wrap selected cells)
+[2026-01-26T20:49:27.532Z] 5.2. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 5.2.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 5.2.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+[2026-01-26T20:49:27.532Z] 5.2.3. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 5.3. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 5.3.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 5.3.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/kogge-stone.v
+[2026-01-26T20:49:27.532Z] 5.3.3. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 5.4. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 5.4.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 5.4.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/sklansky.v
+[2026-01-26T20:49:27.532Z] 5.4.3. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 5.5. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 5.5.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 5.5.2. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 6.1. Executing WRAPCELL pass. (wrap selected cells)
+[2026-01-26T20:49:27.532Z] 6.2. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 6.2.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 6.2.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_wrap_operators-booth.v
+[2026-01-26T20:49:27.532Z] 6.2.3. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 6.3. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:27.532Z] 6.3.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:27.532Z] 6.3.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+[2026-01-26T20:49:27.532Z] 6.3.3. Continuing TECHMAP pass.
+[2026-01-26T20:49:27.532Z] 7. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:49:27.532Z] 8. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2026-01-26T20:49:27.532Z] 9. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:49:28.117Z] 10. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:28.117Z] 10.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:28.117Z] 10.2. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+[2026-01-26T20:49:28.117Z] 11. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:49:28.703Z] 12. Executing EXTRACT_FA pass (find and extract full/half adders).
+[2026-01-26T20:49:35.523Z] 13. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:35.523Z] 13.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_adders.v
+[2026-01-26T20:49:35.523Z] 14. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:35.523Z] 14.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/tools/install/yosys/bin/../share/yosys/techmap.v
+[2026-01-26T20:49:35.523Z] 15. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:49:35.523Z] 16. Executing TECHMAP pass (map to technology primitives).
+[2026-01-26T20:49:35.523Z] 16.1. Executing Verilog-2005 frontend: /tmp/workspace/nROAD-flow-scripts-Public_master/flow/platforms/nangate45/cells_latch.v
+[2026-01-26T20:49:35.523Z] 17. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2026-01-26T20:49:35.523Z] 17.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2026-01-26T20:49:35.523Z] 18. Executing OPT pass (performing simple optimizations).
+[2026-01-26T20:49:36.108Z] 19. Executing SETUNDEF pass (replace undef values with defined constants).
+[2026-01-26T20:49:36.108Z] Warning: Feature 'abc_new' is experimental.
+[2026-01-26T20:49:36.108Z] 20. Executing ABC_NEW pass.
+[2026-01-26T20:49:36.108Z] 20.1. Executing ABC9_OPS pass (helper functions for ABC9).
+[2026-01-26T20:49:36.108Z] 20.2. Executing BOX_DERIVE pass. (derive modules for boxes)
+[2026-01-26T20:49:36.108Z] 20.3. Executing ABC9_OPS pass (helper functions for ABC9).
+[2026-01-26T20:49:36.108Z] 20.4. Executing ABC9_OPS pass (helper functions for ABC9).
+[2026-01-26T20:49:36.108Z] 20.5.1. Executing ABC9_OPS pass (helper functions for ABC9).
+[2026-01-26T20:49:36.108Z] Warning: Feature 'write_xaiger2' is experimental.
+[2026-01-26T20:49:36.108Z] 20.5.2. Executing XAIGER2 backend.
+[2026-01-26T20:49:36.108Z] 20.5.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+[2026-01-26T20:49:36.108Z] 20.5.4. Executing ABC9.
+[2026-01-26T20:50:03.436Z] Warning: Feature 'read_xaiger2' is experimental.
+[2026-01-26T20:50:03.436Z] 20.5.5. Executing XAIGER2 frontend.
+[2026-01-26T20:50:03.436Z] 20.6. Executing ABC9_OPS pass (helper functions for ABC9).
+[2026-01-26T20:50:03.436Z] 21. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2026-01-26T20:50:03.436Z] 22. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2026-01-26T20:50:03.436Z] 23. Executing HILOMAP pass (mapping to constant drivers).
+[2026-01-26T20:50:03.436Z] 24. Executing INSBUF pass (insert buffer cells for connected wires).
+[2026-01-26T20:50:03.436Z] 25. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:50:03.436Z] 26. Printing statistics.
+[2026-01-26T20:50:03.436Z] 27. Executing CHECK pass (checking for obvious problems).
+[2026-01-26T20:50:03.436Z] 28. Executing Verilog backend.
+[2026-01-26T20:50:03.436Z] 28.1. Executing BMUXMAP pass.
+[2026-01-26T20:50:03.436Z] 28.2. Executing DEMUXMAP pass.
+[2026-01-26T20:50:03.436Z] exec cp /tmp/workspace/nROAD-flow-scripts-Public_master/flow/designs/nangate45/aes/constraint.sdc ./results/nangate45/aes/base/1_synth.sdc
+[2026-01-26T20:50:03.436Z] Warnings: 3 unique messages, 3 total
+[2026-01-26T20:50:03.436Z] Warnings: 3 experimental features used (not excluded with -x).
+[2026-01-26T20:50:03.436Z] End of script. Logfile hash: d23f5788d1, CPU: user 9.70s system 0.05s, MEM: 68.07 MB peak
+[2026-01-26T20:50:03.436Z] Yosys 0.61+0 (git sha1 77005b69a, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+[2026-01-26T20:50:03.436Z] Time spent: 72% 1x abc9_exe (25 sec), 19% 1x extract_fa (6 sec), ...
+[2026-01-26T20:50:03.436Z] Elapsed time: 0:35.22[h:]min:sec. CPU time: user 35.22 sys 0.09 (100%). Peak memory: 69704KB.

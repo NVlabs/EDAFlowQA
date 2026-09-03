@@ -1,0 +1,431 @@
+
+==========================================================================
+floorplan final report_tns
+--------------------------------------------------------------------------
+tns max -492.08
+
+==========================================================================
+floorplan final report_wns
+--------------------------------------------------------------------------
+wns max -0.85
+
+==========================================================================
+floorplan final report_worst_slack
+--------------------------------------------------------------------------
+worst slack max -0.85
+
+==========================================================================
+floorplan final report_clock_min_period
+--------------------------------------------------------------------------
+core_clock period_min = 3.85 fmax = 259.55
+
+==========================================================================
+floorplan final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port clocked by core_clock)
+Endpoint: controller_i.fence_active_q$_DFFE_PN0P_
+          (removal check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.60    0.60 ^ input external delay
+ 20779 36953.60    0.00    0.00    0.60 ^ rst_ni (in)
+                                         rst_ni (net)
+                  0.00    0.00    0.60 ^ controller_i.fence_active_q$_DFFE_PN0P_/RN (DFFR_X1)
+                                  0.60   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ controller_i.fence_active_q$_DFFE_PN0P_/CK (DFFR_X1)
+                          0.18    0.18   library removal time
+                                  0.18   data required time
+-----------------------------------------------------------------------------
+                                  0.18   data required time
+                                 -0.60   data arrival time
+-----------------------------------------------------------------------------
+                                  0.42   slack (MET)
+
+
+Startpoint: i_cache_subsystem.i_icache.tag_q[0]$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: i_cache_subsystem.i_icache.sram_block_0__tag_sram.genblk1_0__i_ram/macro_mem_0
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ i_cache_subsystem.i_icache.tag_q[0]$_DFFE_PN0P_/CK (DFFR_X1)
+     3    4.40    0.02    0.07    0.07 ^ i_cache_subsystem.i_icache.tag_q[0]$_DFFE_PN0P_/QN (DFFR_X1)
+                                         _00006_ (net)
+                  0.02    0.00    0.07 ^ _07799_/A1 (NOR2_X1)
+     4   20.00    0.02    0.03    0.11 v _07799_/ZN (NOR2_X1)
+                                         i_cache_subsystem.i_icache.sram_block_0__tag_sram.wdata_i[0] (net)
+                  0.03    0.00    0.11 v i_cache_subsystem.i_icache.sram_block_0__tag_sram.genblk1_0__i_ram/macro_mem_0/wd_in[0] (fakeram45_256x16)
+                                  0.11   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ i_cache_subsystem.i_icache.sram_block_0__tag_sram.genblk1_0__i_ram/macro_mem_0/clk (fakeram45_256x16)
+                          0.05    0.05   library hold time
+                                  0.05   data required time
+-----------------------------------------------------------------------------
+                                  0.05   data required time
+                                 -0.11   data arrival time
+-----------------------------------------------------------------------------
+                                  0.06   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port clocked by core_clock)
+Endpoint: csr_regfile_i/dcache_en_o$_DFFE_PN1P_
+          (recovery check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.60    0.60 ^ input external delay
+ 20779 36953.60    0.00    0.00    0.60 ^ rst_ni (in)
+                                         rst_ni (net)
+                  0.00    0.00    0.60 ^ csr_regfile_i/dcache_en_o$_DFFE_PN1P_/SN (DFFS_X1)
+                                  0.60   data arrival time
+
+                  0.00    3.00    3.00   clock core_clock (rise edge)
+                          0.00    3.00   clock network delay (ideal)
+                          0.00    3.00   clock reconvergence pessimism
+                                  3.00 ^ csr_regfile_i/dcache_en_o$_DFFE_PN1P_/CK (DFFS_X1)
+                          0.04    3.04   library recovery time
+                                  3.04   data required time
+-----------------------------------------------------------------------------
+                                  3.04   data required time
+                                 -0.60   data arrival time
+-----------------------------------------------------------------------------
+                                  2.44   slack (MET)
+
+
+Startpoint: i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_/CK (DFFR_X1)
+     1    3.40    0.01    0.10    0.10 ^ i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_/Q (DFFR_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0] (net)
+                  0.01    0.00    0.10 ^ i_cache_subsystem.i_nbdcache/_2876_/A (BUF_X4)
+     5   15.35    0.01    0.03    0.13 ^ i_cache_subsystem.i_nbdcache/_2876_/Z (BUF_X4)
+                                         i_cache_subsystem.i_nbdcache/_0825_ (net)
+                  0.01    0.00    0.13 ^ i_cache_subsystem.i_nbdcache/_2914_/A (BUF_X4)
+    10   17.52    0.01    0.03    0.16 ^ i_cache_subsystem.i_nbdcache/_2914_/Z (BUF_X4)
+                                         i_cache_subsystem.i_nbdcache/_0854_ (net)
+                  0.01    0.00    0.16 ^ i_cache_subsystem.i_nbdcache/_3098_/A (INV_X1)
+     2    4.91    0.01    0.01    0.17 v i_cache_subsystem.i_nbdcache/_3098_/ZN (INV_X1)
+                                         i_cache_subsystem.i_nbdcache/_0915_ (net)
+                  0.01    0.00    0.17 v i_cache_subsystem.i_nbdcache/_3111_/A4 (NOR4_X2)
+     1    1.78    0.03    0.07    0.24 ^ i_cache_subsystem.i_nbdcache/_3111_/ZN (NOR4_X2)
+                                         i_cache_subsystem.i_nbdcache/_0928_ (net)
+                  0.03    0.00    0.24 ^ i_cache_subsystem.i_nbdcache/_3112_/A (BUF_X2)
+    10   11.10    0.02    0.04    0.28 ^ i_cache_subsystem.i_nbdcache/_3112_/Z (BUF_X2)
+                                         i_cache_subsystem.i_nbdcache/_0929_ (net)
+                  0.02    0.00    0.28 ^ i_cache_subsystem.i_nbdcache/_3883_/A (BUF_X1)
+    10   11.82    0.03    0.05    0.33 ^ i_cache_subsystem.i_nbdcache/_3883_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1340_ (net)
+                  0.03    0.00    0.33 ^ i_cache_subsystem.i_nbdcache/_3884_/A (BUF_X1)
+    12   13.67    0.03    0.06    0.39 ^ i_cache_subsystem.i_nbdcache/_3884_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.miss_req_o[140] (net)
+                  0.03    0.00    0.39 ^ i_cache_subsystem.i_nbdcache/_3885_/A2 (AND2_X1)
+     1    0.97    0.01    0.04    0.42 ^ i_cache_subsystem.i_nbdcache/_3885_/ZN (AND2_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.miss_req_o[0] (net)
+                  0.01    0.00    0.42 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12368_/A (BUF_X1)
+     3    5.02    0.01    0.03    0.45 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12368_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_07278_ (net)
+                  0.01    0.00    0.45 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12373_/A (INV_X1)
+     2    3.07    0.01    0.01    0.46 v i_cache_subsystem.i_nbdcache/i_miss_handler/_12373_/ZN (INV_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_07283_ (net)
+                  0.01    0.00    0.46 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15865_/A2 (NOR2_X1)
+     6    6.49    0.04    0.05    0.51 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15865_/ZN (NOR2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10516_ (net)
+                  0.04    0.00    0.51 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15866_/A3 (NOR3_X1)
+     7    7.36    0.02    0.03    0.54 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15866_/ZN (NOR3_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10517_ (net)
+                  0.02    0.00    0.54 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15868_/B1 (AOI221_X1)
+     2    3.25    0.05    0.09    0.63 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15868_/ZN (AOI221_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10519_ (net)
+                  0.05    0.00    0.63 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15871_/B1 (AOI21_X1)
+     4    6.05    0.02    0.04    0.66 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15871_/ZN (AOI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10522_ (net)
+                  0.02    0.00    0.66 v i_cache_subsystem.i_nbdcache/i_miss_handler/_19021_/A4 (NOR4_X1)
+     3    4.31    0.07    0.11    0.77 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_19021_/ZN (NOR4_X1)
+                                         i_cache_subsystem.axi_req_bypass[1] (net)
+                  0.07    0.00    0.77 ^ _07956_/A (OAI21_X1)
+     1    1.46    0.01    0.03    0.80 v _07956_/ZN (OAI21_X1)
+                                         _00647_ (net)
+                  0.01    0.00    0.80 v _07957_/B1 (OAI21_X1)
+     2    2.64    0.02    0.03    0.84 ^ _07957_/ZN (OAI21_X1)
+                                         _00648_ (net)
+                  0.02    0.00    0.84 ^ _07958_/A (BUF_X1)
+    10    9.06    0.02    0.04    0.88 ^ _07958_/Z (BUF_X1)
+                                         _00649_ (net)
+                  0.02    0.00    0.88 ^ _07959_/A (BUF_X1)
+    10   12.37    0.03    0.05    0.93 ^ _07959_/Z (BUF_X1)
+                                         _00650_ (net)
+                  0.03    0.00    0.93 ^ _05604_/A (BUF_X1)
+    10   15.90    0.04    0.06    1.00 ^ _05604_/Z (BUF_X1)
+                                         _03248_ (net)
+                  0.04    0.00    1.00 ^ _06952_/A2 (NOR3_X1)
+     3    4.65    0.01    0.02    1.02 v _06952_/ZN (NOR3_X1)
+                                         i_cache_subsystem.axi_resp_data_ar_ready_ (net)
+                  0.01    0.00    1.02 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17299_/A1 (NAND3_X1)
+     1    1.67    0.01    0.02    1.04 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17299_/ZN (NAND3_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02620_ (net)
+                  0.01    0.00    1.04 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17300_/A (OAI21_X1)
+     1    1.57    0.01    0.02    1.05 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17300_/ZN (OAI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02621_ (net)
+                  0.01    0.00    1.05 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17301_/B1 (AOI221_X1)
+     4    5.20    0.07    0.10    1.15 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17301_/ZN (AOI221_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02622_ (net)
+                  0.07    0.00    1.15 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_18636_/A2 (AND2_X1)
+     4    5.87    0.02    0.05    1.21 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_18636_/ZN (AND2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_03801_ (net)
+                  0.02    0.00    1.21 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22035_/B1 (OAI22_X1)
+     2    2.95    0.01    0.02    1.23 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22035_/ZN (OAI22_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_06450_ (net)
+                  0.01    0.00    1.23 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22036_/A (AOI21_X1)
+     1    1.71    0.02    0.04    1.27 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22036_/ZN (AOI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_06451_ (net)
+                  0.02    0.00    1.27 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22038_/A1 (NOR2_X1)
+     2    4.29    0.01    0.02    1.29 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22038_/ZN (NOR2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_tag_cmp.req_i[0] (net)
+                  0.01    0.00    1.29 v i_cache_subsystem.i_nbdcache/_2526_/A4 (NOR4_X2)
+     2    2.52    0.04    0.07    1.36 ^ i_cache_subsystem.i_nbdcache/_2526_/ZN (NOR4_X2)
+                                         i_cache_subsystem.i_nbdcache/_0602_ (net)
+                  0.04    0.00    1.36 ^ i_cache_subsystem.i_nbdcache/_2528_/A1 (NAND2_X1)
+     6   10.56    0.03    0.04    1.41 v i_cache_subsystem.i_nbdcache/_2528_/ZN (NAND2_X1)
+                                         i_cache_subsystem.i_nbdcache/_0604_ (net)
+                  0.03    0.00    1.41 v i_cache_subsystem.i_nbdcache/_3435_/A (BUF_X1)
+    10    8.18    0.01    0.05    1.45 v i_cache_subsystem.i_nbdcache/_3435_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1112_ (net)
+                  0.01    0.00    1.45 v i_cache_subsystem.i_nbdcache/_3448_/A (BUF_X1)
+    10   13.07    0.02    0.05    1.50 v i_cache_subsystem.i_nbdcache/_3448_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1125_ (net)
+                  0.02    0.00    1.50 v i_cache_subsystem.i_nbdcache/_3449_/A (BUF_X1)
+    10   12.93    0.02    0.05    1.54 v i_cache_subsystem.i_nbdcache/_3449_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1126_ (net)
+                  0.02    0.00    1.54 v i_cache_subsystem.i_nbdcache/_3462_/B2 (OAI21_X1)
+    88  440.00    2.05    2.26    3.80 ^ i_cache_subsystem.i_nbdcache/_3462_/ZN (OAI21_X1)
+                                         i_cache_subsystem.i_nbdcache/addr_ram[4] (net)
+                  3.07    0.00    3.80 ^ i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0/addr_in[0] (fakeram45_256x16)
+                                  3.80   data arrival time
+
+                  0.00    3.00    3.00   clock core_clock (rise edge)
+                          0.00    3.00   clock network delay (ideal)
+                          0.00    3.00   clock reconvergence pessimism
+                                  3.00 ^ i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0/clk (fakeram45_256x16)
+                         -0.05    2.95   library setup time
+                                  2.95   data required time
+-----------------------------------------------------------------------------
+                                  2.95   data required time
+                                 -3.80   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.85   slack (VIOLATED)
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port clocked by core_clock)
+Endpoint: csr_regfile_i/dcache_en_o$_DFFE_PN1P_
+          (recovery check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.60    0.60 ^ input external delay
+ 20779 36953.60    0.00    0.00    0.60 ^ rst_ni (in)
+                                         rst_ni (net)
+                  0.00    0.00    0.60 ^ csr_regfile_i/dcache_en_o$_DFFE_PN1P_/SN (DFFS_X1)
+                                  0.60   data arrival time
+
+                  0.00    3.00    3.00   clock core_clock (rise edge)
+                          0.00    3.00   clock network delay (ideal)
+                          0.00    3.00   clock reconvergence pessimism
+                                  3.00 ^ csr_regfile_i/dcache_en_o$_DFFE_PN1P_/CK (DFFS_X1)
+                          0.04    3.04   library recovery time
+                                  3.04   data required time
+-----------------------------------------------------------------------------
+                                  3.04   data required time
+                                 -0.60   data arrival time
+-----------------------------------------------------------------------------
+                                  2.44   slack (MET)
+
+
+Startpoint: i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_/CK (DFFR_X1)
+     1    3.40    0.01    0.10    0.10 ^ i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0]$_DFFE_PN0P_/Q (DFFR_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.state_q[0] (net)
+                  0.01    0.00    0.10 ^ i_cache_subsystem.i_nbdcache/_2876_/A (BUF_X4)
+     5   15.35    0.01    0.03    0.13 ^ i_cache_subsystem.i_nbdcache/_2876_/Z (BUF_X4)
+                                         i_cache_subsystem.i_nbdcache/_0825_ (net)
+                  0.01    0.00    0.13 ^ i_cache_subsystem.i_nbdcache/_2914_/A (BUF_X4)
+    10   17.52    0.01    0.03    0.16 ^ i_cache_subsystem.i_nbdcache/_2914_/Z (BUF_X4)
+                                         i_cache_subsystem.i_nbdcache/_0854_ (net)
+                  0.01    0.00    0.16 ^ i_cache_subsystem.i_nbdcache/_3098_/A (INV_X1)
+     2    4.91    0.01    0.01    0.17 v i_cache_subsystem.i_nbdcache/_3098_/ZN (INV_X1)
+                                         i_cache_subsystem.i_nbdcache/_0915_ (net)
+                  0.01    0.00    0.17 v i_cache_subsystem.i_nbdcache/_3111_/A4 (NOR4_X2)
+     1    1.78    0.03    0.07    0.24 ^ i_cache_subsystem.i_nbdcache/_3111_/ZN (NOR4_X2)
+                                         i_cache_subsystem.i_nbdcache/_0928_ (net)
+                  0.03    0.00    0.24 ^ i_cache_subsystem.i_nbdcache/_3112_/A (BUF_X2)
+    10   11.10    0.02    0.04    0.28 ^ i_cache_subsystem.i_nbdcache/_3112_/Z (BUF_X2)
+                                         i_cache_subsystem.i_nbdcache/_0929_ (net)
+                  0.02    0.00    0.28 ^ i_cache_subsystem.i_nbdcache/_3883_/A (BUF_X1)
+    10   11.82    0.03    0.05    0.33 ^ i_cache_subsystem.i_nbdcache/_3883_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1340_ (net)
+                  0.03    0.00    0.33 ^ i_cache_subsystem.i_nbdcache/_3884_/A (BUF_X1)
+    12   13.67    0.03    0.06    0.39 ^ i_cache_subsystem.i_nbdcache/_3884_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.miss_req_o[140] (net)
+                  0.03    0.00    0.39 ^ i_cache_subsystem.i_nbdcache/_3885_/A2 (AND2_X1)
+     1    0.97    0.01    0.04    0.42 ^ i_cache_subsystem.i_nbdcache/_3885_/ZN (AND2_X1)
+                                         i_cache_subsystem.i_nbdcache/master_ports_1__i_cache_ctrl.miss_req_o[0] (net)
+                  0.01    0.00    0.42 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12368_/A (BUF_X1)
+     3    5.02    0.01    0.03    0.45 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12368_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_07278_ (net)
+                  0.01    0.00    0.45 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_12373_/A (INV_X1)
+     2    3.07    0.01    0.01    0.46 v i_cache_subsystem.i_nbdcache/i_miss_handler/_12373_/ZN (INV_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_07283_ (net)
+                  0.01    0.00    0.46 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15865_/A2 (NOR2_X1)
+     6    6.49    0.04    0.05    0.51 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15865_/ZN (NOR2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10516_ (net)
+                  0.04    0.00    0.51 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15866_/A3 (NOR3_X1)
+     7    7.36    0.02    0.03    0.54 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15866_/ZN (NOR3_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10517_ (net)
+                  0.02    0.00    0.54 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15868_/B1 (AOI221_X1)
+     2    3.25    0.05    0.09    0.63 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15868_/ZN (AOI221_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10519_ (net)
+                  0.05    0.00    0.63 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_15871_/B1 (AOI21_X1)
+     4    6.05    0.02    0.04    0.66 v i_cache_subsystem.i_nbdcache/i_miss_handler/_15871_/ZN (AOI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_10522_ (net)
+                  0.02    0.00    0.66 v i_cache_subsystem.i_nbdcache/i_miss_handler/_19021_/A4 (NOR4_X1)
+     3    4.31    0.07    0.11    0.77 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_19021_/ZN (NOR4_X1)
+                                         i_cache_subsystem.axi_req_bypass[1] (net)
+                  0.07    0.00    0.77 ^ _07956_/A (OAI21_X1)
+     1    1.46    0.01    0.03    0.80 v _07956_/ZN (OAI21_X1)
+                                         _00647_ (net)
+                  0.01    0.00    0.80 v _07957_/B1 (OAI21_X1)
+     2    2.64    0.02    0.03    0.84 ^ _07957_/ZN (OAI21_X1)
+                                         _00648_ (net)
+                  0.02    0.00    0.84 ^ _07958_/A (BUF_X1)
+    10    9.06    0.02    0.04    0.88 ^ _07958_/Z (BUF_X1)
+                                         _00649_ (net)
+                  0.02    0.00    0.88 ^ _07959_/A (BUF_X1)
+    10   12.37    0.03    0.05    0.93 ^ _07959_/Z (BUF_X1)
+                                         _00650_ (net)
+                  0.03    0.00    0.93 ^ _05604_/A (BUF_X1)
+    10   15.90    0.04    0.06    1.00 ^ _05604_/Z (BUF_X1)
+                                         _03248_ (net)
+                  0.04    0.00    1.00 ^ _06952_/A2 (NOR3_X1)
+     3    4.65    0.01    0.02    1.02 v _06952_/ZN (NOR3_X1)
+                                         i_cache_subsystem.axi_resp_data_ar_ready_ (net)
+                  0.01    0.00    1.02 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17299_/A1 (NAND3_X1)
+     1    1.67    0.01    0.02    1.04 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17299_/ZN (NAND3_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02620_ (net)
+                  0.01    0.00    1.04 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17300_/A (OAI21_X1)
+     1    1.57    0.01    0.02    1.05 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17300_/ZN (OAI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02621_ (net)
+                  0.01    0.00    1.05 v i_cache_subsystem.i_nbdcache/i_miss_handler/_17301_/B1 (AOI221_X1)
+     4    5.20    0.07    0.10    1.15 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_17301_/ZN (AOI221_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_02622_ (net)
+                  0.07    0.00    1.15 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_18636_/A2 (AND2_X1)
+     4    5.87    0.02    0.05    1.21 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_18636_/ZN (AND2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_03801_ (net)
+                  0.02    0.00    1.21 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22035_/B1 (OAI22_X1)
+     2    2.95    0.01    0.02    1.23 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22035_/ZN (OAI22_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_06450_ (net)
+                  0.01    0.00    1.23 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22036_/A (AOI21_X1)
+     1    1.71    0.02    0.04    1.27 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22036_/ZN (AOI21_X1)
+                                         i_cache_subsystem.i_nbdcache/i_miss_handler/_06451_ (net)
+                  0.02    0.00    1.27 ^ i_cache_subsystem.i_nbdcache/i_miss_handler/_22038_/A1 (NOR2_X1)
+     2    4.29    0.01    0.02    1.29 v i_cache_subsystem.i_nbdcache/i_miss_handler/_22038_/ZN (NOR2_X1)
+                                         i_cache_subsystem.i_nbdcache/i_tag_cmp.req_i[0] (net)
+                  0.01    0.00    1.29 v i_cache_subsystem.i_nbdcache/_2526_/A4 (NOR4_X2)
+     2    2.52    0.04    0.07    1.36 ^ i_cache_subsystem.i_nbdcache/_2526_/ZN (NOR4_X2)
+                                         i_cache_subsystem.i_nbdcache/_0602_ (net)
+                  0.04    0.00    1.36 ^ i_cache_subsystem.i_nbdcache/_2528_/A1 (NAND2_X1)
+     6   10.56    0.03    0.04    1.41 v i_cache_subsystem.i_nbdcache/_2528_/ZN (NAND2_X1)
+                                         i_cache_subsystem.i_nbdcache/_0604_ (net)
+                  0.03    0.00    1.41 v i_cache_subsystem.i_nbdcache/_3435_/A (BUF_X1)
+    10    8.18    0.01    0.05    1.45 v i_cache_subsystem.i_nbdcache/_3435_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1112_ (net)
+                  0.01    0.00    1.45 v i_cache_subsystem.i_nbdcache/_3448_/A (BUF_X1)
+    10   13.07    0.02    0.05    1.50 v i_cache_subsystem.i_nbdcache/_3448_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1125_ (net)
+                  0.02    0.00    1.50 v i_cache_subsystem.i_nbdcache/_3449_/A (BUF_X1)
+    10   12.93    0.02    0.05    1.54 v i_cache_subsystem.i_nbdcache/_3449_/Z (BUF_X1)
+                                         i_cache_subsystem.i_nbdcache/_1126_ (net)
+                  0.02    0.00    1.54 v i_cache_subsystem.i_nbdcache/_3462_/B2 (OAI21_X1)
+    88  440.00    2.05    2.26    3.80 ^ i_cache_subsystem.i_nbdcache/_3462_/ZN (OAI21_X1)
+                                         i_cache_subsystem.i_nbdcache/addr_ram[4] (net)
+                  3.07    0.00    3.80 ^ i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0/addr_in[0] (fakeram45_256x16)
+                                  3.80   data arrival time
+
+                  0.00    3.00    3.00   clock core_clock (rise edge)
+                          0.00    3.00   clock network delay (ideal)
+                          0.00    3.00   clock reconvergence pessimism
+                                  3.00 ^ i_cache_subsystem.i_nbdcache/sram_block_0__data_sram.genblk1_0__i_ram/macro_mem_0/clk (fakeram45_256x16)
+                         -0.05    2.95   library setup time
+                                  2.95   data required time
+-----------------------------------------------------------------------------
+                                  2.95   data required time
+                                 -3.80   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.85   slack (VIOLATED)
+
+
+
+==========================================================================
+floorplan final report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             4.97e-02   4.44e-04   1.66e-03   5.18e-02  24.6%
+Combinational          5.37e-03   5.72e-03   4.22e-03   1.53e-02   7.3%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  1.21e-01   0.00e+00   2.24e-02   1.43e-01  68.1%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.76e-01   6.17e-03   2.83e-02   2.10e-01 100.0%
+                          83.6%       2.9%      13.5%

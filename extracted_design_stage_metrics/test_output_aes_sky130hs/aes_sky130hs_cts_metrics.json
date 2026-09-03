@@ -1,0 +1,79 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -0.039,
+      "tns": -0.0,
+      "clock_sink_wirelength_um": 770.01,
+      "hpwl": 481307.6,
+      "displacement": 727.4,
+      "violations": 0,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets -sink_clustering_size 10 -sink_clustering_max_diameter 50",
+          "results": {
+            "total_sinks": 562,
+            "clock_buffers_created": 119,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 3,
+            "avg_sink_wirelength_um": 770.01,
+            "placement_total_displacement_u": 4220.4,
+            "placement_avg_displacement_u": 0.2,
+            "placement_max_displacement_u": 25.7,
+            "hpwl_before": 468066.9,
+            "hpwl_after": 479537.9,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 658,
+                "leaf_buffers": 102,
+                "avg_sink_wire_length_um": 770.01,
+                "path_depth_min": 2,
+                "path_depth_max": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -verbose",
+          "iterations_count": 73,
+          "start_metrics": {
+            "wns": -0.552,
+            "tns": -4.7,
+            "violation_end_points": 52
+          },
+          "end_metrics": {
+            "wns": -0.039,
+            "tns": -0.0,
+            "violation_end_points": 0
+          },
+          "placement_impact": {
+            "total_displacement_u": 727.4,
+            "avg_displacement_u": 0.0,
+            "max_displacement_u": 14.3,
+            "hpwl_before": 480844.6,
+            "hpwl_after": 481307.6
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-27T23:55:33.836Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:06.40",
+      "peak_memory_kb": 253264,
+      "elapsed_s": 6,
+      "memory_mb": 247,
+      "sha1sum": "c871574c08022ba5caf6"
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 42.0,
+    "cts__design__instance__count__hold_buffer": 0.0,
+    "cts__timing__setup__ws": -0.0386249,
+    "cts__timing__setup__tns": -0.0386249,
+    "cts__timing__hold__ws": 0.145176,
+    "cts__timing__hold__tns": 0.0
+  }
+}

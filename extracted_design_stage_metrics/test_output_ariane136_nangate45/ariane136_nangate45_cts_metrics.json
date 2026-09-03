@@ -1,0 +1,74 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "clock_sink_wirelength_um": 985.1,
+      "hpwl": 6114146.5,
+      "displacement": 3928.5,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 20806,
+            "clock_buffers_created": 3812,
+            "min_buffer_depth": 7,
+            "max_buffer_depth": 8,
+            "avg_sink_wirelength_um": 985.1,
+            "placement_total_displacement_u": 6621.9,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 8.9,
+            "hpwl_before": 6048998.9,
+            "hpwl_after": 6096124.5,
+            "clock_nets": [
+              {
+                "name": "clk_i",
+                "sinks": 136,
+                "leaf_buffers": 41,
+                "avg_sink_wire_length_um": 2030.83,
+                "path_depth_min": 4,
+                "path_depth_max": 5
+              },
+              {
+                "name": "clk_i_regs",
+                "sinks": 23578,
+                "leaf_buffers": 3461,
+                "avg_sink_wire_length_um": 985.1,
+                "path_depth_min": 7,
+                "path_depth_max": 8
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {},
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "hold_buffers_inserted": 2658
+        }
+      ],
+      "report_metrics": "[2026-01-26T21:18:05.011Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "2:36.25",
+      "peak_memory_kb": 1569872,
+      "elapsed_s": 156,
+      "memory_mb": 1533,
+      "sha1sum": "4d2f51cc1aaf6314387b"
+    }
+  },
+  "design_name": "ariane136",
+  "sub_design_name": "ariane",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 0.0,
+    "cts__design__instance__count__hold_buffer": 2658.0,
+    "cts__timing__setup__ws": 0.78449,
+    "cts__timing__setup__tns": 0.0,
+    "cts__timing__hold__ws": -0.470118,
+    "cts__timing__hold__tns": -3.92911
+  }
+}

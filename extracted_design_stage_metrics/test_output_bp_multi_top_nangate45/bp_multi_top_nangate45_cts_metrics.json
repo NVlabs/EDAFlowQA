@@ -1,0 +1,87 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -4.439,
+      "tns": -4.4,
+      "clock_sink_wirelength_um": 857.09,
+      "hpwl": 3273640.8,
+      "displacement": 497.1,
+      "violations": 1,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 16174,
+            "clock_buffers_created": 3061,
+            "min_buffer_depth": 7,
+            "max_buffer_depth": 8,
+            "avg_sink_wirelength_um": 857.09,
+            "placement_total_displacement_u": 5308.1,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 4.6,
+            "hpwl_before": 3248749.6,
+            "hpwl_after": 3272479.9,
+            "clock_nets": [
+              {
+                "name": "clk_i",
+                "sinks": 26,
+                "leaf_buffers": 7,
+                "avg_sink_wire_length_um": 1952.27,
+                "path_depth_min": 2,
+                "path_depth_max": 3,
+                "leaf_load_cells": 2157
+              },
+              {
+                "name": "clk_i_regs",
+                "sinks": 18328,
+                "leaf_buffers": 2710,
+                "avg_sink_wire_length_um": 857.09,
+                "path_depth_min": 7,
+                "path_depth_max": 8,
+                "leaf_load_cells": 2157
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose",
+          "iterations_count": 177,
+          "start_metrics": {
+            "wns": -7.567,
+            "tns": -613.3,
+            "violation_end_points": 90
+          },
+          "end_metrics": {
+            "wns": -4.439,
+            "tns": -4.4,
+            "violation_end_points": 1
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "hold_buffers_inserted": 10
+        }
+      ],
+      "report_metrics": "[2025-11-06T16:12:56.075Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "1:25.14",
+      "peak_memory_kb": 1024848,
+      "elapsed_s": 85,
+      "memory_mb": 1000,
+      "sha1sum": "4f4a114d9158636d19ff"
+    }
+  },
+  "design_name": "bp_multi_top",
+  "sub_design_name": "bp_multi_top",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 19.0,
+    "cts__design__instance__count__hold_buffer": 10.0,
+    "cts__timing__setup__ws": -4.43924,
+    "cts__timing__setup__tns": -4.43924,
+    "cts__timing__hold__ws": 0.0360504,
+    "cts__timing__hold__tns": 0.0
+  }
+}

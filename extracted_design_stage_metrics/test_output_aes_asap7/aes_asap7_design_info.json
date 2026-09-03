@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 36,
+      "timestamp": "2026-01-27T23:49:52.530Z",
+      "design_name": "aes",
+      "technology_node": "asap7",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "aes"
+    ],
+    "technology_nodes": [
+      "asap7"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

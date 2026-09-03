@@ -1,0 +1,45 @@
+[2026-01-26T20:46:08.850Z] Running cts.tcl, stage 4_1_cts
+[2026-01-26T20:46:10.012Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2026-01-26T20:46:10.012Z]                     BUFx2_ASAP7_75t_R
+[2026-01-26T20:46:10.594Z] [INFO CTS-0010]  Clock net "clk" has 12 sinks.
+[2026-01-26T20:46:10.594Z] [INFO CTS-0028]  Total number of sinks: 12.
+[2026-01-26T20:46:10.594Z] [INFO CTS-0018]     Created 3 clock buffers.
+[2026-01-26T20:46:10.594Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2026-01-26T20:46:10.594Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[2026-01-26T20:46:10.594Z] [INFO CTS-0098] Clock net "clk"
+[2026-01-26T20:46:10.594Z] [INFO CTS-0099]  Sinks 12
+[2026-01-26T20:46:10.594Z] [INFO CTS-0100]  Leaf buffers 0
+[2026-01-26T20:46:10.594Z] [INFO CTS-0101]  Average sink wire length 7.53 um
+[2026-01-26T20:46:10.594Z] [INFO CTS-0102]  Path depth 2 - 2
+[2026-01-26T20:46:10.594Z] estimate_parasitics -placement
+[2026-01-26T20:46:10.594Z] Placement Analysis
+[2026-01-26T20:46:10.594Z] ---------------------------------
+[2026-01-26T20:46:10.594Z] total displacement          1.2 u
+[2026-01-26T20:46:10.594Z] average displacement        0.0 u
+[2026-01-26T20:46:10.594Z] max displacement            0.4 u
+[2026-01-26T20:46:10.594Z] original HPWL             166.8 u
+[2026-01-26T20:46:10.594Z] legalized HPWL            170.3 u
+[2026-01-26T20:46:10.594Z] delta HPWL                    2 %
+[2026-01-26T20:46:10.594Z] 
+[2026-01-26T20:46:10.594Z] estimate_parasitics -placement
+[2026-01-26T20:46:10.594Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[2026-01-26T20:46:10.594Z] Placement Analysis
+[2026-01-26T20:46:10.594Z] ---------------------------------
+[2026-01-26T20:46:10.594Z] total displacement          0.0 u
+[2026-01-26T20:46:10.594Z] average displacement        0.0 u
+[2026-01-26T20:46:10.594Z] max displacement            0.0 u
+[2026-01-26T20:46:10.594Z] original HPWL             170.3 u
+[2026-01-26T20:46:10.594Z] legalized HPWL            170.3 u
+[2026-01-26T20:46:10.594Z] delta HPWL                    0 %
+[2026-01-26T20:46:10.594Z] 
+[2026-01-26T20:46:10.594Z] Report metrics stage 4, cts final...
+[2026-01-26T20:46:10.594Z] 
+[2026-01-26T20:46:10.594Z] ==========================================================================
+[2026-01-26T20:46:10.594Z] cts final report_design_area
+[2026-01-26T20:46:10.594Z] --------------------------------------------------------------------------
+[2026-01-26T20:46:10.594Z] Design area 11 um^2 44% utilization.
+[2026-01-26T20:46:10.594Z] write_db ./results/asap7/aes-block_aes_rcon/base/4_1_cts.odb
+[2026-01-26T20:46:10.594Z] write_sdc -no_timestamp ./results/asap7/aes-block_aes_rcon/base/4_cts.sdc
+[2026-01-26T20:46:10.594Z] Elapsed time: 0:02.06[h:]min:sec. CPU time: user 1.92 sys 0.14 (100%). Peak memory: 225992KB.
+[2026-01-26T20:46:10.594Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:10.594Z] 4_1_cts                            2            220 6777eda774ade1bb800d

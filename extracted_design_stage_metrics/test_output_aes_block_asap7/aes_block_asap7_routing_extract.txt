@@ -1,0 +1,172 @@
+[2026-01-26T20:46:11.758Z] Running global_route.tcl, stage 5_1_grt
+[2026-01-26T20:46:12.920Z] pin_access
+[2026-01-26T20:46:12.920Z] Design:                   aes_rcon
+[2026-01-26T20:46:12.920Z]   Layer V2
+[2026-01-26T20:46:12.920Z]   Layer V3
+[2026-01-26T20:46:12.920Z]   Layer V4
+[2026-01-26T20:46:12.920Z]   Layer V5
+[2026-01-26T20:46:12.920Z]   Layer V6
+[2026-01-26T20:46:12.920Z]   Layer V7
+[2026-01-26T20:46:12.920Z]   Layer V8
+[2026-01-26T20:46:12.920Z]   Layer V9
+[2026-01-26T20:46:13.501Z] global_route -congestion_report_file ./reports/asap7/aes-block_aes_rcon/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[2026-01-26T20:46:13.501Z]           Routing      Original      Derated      Resource
+[2026-01-26T20:46:13.501Z] Layer     Direction    Resources     Resources    Reduction (%)
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] M1         Vertical            0             0          0.00%
+[2026-01-26T20:46:13.501Z] M2         Horizontal       3323          2401          27.75%
+[2026-01-26T20:46:13.501Z] M3         Vertical         3732          2773          25.70%
+[2026-01-26T20:46:13.501Z] M4         Horizontal       2696          1981          26.52%
+[2026-01-26T20:46:13.501Z] M5         Vertical         2630          1935          26.43%
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] M1                   0             0            0.00%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] M2                2401           112            4.66%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] M3                2773            98            3.53%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] M4                1981            39            1.97%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] M5                1935            58            3.00%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] Total             9090           307            3.38%             0 /  0 /  0
+[2026-01-26T20:46:13.501Z] [INFO GRT-0018] Total wirelength: 273 um
+[2026-01-26T20:46:13.501Z] estimate_parasitics -global_routing
+[2026-01-26T20:46:13.501Z] Perform buffer insertion and gate resizing...
+[2026-01-26T20:46:13.501Z] repair_design -verbose
+[2026-01-26T20:46:13.501Z] Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------------
+[2026-01-26T20:46:13.501Z]         0 |     +0.0% |       0 |       0 |             0 |       112
+[2026-01-26T20:46:13.501Z]        10 |     +0.0% |       0 |       0 |             0 |       102
+[2026-01-26T20:46:13.501Z]        20 |     +0.0% |       0 |       0 |             0 |        92
+[2026-01-26T20:46:13.501Z]        30 |     +0.0% |       0 |       0 |             0 |        82
+[2026-01-26T20:46:13.501Z]        40 |     +0.0% |       0 |       0 |             0 |        72
+[2026-01-26T20:46:13.501Z]        50 |     +0.0% |       0 |       0 |             0 |        62
+[2026-01-26T20:46:13.501Z]        60 |     +0.0% |       0 |       0 |             0 |        52
+[2026-01-26T20:46:13.501Z]        70 |     +0.0% |       0 |       0 |             0 |        42
+[2026-01-26T20:46:13.501Z]        80 |     +0.0% |       0 |       0 |             0 |        32
+[2026-01-26T20:46:13.501Z]        90 |     +0.0% |       0 |       0 |             0 |        22
+[2026-01-26T20:46:13.501Z]       100 |     +0.0% |       0 |       0 |             0 |        12
+[2026-01-26T20:46:13.501Z]       110 |     +0.0% |       0 |       0 |             0 |         2
+[2026-01-26T20:46:13.501Z]     final |     +0.0% |       0 |       0 |             0 |         0
+[2026-01-26T20:46:13.501Z] ---------------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] global_route -start_incremental
+[2026-01-26T20:46:13.501Z] detailed_placement
+[2026-01-26T20:46:13.501Z] Placement Analysis
+[2026-01-26T20:46:13.501Z] ---------------------------------
+[2026-01-26T20:46:13.501Z] total displacement          0.0 u
+[2026-01-26T20:46:13.501Z] average displacement        0.0 u
+[2026-01-26T20:46:13.501Z] max displacement            0.0 u
+[2026-01-26T20:46:13.501Z] original HPWL             170.3 u
+[2026-01-26T20:46:13.501Z] legalized HPWL            170.3 u
+[2026-01-26T20:46:13.501Z] delta HPWL                    0 %
+[2026-01-26T20:46:13.501Z] global_route -end_incremental -congestion_report_file ./reports/asap7/aes-block_aes_rcon/base/congestion_post_repair_design.rpt
+[2026-01-26T20:46:13.501Z] Repair setup and hold violations...
+[2026-01-26T20:46:13.501Z] estimate_parasitics -global_routing
+[2026-01-26T20:46:13.501Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[2026-01-26T20:46:13.501Z] global_route -start_incremental
+[2026-01-26T20:46:13.501Z] detailed_placement
+[2026-01-26T20:46:13.501Z] Placement Analysis
+[2026-01-26T20:46:13.501Z] ---------------------------------
+[2026-01-26T20:46:13.501Z] total displacement          0.0 u
+[2026-01-26T20:46:13.501Z] average displacement        0.0 u
+[2026-01-26T20:46:13.501Z] max displacement            0.0 u
+[2026-01-26T20:46:13.501Z] original HPWL             170.3 u
+[2026-01-26T20:46:13.501Z] legalized HPWL            170.3 u
+[2026-01-26T20:46:13.501Z] delta HPWL                    0 %
+[2026-01-26T20:46:13.501Z] global_route -end_incremental -congestion_report_file ./reports/asap7/aes-block_aes_rcon/base/congestion_post_repair_timing.rpt
+[2026-01-26T20:46:13.501Z] global_route -start_incremental
+[2026-01-26T20:46:13.501Z] global_route -end_incremental -congestion_report_file ./reports/asap7/aes-block_aes_rcon/base/congestion_post_recover_power.rpt
+[2026-01-26T20:46:13.501Z] Repair antennas...
+[2026-01-26T20:46:13.501Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:46:13.501Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:46:13.501Z] Estimate parasitics...
+[2026-01-26T20:46:13.501Z] estimate_parasitics -global_routing
+[2026-01-26T20:46:13.501Z] Report metrics stage 5, global route...
+[2026-01-26T20:46:13.501Z] ==========================================================================
+[2026-01-26T20:46:13.501Z] global route report_design_area
+[2026-01-26T20:46:13.501Z] --------------------------------------------------------------------------
+[2026-01-26T20:46:13.501Z] Design area 11 um^2 44% utilization.
+[2026-01-26T20:46:13.501Z] write_db ./results/asap7/aes-block_aes_rcon/base/5_1_grt.odb
+[2026-01-26T20:46:13.501Z] write_sdc -no_timestamp ./results/asap7/aes-block_aes_rcon/base/5_1_grt.sdc
+[2026-01-26T20:46:13.501Z] Elapsed time: 0:02.02[h:]min:sec. CPU time: user 6.05 sys 0.22 (310%). Peak memory: 300820KB.
+[2026-01-26T20:46:13.501Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:13.501Z] 5_1_grt                            2            293 9f37af412f861e1c7863
+[2026-01-26T20:46:14.081Z] Running detail_route.tcl, stage 5_2_route
+[2026-01-26T20:46:15.243Z] detailed_route -output_drc ./reports/asap7/aes-block_aes_rcon/base/5_route_drc.rpt -output_maze ./results/asap7/aes-block_aes_rcon/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5
+[2026-01-26T20:46:15.243Z] Design:                   aes_rcon
+[2026-01-26T20:46:15.243Z]   Layer V2
+[2026-01-26T20:46:15.243Z]   Layer V3
+[2026-01-26T20:46:15.243Z]   Layer V4
+[2026-01-26T20:46:15.243Z]   Layer V5
+[2026-01-26T20:46:15.243Z]   Layer V6
+[2026-01-26T20:46:15.243Z]   Layer V7
+[2026-01-26T20:46:15.243Z]   Layer V8
+[2026-01-26T20:46:15.243Z]   Layer V9
+[2026-01-26T20:46:15.824Z] [INFO DRT-0195] Start 0th optimization iteration.
+[2026-01-26T20:46:17.565Z] [INFO DRT-0199]   Number of violations = 6.
+[2026-01-26T20:46:17.565Z] Viol/Layer          M1     M2
+[2026-01-26T20:46:17.565Z] Metal Spacing        3      0
+[2026-01-26T20:46:17.565Z] eolKeepOut           0      3
+[2026-01-26T20:46:17.565Z] Total wire length = 180 um.
+[2026-01-26T20:46:17.565Z] Total number of vias = 649.
+[2026-01-26T20:46:17.565Z] Up-via summary (total 649):
+[2026-01-26T20:46:17.565Z] --------------
+[2026-01-26T20:46:17.565Z]  Active      0
+[2026-01-26T20:46:17.565Z]      M1    263
+[2026-01-26T20:46:17.565Z]      M2    314
+[2026-01-26T20:46:17.565Z]      M3     49
+[2026-01-26T20:46:17.565Z]      M4     23
+[2026-01-26T20:46:17.565Z]      M5      0
+[2026-01-26T20:46:17.565Z]      M6      0
+[2026-01-26T20:46:17.565Z]      M7      0
+[2026-01-26T20:46:17.565Z]      M8      0
+[2026-01-26T20:46:17.565Z]      M9      0
+[2026-01-26T20:46:17.565Z] --------------
+[2026-01-26T20:46:17.565Z]        649
+[2026-01-26T20:46:17.565Z] [INFO DRT-0195] Start 1st optimization iteration.
+[2026-01-26T20:46:19.310Z] [INFO DRT-0199]   Number of violations = 0.
+[2026-01-26T20:46:19.310Z] Total wire length = 176 um.
+[2026-01-26T20:46:19.310Z] Total number of vias = 612.
+[2026-01-26T20:46:19.310Z] Up-via summary (total 612):
+[2026-01-26T20:46:19.310Z] --------------
+[2026-01-26T20:46:19.310Z]  Active      0
+[2026-01-26T20:46:19.310Z]      M1    262
+[2026-01-26T20:46:19.310Z]      M2    287
+[2026-01-26T20:46:19.310Z]      M3     40
+[2026-01-26T20:46:19.310Z]      M4     23
+[2026-01-26T20:46:19.310Z]      M5      0
+[2026-01-26T20:46:19.310Z]      M6      0
+[2026-01-26T20:46:19.310Z]      M7      0
+[2026-01-26T20:46:19.310Z]      M8      0
+[2026-01-26T20:46:19.310Z]      M9      0
+[2026-01-26T20:46:19.310Z] --------------
+[2026-01-26T20:46:19.310Z]        612
+[2026-01-26T20:46:19.310Z] Total wire length = 176 um.
+[2026-01-26T20:46:19.310Z] Total number of vias = 612.
+[2026-01-26T20:46:19.310Z] Up-via summary (total 612):
+[2026-01-26T20:46:19.310Z] --------------
+[2026-01-26T20:46:19.310Z]  Active      0
+[2026-01-26T20:46:19.310Z]      M1    262
+[2026-01-26T20:46:19.310Z]      M2    287
+[2026-01-26T20:46:19.310Z]      M3     40
+[2026-01-26T20:46:19.310Z]      M4     23
+[2026-01-26T20:46:19.310Z]      M5      0
+[2026-01-26T20:46:19.310Z]      M6      0
+[2026-01-26T20:46:19.310Z]      M7      0
+[2026-01-26T20:46:19.310Z]      M8      0
+[2026-01-26T20:46:19.310Z]      M9      0
+[2026-01-26T20:46:19.310Z] --------------
+[2026-01-26T20:46:19.310Z]        612
+[2026-01-26T20:46:19.310Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:46:19.310Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:46:19.310Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:46:19.310Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:46:19.310Z] write_db ./results/asap7/aes-block_aes_rcon/base/5_2_route.odb
+[2026-01-26T20:46:19.310Z] Elapsed time: 0:05.46[h:]min:sec. CPU time: user 14.50 sys 0.65 (277%). Peak memory: 1080444KB.
+[2026-01-26T20:46:19.310Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:19.310Z] 5_2_route                          5           1055 d7f80d932f35539471d8
+[2026-01-26T20:46:19.890Z] Running fillcell.tcl, stage 5_3_fillcell
+[2026-01-26T20:46:21.050Z] filler_placement "FILLERxp5_ASAP7_75t_R FILLER_ASAP7_75t_R DECAPx1_ASAP7_75t_R DECAPx2_ASAP7_75t_R DECAPx4_ASAP7_75t_R DECAPx6_ASAP7_75t_R DECAPx10_ASAP7_75t_R"
+[2026-01-26T20:46:21.050Z] write_db ./results/asap7/aes-block_aes_rcon/base/5_3_fillcell.odb
+[2026-01-26T20:46:21.050Z] Elapsed time: 0:01.40[h:]min:sec. CPU time: user 1.31 sys 0.09 (100%). Peak memory: 196708KB.
+[2026-01-26T20:46:21.050Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:46:21.050Z] 5_3_fillcell                       1            192 35bcba4bcb517273d2ac

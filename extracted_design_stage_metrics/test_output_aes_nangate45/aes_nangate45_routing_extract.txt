@@ -1,0 +1,229 @@
+[2026-01-26T20:51:44.187Z] Running global_route.tcl, stage 5_1_grt
+[2026-01-26T20:51:44.783Z] pin_access
+[2026-01-26T20:51:44.783Z] Design:                   aes_cipher_top
+[2026-01-26T20:51:48.648Z] global_route -congestion_report_file ./reports/nangate45/aes/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[2026-01-26T20:51:49.235Z]           Routing      Original      Derated      Resource
+[2026-01-26T20:51:49.235Z] Layer     Direction    Resources     Resources    Reduction (%)
+[2026-01-26T20:51:49.235Z] ---------------------------------------------------------------
+[2026-01-26T20:51:49.235Z] metal1     Horizontal          0             0          0.00%
+[2026-01-26T20:51:49.235Z] metal2     Vertical       110740         51994          53.05%
+[2026-01-26T20:51:49.235Z] metal3     Horizontal     153162         75099          50.97%
+[2026-01-26T20:51:49.235Z] metal4     Vertical        75172         53208          29.22%
+[2026-01-26T20:51:49.235Z] metal5     Horizontal      76592         54062          29.42%
+[2026-01-26T20:51:49.235Z] metal6     Vertical        76555         54079          29.36%
+[2026-01-26T20:51:49.236Z] metal7     Horizontal      23926         16925          29.26%
+[2026-01-26T20:51:49.236Z] metal8     Vertical        26918         19350          28.12%
+[2026-01-26T20:51:49.236Z] metal9     Horizontal      13502          7482          44.59%
+[2026-01-26T20:51:49.236Z] metal10    Vertical        13502          7482          44.59%
+[2026-01-26T20:51:49.236Z] ---------------------------------------------------------------
+[2026-01-26T20:51:49.823Z] Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+[2026-01-26T20:51:49.823Z] ---------------------------------------------------------------------------------------
+[2026-01-26T20:51:49.823Z] metal1               0             0            0.00%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal2           51994         24948           47.98%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal3           75099         31714           42.23%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal4           53208         13696           25.74%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal5           54062          8550           15.82%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal6           54079          3918            7.24%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal7           16925           243            1.44%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal8           19350             1            0.01%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal9            7482            12            0.16%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] metal10           7482             0            0.00%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] ---------------------------------------------------------------------------------------
+[2026-01-26T20:51:49.823Z] Total           339681         83082           24.46%             0 /  0 /  0
+[2026-01-26T20:51:49.823Z] [INFO GRT-0018] Total wirelength: 358299 um
+[2026-01-26T20:51:49.823Z] estimate_parasitics -global_routing
+[2026-01-26T20:51:50.410Z] global_route -start_incremental
+[2026-01-26T20:51:50.410Z] global_route -end_incremental -congestion_report_file ./reports/nangate45/aes/base/congestion_post_recover_power.rpt
+[2026-01-26T20:51:50.999Z] Repair antennas...
+[2026-01-26T20:51:51.585Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:51:51.585Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:51:51.585Z] Estimate parasitics...
+[2026-01-26T20:51:51.585Z] estimate_parasitics -global_routing
+[2026-01-26T20:51:52.171Z] Report metrics stage 5, global route...
+[2026-01-26T20:51:56.671Z] ==========================================================================
+[2026-01-26T20:51:56.671Z] global route report_design_area
+[2026-01-26T20:51:56.671Z] --------------------------------------------------------------------------
+[2026-01-26T20:51:56.671Z] Design area 20420 um^2 39% utilization.
+[2026-01-26T20:51:56.671Z] write_db ./results/nangate45/aes/base/5_1_grt.odb
+[2026-01-26T20:51:56.671Z] write_sdc -no_timestamp ./results/nangate45/aes/base/5_1_grt.sdc
+[2026-01-26T20:51:56.671Z] Elapsed time: 0:12.24[h:]min:sec. CPU time: user 133.16 sys 7.40 (1147%). Peak memory: 491296KB.
+[2026-01-26T20:51:56.671Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:51:56.671Z] 5_1_grt                           12            479 ba5cb49b0fe3d4539542
+[2026-01-26T20:51:57.258Z] Running detail_route.tcl, stage 5_2_route
+[2026-01-26T20:51:57.846Z] detailed_route -output_drc ./reports/nangate45/aes/base/5_route_drc.rpt -output_maze ./results/nangate45/aes/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5
+[2026-01-26T20:51:57.846Z] Design:                   aes_cipher_top
+[2026-01-26T20:52:06.361Z] [INFO DRT-0195] Start 0th optimization iteration.
+[2026-01-26T20:52:32.239Z] [INFO DRT-0199]   Number of violations = 6281.
+[2026-01-26T20:52:32.239Z] Viol/Layer      metal1   via1 metal2   via2 metal3   via3 metal4   via4 metal5 metal7
+[2026-01-26T20:52:32.239Z] Cut Spacing          0      0      0     18      0      0      0     11      0      0
+[2026-01-26T20:52:32.239Z] Metal Spacing        0      0    381      0     38      0      1      0      1      2
+[2026-01-26T20:52:32.239Z] Recheck             19      0   1048      0    630      0     54      0     27      1
+[2026-01-26T20:52:32.239Z] Short                0     13   3453     16    542      1     19      0      2      4
+[2026-01-26T20:52:32.239Z] Total wire length = 247799 um.
+[2026-01-26T20:52:32.239Z] Total number of vias = 128210.
+[2026-01-26T20:52:32.239Z] Up-via summary (total 128210):
+[2026-01-26T20:52:32.239Z] -----------------
+[2026-01-26T20:52:32.239Z]  active         0
+[2026-01-26T20:52:32.239Z]  metal1     57178
+[2026-01-26T20:52:32.239Z]  metal2     59007
+[2026-01-26T20:52:32.239Z]  metal3      8567
+[2026-01-26T20:52:32.239Z]  metal4      2746
+[2026-01-26T20:52:32.239Z]  metal5       680
+[2026-01-26T20:52:32.239Z]  metal6        28
+[2026-01-26T20:52:32.239Z]  metal7         2
+[2026-01-26T20:52:32.239Z]  metal8         2
+[2026-01-26T20:52:32.239Z]  metal9         0
+[2026-01-26T20:52:32.239Z] -----------------
+[2026-01-26T20:52:32.239Z]        128210
+[2026-01-26T20:52:32.239Z] [INFO DRT-0195] Start 1st optimization iteration.
+[2026-01-26T20:52:54.917Z] [INFO DRT-0199]   Number of violations = 2523.
+[2026-01-26T20:52:54.917Z] Viol/Layer        via1 metal2   via2 metal3   via4
+[2026-01-26T20:52:54.917Z] Cut Spacing          5      0      6      0      1
+[2026-01-26T20:52:54.917Z] Metal Spacing        0    430      0     24      0
+[2026-01-26T20:52:54.917Z] Short                0   1880      0    177      0
+[2026-01-26T20:52:54.917Z] Total wire length = 245771 um.
+[2026-01-26T20:52:54.917Z] Total number of vias = 127131.
+[2026-01-26T20:52:54.917Z] Up-via summary (total 127131):
+[2026-01-26T20:52:54.917Z] -----------------
+[2026-01-26T20:52:54.917Z]  active         0
+[2026-01-26T20:52:54.917Z]  metal1     57179
+[2026-01-26T20:52:54.917Z]  metal2     58013
+[2026-01-26T20:52:54.917Z]  metal3      8587
+[2026-01-26T20:52:54.917Z]  metal4      2653
+[2026-01-26T20:52:54.917Z]  metal5       667
+[2026-01-26T20:52:54.917Z]  metal6        28
+[2026-01-26T20:52:54.917Z]  metal7         2
+[2026-01-26T20:52:54.917Z]  metal8         2
+[2026-01-26T20:52:54.917Z]  metal9         0
+[2026-01-26T20:52:54.917Z] -----------------
+[2026-01-26T20:52:54.917Z]        127131
+[2026-01-26T20:52:54.917Z] [INFO DRT-0195] Start 2nd optimization iteration.
+[2026-01-26T20:53:17.189Z] [INFO DRT-0199]   Number of violations = 2324.
+[2026-01-26T20:53:17.189Z] Viol/Layer      metal1   via1 metal2   via2 metal3 metal4   via4
+[2026-01-26T20:53:17.189Z] Cut Spacing          0      4      0      5      0      0      2
+[2026-01-26T20:53:17.189Z] Metal Spacing        1      0    415      0     20      0      0
+[2026-01-26T20:53:17.189Z] Short                0      0   1715      0    161      1      0
+[2026-01-26T20:53:17.189Z] Total wire length = 245356 um.
+[2026-01-26T20:53:17.189Z] Total number of vias = 126902.
+[2026-01-26T20:53:17.189Z] Up-via summary (total 126902):
+[2026-01-26T20:53:17.189Z] -----------------
+[2026-01-26T20:53:17.189Z]  active         0
+[2026-01-26T20:53:17.189Z]  metal1     57175
+[2026-01-26T20:53:17.189Z]  metal2     57895
+[2026-01-26T20:53:17.189Z]  metal3      8513
+[2026-01-26T20:53:17.189Z]  metal4      2625
+[2026-01-26T20:53:17.189Z]  metal5       662
+[2026-01-26T20:53:17.189Z]  metal6        28
+[2026-01-26T20:53:17.189Z]  metal7         2
+[2026-01-26T20:53:17.189Z]  metal8         2
+[2026-01-26T20:53:17.189Z]  metal9         0
+[2026-01-26T20:53:17.189Z] -----------------
+[2026-01-26T20:53:17.189Z]        126902
+[2026-01-26T20:53:17.189Z] [INFO DRT-0195] Start 3rd optimization iteration.
+[2026-01-26T20:53:34.646Z] [INFO DRT-0199]   Number of violations = 135.
+[2026-01-26T20:53:34.646Z] Viol/Layer      metal2 metal3
+[2026-01-26T20:53:34.646Z] Metal Spacing       30      5
+[2026-01-26T20:53:34.646Z] Short               71     29
+[2026-01-26T20:53:34.646Z] Total wire length = 245117 um.
+[2026-01-26T20:53:34.646Z] Total number of vias = 128986.
+[2026-01-26T20:53:34.646Z] Up-via summary (total 128986):
+[2026-01-26T20:53:34.646Z] -----------------
+[2026-01-26T20:53:34.646Z]  active         0
+[2026-01-26T20:53:34.646Z]  metal1     57179
+[2026-01-26T20:53:34.646Z]  metal2     58696
+[2026-01-26T20:53:34.646Z]  metal3      9779
+[2026-01-26T20:53:34.646Z]  metal4      2634
+[2026-01-26T20:53:34.646Z]  metal5       666
+[2026-01-26T20:53:34.646Z]  metal6        28
+[2026-01-26T20:53:34.646Z]  metal7         2
+[2026-01-26T20:53:34.646Z]  metal8         2
+[2026-01-26T20:53:34.646Z]  metal9         0
+[2026-01-26T20:53:34.646Z] -----------------
+[2026-01-26T20:53:34.646Z]        128986
+[2026-01-26T20:53:34.646Z] [INFO DRT-0195] Start 4th optimization iteration.
+[2026-01-26T20:53:37.583Z] [INFO DRT-0199]   Number of violations = 2.
+[2026-01-26T20:53:37.583Z] Viol/Layer      metal2
+[2026-01-26T20:53:37.583Z] Short                2
+[2026-01-26T20:53:37.583Z] Total wire length = 245114 um.
+[2026-01-26T20:53:37.583Z] Total number of vias = 128995.
+[2026-01-26T20:53:37.583Z] Up-via summary (total 128995):
+[2026-01-26T20:53:37.583Z] -----------------
+[2026-01-26T20:53:37.583Z]  active         0
+[2026-01-26T20:53:37.583Z]  metal1     57179
+[2026-01-26T20:53:37.583Z]  metal2     58691
+[2026-01-26T20:53:37.583Z]  metal3      9801
+[2026-01-26T20:53:37.583Z]  metal4      2628
+[2026-01-26T20:53:37.583Z]  metal5       664
+[2026-01-26T20:53:37.583Z]  metal6        28
+[2026-01-26T20:53:37.583Z]  metal7         2
+[2026-01-26T20:53:37.583Z]  metal8         2
+[2026-01-26T20:53:37.583Z]  metal9         0
+[2026-01-26T20:53:37.583Z] -----------------
+[2026-01-26T20:53:37.583Z]        128995
+[2026-01-26T20:53:37.583Z] [INFO DRT-0199]   Number of violations = 2.
+[2026-01-26T20:53:37.583Z] Viol/Layer      metal2
+[2026-01-26T20:53:37.583Z] Short                2
+[2026-01-26T20:53:37.583Z] Total wire length = 245114 um.
+[2026-01-26T20:53:37.583Z] Total number of vias = 128995.
+[2026-01-26T20:53:37.583Z] Up-via summary (total 128995):
+[2026-01-26T20:53:37.583Z] -----------------
+[2026-01-26T20:53:37.583Z]  active         0
+[2026-01-26T20:53:37.583Z]  metal1     57179
+[2026-01-26T20:53:37.583Z]  metal2     58691
+[2026-01-26T20:53:37.583Z]  metal3      9801
+[2026-01-26T20:53:37.583Z]  metal4      2628
+[2026-01-26T20:53:37.583Z]  metal5       664
+[2026-01-26T20:53:37.583Z]  metal6        28
+[2026-01-26T20:53:37.583Z]  metal7         2
+[2026-01-26T20:53:37.583Z]  metal8         2
+[2026-01-26T20:53:37.583Z]  metal9         0
+[2026-01-26T20:53:37.583Z] -----------------
+[2026-01-26T20:53:37.583Z]        128995
+[2026-01-26T20:53:39.349Z] [INFO DRT-0199]   Number of violations = 0.
+[2026-01-26T20:53:39.349Z] Total wire length = 245113 um.
+[2026-01-26T20:53:39.349Z] Total number of vias = 128995.
+[2026-01-26T20:53:39.349Z] Up-via summary (total 128995):
+[2026-01-26T20:53:39.349Z] -----------------
+[2026-01-26T20:53:39.349Z]  active         0
+[2026-01-26T20:53:39.349Z]  metal1     57179
+[2026-01-26T20:53:39.349Z]  metal2     58691
+[2026-01-26T20:53:39.349Z]  metal3      9801
+[2026-01-26T20:53:39.349Z]  metal4      2628
+[2026-01-26T20:53:39.349Z]  metal5       664
+[2026-01-26T20:53:39.349Z]  metal6        28
+[2026-01-26T20:53:39.349Z]  metal7         2
+[2026-01-26T20:53:39.349Z]  metal8         2
+[2026-01-26T20:53:39.349Z]  metal9         0
+[2026-01-26T20:53:39.349Z] -----------------
+[2026-01-26T20:53:39.349Z]        128995
+[2026-01-26T20:53:39.349Z] Total wire length = 245113 um.
+[2026-01-26T20:53:39.349Z] Total number of vias = 128995.
+[2026-01-26T20:53:39.349Z] Up-via summary (total 128995):
+[2026-01-26T20:53:39.349Z] -----------------
+[2026-01-26T20:53:39.349Z]  active         0
+[2026-01-26T20:53:39.349Z]  metal1     57179
+[2026-01-26T20:53:39.349Z]  metal2     58691
+[2026-01-26T20:53:39.349Z]  metal3      9801
+[2026-01-26T20:53:39.349Z]  metal4      2628
+[2026-01-26T20:53:39.349Z]  metal5       664
+[2026-01-26T20:53:39.349Z]  metal6        28
+[2026-01-26T20:53:39.349Z]  metal7         2
+[2026-01-26T20:53:39.349Z]  metal8         2
+[2026-01-26T20:53:39.349Z]  metal9         0
+[2026-01-26T20:53:39.349Z] -----------------
+[2026-01-26T20:53:39.349Z]        128995
+[2026-01-26T20:53:39.349Z] Took 102 seconds: detailed_route -output_drc ./reports/nangate45/aes/base/5_route_drc.rpt -output_maze ./results/nangate45/aes/base/maze.log -droute_end_iter 64 -verbose 1 -drc_report_iter_step 5
+[2026-01-26T20:53:39.946Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:53:39.946Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:53:40.534Z] [INFO ANT-0002] Found 0 net violations.
+[2026-01-26T20:53:40.534Z] [INFO ANT-0001] Found 0 pin violations.
+[2026-01-26T20:53:40.534Z] write_db ./results/nangate45/aes/base/5_2_route.odb
+[2026-01-26T20:53:41.121Z] Elapsed time: 1:43.92[h:]min:sec. CPU time: user 1147.11 sys 2.44 (1106%). Peak memory: 2780208KB.
+[2026-01-26T20:53:41.121Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:53:41.121Z] 5_2_route                        103           2715 8a8c756452745289c4ac
+[2026-01-26T20:53:41.121Z] Running fillcell.tcl, stage 5_3_fillcell
+[2026-01-26T20:53:41.708Z] filler_placement "FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32"
+[2026-01-26T20:53:42.295Z] write_db ./results/nangate45/aes/base/5_3_fillcell.odb
+[2026-01-26T20:53:42.295Z] Elapsed time: 0:00.76[h:]min:sec. CPU time: user 0.64 sys 0.12 (100%). Peak memory: 167296KB.
+[2026-01-26T20:53:42.295Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:53:42.295Z] 5_3_fillcell                       0            163 345c385c940a41976fc5

@@ -1,0 +1,89 @@
+Log file: ./design_artifacts/ibex_sky130hd/ibex_sky130hd.txt
+Total log lines: 3847
+Uncovered line count: 84
+Gap ranges (0-based, end exclusive): [(0, 84)]
+--------------------------------------------------------------------------------
+L1: [2026-01-26T20:43:03.881Z] + docker inspect -f . openroad/flow-ubuntu22.04-dev:e656b3
+L2: [2026-01-26T20:43:03.881Z] 
+L3: [2026-01-26T20:43:03.881Z] error: no such object: openroad/flow-ubuntu22.04-dev:e656b3
+L4: [2026-01-26T20:44:09.524Z] + docker pull openroad/flow-ubuntu22.04-dev:e656b3
+L5: [2026-01-26T20:44:10.109Z] e656b3: Pulling from openroad/flow-ubuntu22.04-dev
+L6: [2026-01-26T20:44:10.696Z] 0d7066ea17ad: Pulling fs layer
+L7: [2026-01-26T20:44:10.696Z] 09e3a651a419: Pulling fs layer
+L8: [2026-01-26T20:44:10.696Z] 6f4ebca3e823: Pulling fs layer
+L9: [2026-01-26T20:44:10.696Z] 37854d3794f9: Pulling fs layer
+L10: [2026-01-26T20:44:10.696Z] 4d823595d30b: Pulling fs layer
+L11: [2026-01-26T20:44:10.696Z] d17520e33d2d: Pulling fs layer
+L12: [2026-01-26T20:44:10.696Z] 18da84cd7e7e: Pulling fs layer
+L13: [2026-01-26T20:44:10.696Z] b1770a8f3314: Download complete
+L14: [2026-01-26T20:44:10.696Z] d17520e33d2d: Download complete
+L15: [2026-01-26T20:44:10.696Z] 4d823595d30b: Download complete
+L16: [2026-01-26T20:44:10.696Z] 0d7066ea17ad: Download complete
+L17: [2026-01-26T20:44:10.696Z] 09e3a651a419: Download complete
+L18: [2026-01-26T20:44:10.696Z] 18da84cd7e7e: Download complete
+L19: [2026-01-26T20:44:12.610Z] 6f4ebca3e823: Download complete
+L20: [2026-01-26T20:44:13.196Z] d17520e33d2d: Pull complete
+L21: [2026-01-26T20:44:13.196Z] 4d823595d30b: Pull complete
+L22: [2026-01-26T20:44:13.196Z] 09e3a651a419: Pull complete
+L23: [2026-01-26T20:44:13.196Z] 18da84cd7e7e: Pull complete
+L24: [2026-01-26T20:44:13.196Z] 6f4ebca3e823: Pull complete
+L25: [2026-01-26T20:44:36.172Z] 37854d3794f9: Download complete
+L26: [2026-01-26T20:44:52.623Z] 37854d3794f9: Pull complete
+L27: [2026-01-26T20:44:52.623Z] 0d7066ea17ad: Pull complete
+L28: [2026-01-26T20:44:52.623Z] Digest: sha256:7e155fab53594c9122be9cc1888ab7fa9a65a5c4858281bcbc48f6ea12bfd72b
+L29: [2026-01-26T20:44:52.623Z] Status: Downloaded newer image for openroad/flow-ubuntu22.04-dev:e656b3
+L30: [2026-01-26T20:44:52.623Z] docker.io/openroad/flow-ubuntu22.04-dev:e656b3
+L31: [2026-01-26T20:48:03.682Z] + git config --system --add safe.directory *
+L32: [2026-01-26T20:49:51.137Z] + nice flow/test/test_helper.sh ibex sky130hd
+L33: [2026-01-26T20:49:51.137Z] +++ readlink -f flow/test/test_helper.sh
+L34: [2026-01-26T20:49:51.137Z] ++ dirname /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/test_helper.sh
+L35: [2026-01-26T20:49:51.137Z] + cd /tmp/workspace/nROAD-flow-scripts-Public_master/flow/test/../
+L36: [2026-01-26T20:49:51.137Z] + DESIGN_NAME=ibex
+L37: [2026-01-26T20:49:51.137Z] + PLATFORM=sky130hd
+L38: [2026-01-26T20:49:51.137Z] + CONFIG_MK=config.mk
+L39: [2026-01-26T20:49:51.137Z] + '[' 2 -ge 4 ']'
+L40: [2026-01-26T20:49:51.137Z] + TARGET='finish metadata'
+L41: [2026-01-26T20:49:51.137Z] + DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk
+L42: [2026-01-26T20:49:51.137Z] + LOG_FILE=./logs/sky130hd/ibex.log
+L43: [2026-01-26T20:49:51.137Z] + mkdir -p ./logs/sky130hd
+L44: [2026-01-26T20:49:51.137Z] + __make='make DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk'
+L45: [2026-01-26T20:49:51.137Z] + '[' -n '' ']'
+L46: [2026-01-26T20:49:51.137Z] ++ dirname ./logs/sky130hd/ibex.log
+L47: [2026-01-26T20:49:51.137Z] + mkdir -p ./logs/sky130hd
+L48: [2026-01-26T20:49:51.137Z] + make DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk clean_all clean_metadata
+L49: [2026-01-26T20:49:51.137Z] + tee ./logs/sky130hd/ibex.log
+L50: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/1_* ./results/sky130hd/ibex/base/mem*.json
+L51: [2026-01-26T20:49:51.137Z] rm -f ./reports/sky130hd/ibex/base/synth_*
+L52: [2026-01-26T20:49:51.137Z] rm -f ./logs/sky130hd/ibex/base/1_*
+L53: [2026-01-26T20:49:51.137Z] rm -f 
+L54: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/clock_period.txt
+L55: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/2_*floorplan*.odb ./results/sky130hd/ibex/base/2_floorplan.sdc ./results/sky130hd/ibex/base/2_*.v ./results/sky130hd/ibex/base/2_*.def
+L56: [2026-01-26T20:49:51.137Z] rm -f ./reports/sky130hd/ibex/base/2_*
+L57: [2026-01-26T20:49:51.137Z] rm -f ./logs/sky130hd/ibex/base/2_*
+L58: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/3_*place*.odb
+L59: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/3_place.sdc
+L60: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/3_*.def ./results/sky130hd/ibex/base/3_*.v
+L61: [2026-01-26T20:49:51.137Z] rm -f ./reports/sky130hd/ibex/base/3_*
+L62: [2026-01-26T20:49:51.137Z] rm -f ./logs/sky130hd/ibex/base/3_*
+L63: [2026-01-26T20:49:51.137Z] rm -rf ./results/sky130hd/ibex/base/4_*cts*.odb ./results/sky130hd/ibex/base/4_cts.sdc ./results/sky130hd/ibex/base/4_*.v ./results/sky130hd/ibex/base/4_*.def
+L64: [2026-01-26T20:49:51.137Z] rm -f  ./reports/sky130hd/ibex/base/4_*
+L65: [2026-01-26T20:49:51.137Z] rm -rf ./logs/sky130hd/ibex/base/4_*
+L66: [2026-01-26T20:49:51.137Z] rm -rf ./results/sky130hd/ibex/base/route.guide ./results/sky130hd/ibex/base/output_guide.mod ./results/sky130hd/ibex/base/updated_clks.sdc
+L67: [2026-01-26T20:49:51.137Z] rm -rf ./results/sky130hd/ibex/base/5_*.odb ./results/sky130hd/ibex/base/5_route.sdc ./results/sky130hd/ibex/base/5_*.def ./results/sky130hd/ibex/base/5_*.v
+L68: [2026-01-26T20:49:51.137Z] rm -f  ./reports/sky130hd/ibex/base/5_*
+L69: [2026-01-26T20:49:51.137Z] rm -f  ./logs/sky130hd/ibex/base/5_*
+L70: [2026-01-26T20:49:51.137Z] rm -rf ./results/sky130hd/ibex/base/6_*.gds ./results/sky130hd/ibex/base/6_*.oas ./results/sky130hd/ibex/base/6_*.odb ./results/sky130hd/ibex/base/6_*.v ./results/sky130hd/ibex/base/6_*.def ./results/sky130hd/ibex/base/6_*.sdc ./results/sky130hd/ibex/base/6_*.spef
+L71: [2026-01-26T20:49:51.137Z] rm -rf ./reports/sky130hd/ibex/base/6_*.rpt
+L72: [2026-01-26T20:49:51.137Z] rm -f  ./logs/sky130hd/ibex/base/6_*
+L73: [2026-01-26T20:49:51.137Z] rm -f ./reports/sky130hd/ibex/base/design-dir.txt
+L74: [2026-01-26T20:49:51.137Z] rm -f ./reports/sky130hd/ibex/base/metadata*.*
+L75: [2026-01-26T20:49:51.137Z] rm -f ./results/sky130hd/ibex/base/ibex_core.lib ./results/sky130hd/ibex/base/ibex_core.lef
+L76: [2026-01-26T20:49:51.137Z] rm -rf ./objects/sky130hd/ibex/base
+L77: [2026-01-26T20:49:51.137Z] make: Nothing to be done for 'clean_metadata'.
+L78: [2026-01-26T20:49:51.137Z] + set +e
+L79: [2026-01-26T20:49:51.137Z] + eval make DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk 'finish metadata'
+L80: [2026-01-26T20:49:51.137Z] + tee -a ./logs/sky130hd/ibex.log
+L81: [2026-01-26T20:49:51.137Z] ++ make DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk finish metadata
+L82: [2026-01-26T20:49:51.759Z] mkdir -p results/sky130hd/ibex/base/
+L83: [2026-01-26T20:49:51.759Z] echo 10.0 > results/sky130hd/ibex/base/clock_period.txt
+L84: [2026-01-26T20:49:51.759Z] /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth.sh /tmp/workspace/nROAD-flow-scripts-Public_master/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/ibex/base/1_1_yosys_canonicalize.log

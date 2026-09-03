@@ -1,0 +1,153 @@
+{
+  "stage": "placement",
+  "substages": {
+    "3_1_place_gp_skip_io": {
+      "hpwl": 49910.16,
+      "area": 4181.544,
+      "utilization": 43.899,
+      "density": 43.899,
+      "overflow": 0.0993,
+      "optimization_process": [
+        {
+          "type": "global_placement",
+          "command": "global_placement -skip_io -density 0.65 -pad_left 0 -pad_right 0",
+          "iterations_count": 420,
+          "start_metrics": {
+            "overflow": 0.9933,
+            "hpwl": 11135.66
+          },
+          "end_metrics": {
+            "overflow": 0.0993,
+            "hpwl": 49910.16
+          },
+          "results": {
+            "movable_instances": 15690,
+            "fixed_instances": 719,
+            "num_nets": 16227,
+            "num_pins": 53068,
+            "core_area_um2": 4181.544,
+            "fixed_instances_area_um2": 20.966,
+            "movable_instances_area_um2": 1826.455,
+            "standard_cells_area_um2": 1826.455,
+            "utilization": 43.899,
+            "target_density": 65.0,
+            "final_overflow": 0.0993,
+            "final_hpwl_um": 49910.16
+          }
+        }
+      ],
+      "elapsed_s": 5,
+      "memory_mb": 237,
+      "sha1sum": "fc0e2e1ea69a2af1d514"
+    },
+    "3_2_place_iop": {
+      "optimization_process": [
+        {
+          "type": "io_placement",
+          "command": "place_pins -hor_layers M4 -ver_layers M5",
+          "results": {
+            "io_nets_hpwl_um": 10264.77
+          }
+        }
+      ],
+      "elapsed_s": 1,
+      "memory_mb": 218,
+      "sha1sum": "471f724489a426737e2b"
+    },
+    "3_3_place_gp": {
+      "hpwl": 52818.89,
+      "area": 4181.544,
+      "utilization": 41.998,
+      "density": 41.998,
+      "overflow": 0.0988,
+      "optimization_process": [
+        {
+          "type": "buffer_removal",
+          "results": {
+            "removed_buffers": 1126
+          }
+        },
+        {
+          "type": "buffer_insertion",
+          "results": {
+            "input_buffers": 258,
+            "buffer_type": "BUFx2_ASAP7_75t_R",
+            "output_buffers": 129
+          }
+        },
+        {
+          "type": "global_placement",
+          "command": "global_placement -density 0.65 -pad_left 0 -pad_right 0 -routability_driven -timing_driven -min_phi_coef 0.95 -max_phi_coef 1.05",
+          "iterations_count": 383,
+          "start_metrics": {
+            "overflow": 0.9066,
+            "hpwl": 26741.37
+          },
+          "end_metrics": {
+            "overflow": 0.0988,
+            "hpwl": 52818.89
+          },
+          "results": {
+            "movable_instances": 14951,
+            "fixed_instances": 719,
+            "num_nets": 15488,
+            "num_pins": 51978,
+            "core_area_um2": 4181.544,
+            "fixed_instances_area_um2": 20.966,
+            "movable_instances_area_um2": 1747.375,
+            "standard_cells_area_um2": 1747.375,
+            "utilization": 41.998,
+            "target_density": 65.0,
+            "final_overflow": 0.0988,
+            "final_hpwl_um": 52818.89
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-27T23:51:01.666Z] Report metrics stage 3, global place...",
+      "elapsed_s": 21,
+      "memory_mb": 558,
+      "sha1sum": "afe6f168d12accd41f76"
+    },
+    "3_4_place_resized": {
+      "optimization_process": [
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        }
+      ],
+      "report_metrics": "[2026-01-27T23:51:07.884Z] Report metrics stage 3, resizer...",
+      "elapsed_s": 6,
+      "memory_mb": 271,
+      "sha1sum": "afe6f168d12accd41f76"
+    },
+    "3_5_place_dp": {
+      "hpwl": 53096.2,
+      "optimization_process": [
+        {
+          "type": "detailed_placement",
+          "results": {
+            "total_displacement_u": 3448.0,
+            "average_displacement_u": 0.2,
+            "max_displacement_u": 0.9,
+            "original_hpwl_u": 52831.6,
+            "legalized_hpwl_u": 55411.6,
+            "delta_hpwl_percent": 5.0,
+            "final_hpwl_u": 53096.2,
+            "final_delta_hpwl_percent": -4.2
+          }
+        }
+      ],
+      "report_metrics": "[2026-01-27T23:51:17.065Z] Report metrics stage 3, detailed place...",
+      "elapsed_s": 8,
+      "memory_mb": 296,
+      "sha1sum": "0f44aa42ac0db968c45f"
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top",
+  "design_metrics_final": {
+    "placeopt__design__instance__area": 1879.84,
+    "placeopt__design__instance__count__stdcell": 17937.0
+  }
+}

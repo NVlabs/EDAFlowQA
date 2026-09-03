@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "line": 39,
+      "timestamp": "2025-10-11T15:09:56.296Z",
+      "design_name": "uart-blocks",
+      "technology_node": "gf180",
+      "config_mk": "config.mk"
+    }
+  ],
+  "summary": {
+    "design_names": [
+      "uart-blocks"
+    ],
+    "technology_nodes": [
+      "gf180"
+    ],
+    "config_mks": [
+      "config.mk"
+    ]
+  }
+}

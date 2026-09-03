@@ -1,0 +1,155 @@
+{
+  "stage": "placement",
+  "substages": {
+    "3_1_place_gp_skip_io": {
+      "hpwl": 7884.682,
+      "area": 167345.741,
+      "utilization": 11.043,
+      "density": 11.043,
+      "overflow": 0.0988,
+      "optimization_process": [
+        {
+          "type": "global_placement",
+          "command": "global_placement -skip_io -density 0.6 -pad_left 0 -pad_right 0",
+          "iterations_count": 393,
+          "start_metrics": {
+            "overflow": 0.9472,
+            "hpwl": 3874.693
+          },
+          "end_metrics": {
+            "overflow": 0.0988,
+            "hpwl": 7884.682
+          },
+          "results": {
+            "movable_instances": 255,
+            "fixed_instances": 95,
+            "num_nets": 298,
+            "num_pins": 940,
+            "core_area_um2": 167345.741,
+            "fixed_instances_area_um2": 65702.65,
+            "movable_instances_area_um2": 11224.685,
+            "standard_cells_area_um2": 11224.685,
+            "utilization": 11.043,
+            "target_density": 60.0,
+            "final_overflow": 0.0988,
+            "final_hpwl_um": 7884.682
+          }
+        }
+      ],
+      "elapsed_s": 1,
+      "memory_mb": 119,
+      "sha1sum": "b4ecb9c3e807d9d55c19"
+    },
+    "3_2_place_iop": {
+      "optimization_process": [
+        {
+          "type": "io_placement",
+          "command": "place_pins -hor_layers Metal3 -ver_layers Metal4",
+          "results": {
+            "io_nets_hpwl_um": 7538.6
+          }
+        }
+      ],
+      "elapsed_s": 1,
+      "memory_mb": 119,
+      "sha1sum": "3974c4b22a6396e07000"
+    },
+    "3_3_place_gp": {
+      "hpwl": 13199.67,
+      "area": 58470.0,
+      "utilization": 35,
+      "density": 35,
+      "overflow": 0.0978,
+      "optimization_process": [
+        {
+          "type": "buffer_removal",
+          "results": {
+            "removed_buffers": 5
+          }
+        },
+        {
+          "type": "buffer_insertion",
+          "results": {
+            "input_buffers": 28,
+            "buffer_type": "gf180mcu_fd_sc_mcu9t5v0__dlyb_2",
+            "output_buffers": 15
+          }
+        },
+        {
+          "type": "global_placement",
+          "command": "global_placement -density 0.6 -pad_left 0 -pad_right 0 -routability_driven -timing_driven",
+          "iterations_count": 364,
+          "start_metrics": {
+            "overflow": 0.7765,
+            "hpwl": 9696.346
+          },
+          "end_metrics": {
+            "overflow": 0.0978,
+            "hpwl": 13199.67
+          },
+          "results": {
+            "movable_instances": 293,
+            "fixed_instances": 95,
+            "num_nets": 336,
+            "num_pins": 1060,
+            "core_area_um2": 167345.741,
+            "fixed_instances_area_um2": 65702.65,
+            "movable_instances_area_um2": 12858.854,
+            "standard_cells_area_um2": 12858.854,
+            "utilization": 12.651,
+            "target_density": 60.0,
+            "final_overflow": 0.0978,
+            "final_hpwl_um": 13199.67
+          }
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:11:47.631Z] Report metrics stage 3, global place...",
+      "elapsed_s": 3,
+      "memory_mb": 195,
+      "sha1sum": "5dbf97e1dcdb701df82d"
+    },
+    "3_4_place_resized": {
+      "area": 58470.0,
+      "utilization": 35,
+      "density": 35,
+      "optimization_process": [
+        {
+          "type": "repair_design",
+          "command": "repair_design -verbose",
+          "iterations_count": 0
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:11:50.242Z] Report metrics stage 3, resizer...",
+      "elapsed_s": 2,
+      "memory_mb": 137,
+      "sha1sum": "5dbf97e1dcdb701df82d"
+    },
+    "3_5_place_dp": {
+      "hpwl": 13442.8,
+      "area": 58470.0,
+      "utilization": 35,
+      "density": 35,
+      "optimization_process": [
+        {
+          "type": "detailed_placement",
+          "results": {
+            "total_displacement_u": 1194.8,
+            "average_displacement_u": 1.8,
+            "max_displacement_u": 13.9,
+            "original_hpwl_u": 13208.4,
+            "legalized_hpwl_u": 14269.3,
+            "delta_hpwl_percent": 8.0,
+            "final_hpwl_u": 13442.8,
+            "final_delta_hpwl_percent": -5.8
+          }
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:11:52.850Z] Report metrics stage 3, detailed place...",
+      "elapsed_s": 2,
+      "memory_mb": 127,
+      "sha1sum": "01cce14027e2e780f61f"
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart"
+}

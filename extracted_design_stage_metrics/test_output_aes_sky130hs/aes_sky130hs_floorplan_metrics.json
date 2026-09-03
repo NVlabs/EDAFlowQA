@@ -1,0 +1,42 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        }
+      ],
+      "elapsed_time": "0:01.87",
+      "peak_memory_kb": 187520,
+      "elapsed_s": 1,
+      "memory_mb": 183,
+      "sha1sum": "405d5ef0812085445d42"
+    },
+    "2_2_floorplan_macro": {
+      "elapsed_time": "0:00.93",
+      "peak_memory_kb": 162088,
+      "elapsed_s": 0,
+      "memory_mb": 158,
+      "sha1sum": "405d5ef0812085445d42"
+    },
+    "2_3_floorplan_tapcell": {
+      "elapsed_time": "0:00.92",
+      "peak_memory_kb": 156088,
+      "elapsed_s": 0,
+      "memory_mb": 152,
+      "sha1sum": "dcc206d9642a9d66e951"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2026-01-27T23:54:50.182Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:01.05",
+      "peak_memory_kb": 167156,
+      "elapsed_s": 1,
+      "memory_mb": 163,
+      "sha1sum": "c089bf88c829ba168dbe"
+    }
+  },
+  "design_name": "aes",
+  "sub_design_name": "aes_cipher_top"
+}

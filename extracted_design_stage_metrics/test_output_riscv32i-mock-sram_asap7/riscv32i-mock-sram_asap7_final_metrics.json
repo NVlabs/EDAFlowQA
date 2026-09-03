@@ -1,0 +1,54 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 0.77,
+      "worstcase_voltage_v": 0.769,
+      "average_voltage_v": 0.77,
+      "average_ir_drop_v": 0.000228,
+      "worstcase_ir_drop_v": 0.000859,
+      "percentage_drop": 0.11
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.000859,
+      "average_voltage_v": 0.000231,
+      "average_ir_drop_v": 0.000231,
+      "worstcase_ir_drop_v": 0.000859,
+      "percentage_drop": 0.11
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 405,
+    "fill_cell_area": 31.76,
+    "tap_cell_count": 224,
+    "tap_cell_area": 6.53,
+    "clock_buffer_count": 13,
+    "clock_buffer_area": 2.0,
+    "timing_repair_buffer_count": 119,
+    "timing_repair_buffer_area": 14.19,
+    "inverter_count": 34,
+    "inverter_area": 1.66,
+    "sequential_cell_count": 97,
+    "sequential_cell_area": 28.29,
+    "combinational_cell_count": 269,
+    "combinational_cell_area": 28.26,
+    "total_cell_count": 1161,
+    "total_cell_area": 112.67
+  },
+  "design_metrics": {},
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 0,
+      "memory_mb": 187,
+      "sha1sum": "09c735cc16353c27e465"
+    },
+    "6_report": {
+      "elapsed_s": 1,
+      "memory_mb": 252
+    }
+  },
+  "performance": {},
+  "design_name": "riscv32i-mock-sram",
+  "sub_design_name": "fakeram7_256x32"
+}

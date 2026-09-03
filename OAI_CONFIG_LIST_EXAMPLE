@@ -1,0 +1,7 @@
+[ 
+  { 
+    "model": "<model name>", 
+    "base_url": "<base url>",
+    "api_key": "<api key>"
+  } 
+] 

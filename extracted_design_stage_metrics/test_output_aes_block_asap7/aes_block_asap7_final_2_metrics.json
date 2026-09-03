@@ -1,0 +1,50 @@
+{
+  "stage": "final",
+  "ir_drop": {
+    "vdd": {
+      "supply_voltage_v": 0.77,
+      "worstcase_voltage_v": 0.77,
+      "average_voltage_v": 0.77,
+      "average_ir_drop_v": 8.74e-05,
+      "worstcase_ir_drop_v": 0.000286,
+      "percentage_drop": 0.04
+    },
+    "vss": {
+      "supply_voltage_v": 0.0,
+      "worstcase_voltage_v": 0.000373,
+      "average_voltage_v": 8.75e-05,
+      "average_ir_drop_v": 8.75e-05,
+      "worstcase_ir_drop_v": 0.000373,
+      "percentage_drop": 0.05
+    }
+  },
+  "cell_counts": {
+    "fill_cell_count": 855,
+    "fill_cell_area": 84.1,
+    "tap_cell_count": 90,
+    "tap_cell_area": 2.62,
+    "timing_repair_buffer_count": 72,
+    "timing_repair_buffer_area": 6.79,
+    "inverter_count": 41,
+    "inverter_area": 1.97,
+    "combinational_cell_count": 527,
+    "combinational_cell_area": 56.07,
+    "total_cell_count": 1585,
+    "total_cell_area": 151.56
+  },
+  "design_metrics": {},
+  "flow_summary": {
+    "6_1_fill": {
+      "elapsed_s": 1,
+      "memory_mb": 192,
+      "sha1sum": "8f5d13ee6b78012ec58b"
+    },
+    "6_report": {
+      "elapsed_s": 2,
+      "memory_mb": 261
+    }
+  },
+  "performance": {},
+  "design_name": "aes-block",
+  "sub_design_name": "aes_sbox"
+}

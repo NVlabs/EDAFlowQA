@@ -1,0 +1,72 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -139.335,
+      "tns": -8959.4,
+      "clock_sink_wirelength_um": 65.29,
+      "hpwl": 49591.1,
+      "displacement": 1301.6,
+      "violations": 200,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 518,
+            "clock_buffers_created": 44,
+            "min_buffer_depth": 3,
+            "max_buffer_depth": 3,
+            "avg_sink_wirelength_um": 65.29,
+            "placement_total_displacement_u": 64.6,
+            "placement_avg_displacement_u": 0.0,
+            "placement_max_displacement_u": 2.5,
+            "hpwl_before": 48162.1,
+            "hpwl_after": 48581.8,
+            "clock_nets": [
+              {
+                "name": "clk_regs",
+                "sinks": 556,
+                "leaf_buffers": 39,
+                "avg_sink_wire_length_um": 65.29,
+                "path_depth_min": 2,
+                "path_depth_max": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose",
+          "iterations_count": 473,
+          "start_metrics": {
+            "wns": -180.083,
+            "tns": -12254.6,
+            "violation_end_points": 206
+          },
+          "end_metrics": {
+            "wns": -139.335,
+            "tns": -8959.4,
+            "violation_end_points": 200
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "removed_buffers": 13,
+          "inserted_buffers": 96,
+          "hold_buffers_inserted": 1321,
+          "resized_instances": 238
+        }
+      ],
+      "report_metrics": "[2026-01-26T20:48:44.325Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:10.35",
+      "peak_memory_kb": 281244,
+      "elapsed_s": 10,
+      "memory_mb": 274,
+      "sha1sum": "1629f3aa4877b343417c"
+    }
+  },
+  "design_name": "aes-block",
+  "sub_design_name": "aes_cipher_top"
+}

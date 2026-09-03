@@ -1,0 +1,84 @@
+{
+  "stage": "cts",
+  "substages": {
+    "4_1_cts": {
+      "wns": -2.337,
+      "tns": -104.2,
+      "clock_sink_wirelength_um": 116.0,
+      "hpwl": 6613.0,
+      "area": 4387.0,
+      "utilization": 78,
+      "density": 78,
+      "displacement": 1163.5,
+      "violations": 84,
+      "optimization_process": [
+        {
+          "type": "clock_tree_synthesis",
+          "command": "clock_tree_synthesis -sink_clustering_enable -repair_clock_nets",
+          "results": {
+            "total_sinks": 35,
+            "clock_buffers_created": 5,
+            "min_buffer_depth": 2,
+            "max_buffer_depth": 2,
+            "avg_sink_wirelength_um": 116.0,
+            "placement_total_displacement_u": 95.4,
+            "placement_avg_displacement_u": 0.2,
+            "placement_max_displacement_u": 6.9,
+            "hpwl_before": 4641.8,
+            "hpwl_after": 4977.7,
+            "clock_nets": [
+              {
+                "name": "clk",
+                "sinks": 38,
+                "leaf_buffers": 0,
+                "avg_sink_wire_length_um": 116.0,
+                "path_depth_min": 2,
+                "path_depth_max": 2,
+                "leaf_load_cells": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint",
+          "iterations_count": 199,
+          "start_metrics": {
+            "wns": -2.638,
+            "tns": -96.9,
+            "violation_end_points": 56
+          },
+          "end_metrics": {
+            "wns": -2.337,
+            "tns": -104.2,
+            "violation_end_points": 84
+          },
+          "placement_impact": {}
+        },
+        {
+          "type": "repair_timing_summary",
+          "removed_buffers": 4,
+          "inserted_buffers": 42,
+          "resized_instances": 127,
+          "cloned_instances": 2
+        }
+      ],
+      "report_metrics": "[2025-10-11T15:12:43.273Z] Report metrics stage 4, cts final...",
+      "elapsed_time": "0:14.36",
+      "peak_memory_kb": 149324,
+      "elapsed_s": 14,
+      "memory_mb": 145,
+      "sha1sum": "5639158eab7e301dd9b3"
+    }
+  },
+  "design_name": "gcd",
+  "sub_design_name": "gcd",
+  "design_metrics_final": {
+    "cts__design__instance__count__setup_buffer": 42.0,
+    "cts__design__instance__count__hold_buffer": 0.0,
+    "cts__timing__setup__ws": -2.3374,
+    "cts__timing__setup__tns": -104.172,
+    "cts__timing__hold__ws": 0.473234,
+    "cts__timing__hold__tns": 0.0
+  }
+}

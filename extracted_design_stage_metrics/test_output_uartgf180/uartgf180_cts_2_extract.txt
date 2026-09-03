@@ -1,0 +1,48 @@
+[2025-10-11T15:11:54.971Z] Running cts.tcl, stage 4_1_cts
+[2025-10-11T15:11:56.068Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2025-10-11T15:11:56.068Z]                     gf180mcu_fd_sc_mcu9t5v0__clkbuf_8
+[2025-10-11T15:11:56.068Z]                     gf180mcu_fd_sc_mcu9t5v0__clkbuf_12
+[2025-10-11T15:11:56.068Z]                     gf180mcu_fd_sc_mcu9t5v0__clkbuf_16
+[2025-10-11T15:12:04.235Z] [INFO CTS-0028]  Total number of sinks: 1.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0028]  Total number of sinks: 35.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0018]     Created 2 clock buffers.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0018]     Created 5 clock buffers.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[2025-10-11T15:12:04.235Z] [INFO CTS-0098] Clock net "clk_regs"
+[2025-10-11T15:12:04.235Z] [INFO CTS-0099]  Sinks 38
+[2025-10-11T15:12:04.235Z] [INFO CTS-0100]  Leaf buffers 0
+[2025-10-11T15:12:04.235Z] [INFO CTS-0101]  Average sink wire length 114.94 um
+[2025-10-11T15:12:04.235Z] [INFO CTS-0102]  Path depth 2 - 2
+[2025-10-11T15:12:04.235Z] [INFO CTS-0207]  Leaf load cells 3
+[2025-10-11T15:12:04.235Z] Took 7 seconds: clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2025-10-11T15:12:04.235Z] Placement Analysis
+[2025-10-11T15:12:04.235Z] ---------------------------------
+[2025-10-11T15:12:04.235Z] total displacement        215.4 u
+[2025-10-11T15:12:04.235Z] average displacement        0.3 u
+[2025-10-11T15:12:04.235Z] max displacement           32.0 u
+[2025-10-11T15:12:04.235Z] original HPWL           14159.3 u
+[2025-10-11T15:12:04.235Z] legalized HPWL          14784.5 u
+[2025-10-11T15:12:04.235Z] delta HPWL                    4 %
+[2025-10-11T15:12:04.235Z] 
+[2025-10-11T15:12:04.235Z] repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100
+[2025-10-11T15:12:04.235Z] Placement Analysis
+[2025-10-11T15:12:04.235Z] ---------------------------------
+[2025-10-11T15:12:04.235Z] total displacement          0.0 u
+[2025-10-11T15:12:04.235Z] average displacement        0.0 u
+[2025-10-11T15:12:04.235Z] max displacement            0.0 u
+[2025-10-11T15:12:04.235Z] original HPWL           14784.5 u
+[2025-10-11T15:12:04.235Z] legalized HPWL          14784.5 u
+[2025-10-11T15:12:04.235Z] delta HPWL                    0 %
+[2025-10-11T15:12:04.235Z] 
+[2025-10-11T15:12:04.235Z] Report metrics stage 4, cts final...
+[2025-10-11T15:12:04.235Z] 
+[2025-10-11T15:12:04.235Z] ==========================================================================
+[2025-10-11T15:12:04.235Z] cts final report_design_area
+[2025-10-11T15:12:04.235Z] --------------------------------------------------------------------------
+[2025-10-11T15:12:04.235Z] Design area 59373 u^2 35% utilization.
+[2025-10-11T15:12:04.235Z] Elapsed time: 0:09.23[h:]min:sec. CPU time: user 10.04 sys 1.49 (124%). Peak memory: 165920KB.
+[2025-10-11T15:12:04.235Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2025-10-11T15:12:04.235Z] 4_1_cts                            9            162 f735fe784642ab1c5210

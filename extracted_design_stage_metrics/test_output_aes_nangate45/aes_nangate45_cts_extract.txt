@@ -1,0 +1,63 @@
+[2026-01-26T20:51:35.827Z] Running cts.tcl, stage 4_1_cts
+[2026-01-26T20:51:36.413Z] clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[2026-01-26T20:51:36.413Z]                     CLKBUF_X3
+[2026-01-26T20:51:37.007Z] [INFO CTS-0010]  Clock net "clk" has 562 sinks.
+[2026-01-26T20:51:37.007Z] [INFO CTS-0028]  Total number of sinks: 562.
+[2026-01-26T20:51:37.007Z] [INFO CTS-0018]     Created 104 clock buffers.
+[2026-01-26T20:51:37.007Z] [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[2026-01-26T20:51:37.007Z] [INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[2026-01-26T20:51:37.007Z] [INFO CTS-0098] Clock net "clk"
+[2026-01-26T20:51:37.007Z] [INFO CTS-0099]  Sinks 642
+[2026-01-26T20:51:37.007Z] [INFO CTS-0100]  Leaf buffers 95
+[2026-01-26T20:51:37.007Z] [INFO CTS-0101]  Average sink wire length 334.89 um
+[2026-01-26T20:51:37.007Z] [INFO CTS-0102]  Path depth 2 - 3
+[2026-01-26T20:51:38.269Z] estimate_parasitics -placement
+[2026-01-26T20:51:38.857Z] Placement Analysis
+[2026-01-26T20:51:38.857Z] ---------------------------------
+[2026-01-26T20:51:38.857Z] total displacement        253.8 u
+[2026-01-26T20:51:38.857Z] average displacement        0.0 u
+[2026-01-26T20:51:38.857Z] max displacement            2.9 u
+[2026-01-26T20:51:38.857Z] original HPWL          196588.7 u
+[2026-01-26T20:51:38.857Z] legalized HPWL         199243.8 u
+[2026-01-26T20:51:38.857Z] delta HPWL                    1 %
+[2026-01-26T20:51:38.857Z] 
+[2026-01-26T20:51:38.857Z] estimate_parasitics -placement
+[2026-01-26T20:51:39.443Z] repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[2026-01-26T20:51:39.443Z] [INFO RSZ-0094] Found 2 endpoints with setup violations.
+[2026-01-26T20:51:39.443Z]    Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+[2026-01-26T20:51:39.443Z]           | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+[2026-01-26T20:51:39.443Z] --------------------------------------------------------------------------------------------------------------
+[2026-01-26T20:51:39.443Z]         0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -0.005 |       -0.0 |      2 | u0.u3.d[3]$_DFF_P_/D
+[2026-01-26T20:51:39.443Z]         2 |       0 |       1 |        0 |      0 |     0 |    +0.0% |    0.012 |        0.0 |      0 | sa21_sr[1]$_DFF_P_/D
+[2026-01-26T20:51:39.443Z]         3 |       0 |       1 |        0 |      0 |     0 |    +0.0% |    0.012 |        0.0 |      0 | sa21_sr[1]$_DFF_P_/D
+[2026-01-26T20:51:39.443Z]     final |       0 |       1 |        0 |      0 |     0 |    +0.0% |    0.012 |        0.0 |      0 | sa21_sr[1]$_DFF_P_/D
+[2026-01-26T20:51:39.443Z] --------------------------------------------------------------------------------------------------------------
+[2026-01-26T20:51:39.443Z] [INFO RSZ-0051] Resized 1 instances: 1 up, 0 up match, 0 down, 0 VT
+[2026-01-26T20:51:39.443Z] Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+[2026-01-26T20:51:39.443Z] --------------------------------------------------------------------------------------
+[2026-01-26T20:51:39.443Z]         0 |       0 |       0 |            0 |    +0.0% |  -0.005 |  -0.020 | text_in_r[125]$_DFFE_PP_/D
+[2026-01-26T20:51:39.443Z]        10 |       0 |       9 |            0 |    +0.0% |  -0.001 |  -0.004 | text_in_r[108]$_DFFE_PP_/D
+[2026-01-26T20:51:39.443Z]        20 |       0 |      19 |            0 |    +0.1% |  -0.000 |  -0.000 | text_in_r[77]$_DFFE_PP_/D
+[2026-01-26T20:51:39.443Z]     final |       0 |      21 |            0 |    +0.1% |   0.000 |   0.000 | text_in_r[127]$_DFFE_PP_/D
+[2026-01-26T20:51:39.443Z] --------------------------------------------------------------------------------------
+[2026-01-26T20:51:39.443Z] [INFO RSZ-0032] Inserted 21 hold buffers.
+[2026-01-26T20:51:40.039Z] Placement Analysis
+[2026-01-26T20:51:40.039Z] ---------------------------------
+[2026-01-26T20:51:40.039Z] total displacement         19.9 u
+[2026-01-26T20:51:40.039Z] average displacement        0.0 u
+[2026-01-26T20:51:40.039Z] max displacement            4.4 u
+[2026-01-26T20:51:40.039Z] original HPWL          199243.2 u
+[2026-01-26T20:51:40.039Z] legalized HPWL         199246.8 u
+[2026-01-26T20:51:40.039Z] delta HPWL                    0 %
+[2026-01-26T20:51:40.039Z] 
+[2026-01-26T20:51:40.039Z] Report metrics stage 4, cts final...
+[2026-01-26T20:51:43.593Z] 
+[2026-01-26T20:51:43.593Z] ==========================================================================
+[2026-01-26T20:51:43.593Z] cts final report_design_area
+[2026-01-26T20:51:43.593Z] --------------------------------------------------------------------------
+[2026-01-26T20:51:43.593Z] Design area 20420 um^2 39% utilization.
+[2026-01-26T20:51:43.593Z] write_db ./results/nangate45/aes/base/4_1_cts.odb
+[2026-01-26T20:51:43.593Z] write_sdc -no_timestamp ./results/nangate45/aes/base/4_cts.sdc
+[2026-01-26T20:51:43.593Z] Elapsed time: 0:07.69[h:]min:sec. CPU time: user 15.49 sys 10.14 (333%). Peak memory: 209424KB.
+[2026-01-26T20:51:43.593Z] Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+[2026-01-26T20:51:43.593Z] 4_1_cts                            7            204 efcb8814311d2fe2492e

@@ -1,0 +1,58 @@
+================================================================================
+EXTRACTION SUMMARY
+================================================================================
+Log file: ./design_artifacts/aes_asap7_vs_aes_sky130hs/aes_asap7.txt
+Output directory: test_output_aes_asap7
+Timestamp: 2026-02-28T10:49:17.927484
+
+DESIGN INFO:
+  design_names=['aes']
+  technology_nodes=['asap7']
+  config_mks=['config.mk']
+  design_info_file=aes_asap7_design_info.json
+
+LINE CHECK:
+  log_total_lines=4230  chunks_total_lines=3860  chunks_covered_lines=3860  gaps=370  overlaps=0  extracted_total_lines=1983
+  gap_file=aes_asap7_gap_lines.txt
+
+Total stage occurrences extracted: 6
+--------------------------------------------------------------------------------
+
+CTS (1 occurrence(s)):
+  #1:   416 lines -> aes_asap7_cts_extract.txt
+
+FINAL (1 occurrence(s)):
+  #1:   121 lines -> aes_asap7_final_extract.txt
+
+FLOORPLAN (1 occurrence(s)):
+  #1:   369 lines -> aes_asap7_floorplan_extract.txt
+
+PLACEMENT (1 occurrence(s)):
+  #1:   321 lines -> aes_asap7_placement_extract.txt
+
+ROUTING (1 occurrence(s)):
+  #1:   745 lines -> aes_asap7_routing_extract.txt
+
+SYNTHESIS (1 occurrence(s)):
+  #1:    11 lines -> aes_asap7_synthesis_extract.txt
+
+--------------------------------------------------------------------------------
+CHRONOLOGICAL ORDER:
+--------------------------------------------------------------------------------
+ 1. synthesis_1                    (   11 lines)
+ 2. floorplan_1                    (  369 lines)
+ 3. placement_1                    (  321 lines)
+ 4. cts_1                          (  416 lines)
+ 5. routing_1                      (  745 lines)
+ 6. final_1                        (  121 lines)
+
+--------------------------------------------------------------------------------
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+ 1. synthesis_1       clock=N/A  cpu_s=1.52  warnings=0  errors=0
+ 2. floorplan_1       area=N/A  util=N/A  wns=-77.730  tns=-4080.0  viol=132  hpwl=N/A
+ 3. placement_1       area=4181.5  util=42.0  wns=N/A  tns=N/A  viol=N/A  hpwl=53096.2
+ 4. cts_1             area=N/A  util=N/A  wns=-21.801  tns=-531.4  viol=68  hpwl=55488.3
+ 5. routing_1         area=N/A  util=N/A  wns=N/A  tns=N/A  viol=0  hpwl=N/A
+ 6. final_1           area=1980.900  util=N/A  ir_vdd_wc=0.024  ir_vss_wc=0.025
+================================================================================

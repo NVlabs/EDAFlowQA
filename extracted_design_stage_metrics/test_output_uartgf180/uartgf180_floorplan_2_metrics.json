@@ -1,0 +1,77 @@
+{
+  "stage": "floorplan",
+  "substages": {
+    "2_1_floorplan": {
+      "area": 56796.0,
+      "utilization": 34,
+      "density": 34,
+      "optimization_process": [
+        {
+          "type": "repair_tie_fanout",
+          "results": {}
+        },
+        {
+          "type": "repair_timing",
+          "command": "repair_timing -setup -verbose -setup_margin 0 -hold_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp",
+          "iterations_count": 0,
+          "start_metrics": {},
+          "end_metrics": {}
+        }
+      ],
+      "elapsed_time": "0:01.75",
+      "peak_memory_kb": 143288,
+      "elapsed_s": 1,
+      "memory_mb": 139,
+      "sha1sum": "c3f176cf079309b632c3"
+    },
+    "2_2_floorplan_macro": {
+      "utilization": 34.0,
+      "density": 34.0,
+      "optimization_process": [
+        {
+          "type": "macro_placement",
+          "command": "rtl_macro_placer -max_num_level 2 -halo_width 20 -halo_height 20 -min_ar 0.33 -signature_net_threshold 50 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/gf180/uart-blocks/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.6",
+          "results": {
+            "num_std_cells": 255,
+            "area_std_cells": 11224.68,
+            "num_macros": 1,
+            "area_macros": 56796.26,
+            "design_utilization": 34.0,
+            "floorplan_utilization": 9.0
+          }
+        }
+      ],
+      "elapsed_time": "0:03.98",
+      "peak_memory_kb": 121760,
+      "elapsed_s": 3,
+      "memory_mb": 118,
+      "sha1sum": "8eb86b4a29f00c6aede6"
+    },
+    "2_3_floorplan_tapcell": {
+      "optimization_process": [
+        {
+          "type": "tapcell_insertion",
+          "results": {
+            "endcaps_inserted": 162,
+            "tapcells_inserted": 94
+          }
+        }
+      ],
+      "elapsed_time": "0:01.17",
+      "peak_memory_kb": 120276,
+      "elapsed_s": 1,
+      "memory_mb": 117,
+      "sha1sum": "e6173e589292a97d843c"
+    },
+    "2_4_floorplan_pdn": {
+      "report_metrics": "[2025-10-11T15:11:30.535Z] Report metrics stage 2, floorplan final...",
+      "elapsed_time": "0:01.23",
+      "peak_memory_kb": 127248,
+      "elapsed_s": 1,
+      "memory_mb": 124,
+      "sha1sum": "9088c669c25d1e0e618e"
+    }
+  },
+  "design_name": "uart-blocks",
+  "sub_design_name": "uart"
+}
